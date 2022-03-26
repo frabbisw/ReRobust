@@ -1,0 +1,16 @@
+line_index: 14
+bug_before_refactoring: { int width = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int width = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+bug_after_refactoring: { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+fix_before_refactoring: { return false ; }
+fix_after_refactoring: { return false ; }
+√ fix_prediction_before: { return false ; }
+√ fix_prediction_after: { return false ; }
+
+line_index: 198
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+bug_after_refactoring: public static void main ( java.lang.String [] args ) { long jccgguhfirnlwkrtkmaj = 0 ; jccgguhfirnlwkrtkmaj = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( jccgguhfirnlwkrtkmaj * 11 ) ) ; } <s> public static void main ( java.lang.String [] args ) { long jccgguhfirnlwkrtkmaj = 0 ; jccgguhfirnlwkrtkmaj = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( jccgguhfirnlwkrtkmaj * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void main ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+√ fix_prediction_after: public static void main ( java.lang.String [] args ) {}
+

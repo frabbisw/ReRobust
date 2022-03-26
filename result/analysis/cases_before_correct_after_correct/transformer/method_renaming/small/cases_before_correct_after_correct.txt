@@ -1,0 +1,16 @@
+line_index: 428
+bug_before_refactoring: @ java.lang.Override protected void setHistoryValue ( net.ssehub.easy.varModel.model.values.Value value , net.ssehub.easy.varModel.confModel.IAssignmentState state ) throws net.ssehub.easy.varModel.confModel.ConfigurationException {} <s> @ java.lang.Override protected void setHistoryValue ( net.ssehub.easy.varModel.model.values.Value value , net.ssehub.easy.varModel.confModel.IAssignmentState state ) throws net.ssehub.easy.varModel.confModel.ConfigurationException {} <s> Bug fix for container variables when performing an Undo freezeAll  However  one bug remains: Newly created container slots may loose their value during freezing them references #64
+bug_after_refactoring: @ java.lang.Override protected void qfpooawedmnqwgemotyo ( net.ssehub.easy.varModel.model.values.Value value , net.ssehub.easy.varModel.confModel.IAssignmentState state ) throws net.ssehub.easy.varModel.confModel.ConfigurationException {} <s> @ java.lang.Override protected void qfpooawedmnqwgemotyo ( net.ssehub.easy.varModel.model.values.Value value , net.ssehub.easy.varModel.confModel.IAssignmentState state ) throws net.ssehub.easy.varModel.confModel.ConfigurationException {} <s> Bug fix for container variables when performing an Undo freezeAll  However  one bug remains: Newly created container slots may loose their value during freezing them references #64
+fix_before_refactoring: { this . state = state ; }
+fix_after_refactoring: { this . state = state ; }
+√ fix_prediction_before: { this . state = state ; }
+√ fix_prediction_after: { this . state = state ; }
+
+line_index: 970
+bug_before_refactoring: public java.util.Map < java.lang.Integer , cs414c.pizza.domain.Item > pullItemsFromDB () {} <s> public java.util.Map < java.lang.Integer , cs414c.pizza.domain.Item > pullItemsFromDB () {} <s> Fixed compilation errors
+bug_after_refactoring: public java.util.Map < java.lang.Integer , cs414c.pizza.domain.Item > vuldhqehhyytmumqvucp () {} <s> public java.util.Map < java.lang.Integer , cs414c.pizza.domain.Item > vuldhqehhyytmumqvucp () {} <s> Fixed compilation errors
+fix_before_refactoring: { return null ; }
+fix_after_refactoring: { return null ; }
+√ fix_prediction_before: { return null ; }
+√ fix_prediction_after: { return null ; }
+

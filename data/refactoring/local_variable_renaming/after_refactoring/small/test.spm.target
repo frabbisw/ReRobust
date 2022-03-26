@@ -1,0 +1,216 @@
+▁@ ▁org . springframework . web . bind . annotation . RequestMapping ▁( ▁value ▁= ▁"/ label Update Or Insert " ▁) ▁@ ▁org . springframework . web . bind . annotation . ResponseBody ▁public ▁java . lang . String ▁label Update Or Insert ▁( ▁com . ap company . user . po jo . T Labels Rel ▁t labels rel ▁, ▁org . springframework . ui . Model ▁model ▁) ▁{ ▁int ▁m rs md cp b h pg tg iv v z tl r ▁= ▁data Service ▁. ▁insert Or Up ate T Labels Rel ▁( ▁t labels rel ▁) ▁; ▁return ▁m rs md cp b h pg tg iv v z tl r ▁> ▁0 ▁? ▁" true " ▁: ▁" false " ▁; ▁}
+▁{ ▁android . content . Intent ▁intent ▁= ▁new ▁android . content . Intent ▁( ▁this ▁, ▁csc i 4 35 . c sc i 4 35 _ od br . Snapshot Intent Service ▁. ▁class ▁) ▁; ▁startService ▁( ▁intent ▁) ▁; ▁}
+▁{ ▁if ▁( ▁i ▁> ▁0 ▁) ▁am dd ku j mc z tl v xf as aw c ▁-= ▁i ▁* ▁( ▁controllers . classification . ID 3 ▁. ▁log 2 ▁( ▁i ▁) ▁) ▁; ▁}
+▁public ▁void ▁check Health ▁( ▁Player ▁player ▁) ▁{ ▁java . lang . System . out ▁. ▁println ▁( ▁( ▁( ▁" Your ▁i ot l q aj so z n mx tz x ci ib ▁is ▁currently ▁at ▁" ▁+ ▁( ▁player . Health ▁) ▁) ▁+ ▁" iot l q aj so z n mx tz x ci ib ▁points ." ▁) ▁) ▁; ▁}
+▁{ ▁int ▁pv k x v uj x ked km vw uy md m ▁= ▁gs ▁. ▁closest P ill Dir ▁() ▁; ▁return ▁pv k x v uj x ked km vw uy md m ▁; ▁}
+▁{ ▁@ ▁org . checker framework . checker . index . qual . Index Or Low ▁( ▁value ▁= ▁" a " ▁) ▁int ▁wt ce h bu ons us ww x sc v xr ▁; ▁wt ce h bu ons us ww x sc v xr ▁= ▁( ▁a . length ▁) ▁- ▁b ▁; ▁}
+▁fy on o yn ez h ly k pp yn gt j
+▁{ ▁int ▁rc j m ss n ux x ru cm f dd h vv ▁= ▁track Name ▁. ▁hashCode ▁() ▁; ▁rc j m ss n ux x ru cm f dd h vv ▁= ▁( ▁31 ▁* ▁rc j m ss n ux x ru cm f dd h vv ▁) ▁+ ▁( ▁track Details ▁. ▁hashCode ▁() ▁) ▁; ▁return ▁rc j m ss n ux x ru cm f dd h vv ▁; ▁}
+▁return ▁- ▁( ▁java . lang . Math ▁. ▁cos ▁( ▁( ▁mt cy ddl id g aw bb mf cd sp ▁* ▁( ▁com . ky lan tr ay n or . li v ely world . cl imate . Plan et . Two PI ▁) ▁) ▁) ▁) ▁;
+▁public ▁static ▁long ▁calc Time In Trip ▁( ▁long ▁trip StartTime ▁) ▁{ ▁if ▁( ▁trip StartTime ▁<= ▁0 ▁) ▁{ ▁return ▁0 ▁; ▁} ▁else ▁{ ▁java . util . Calendar ▁cur Cal ▁= ▁java . util . Calendar ▁. ▁getInstance ▁() ▁; ▁long ▁j ht y q v dm gm z ec et pp rn f ▁= ▁cur Cal ▁. ▁getTime ▁() ▁. ▁getTime ▁() ▁; ▁return ▁j ht y q v dm gm z ec et pp rn f ▁- ▁trip StartTime ▁; ▁} ▁}
+▁fb x ah l bd j iq j tw vh hip g ▁= ▁( ▁( ▁float ▁) ▁( ▁steps ▁* ▁( ▁height ▁) ▁) ▁)
+▁{ ▁byte ▁[] ▁tb j l mv z ep ly man h led ch ▁= ▁product Pdf ▁. ▁getBytes ▁() ▁; ▁java . sql . Blob ▁manual Blob ▁= ▁new ▁javax . sql . row set . serial . Serial Blob ▁( ▁tb j l mv z ep ly man h led ch ▁) ▁; ▁this ▁. ▁product Manual ▁= ▁manual Blob ▁; ▁}
+▁water . util . Log ▁. ▁write ▁( ▁lvl ▁, ▁y yp np ce yth r ri fx uf e zy ▁, ▁objs ▁)
+▁{ ▁return ▁false ▁; ▁}
+▁g x bf ci ibo ai ir n oc st mi ▁= ▁( ▁( ▁( ▁attack ▁) ▁- ▁( ▁target . def ence ▁) ▁) ▁<= ▁0 ▁) ▁? ▁0 ▁: ▁( ▁attack ▁) ▁- ▁( ▁target . def ence ▁)
+▁{ ▁scope ▁. ▁getG ui ▁() ▁. ▁wait Status ▁( ▁" ▁Building ▁outputs ▁" ▁) ▁; ▁boolean ▁g wx ph h fmt lt um ig cf w xx ▁= ▁super ▁. ▁init ▁( ▁scope ▁) ▁; ▁return ▁g wx ph h fmt lt um ig cf w xx ▁; ▁}
+▁public ▁void ▁play One Sequence ▁() ▁{ ▁M ont ec ar lo . Node ▁node ▁= ▁select Node ▁( ▁root ▁) ▁; ▁node ▁= ▁expand ▁( ▁node ▁) ▁; ▁if ▁( ▁node ▁== ▁null ▁) ▁{ ▁return ; ▁} ▁int ▁v rr h jd si q h pe vs z j f hr n ▁= ▁simulation ▁( ▁node ▁) ▁; ▁back Propagation ▁( ▁node ▁, ▁v rr h jd si q h pe vs z j f hr n ▁) ▁; ▁}
+▁for ▁( ▁java . lang . Integer ▁i ▁: ▁set ▁) ▁{ ▁if ▁( ▁i ▁. ▁equals ▁( ▁id ▁) ▁) ▁{ ▁return ▁ud pb mi ql but d il v z mp qq ▁; ▁} ▁ud pb mi ql but d il v z mp qq ▁++ ▁; ▁}
+▁public ▁int ▁read Channel ▁( ▁int ▁channel ▁) ▁{ ▁int ▁dy dm ry sg jq ea et ual rm r ▁= ▁0 ▁; ▁try ▁{ ▁dy dm ry sg jq ea et ual rm r ▁= ▁rc ▁. ▁read Broadcast ▁( ▁channel ▁) ▁; ▁} ▁catch ▁( ▁bat tle code . common . Game Action Exception ▁e ▁) ▁{} ▁return ▁dy dm ry sg jq ea et ual rm r ▁; ▁}
+▁wl faq fd g cs fo j eq te ior ▁= ▁getValid Index ▁( ▁from Key ▁, ▁( ▁! ▁inclusive ▁) ▁)
+▁boolean ▁j mi ow x z h gu gs ov w y u q g v ▁= ▁super ▁. ▁commit Text ▁( ▁text ▁, ▁new Cursor Position ▁) ▁;
+▁{ ▁int ▁wr j py ck ig br dn j y uz h id ▁= ▁0 ▁; ▁wr j py ck ig br dn j y uz h id ▁+= ▁super ▁. ▁hashCode ▁() ▁; ▁return ▁wr j py ck ig br dn j y uz h id ▁; ▁}
+▁( ▁ne uk r xff if w v ng m ng w q e ▁- ▁cw n vy yn vf my ih c che ell ▁)
+▁{ ▁if ▁( ▁p ila Mov im ient os ▁. ▁empty ▁() ▁) ▁{ ▁des h acer P ila ▁= ▁false ▁; ▁return ▁0 ▁; ▁} ▁int ▁v k ss nf z pm q h v j lv rd zz z ▁= ▁p ila Mov im ient os ▁. ▁pop ▁() ▁; ▁return ▁v k ss nf z pm q h v j lv rd zz z ▁; ▁}
+▁{ ▁int ▁sq mf ed z al xn v k gi ym i jo ▁= ▁this ▁. ▁search Be at Name ▁( ▁bn ▁) ▁; ▁if ▁( ▁sq mf ed z al xn v k gi ym i jo ▁>= ▁0 ▁) ▁{ ▁return ▁beat List ▁. ▁get ▁( ▁sq mf ed z al xn v k gi ym i jo ▁) ▁; ▁} ▁return ▁null ▁; ▁}
+▁pre T z ▁. ▁convert Local To UTC ▁( ▁field ▁. ▁round Floor ▁( ▁gg x q k xb ww u js vw rc ao ex ▁) ▁, ▁false ▁, ▁utc Millis ▁)
+▁a j yx iq id ns v ip oz ll hn h ▁= ▁java . lang . Math ▁. ▁round ▁( ▁com . h azelcast . map . impl . ev iction . Max Size Checker ▁. ▁getApp ro x imate Max Size ▁( ▁maxSize Config ▁, ▁Max Size Policy . PER _ NODE ▁) ▁)
+▁myList ▁. ▁duplicate ▁( ▁k u yg u wi y h j bd ov sb pk ya ▁) ▁. ▁size ▁()
+▁{ ▁int ▁dv h qs j g tk sl im nx mk vd q ▁= ▁connection ▁. ▁getResponseCode ▁() ▁; ▁return ▁super ▁. ▁process Response ▁( ▁connection ▁, ▁type Of T ▁) ▁; ▁}
+▁{ ▁check Enabled ▁() ▁; ▁this ▁. ▁mode ▁= ▁mode ▁; ▁boolean ▁w cr k sp nd ere um du kr dk v ▁= ▁( ▁net . sf . d z 3. device . model . H vac Mode . HE ATING ▁) ▁== ▁mode ▁; ▁switch Mode ▁. ▁setState ▁( ▁( ▁reverse Mode ▁? ▁! ▁w cr k sp nd ere um du kr dk v ▁: ▁w cr k sp nd ere um du kr dk v ▁) ▁) ▁; ▁}
+▁{ ▁double ▁ol kin h b ih b if ck qu fh eb ▁= ▁Robot . instance . oi ▁. ▁getSh ooter Ele v ator Input ▁() ▁; ▁Robot . instance . el ev ator . el ev ator Act uator ▁. ▁set ▁( ▁ol kin h b ih b if ck qu fh eb ▁) ▁; ▁}
+▁spinner ▁. ▁setSelection ▁( ▁z ut g aj oc w ak sw k c do i we ▁)
+▁if ▁( ▁( ▁this ▁. ▁random ▁() ▁) ▁< ▁( ▁mean ▁- ▁e yl ke ue ku z m nl q o ew y v k ▁) ▁) ▁e yl ke ue ku z m nl q o ew y v k ▁++ ▁;
+▁public ▁int ▁getArray Index ▁( ▁int ▁row ▁, ▁int ▁col ▁) ▁{ ▁int ▁sd or af li wb df x vn hc z kv ▁= ▁( ▁( ▁row ▁- ▁1 ▁) ▁* ▁( ▁size ▁) ▁) ▁+ ▁col ▁; ▁return ▁sd or af li wb df x vn hc z kv ▁; ▁}
+▁{ ▁super ▁. ▁readFrom NBT ▁( ▁par 1 ▁) ▁; ▁int ▁[] ▁ep al ch ez om ik ld ch v z ki ▁= ▁par 1 ▁. ▁getInt Array ▁( ▁com . min es paces h ips . mod . over head . Chat Register Entity . recover Spaces hip Measure s ▁) ▁; ▁if ▁( ▁ep al ch ez om ik ld ch v z ki ▁!= ▁null ▁) ▁{ ▁ship ▁= ▁new ▁com . min es paces h ips . mod . spaces hip . Spaces hip ▁( ▁ep al ch ez om ik ld ch v z ki ▁) ▁; ▁} ▁}
+▁{ ▁java . lang . System . err ▁. ▁println ▁( ▁( ▁" z x sn ff y bd l q v vl ri q z c q ▁is ▁an ▁invalid ▁value ; ▁" ▁+ ▁z x sn ff y bd l q v vl ri q z c q ▁) ▁) ▁; ▁}
+▁{ ▁java . lang . String ▁Index Word ▁= ▁parser . Index Parser ▁. ▁find Index Word ▁( ▁userInput Event ▁) ▁; ▁int ▁mod le op dg fb ld h li ok vr ▁= ▁parser . Index Parser ▁. ▁try Parse ▁( ▁Index Word ▁) ▁; ▁java . lang . System . out ▁. ▁println ▁( ▁mod le op dg fb ld h li ok vr ▁) ▁; ▁return ▁mod le op dg fb ld h li ok vr ▁; ▁}
+▁getS lot From Index ▁( ▁slot ▁, ▁ny jd gin fq bf uc gn h qu uf ▁)
+▁{ ▁rotate ▁( ▁( ▁theta ▁- ▁( ▁this ▁. ▁rotation ▁) ▁) ▁) ▁; ▁}
+▁switch ▁( ▁j x st mb sf el ft v ij v uv pc ▁) ▁{ ▁case ▁0 ▁: ▁f ight ▁() ▁; ▁break ; ▁case ▁1 ▁: ▁f lee ▁() ▁; ▁break ; ▁default : ▁return ; ▁}
+▁{ ▁@ ▁Int Range ▁( ▁from ▁= ▁6 ▁, ▁to ▁= ▁25 ▁) ▁int ▁mu yz db aux mv ad g md f z qq ▁= ▁a ▁+ ▁b ▁; ▁@ ▁Int Range ▁( ▁from ▁= ▁0 ▁, ▁to ▁= ▁25 ▁) ▁int ▁d qu y ru et n cl j z b ce g gs x ▁= ▁a ▁+ ▁b ▁; ▁}
+▁pe z w ne j cl r le hn cb id mp ▁= ▁com . we ibo . api . m ot an . util . RequestId Generator ▁. ▁getRequest Id ▁()
+▁{ ▁return ▁ep b h j xb v jb iq sn m mp uf k ▁= ▁( ▁( ▁desired Hours ▁) ▁- ▁( ▁scheduled Hours ▁) ▁) ▁/ ▁2 ▁; ▁}
+▁private ▁void ▁next Pdf Page ▁() ▁{ ▁int ▁p dec db at yn yc w q g lo q hu ▁= ▁( ▁mCurrent Page ▁. ▁getIndex ▁() ▁) ▁+ ▁1 ▁; ▁if ▁( ▁( ▁p dec db at yn yc w q g lo q hu ▁< ▁( ▁getPage Count ▁() ▁) ▁) ▁&& ▁( ▁p dec db at yn yc w q g lo q hu ▁>= ▁0 ▁) ▁) ▁{ ▁show Page ▁( ▁p dec db at yn yc w q g lo q hu ▁) ▁; ▁} ▁}
+▁res x bl pe h fd qq k x mn zz z ▁= ▁m _ worker Task . m _ last Total Timed Execution Time
+▁static ▁long ▁a cker ▁( ▁int ▁m ▁, ▁int ▁n ▁) ▁{ ▁long ▁ct q tk cd r z q nd q jax ql x w ▁; ▁long ▁j le hr xr h bz l xs z h log z f ▁; ▁ct q tk cd r z q nd q jax ql x w ▁= ▁java . lang . System ▁. ▁current TimeMillis ▁() ▁; ▁java cpp . cm r . com . sdk vs nd k . Algorithm ▁. ▁un ack er ▁( ▁m ▁, ▁n ▁) ▁; ▁j le hr xr h bz l xs z h log z f ▁= ▁java . lang . System ▁. ▁current TimeMillis ▁() ▁; ▁return ▁j le hr xr h bz l xs z h log z f ▁- ▁ct q tk cd r z q nd q jax ql x w ▁; ▁}
+▁{ ▁assert ▁attribute ▁. ▁is Dis crete ▁() ▁; ▁double ▁x t su y w lk mx b fl pe k oy sc ▁= ▁( ▁info ▁( ▁training Set ▁) ▁) ▁- ▁( ▁info ▁( ▁training Set ▁, ▁attribute ▁) ▁) ▁; ▁assert ▁x t su y w lk mx b fl pe k oy sc ▁>= ▁0 ▁; ▁return ▁x t su y w lk mx b fl pe k oy sc ▁; ▁}
+▁{ ▁server . game info container . Game Info Container ▁g ic ▁= ▁new ▁server . game info container . Game Info Container ▁( ▁false ▁) ▁; ▁byte ▁[] ▁qs x u iv q y dog gp as dg mb a ▁= ▁toBytes ▁( ▁g ic ▁) ▁; ▁fc ▁. ▁write G ames Bytes ▁( ▁qs x u iv q y dog gp as dg mb a ▁) ▁; ▁}
+▁{ ▁view Pager ▁. ▁setCurrent Item ▁( ▁tab ▁. ▁getPosition ▁() ▁) ▁; ▁}
+▁{ ▁long ▁length ▁= ▁inserted Data ▁. ▁getData Size ▁() ▁; ▁insert Un initialized ▁( ▁start From ▁, ▁length ▁) ▁; ▁replace ▁( ▁start From ▁, ▁inserted Data ▁, ▁0 ▁, ▁length ▁) ▁; ▁}
+▁fire Axis Log Scale Changed ▁( ▁q cm nd se j fc af vp ff vr wk ▁, ▁enabled ▁)
+▁if ▁( ▁storage ▁[ ▁np r j mr pop nx lg is vo ic p ▁] ▁. ▁contains ▁( ▁key ▁) ▁) ▁( ▁size ▁) ▁-- ▁;
+▁{ ▁set Logged In ▁( ▁validate Credentials ▁() ▁) ▁; ▁client ▁. ▁setM ot De P as se ▁( ▁null ▁) ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁onSave InstanceState ▁( ▁android . os . Bundle ▁outState ▁) ▁{ ▁super ▁. ▁onSave InstanceState ▁( ▁outState ▁) ▁; ▁final ▁int ▁y gy mt s key xp q fn u h v q z q ▁= ▁org . d roid plan ner . android . activ ities . Locator Activity . last Positions ▁. ▁indexOf ▁( ▁selected Msg ▁) ▁; ▁outState ▁. ▁putInt ▁( ▁org . d roid plan ner . android . activ ities . Locator Activity . STATE _ LAST _ SELECT ED _ POSITION ▁, ▁y gy mt s key xp q fn u h v q z q ▁) ▁; ▁}
+▁private ▁double ▁convert Unit ▁( ▁double ▁number ▁, ▁int ▁w vf ot fw q dr mk h f u yn l uc ▁) ▁{ ▁if ▁( ▁w vf ot fw q dr mk h f u yn l uc ▁!= ▁( ▁- ▁1 ▁) ▁) ▁return ▁number ▁/ ▁( ▁java . lang . Math ▁. ▁pow ▁( ▁10 ▁, ▁Functions . Density . PO W ERS ▁[ ▁w vf ot fw q dr mk h f u yn l uc ▁] ▁) ▁) ▁; ▁return ▁0 ▁; ▁}
+▁engine . Drive Utils ▁. ▁round ▁( ▁( ▁( ▁( ▁num ▁/ ▁say fds fk rx jq en h be k sm ▁) ▁/ ▁say fds fk rx jq en h be k sm ▁) ▁/ ▁say fds fk rx jq en h be k sm ▁) ▁, ▁1 ▁)
+▁{ ▁return ▁metadata Retrieve ▁. ▁getPixel s Size Y ▁( ▁get Series ▁() ▁) ▁. ▁getValue ▁() ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁on UpperBound Value ▁( ▁com . f reed om ot ic . model . ds . Config ▁params ▁, ▁boolean ▁fire Command ▁) ▁{ ▁boolean ▁x w gn h lt gr b kk ve p ne a qr ▁= ▁execute Command ▁( ▁" set ▁sat uration " ▁, ▁params ▁) ▁; ▁setS at uration ▁( ▁25 4 ▁) ▁; ▁}
+▁assertEquals ▁( ▁k np k ph r uly fo qm vm gb k f ▁, ▁task ▁. ▁getUpdate Sub Tasks ▁() ▁)
+▁org . junit . Assert ▁. ▁assertThat ▁( ▁expected ▁, ▁org . q om mon s . Q om mon s TestUtils ▁. ▁collections Equal ▁( ▁the Sync ed Copy ▁, ▁dn ke z xl k ap gp w gt od ba i ▁) ▁)
+▁protected ▁static ▁boolean ▁is N ight Mode ▁( ▁android . content . Context ▁context ▁) ▁{ ▁return ▁false ▁; ▁}
+▁{ ▁pos ▁= ▁new ▁l as ers h ark s . Position ▁( ▁0 ▁, ▁0 ▁) ▁; ▁am mo ▁= ▁new ▁l as ers h ark s . se a objects . A mm o ▁( ▁pos ▁, ▁jac la k vh wr w l mq yr n j fa ▁) ▁; ▁}
+▁{ ▁if ▁( ▁( ▁state Component . active Shapes ▁[ ▁position ▁] ▁) ▁== ▁null ▁) ▁return ▁false ▁; ▁boolean ▁fr p so k zz x xy v gn f j tb q n ▁= ▁move Shape ▁( ▁1 ▁, ▁0 ▁, ▁state Component . active Shapes ▁[ ▁position ▁] ▁) ▁; ▁if ▁( ▁fr p so k zz x xy v gn f j tb q n ▁) ▁put Active Shape G hosts ▁() ▁; ▁return ▁fr p so k zz x xy v gn f j tb q n ▁; ▁}
+▁{ ▁m Row Objs ▁= ▁data ▁; ▁notify DataSetChanged ▁() ▁; ▁}
+▁{ ▁if ▁( ▁! ▁( ▁isS ending ▁. ▁get AndSet ▁( ▁true ▁) ▁) ▁) ▁{ ▁send Bytes From Buffer ▁() ▁; ▁} ▁}
+▁{ ▁int ▁l j by xl gr ut dv pw c ny q xf ▁= ▁item ▁. ▁getItemId ▁() ▁; ▁if ▁( ▁l j by xl gr ut dv pw c ny q xf ▁== ▁( ▁R . l j by xl gr ut dv pw c ny q xf . save Category ▁) ▁) ▁{} ▁return ▁super ▁. ▁onOptions ItemSelected ▁( ▁item ▁) ▁; ▁}
+▁{ ▁return ▁a ▁* ▁b ▁; ▁}
+▁public ▁static ▁void ▁sleep ▁( ▁int ▁time ▁) ▁{ ▁long ▁ver fn wh df os q b pp qr n ra ▁= ▁java . lang . System ▁. ▁current TimeMillis ▁() ▁; ▁while ▁( ▁( ▁( ▁java . lang . System ▁. ▁current TimeMillis ▁() ▁) ▁- ▁ver fn wh df os q b pp qr n ra ▁) ▁< ▁time ▁) ▁; ▁}
+▁@ ▁org . junit . Test ▁( ▁expected ▁= ▁java . lang . IllegalArgument Exception ▁. ▁class ▁) ▁public ▁void ▁validating Org MR N 2 ▁() ▁{ ▁java . lang . String ▁org M rn ▁= ▁" urn : x - m rn : m cl : org : d ma " ▁; ▁boolean ▁y n ut t pp jd w my ta q h eb xl ▁= ▁net . mar it im ec l oud . identity registry . utils . M rn Utils ▁. ▁validate M rn ▁( ▁org M rn ▁) ▁; ▁}
+▁{ ▁int ▁[] ▁[] ▁bx vm rm ct f md v loy af l kl ▁= ▁Tokenizer ▁. ▁init Delta ▁() ▁; ▁return ▁Tokenizer ▁. ▁findAll Tokens ▁( ▁s ▁, ▁bx vm rm ct f md v loy af l kl ▁) ▁; ▁}
+▁return ▁( ▁lb vw k af u ok tn id g at q j f ▁[ ▁2 ▁] ▁) ▁!= ▁'   ' ▁;
+▁{ ▁int ▁yy z xb dx c pha is ft cx tz v ▁= ▁menuItem ▁. ▁getItemId ▁() ▁; ▁do Menu Action ▁( ▁yy z xb dx c pha is ft cx tz v ▁) ▁; ▁return ▁true ▁; ▁}
+▁public ▁double ▁getC ost Of Route ▁() ▁{ ▁double ▁q ip z so ev not li h np k ig t ▁= ▁0 ▁; ▁for ▁( ▁main . logic . Route ▁r ▁: ▁getB est Route ▁() ▁) ▁{ ▁q ip z so ev not li h np k ig t ▁+= ▁cost ▁( ▁r ▁) ▁; ▁} ▁return ▁q ip z so ev not li h np k ig t ▁; ▁}
+▁assertEquals ▁( ▁0.0 ▁, ▁cl cl cdn od h cdf y ca j y vs ▁, ▁1.0 E -5 ▁)
+▁{ ▁return ▁( ▁( ▁getMap Width ▁() ▁) ▁* ▁( ▁getMap Tile Width ▁() ▁) ▁) ▁* ▁( ▁level Scale ▁) ▁; ▁}
+▁{ ▁int ▁us ls is ow im uv f pv h ht xm ▁= ▁( ▁rand ▁. ▁nextInt ▁( ▁3 ▁) ▁) ▁+ ▁1 ▁; ▁int ▁nc ve bj yg q xd m ly an p q ou ▁= ▁set Hand From Id ▁( ▁us ls is ow im uv f pv h ht xm ▁) ▁; ▁if ▁( ▁nc ve bj yg q xd m ly an p q ou ▁!= ▁0 ▁) ▁{ ▁java . lang . System . out ▁. ▁println ▁( ▁" This ▁should ▁be ▁an ▁exception !" ▁) ▁; ▁} ▁}
+▁{ ▁draw Map Elements ▁( ▁g ▁) ▁; ▁draw Build ings ▁( ▁g ▁) ▁; ▁draw Other Train ers ▁( ▁g ▁) ▁; ▁draw Tra iner ▁( ▁g ▁) ▁; ▁}
+▁h nw tip a od n ib q hh l j g ig ▁= ▁( ▁value ▁. ▁nextInt ▁( ▁10 ▁) ▁) ▁+ ▁1
+▁while ▁( ▁( ▁x j vi ar z d q oj y q jh xy my a ▁= ▁pkg Name ▁. ▁indexOf ▁( ▁"." ▁, ▁x j vi ar z d q oj y q jh xy my a ▁) ▁) ▁== ▁( ▁- ▁1 ▁) ▁) ▁{ ▁y ux mv q iv ib nb us j mq aze ▁++ ▁; ▁}
+▁assertThat ▁( ▁h u . advanced web . sc ott . helper . TestHelper ▁. ▁getLast Record ed State For ▁( ▁" es x k um x vl vb cs ad ug t mm " ▁) ▁, ▁org . ham cre st . Core Matchers ▁. ▁equalTo ▁( ▁java . lang . Float ▁. ▁toString ▁( ▁es x k um x vl vb cs ad ug t mm ▁) ▁) ▁)
+▁{ ▁java . lang . String ▁te asp oon ▁= ▁getInput ▁() ▁; ▁int ▁sk n ol fg x xy km v os iry in ▁= ▁java . lang . Integer ▁. ▁parseInt ▁( ▁te asp oon ▁) ▁; ▁}
+▁int ▁i lo ee ow h ev vy t vm id c j g ▁= ▁( ▁( ▁int ▁) ▁( ▁( ▁lz np . util . File IO ▁. ▁getC RC 32 ▁( ▁outStream ▁) ▁) ▁& ▁- ▁1 ▁) ▁) ▁;
+▁public ▁void ▁set Ch est Angular Control Only ▁() ▁{ ▁double ▁[] ▁vm z su u q ro sv tc zy ym u qu ▁= ▁new ▁double ▁[] ▁{ ▁0.0 ▁, ▁0.0 ▁, ▁0.0 ▁} ▁; ▁double ▁[] ▁m ls oc aj g k zk gu pd gz gs a ▁= ▁new ▁double ▁[] ▁{ ▁1.0 ▁, ▁1.0 ▁, ▁1.0 ▁} ▁; ▁set Ch est Control led Axes ▁( ▁vm z su u q ro sv tc zy ym u qu ▁, ▁m ls oc aj g k zk gu pd gz gs a ▁) ▁; ▁}
+▁{ ▁return ▁null ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁long ▁ref ill ▁( ▁long ▁limit ▁) ▁{ ▁final ▁long ▁z lo z ux eh et gg k z l fb j f j ▁= ▁org . apache . hadoop . h base . util . Environment Edge Manager ▁. ▁currentTime ▁() ▁; ▁if ▁( ▁z lo z ux eh et gg k z l fb j f j ▁< ▁( ▁next Ref ill Time ▁) ▁) ▁{ ▁return ▁0 ▁; ▁} ▁next Ref ill Time ▁= ▁z lo z ux eh et gg k z l fb j f j ▁+ ▁( ▁super ▁. ▁getTime Unit InMillis ▁() ▁) ▁; ▁return ▁limit ▁; ▁}
+▁core . Arc ade Machine ▁. ▁run One Game ▁( ▁game _ file ▁, ▁level _ file ▁, ▁t ui ab g xo aj ak sh q ap rd j ▁, ▁agent Name ▁, ▁action File ▁, ▁random Seed ▁, ▁true ▁)
+▁@ ▁java . lang . Override ▁public ▁org . w 3 c . dom . Node ▁getParent Node ▁() ▁{ ▁return ▁null ▁; ▁}
+▁{ ▁double ▁y r rt v fn ky oad av z mv if g ▁= ▁0 ▁; ▁if ▁( ▁planned ▁!= ▁0 ▁) ▁{ ▁y r rt v fn ky oad av z mv if g ▁= ▁( ▁actual ▁/ ▁planned ▁) ▁* ▁100 ▁; ▁} ▁else ▁{ ▁y r rt v fn ky oad av z mv if g ▁= ▁100 ▁; ▁} ▁return ▁y r rt v fn ky oad av z mv if g ▁; ▁}
+▁public ▁void ▁set At Position ▁( ▁long ▁position ▁, ▁int ▁value ▁) ▁{ ▁ensure ▁( ▁position ▁) ▁; ▁com . h eer ban n . unsafe . Unsafe Buffer . unsafe ▁. ▁putInt ▁( ▁( ▁( ▁pointer ▁) ▁+ ▁position ▁) ▁, ▁value ▁) ▁; ▁}
+▁{ ▁double ▁j f z sm h cr k ou vf aw bc gt j ▁= ▁this ▁. ▁x ▁; ▁this ▁. ▁x ▁= ▁x ▁; ▁}
+▁assertEquals ▁( ▁2 97 12 150 73 L ▁, ▁( ▁tf cw or l fe uk cw l my hy co ▁+ ▁lz fn c q c mt ij e j zz wx tic ▁) ▁)
+▁boolean ▁run Check ▁() ▁{ ▁double ▁cr q v ay yl k av htm las j jq ▁= ▁java . lang . Math ▁. ▁random ▁() ▁; ▁return ▁( ▁chance ▁) ▁> ▁cr q v ay yl k av htm las j jq ▁; ▁}
+▁{ ▁apply Repository ▁. ▁create ▁( ▁apply ▁) ▁; ▁return ▁apply ▁. ▁getId ▁() ▁; ▁}
+▁private ▁double ▁calculate Price ▁( ▁double ▁num ▁) ▁{ ▁num ▁= ▁( ▁quantity ▁) ▁* ▁3. 24 ▁; ▁return ▁num ▁; ▁}
+▁public ▁int ▁collect User Option ▁( ▁java . lang . String ▁question ▁) ▁{ ▁int ▁dg pc ntl vp ix q k j z ug b qp ▁= ▁0 ▁; ▁dg pc ntl vp ix q k j z ug b qp ▁= ▁javax . swing . J OptionPane ▁. ▁show Confirm Dialog ▁( ▁null ▁, ▁question ▁, ▁window Message ▁, ▁javax . swing . J OptionPane . PLAIN _ MESSAGE ▁, ▁javax . swing . J OptionPane . PLAIN _ MESSAGE ▁, ▁chat Icon ▁) ▁; ▁return ▁dg pc ntl vp ix q k j z ug b qp ▁; ▁}
+▁public ▁void ▁set Rad ii ▁( ▁byte ▁rad ii ▁) ▁{ ▁this ▁. ▁rad ii ▁= ▁rad ii ▁; ▁}
+▁{ ▁boolean ▁ois n hw bg k mb r fn cb ih pf ▁= ▁super ▁. ▁on Un bind ▁( ▁intent ▁) ▁; ▁return ▁ois n hw bg k mb r fn cb ih pf ▁; ▁}
+▁{ ▁super ▁. ▁reset ▁() ▁; ▁path ▁= ▁new ▁java . util . ArrayList ▁< ▁Agent s . Node ▁> ▁() ▁; ▁nodes ▁= ▁new ▁java . util . HashMap ▁< ▁Agent s . Node ▁, ▁Agent s . Node ▁> ▁() ▁; ▁path Not Created Y et ▁= ▁true ▁; ▁o j m tx kv wh p q cd y k xx mb j ▁= ▁0 ▁; ▁ff ly rd z ce v rb ss n ol kw n ▁= ▁0 ▁; ▁}
+▁{ ▁double ▁mw mc ir tr ux el ir lu an nd ▁= ▁( ▁this ▁. ▁sim ▁) ▁- ▁( ▁o . sim ▁) ▁; ▁if ▁( ▁mw mc ir tr ux el ir lu an nd ▁< ▁0 ▁) ▁return ▁1 ▁; ▁return ▁mw mc ir tr ux el ir lu an nd ▁== ▁0.0 ▁? ▁0 ▁: ▁- ▁1 ▁; ▁}
+▁public ▁int ▁getD ev Card Count ▁() ▁{ ▁int ▁hi q v q xf myp ik pt q v bj cv ▁= ▁0 ▁; ▁for ▁( ▁int ▁i ▁= ▁0 ▁; ▁i ▁< ▁( ▁this ▁. ▁number Dev Card Types ▁) ▁; ▁i ▁++ ▁) ▁{ ▁hi q v q xf myp ik pt q v bj cv ▁+= ▁this ▁. ▁dev Cards ▁[ ▁i ▁] ▁; ▁} ▁return ▁hi q v q xf myp ik pt q v bj cv ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁synchronized ▁void ▁client Did Disconnect ▁( ▁com . tc . net . ClientID ▁client ▁) ▁{ ▁com . tc . util . Assert ▁. ▁assertTrue ▁( ▁this ▁. ▁connected Clients ▁. ▁contains ▁( ▁client ▁) ▁) ▁; ▁this ▁. ▁connected Clients ▁. ▁remove ▁( ▁client ▁) ▁; ▁}
+▁{ ▁boolean ▁i k nl h um h v ib n ia ix l pk v ▁= ▁ut ill ities . Mouse . rele ased Buttons ▁[ ▁keycode ▁] ▁; ▁return ▁i k nl h um h v ib n ia ix l pk v ▁; ▁}
+▁{ ▁int ▁nl c q j ham wo zk z n ck y j nz ▁= ▁no . e uro park . park ing Booking . Utility ▁. ▁Calculate Price ▁( ▁time Span ▁, ▁par king Place ▁) ▁; ▁add Model Variable ▁( ▁" Total Price " ▁, ▁nl c q j ham wo zk z n ck y j nz ▁) ▁; ▁}
+▁private ▁int ▁th reat Level Calculator ▁( ▁int ▁arm or Rating ▁, ▁int ▁p otion Effect Rating ▁) ▁{ ▁int ▁y q x pl uk ou ph gc g ck i ind ▁= ▁( ▁arm or Rating ▁/ ▁2 ▁) ▁+ ▁p otion Effect Rating ▁; ▁return ▁y q x pl uk ou ph gc g ck i ind ▁; ▁}
+▁public ▁int ▁pick Color ▁( ▁java . lang . String ▁key ▁) ▁{ ▁final ▁int ▁ve op id zy eh ot dx og ji wo ▁= ▁( ▁java . lang . Math ▁. ▁abs ▁( ▁key ▁. ▁hashCode ▁() ▁) ▁) ▁% ▁( ▁com . bytes ha ft . contact sharing . utils . Bitmap With Character . NUM _ OF _ TI LE _ COL ORS ▁) ▁; ▁try ▁{ ▁return ▁m Colors ▁. ▁getColor ▁( ▁ve op id zy eh ot dx og ji wo ▁, ▁Color . BLACK ▁) ▁; ▁} ▁finally ▁{ ▁m Colors ▁. ▁recycle ▁() ▁; ▁} ▁}
+▁{ ▁int ▁wx m z vm r j ev z mm k fb x alk ▁= ▁item ▁. ▁getItemId ▁() ▁; ▁return ▁true ▁; ▁}
+▁public ▁boolean ▁contains ▁( ▁java . lang . String ▁id ▁) ▁{ ▁nu . x om . Element ▁e ▁= ▁getElement ByID ▁( ▁id ▁) ▁; ▁boolean ▁f j mq in ah vw mv tb v u zed f ▁= ▁false ▁; ▁if ▁( ▁e ▁!= ▁null ▁) ▁{ ▁f j mq in ah vw mv tb v u zed f ▁= ▁true ▁; ▁} ▁return ▁f j mq in ah vw mv tb v u zed f ▁; ▁}
+▁public ▁final ▁native ▁int ▁add Overlay Path ▁( ▁java . lang . String ▁id map Path ▁) ▁;
+▁{ ▁boolean ▁li ud ll l nt d q ab vb v k sg e ▁= ▁super ▁. ▁is Ready ▁( ▁task Action Client ▁) ▁; ▁if ▁( ▁( ▁lock Ac quisition Latch ▁) ▁!= ▁null ▁) ▁{ ▁lock Ac quisition Latch ▁. ▁countDown ▁() ▁; ▁} ▁return ▁li ud ll l nt d q ab vb v k sg e ▁; ▁}
+▁return ▁( ▁this ▁. ▁index ▁) ▁< ▁fy omp gh ied gw ij x fx hw u ▁;
+▁q rl uc w uf tg st y ce pm pe i ▁= ▁( ▁( ▁y ▁- ▁( ▁( ▁cvs ▁. ▁getHeight ▁() ▁) ▁/ ▁2 ▁) ▁) ▁/ ▁( ▁scale ▁) ▁) ▁- ▁( ▁translate Y ▁)
+▁private ▁boolean ▁should Update ▁( ▁long ▁lastUpdate ▁) ▁{ ▁return ▁true ▁; ▁}
+▁protected ▁void ▁scrollTo Ne arest Position ▁() ▁{ ▁scrollTo Position ▁( ▁( ▁( ▁int ▁) ▁( ▁( ▁( ▁getF old Rotation ▁() ▁) ▁+ ▁90 .0 F ▁) ▁/ ▁180 .0 F ▁) ▁) ▁) ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁enable Package ▁( ▁long ▁orderId ▁) ▁{ ▁java . lang . String ▁sql ▁= ▁" UPDATE ▁S G _ Subject Order Package ▁SET ▁Status =1 ▁WHERE ▁Order Id = ?" ▁; ▁int ▁k x pc b tb uc qq ics y k cx h v ▁= ▁single Update ▁( ▁sql ▁, ▁new ▁java . lang . Object ▁[] ▁{ ▁orderId ▁} ▁) ▁; ▁if ▁( ▁! ▁( ▁k x pc b tb uc qq ics y k cx h v ▁> ▁0 ▁) ▁) ▁throw ▁new ▁java . lang . RuntimeException ▁( ▁( ▁" fail ▁to ▁enable ▁package ▁of ▁order : ▁" ▁+ ▁orderId ▁) ▁) ▁; ▁}
+▁{ ▁message Handler ▁= ▁new ▁ru . ay az . User Message Handler ▁( ▁500 ▁) ▁; ▁}
+▁if ▁( ▁t um c q h b mem be k no yn n mm ▁> ▁0 ▁) ▁{ ▁player Model ▁. ▁setM oney ▁( ▁( ▁( ▁player Model ▁. ▁getM oney ▁() ▁) ▁+ ▁t um c q h b mem be k no yn n mm ▁) ▁) ▁; ▁}
+▁return ▁set ▁( ▁other ▁) ▁. ▁mult Local ▁( ▁( ▁lh ug oz sq q z is q o iq wm ft ▁/ ▁ht w f vy x z bz x q fs dl za j j ▁) ▁) ▁;
+▁while ▁( ▁( ▁java . lang . Math ▁. ▁abs ▁( ▁( ▁( ▁get Encoder Avg ▁() ▁) ▁- ▁v pm wc js bk rx ro cg my pd x ▁) ▁) ▁) ▁< ▁distance ▁) ▁{ ▁turn _ basic ▁( ▁power ▁) ▁; ▁}
+▁public ▁com . sm oke . d to . Sm oke Http Wrapper DTO ▁[] ▁prepare For Launch ▁( ▁org . apache . poi . x ss f . user model . X SSF Workbook ▁work Book ▁) ▁{ ▁int ▁q vy can j vy z bg q n md con i ▁= ▁work Book ▁. ▁getNumberOf Sh eets ▁() ▁; ▁return ▁prepare Request From Sheet ▁( ▁work Book ▁. ▁getSh eet At ▁( ▁0 ▁) ▁) ▁; ▁}
+▁{ ▁int ▁l tf h j tw p wr pt tt bu et xm ▁= ▁( ▁getW Register ▁() ▁) ▁& ▁k ▁; ▁if ▁( ▁l tf h j tw p wr pt tt bu et xm ▁== ▁0 ▁) ▁{ ▁set STATUS bit Z ▁( ▁1 ▁) ▁; ▁} ▁set W Register ▁( ▁l tf h j tw p wr pt tt bu et xm ▁) ▁; ▁}
+▁{ ▁tim ber . log . Tim ber ▁. ▁d ▁( ▁" category Spinner ▁selected ▁% d " ▁, ▁m Category Spinner ▁. ▁getSelectedItem Position ▁() ▁) ▁; ▁int ▁z im rv ex h yc la wj y ex z lk ▁= ▁m Category Spinner ▁. ▁getSelectedItem Position ▁() ▁; ▁on Category Ch osen ▁( ▁z im rv ex h yc la wj y ex z lk ▁) ▁; ▁}
+▁{ ▁int ▁f ug pp sh ob x up ck x q ov fm ▁= ▁m Pending Delete Item Position ▁; ▁m Pending Delete Item Position ▁= ▁android . support . v 7. widget . RecyclerView . NO _ POSITION ▁; ▁notify Item Changed ▁( ▁f ug pp sh ob x up ck x q ov fm ▁) ▁; ▁}
+▁{ ▁long ▁x e ih v uc of h et age q d ub v ▁= ▁java . lang . System ▁. ▁current TimeMillis ▁() ▁; ▁ev as ive At ▁= ▁x e ih v uc of h et age q d ub v ▁+ ▁ev as ive Timeout ▁; ▁expired At ▁= ▁x e ih v uc of h et age q d ub v ▁+ ▁expired Timeout ▁; ▁}
+▁{ ▁if ▁( ▁( ▁de . t uc ott bus . kt . d ra k on . D RA K ON . d ra k on Chart ▁. ▁getScale ▁() ▁) ▁> ▁0.2 F ▁) ▁{ ▁de . t uc ott bus . kt . d ra k on . D RA K ON . d ra k on Chart ▁. ▁setScale ▁( ▁( ▁( ▁de . t uc ott bus . kt . d ra k on . D RA K ON . d ra k on Chart ▁. ▁getScale ▁() ▁) ▁- ▁0.1 F ▁) ▁) ▁; ▁de . t uc ott bus . kt . d ra k on . D RA K ON . d ra k on Chart ▁. ▁pack ▁() ▁; ▁} ▁}
+▁j gm v gy q n ib z axb z nb ann ▁= ▁16
+▁public ▁void ▁attack ▁( ▁k ru . cod ef ight . fig h ter . attack s . Abstract Attack ▁attack ▁) ▁{ ▁f ighter ▁. ▁attack ▁( ▁attack ▁) ▁; ▁}
+▁{ ▁java . lang . System . out ▁. ▁println ▁( ▁" rob Player " ▁) ▁; ▁int ▁ec xd ws om y el hr at b sp z b ▁= ▁1 ▁; ▁shared . locations . Hex Location ▁loc ▁= ▁new ▁shared . locations . Hex Location ▁( ▁1 ▁, ▁1 ▁) ▁; ▁}
+▁{ ▁settings . selected Lang Index ▁= ▁( ▁( ▁javax . swing . J ComboBox ▁< ▁? ▁> ▁) ▁( ▁ev ▁. ▁getSource ▁() ▁) ▁) ▁. ▁getSelected Index ▁() ▁; ▁}
+▁{ ▁boolean ▁cq w v tn y xsd be ipv ti w ka ▁= ▁false ▁; ▁gc ▁= ▁new ▁or bit . Or bit Game . Game Client ▁() ▁; ▁gc ▁. ▁start ▁() ▁; ▁}
+▁{ ▁android . os . Handler ▁client Handler ▁= ▁new ▁android . os . Handler ▁() ▁; ▁com . smart manager agent . ext er ior comm . Client Connection ▁client Connection ▁= ▁new ▁com . smart manager agent . ext er ior comm . Client Connection ▁( ▁ip Ad ▁, ▁com . smart manager agent . ext er ior comm . Communication Service . port Number ▁, ▁client Handler ▁, ▁js message ▁) ▁; ▁return ▁client Connection ▁. ▁connection ▁() ▁; ▁}
+▁{ ▁if ▁( ▁z av syn u ir z t ia om au k c q ▁== ▁index ▁) ▁{ ▁return ▁element ▁; ▁} ▁z av syn u ir z t ia om au k c q ▁++ ▁; ▁}
+▁{ ▁return ▁updater ▁. ▁update A ch iev ement ▁( ▁this ▁, ▁change ▁, ▁context ▁) ▁; ▁}
+▁io . m ang oo . utils . Two Factor Utils ▁. ▁validate Current Number ▁( ▁number ▁, ▁secret ▁, ▁window ▁, ▁l yz qt i ou k f od af w y ec sh ▁)
+▁ip fi il x rab n so az re yy b ▁/ ▁m ck y t ww ll ly gh ce oy kt z
+▁{ ▁if ▁( ▁( ▁average Score ▁() ▁) ▁> ▁50 ▁) ▁{ ▁k y q y dro fy ok h x kn wp ok k ▁= ▁true ▁; ▁} ▁return ▁k y q y dro fy ok h x kn wp ok k ▁; ▁}
+▁{ ▁float ▁f cy tic f ep fs rq z tu z j xs ▁= ▁minY aw ▁+ ▁( ▁progress ▁* ▁step Y aw ▁) ▁; ▁Current Y aw Speed ▁. ▁setText ▁( ▁java . lang . Float ▁. ▁toString ▁( ▁f cy tic f ep fs rq z tu z j xs ▁) ▁) ▁; ▁}
+▁{ ▁float ▁mx qr nn ke ul wc z bar ay qs ▁= ▁( ▁( ▁float ▁) ▁( ▁value Animator ▁. ▁get Animated Value ▁() ▁) ▁) ▁; ▁update Clip Path ▁( ▁( ▁( ▁clip Start Radius ▁) ▁+ ▁mx qr nn ke ul wc z bar ay qs ▁) ▁) ▁; ▁}
+▁{ ▁ta esg ex wh f py ul ny f ib z ▁-= ▁1 ▁; ▁table Drawer ▁. ▁setPage ▁( ▁ta esg ex wh f py ul ny f ib z ▁) ▁; ▁setPage Btn State ▁() ▁; ▁setPage Nr To Field ▁( ▁ta esg ex wh f py ul ny f ib z ▁) ▁; ▁draw ▁() ▁; ▁}
+▁{ ▁int ▁u y tn ec z fp nd ff q ks x ef r ▁= ▁city ▁. ▁hashCode ▁() ▁; ▁u y tn ec z fp nd ff q ks x ef r ▁= ▁( ▁31 ▁* ▁u y tn ec z fp nd ff q ks x ef r ▁) ▁+ ▁( ▁street ▁. ▁hashCode ▁() ▁) ▁; ▁return ▁u y tn ec z fp nd ff q ks x ef r ▁; ▁}
+▁public ▁java . lang . String ▁getPackage ▁() ▁{ ▁int ▁d wh q io z fm gz c q bm rx os o ▁= ▁name ▁. ▁lastIndexOf ▁( ▁'.' ▁) ▁; ▁return ▁d wh q io z fm gz c q bm rx os o ▁> ▁( ▁- ▁1 ▁) ▁? ▁name ▁. ▁substring ▁( ▁0 ▁, ▁d wh q io z fm gz c q bm rx os o ▁) ▁: ▁"" ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁redraw ▁() ▁{ ▁chart Panel ▁. ▁set Chart ▁( ▁this ▁. ▁get Chart ▁() ▁) ▁; ▁}
+▁public ▁int ▁getNode In Degree ▁( ▁int ▁node Index ▁) ▁{ ▁int ▁ed ze eft k q j cy fg du qu dm ▁= ▁node Buf ▁. ▁getInt ▁( ▁( ▁( ▁uk . ac . k ent . d over . fast Graph . Fast Graph . NODE _ IN _ DE G REE _ OFFSET ▁) ▁+ ▁( ▁node Index ▁* ▁( ▁uk . ac . k ent . d over . fast Graph . Fast Graph . NODE _ BYTE _ SIZE ▁) ▁) ▁) ▁) ▁; ▁return ▁ed ze eft k q j cy fg du qu dm ▁; ▁}
+▁return ▁utc Date ▁+ ▁d an md fy as j own js m com r ▁;
+▁v js z fa u h j en chn r sw q bk ▁- ▁a q nz tx hn v ig den n ar uck
+▁{ ▁@ ▁org . checker framework . checker . index . qual . Index Or High ▁( ▁value ▁= ▁" arr " ▁) ▁int ▁n wx ek q o ed od q ry hz wc z j ▁= ▁1 ▁+ ▁v ▁; ▁@ ▁org . checker framework . checker . index . qual . Index For ▁( ▁value ▁= ▁" arr " ▁) ▁int ▁y bz n ao z pi k h v x gh j xp vo ▁= ▁1 ▁+ ▁v ▁; ▁}
+▁public ▁void ▁ma al Select ▁() ▁{ ▁if ▁( ▁( ▁ma al _ list ▁. ▁getValue ▁() ▁) ▁!= ▁null ▁) ▁{ ▁int ▁gm j x hh fg w f ub n j y hw py e ▁= ▁java . lang . Integer ▁. ▁parseInt ▁( ▁ma al _ list ▁. ▁getValue ▁() ▁) ▁; ▁retrieve ▁. ▁getRow ▁( ▁gm j x hh fg w f ub n j y hw py e ▁) ▁; ▁fill M a al ▁( ▁gm j x hh fg w f ub n j y hw py e ▁) ▁; ▁} ▁}
+▁{ ▁int ▁m ib h mp c im j uc wh lr pen g ▁= ▁category List ▁. ▁getSelected Index ▁() ▁; ▁cat Arr ▁. ▁get ▁( ▁m ib h mp c im j uc wh lr pen g ▁) ▁. ▁setVisible ▁( ▁false ▁) ▁; ▁validate ▁() ▁; ▁repaint ▁() ▁; ▁change ▁= ▁true ▁; ▁}
+▁{ ▁return ▁! ▁( ▁org . springframework . util . Collection Utils ▁. ▁isEmpty ▁( ▁search Dto ▁. ▁getUser Group Keys ▁() ▁) ▁) ▁; ▁}
+▁public ▁double ▁getM ult ▁() ▁{ ▁double ▁mm hn iev k mi w q ba um wm hz ▁= ▁( ▁difficulty ▁. ▁getM ult ▁() ▁) ▁* ▁( ▁current Stage ▁. ▁getM ult ▁() ▁) ▁; ▁return ▁mm hn iev k mi w q ba um wm hz ▁; ▁}
+▁{ ▁edu . nc su . mon op ol y . Player ▁current Player ▁= ▁edu . nc su . mon op ol y . Game Master ▁. ▁instance ▁() ▁. ▁getCurrent Player ▁() ▁; ▁return ; ▁}
+▁if ▁( ▁( ▁j uu hq dn hr pu wo hu q j ek x ▁>= ▁0 ▁) ▁&& ▁( ▁( ▁float Properties ▁) ▁!= ▁null ▁) ▁) ▁{ ▁return ▁float Properties ▁[ ▁j uu hq dn hr pu wo hu q j ek x ▁] ▁; ▁}
+▁{ ▁fetch Requests ▁() ▁; ▁swipe Layout Requests ▁. ▁set Refresh ing ▁( ▁false ▁) ▁; ▁}
+▁{ ▁Engine . Tile Coordinate ▁tc ▁= ▁getPosition For ▁( ▁p actor Name ▁) ▁; ▁create Collision Bucket For Tile Coordinate If Bucket Absent ▁( ▁tc ▁) ▁; ▁shared P actor Location Buckets ▁. ▁get ▁( ▁tc ▁) ▁. ▁add ▁( ▁p actor Name ▁) ▁; ▁}
+▁{ ▁long ▁nl v px n xt bs xp fl gn ft ml ▁= ▁value ▁. ▁longValue ▁() ▁; ▁evaluate Min Max ▁( ▁nl v px n xt bs xp fl gn ft ml ▁) ▁; ▁( ▁count ▁) ▁++ ▁; ▁sum ▁+= ▁nl v px n xt bs xp fl gn ft ml ▁; ▁}
+▁return ▁new ▁java . lang . String ▁( ▁ht oy tc il ur px as ru h ht i ▁) ▁;
+▁assertEquals ▁( ▁expected ▁, ▁at . fh j . sw d 1 3. p se . test . service . Document Service IT . document Service ▁. ▁build Service Url ▁( ▁g ww zy xl ww uz j u h uby f qa ▁) ▁)
+▁for ▁( ▁by . tar if . web . data buffer . Register ▁register ▁: ▁this ▁. ▁list ▁) ▁{ ▁lv vv sp wt air x w u ext ibo ▁+= ▁register ▁. ▁get Consum ption ▁() ▁; ▁}
+▁{ ▁for ▁( ▁Space ▁space ▁: ▁spaces ▁) ▁{ ▁if ▁( ▁space ▁. ▁isEmpty ▁() ▁) ▁return ▁false ▁; ▁} ▁return ▁true ▁; ▁}
+▁{ ▁if ▁( ▁( ▁state Component . active Shapes ▁[ ▁position ▁] ▁) ▁== ▁null ▁) ▁return ▁false ▁; ▁boolean ▁ok ow ba ex a q nr fs mv k pk c ▁= ▁move Shape Down ▁( ▁state Component . active Shapes ▁[ ▁position ▁] ▁) ▁; ▁if ▁( ▁ok ow ba ex a q nr fs mv k pk c ▁) ▁put Active Shape G hosts ▁() ▁; ▁return ▁ok ow ba ex a q nr fs mv k pk c ▁; ▁}
+▁{ ▁com . al ib aba . dr uid . filter . FilterChain Impl ▁chain ▁= ▁create Chain ▁() ▁; ▁boolean ▁ig x gg amt sc ak n ue of by u ▁= ▁chain ▁. ▁statement _ get More Results ▁( ▁this ▁) ▁; ▁update Count ▁= ▁null ▁; ▁recycle FilterChain ▁( ▁chain ▁) ▁; ▁return ▁ig x gg amt sc ak n ue of by u ▁; ▁}
+▁q bn ys ur rc c fn b tk ot nn v ▁= ▁pages . re venue . Re venue Page ▁. ▁Get Top 5 Widget Total Count ▁( ▁Widget Option . Top 5 Ag encies ▁)
+▁{ ▁byte ▁[] ▁result ▁= ▁new ▁byte ▁[ ▁this ▁. ▁by vl h gt g pdb wj mx l z n kl ▁. ▁length ▁] ▁; ▁java . lang . System ▁. ▁arraycopy ▁( ▁by vl h gt g pdb wj mx l z n kl ▁, ▁0 ▁, ▁result ▁, ▁0 ▁, ▁by vl h gt g pdb wj mx l z n kl . length ▁) ▁; ▁return ▁result ▁; ▁}
+▁{ ▁if ▁( ▁( ▁org . w so 2. developer studio . eclipse . upd ater . job . Update Meta FileReader Job Listener ▁. ▁getUser Preference ▁( ▁org . w so 2. developer studio . eclipse . upd ater . job . Update Meta FileReader Job Listener . TITLE ▁, ▁org . w so 2. developer studio . eclipse . upd ater . job . Update Meta FileReader Job Listener . UP DAT ER _ DI ALOG _ MESSAGE ▁) ▁) ▁== ▁0 ▁) ▁{ ▁run Updater Job ▁() ▁; ▁} ▁}
+▁{ ▁stats . count _ human _ d na ▁= ▁j g fb vg f j z iv c zz dm z dx z ▁; ▁stats . count _ mut ant _ d na ▁= ▁n tt t ey ou kg x ve ek es b vo ▁; ▁stats ▁. ▁ratio ▁( ▁n tt t ey ou kg x ve ek es b vo ▁, ▁j g fb vg f j z iv c zz dm z dx z ▁) ▁; ▁}
+▁{ ▁int ▁u x q dj kv jb by z aw v ne eph ▁= ▁0 ▁; ▁for ▁( ▁java . lang . Integer ▁num ▁: ▁l ▁) ▁{ ▁if ▁( ▁num ▁. ▁equals ▁( ▁id ▁) ▁) ▁{ ▁return ▁u x q dj kv jb by z aw v ne eph ▁; ▁} ▁u x q dj kv jb by z aw v ne eph ▁++ ▁; ▁} ▁return ▁null ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁run ▁() ▁{ ▁vn . edu . u it . jr fs it . utils . Utils ▁. ▁print ▁( ▁activity ▁, ▁" C ậ p ▁n h ậ t ▁th ấ t ▁b ạ i , ▁k i ể m ▁tra ▁k ế t ▁n ố i " ▁) ▁; ▁}
+▁{ ▁int ▁ded r z ay yy l ue iq iq vw q o ▁= ▁size ▁() ▁; ▁if ▁( ▁ded r z ay yy l ue iq iq vw q o ▁> ▁0 ▁) ▁{ ▁return ▁this ▁. ▁ex ection List ▁. ▁get ▁( ▁( ▁ded r z ay yy l ue iq iq vw q o ▁- ▁1 ▁) ▁) ▁; ▁} ▁else ▁{ ▁return ▁null ▁; ▁} ▁}
+▁public ▁boolean ▁contains ▁( ▁java . lang . String ▁key ▁) ▁{ ▁return ▁( ▁get ▁( ▁key ▁) ▁) ▁!= ▁null ▁; ▁}
+▁{ ▁if ▁( ▁( ▁hashcode ▁) ▁== ▁0 ▁) ▁{ ▁hashcode ▁= ▁this ▁. ▁fs ▁. ▁hashCode ▁() ▁; ▁} ▁return ▁hashcode ▁; ▁}
+▁{ ▁int ▁mm tx c wj bs j fi it j im qq x ▁= ▁charset ▁. ▁getS ID ▁( ▁name ▁) ▁; ▁java . lang . Integer ▁sx hd wh ls n cd ty bx ka h ud ▁= ▁charset ▁. ▁getG ID For S ID ▁( ▁mm tx c wj bs j fi it j im qq x ▁) ▁; ▁if ▁( ▁sx hd wh ls n cd ty bx ka h ud ▁== ▁null ▁) ▁{ ▁return ▁false ▁; ▁} ▁else ▁{ ▁return ▁true ▁; ▁} ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁surface Destroyed ▁( ▁android . view . Surface Holder ▁holder ▁) ▁{}
+▁return ▁w px ep nn q db gs q ko eq r nd ▁== ▁1 ▁? ▁w px ep nn q db gs q ko eq r nd ▁: ▁w px ep nn q db gs q ko eq r nd ▁* ▁( ▁w px ep nn q db gs q ko eq r nd ▁- ▁1 ▁) ▁;
+▁ns n ge u hq zk j v k oe ue g ok ▁= ▁( ▁( ▁( ▁( ▁float ▁) ▁( ▁this ▁. ▁toMillis ▁() ▁) ▁) ▁/ ▁1000.0 F ▁) ▁/ ▁60.0 F ▁) ▁/ ▁60.0 F
+▁assertTrue ▁( ▁ak m ws n vec q ff np b th m z r ▁)
+▁{ ▁int ▁md on cx w yy vw og xn cb fo f ▁= ▁Settings . IMP . QUEUE . PAR AL LE L _ THREADS ▁; ▁long ▁y pt ow j ml bd j ut tc br j fn ▁= ▁20 ▁; ▁return ▁next ▁( ▁md on cx w yy vw og xn cb fo f ▁, ▁y pt ow j ml bd j ut tc br j fn ▁) ▁; ▁}
+▁double ▁j u vs bs rnn ned ra u et q z m ▁= ▁x ▁;
+▁{ ▁long ▁s igh j pb mx gm uz uv y u ux t ▁= ▁node . data ▁; ▁if ▁( ▁s igh j pb mx gm uz uv y u ux t ▁> ▁( ▁this ▁. ▁data ▁) ▁) ▁return ▁- ▁1 ▁; ▁else ▁if ▁( ▁s igh j pb mx gm uz uv y u ux t ▁< ▁( ▁this ▁. ▁data ▁) ▁) ▁return ▁1 ▁; ▁else ▁return ▁0 ▁; ▁}
+▁append ▁( ▁vl j abel t ro im vh q z bw re ▁)
+▁do ▁{ ▁st w axb fd t chr dao q cl mc ▁= ▁random ▁. ▁nextInt ▁( ▁65535 ▁) ▁; ▁} ▁while ▁( ▁org . op enc ron . common . utils . Http Utils ▁. ▁isLocal Port Using ▁( ▁st w axb fd t chr dao q cl mc ▁) ▁) ▁;
+▁{ ▁ll ▁. ▁remove Middle Node ▁() ▁; ▁org . junit . Assert ▁. ▁assertEquals ▁( ▁"1 ▁-> ▁2 ▁-> ▁4 ▁-> ▁5" ▁, ▁ll ▁. ▁toString ▁() ▁) ▁; ▁}
+▁{ ▁int ▁[] ▁z od fy ah cut j ef c sh o q ef ▁= ▁new ▁int ▁[ ▁this ▁. ▁size ▁] ▁; ▁if ▁( ▁( ▁this ▁. ▁size ▁) ▁== ▁0 ▁) ▁{ ▁return ▁z od fy ah cut j ef c sh o q ef ▁; ▁} ▁generate Keys Array ▁( ▁root ▁, ▁z od fy ah cut j ef c sh o q ef ▁, ▁0 ▁) ▁; ▁return ▁z od fy ah cut j ef c sh o q ef ▁; ▁}
+▁ed lp om pn w n gr z db tb te z ▁= ▁( ▁a . length ▁) ▁- ▁1
+▁assertTrue ▁( ▁et q k x fn uf g j mf q mq a ack ▁)
+▁{ ▁boolean ▁d kv q j ex a q ik us u hbm wt u ▁= ▁false ▁; ▁if ▁( ▁( ▁bag Weight ▁) ▁>= ▁3.0 ▁) ▁{ ▁d kv q j ex a q ik us u hbm wt u ▁= ▁true ▁; ▁} ▁return ▁d kv q j ex a q ik us u hbm wt u ▁; ▁}
+▁( ▁o lg dd ox c gs ct is q fk oc y ▁* ▁1.0 ▁) ▁/ ▁( ▁total C ourses Needed ▁)
+▁id ▁< ▁bp bs ud pg wj rl h j ri ik ut ▁? ▁id ▁+ ▁( ▁bp bs ud pg wj rl h j ri ik ut ▁* ▁( ▁( ▁this ▁. ▁height ▁) ▁- ▁1 ▁) ▁) ▁: ▁id ▁- ▁bp bs ud pg wj rl h j ri ik ut
+▁{ ▁int ▁dd ad v ps gs ody zi pl n pd z ▁= ▁dataset ▁. ▁indexOf ▁( ▁movie ▁) ▁; ▁db ▁. ▁delete Movie From Watch list ▁( ▁movie ▁. ▁getId ▁() ▁) ▁; ▁}
+▁public ▁void ▁actionPerformed ▁( ▁java . awt . event . ActionEvent ▁event ▁) ▁{ ▁if ▁( ▁( ▁clientId Ch osen ▁) ▁!= ▁null ▁) ▁{ ▁int ▁y vw l vs y d pr fo aw uj mpl f ▁= ▁java . lang . Integer ▁. ▁parseInt ▁( ▁clientId Ch osen ▁) ▁; ▁client Controller ▁. ▁delete Client ▁( ▁y vw l vs y d pr fo aw uj mpl f ▁, ▁panel ▁, ▁scroll ▁) ▁; ▁} ▁}
+▁public ▁static ▁void ▁test is To ▁( ▁int ▁heading ▁, ▁int ▁rad ial ▁) ▁{ ▁com . vor . driver . V OR Calculator ▁vc ▁= ▁new ▁com . vor . driver . V OR Calculator ▁( ▁new ▁com . vor . driver . V OR ▁() ▁) ▁; ▁boolean ▁ut cp bw iq b svg z j j gb mm z ▁= ▁vc ▁. ▁is To ▁( ▁heading ▁, ▁rad ial ▁) ▁; ▁java . lang . System . out ▁. ▁println ▁( ▁ut cp bw iq b svg z j j gb mm z ▁) ▁; ▁}
+▁z m rs a ad sb ka j ec wo i abs ▁= ▁( ▁( ▁int ▁) ▁( ▁java . lang . Runtime ▁. ▁getRuntime ▁() ▁. ▁z m rs a ad sb ka j ec wo i abs ▁() ▁) ▁)
+▁{ ▁long ▁ka q kw c jq os fv u js pm i ay ▁= ▁( ▁com . k alt ura . play kit . utils . Const s . MILLI SECONDS _ MULTIP LI ER ▁) ▁* ▁( ▁ads Provider ▁. ▁getCurrent Position ▁() ▁) ▁; ▁return ▁ka q kw c jq os fv u js pm i ay ▁; ▁}
+▁q f kill lies ai w sh om no z ▁= ▁m Actions ▁. ▁get ▁( ▁direction ▁) ▁. ▁getLeft ▁()
+▁return ▁( ▁startTime InMillis ▁+ ▁timeout InMillis ▁) ▁< ▁ind rq q h bb x v px c ink g ig ▁;
+▁public ▁void ▁populate List ▁( ▁main . java . gui . Tasks Table Controller ▁table Control ▁, ▁java . util . ArrayList ▁< ▁main . java . data . Task ▁> ▁result ▁) ▁{ ▁int ▁gs fa ic pw mq x q ut n yg if k ▁= ▁1 ▁; ▁table Control ▁. ▁clear Task ▁() ▁; ▁for ▁( ▁main . java . data . Task ▁temp ▁: ▁result ▁) ▁{ ▁table Control ▁. ▁add Task ▁( ▁temp ▁, ▁( ▁gs fa ic pw mq x q ut n yg if k ▁++ ▁) ▁) ▁; ▁} ▁}
+▁{ ▁int ▁z kb ng v pb go pple uf d z q z ▁= ▁Key ▁. ▁hashCode ▁() ▁; ▁int ▁q dp q np k cx w ok k db det q k ▁= ▁size ▁() ▁; ▁z kb ng v pb go pple uf d z q z ▁= ▁java . lang . Math ▁. ▁abs ▁( ▁z kb ng v pb go pple uf d z q z ▁) ▁; ▁if ▁( ▁z kb ng v pb go pple uf d z q z ▁> ▁q dp q np k cx w ok k db det q k ▁) ▁{ ▁z kb ng v pb go pple uf d z q z ▁= ▁z kb ng v pb go pple uf d z q z ▁% ▁q dp q np k cx w ok k db det q k ▁; ▁} ▁return ▁z kb ng v pb go pple uf d z q z ▁; ▁}
+▁return ▁z y hw f ng mm jh ba ay dh af v ▁;
+▁public ▁int ▁indexOf ▁( ▁E ▁x ▁) ▁{ ▁int ▁u j g fm h ugh v ve uj y hl z na ▁= ▁binarySearch ▁( ▁x ▁) ▁; ▁return ▁u j g fm h ugh v ve uj y hl z na ▁>= ▁0 ▁? ▁u j g fm h ugh v ve uj y hl z na ▁: ▁- ▁1 ▁; ▁}
+▁public ▁static ▁void ▁main ▁( ▁java . lang . String ▁[] ▁args ▁) ▁{}
+▁private ▁int ▁accumulate ▁( ▁int ▁[] ▁folders ▁) ▁{ ▁int ▁e ef k ng la a az ad hn sw ul z ▁= ▁0 ▁; ▁for ▁( ▁int ▁folder ▁: ▁folders ▁) ▁{ ▁e ef k ng la a az ad hn sw ul z ▁+= ▁folder ▁; ▁} ▁return ▁e ef k ng la a az ad hn sw ul z ▁; ▁}
+▁{ ▁int ▁dn z sl ang upd k j z m ev gu q ▁= ▁keys ▁. ▁get ▁( ▁key ▁) ▁; ▁dn z sl ang upd k j z m ev gu q ▁++ ▁; ▁keys ▁. ▁set ▁( ▁key ▁, ▁dn z sl ang upd k j z m ev gu q ▁) ▁; ▁}
+▁{ ▁return ▁org . de identifier . ar x . metric . Metric ▁. ▁create Publisher P ayout Metric ▁( ▁false ▁, ▁config ▁. ▁getG s Factor ▁() ▁) ▁; ▁}
+▁public ▁void ▁call Target Event ▁( ▁org . b ukkit . event . entity . Entity Target Event ▁event ▁) ▁{ ▁for ▁( ▁net . c it iz ens np cs . np ctypes . C it iz ens N PC ▁type ▁: ▁types ▁. ▁values ▁() ▁) ▁{ ▁type ▁. ▁on Target ▁( ▁event ▁) ▁; ▁} ▁}
+▁@ ▁java . lang . Override ▁public ▁float ▁compute B onus ▁() ▁{ ▁float ▁w z f ub tv h qs og os q th h fy ▁= ▁( ▁( ▁this ▁. ▁salary ▁) ▁* ▁( ▁this ▁. ▁pct B onus ▁) ▁) ▁+ ▁1000 ▁; ▁return ▁w z f ub tv h qs og os q th h fy ▁; ▁}
+▁@ ▁org . junit . Ignore ▁@ ▁org . junit . Test ▁public ▁void ▁test Can Equal ▁() ▁{}
+▁return ▁gv rr xx z l xl tn cy z ig l rb ▁&& ▁ll py h px g vc gb q ez ix k j g ▁;
+▁protected ▁float ▁score Piece ▁( ▁puzz les olver . solver . State ▁state ▁, ▁puzz les olver . Piece ▁found Piece ▁) ▁{ ▁int ▁tp q eq ib ra uf y cd ly ls yg ▁= ▁0 ▁; ▁for ▁( ▁puzz les olver . enum s . Piece Type ▁piece Type ▁: ▁found Piece ▁. ▁getP iece Types ▁() ▁) ▁{ ▁tp q eq ib ra uf y cd ly ls yg ▁+= ▁state . un pla ced Pi eces ▁. ▁sublist ByType ▁( ▁piece Type ▁) ▁. ▁size ▁() ▁; ▁} ▁return ▁1.0 F ▁/ ▁tp q eq ib ra uf y cd ly ls yg ▁; ▁}
+▁public ▁static ▁void ▁main ▁( ▁java . lang . String ▁[] ▁args ▁) ▁{ ▁new ▁Main ▁() ▁. ▁main ▁() ▁; ▁}
+▁public ▁double ▁getSub Total Price ▁( ▁man ufact ure . entity . cart . Cart Product ▁cart Product ▁) ▁{ ▁double ▁y tp dc ql t jq n zy hy w aw l w ▁= ▁0 ▁; ▁y tp dc ql t jq n zy hy w aw l w ▁= ▁( ▁cart Product ▁. ▁getProduct ▁() ▁. ▁getPrice ▁() ▁) ▁* ▁( ▁cart Product ▁. ▁get Quantity ▁() ▁) ▁; ▁return ▁y tp dc ql t jq n zy hy w aw l w ▁; ▁}
+▁ur fc w z t wd ke p my wh aj ip ▁= ▁( ▁old Opacity ▁) ▁+ ▁( ▁fraction ▁* ▁( ▁( ▁opacity ▁) ▁- ▁( ▁old Opacity ▁) ▁) ▁)
+▁{ ▁int ▁pw td fr rb ix ug b ld w v xd z ▁= ▁( ▁row ▁* ▁( ▁image . width ▁) ▁) ▁+ ▁col ▁; ▁return ▁( ▁image . pixels ▁[ ▁pw td fr rb ix ug b ld w v xd z ▁] ▁) ▁& ▁255 ▁; ▁}
+▁@ ▁java . lang . Override ▁public ▁void ▁on Last Item Visible ▁() ▁{}
+▁{ ▁boolean ▁y mvc gc rc ch gz s j y q z x sn ▁= ▁de . fh bing en . w bs . db access . DB Model Manager ▁. ▁getTest Execution Model ▁() ▁. ▁addNew Test Execution ▁( ▁te ▁) ▁; ▁de . fh bing en . w bs . db access . repositories . TestCase Execution Repository ▁. ▁reload Cache ▁() ▁; ▁return ▁y mvc gc rc ch gz s j y q z x sn ▁; ▁}
+▁{ ▁byte ▁[] ▁pow jwt b h gz cd v js mc is r ▁= ▁getAs Bytes ▁( ▁key ▁) ▁; ▁if ▁( ▁pow jwt b h gz cd v js mc is r ▁== ▁null ▁) ▁return ▁null ▁; ▁return ▁com . z hy . base . cache . disk . Utils ▁. ▁bytes 2 Bitmap ▁( ▁pow jwt b h gz cd v js mc is r ▁) ▁; ▁}
+▁{ ▁run G PG ▁( ▁java . util . Arrays ▁. ▁asList ▁( ▁"-- import " ▁) ▁, ▁key ▁) ▁; ▁}
+▁{ ▁int ▁st q x de j x z nz vs jax du oo ▁= ▁getResources ▁() ▁. ▁get Configuration ▁() ▁. ▁orientation ▁; ▁display Mode ▁= ▁( ▁st q x de j x z nz vs jax du oo ▁== ▁1 ▁) ▁? ▁"" ▁: ▁"_ land " ▁; ▁}
+▁{ ▁int ▁pu u wj z m z tz c gb u ot un va ▁= ▁10 ▁; ▁int ▁mh g kk ur w y k mx kn ek d hr h ▁= ▁11 ▁; ▁int ▁u x oz aw x ew ew l gu co ft q v ▁= ▁org . tls ys . Main ▁. ▁get ▁( ▁1 ▁, ▁2 ▁) ▁; ▁org . tls ys . Main ▁. ▁give Exception ▁() ▁; ▁new ▁org . tls ys . Main ▁() ▁; ▁return ; ▁}

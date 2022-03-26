@@ -1,0 +1,216 @@
+@ org.springframework.web.bind.annotation.RequestMapping ( value = "/labelUpdateOrInsert" ) @ org.springframework.web.bind.annotation.ResponseBody public java.lang.String labelUpdateOrInsert ( com.apcompany.user.pojo.TLabelsRel tlabelsrel , org.springframework.ui.Model model ) { int count = dataService . insertOrUpateTLabelsRel ( tlabelsrel ) ; return count > 0 ? "true" : "false" ; }
+{ android.content.Intent intent = new android.content.Intent ( this , csci435.csci435_odbr.SnapshotIntentService . class ) ; startService ( intent ) ; }
+{ if ( i > 0 ) sum -= i * ( controllers.classification.ID3 . log2 ( i ) ) ; }
+public void checkHealth ( Player player ) { java.lang.System.out . println ( ( ( "Your health is currently at " + ( player.Health ) ) + "health points." ) ) ; }
+{ int direction = gs . closestPillDir () ; return direction ; }
+{ @ org.checkerframework.checker.index.qual.IndexOrLow ( value = "a" ) int k ; k = ( a.length ) - b ; }
+numPlays
+{ int result = trackName . hashCode () ; result = ( 31 * result ) + ( trackDetails . hashCode () ) ; return result ; }
+return - ( java.lang.Math . cos ( ( day * ( com.kylantraynor.livelyworld.climate.Planet.TwoPI ) ) ) ) ;
+public static long calcTimeInTrip ( long tripStartTime ) { if ( tripStartTime <= 0 ) { return 0 ; } else { java.util.Calendar curCal = java.util.Calendar . getInstance () ; long endTime = curCal . getTime () . getTime () ; return endTime - tripStartTime ; } }
+distance = ( ( float ) ( steps * ( height ) ) )
+{ byte [] manualBytes = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( manualBytes ) ; this . productManual = manualBlob ; }
+water.util.Log . write ( lvl , writeToStdout , objs )
+{ return false ; }
+damageDealt = ( ( ( attack ) - ( target.defence ) ) <= 0 ) ? 0 : ( attack ) - ( target.defence )
+{ scope . getGui () . waitStatus ( " Building outputs " ) ; boolean result = super . init ( scope ) ; return result ; }
+public void playOneSequence () { Montecarlo.Node node = selectNode ( root ) ; node = expand ( node ) ; if ( node == null ) { return; } int winner = simulation ( node ) ; backPropagation ( node , winner ) ; }
+for ( java.lang.Integer i : set ) { if ( i . equals ( id ) ) { return index ; } index ++ ; }
+public int readChannel ( int channel ) { int msg = 0 ; try { msg = rc . readBroadcast ( channel ) ; } catch ( battlecode.common.GameActionException e ) {} return msg ; }
+index = getValidIndex ( fromKey , ( ! inclusive ) )
+boolean result = super . commitText ( text , newCursorPosition ) ;
+{ int hash = 0 ; hash += super . hashCode () ; return hash ; }
+( a - b )
+{ if ( pilaMovimientos . empty () ) { deshacerPila = false ; return 0 ; } int aux = pilaMovimientos . pop () ; return aux ; }
+{ int position = this . searchBeatName ( bn ) ; if ( position >= 0 ) { return beatList . get ( position ) ; } return null ; }
+preTz . convertLocalToUTC ( field . roundFloor ( local ) , false , utcMillis )
+maxSizePerNode = java.lang.Math . round ( com.hazelcast.map.impl.eviction.MaxSizeChecker . getApproximateMaxSize ( maxSizeConfig , MaxSizePolicy.PER_NODE ) )
+myList . duplicate ( n ) . size ()
+{ int code = connection . getResponseCode () ; return super . processResponse ( connection , typeOfT ) ; }
+{ checkEnabled () ; this . mode = mode ; boolean state = ( net.sf.dz3.device.model.HvacMode.HEATING ) == mode ; switchMode . setState ( ( reverseMode ? ! state : state ) ) ; }
+{ double output = Robot.instance.oi . getShooterElevatorInput () ; Robot.instance.elevator.elevatorActuator . set ( output ) ; }
+spinner . setSelection ( item )
+if ( ( this . random () ) < ( mean - n ) ) n ++ ;
+public int getArrayIndex ( int row , int col ) { int index = ( ( row - 1 ) * ( size ) ) + col ; return index ; }
+{ super . readFromNBT ( par1 ) ; int [] measurements = par1 . getIntArray ( com.minespaceships.mod.overhead.ChatRegisterEntity.recoverSpaceshipMeasures ) ; if ( measurements != null ) { ship = new com.minespaceships.mod.spaceship.Spaceship ( measurements ) ; } }
+{ java.lang.System.err . println ( ( "length is an invalid value; " + length ) ) ; }
+{ java.lang.String IndexWord = parser.IndexParser . findIndexWord ( userInputEvent ) ; int parsedInt = parser.IndexParser . tryParse ( IndexWord ) ; java.lang.System.out . println ( parsedInt ) ; return parsedInt ; }
+getSlotFromIndex ( slot , index )
+{ rotate ( ( theta - ( this . rotation ) ) ) ; }
+switch ( option ) { case 0 : fight () ; break; case 1 : flee () ; break; default: return; }
+{ @ IntRange ( from = 6 , to = 25 ) int plus1 = a + b ; @ IntRange ( from = 0 , to = 25 ) int plus2 = a + b ; }
+id = com.weibo.api.motan.util.RequestIdGenerator . getRequestId ()
+{ return remainingHours = ( ( desiredHours ) - ( scheduledHours ) ) / 2 ; }
+private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+retval = m_workerTask.m_lastTotalTimedExecutionTime
+static long acker ( int m , int n ) { long start ; long end ; start = java.lang.System . currentTimeMillis () ; javacpp.cmr.com.sdkvsndk.Algorithm . unacker ( m , n ) ; end = java.lang.System . currentTimeMillis () ; return end - start ; }
+{ assert attribute . isDiscrete () ; double gain = ( info ( trainingSet ) ) - ( info ( trainingSet , attribute ) ) ; assert gain >= 0 ; return gain ; }
+{ server.gameinfocontainer.GameInfoContainer gic = new server.gameinfocontainer.GameInfoContainer ( false ) ; byte [] bytes = toBytes ( gic ) ; fc . writeGamesBytes ( bytes ) ; }
+{ viewPager . setCurrentItem ( tab . getPosition () ) ; }
+{ long length = insertedData . getDataSize () ; insertUninitialized ( startFrom , length ) ; replace ( startFrom , insertedData , 0 , length ) ; }
+fireAxisLogScaleChanged ( old , enabled )
+if ( storage [ index ] . contains ( key ) ) ( size ) -- ;
+{ setLoggedIn ( validateCredentials () ) ; client . setMotDePasse ( null ) ; }
+@ java.lang.Override public void onSaveInstanceState ( android.os.Bundle outState ) { super . onSaveInstanceState ( outState ) ; final int lastSelectedPosition = org.droidplanner.android.activities.LocatorActivity.lastPositions . indexOf ( selectedMsg ) ; outState . putInt ( org.droidplanner.android.activities.LocatorActivity.STATE_LAST_SELECTED_POSITION , lastSelectedPosition ) ; }
+private double convertUnit ( double number , int index ) { if ( index != ( - 1 ) ) return number / ( java.lang.Math . pow ( 10 , Functions.Density.POWERS [ index ] ) ) ; return 0 ; }
+engine.DriveUtils . round ( ( ( ( num / divisor ) / divisor ) / divisor ) , 1 )
+{ return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+@ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean executed = executeCommand ( "set saturation" , params ) ; setSaturation ( 254 ) ; }
+assertEquals ( param , task . getUpdateSubTasks () )
+org.junit.Assert . assertThat ( expected , org.qommons.QommonsTestUtils . collectionsEqual ( theSyncedCopy , ordered ) )
+protected static boolean isNightMode ( android.content.Context context ) { return false ; }
+{ pos = new lasersharks.Position ( 0 , 0 ) ; ammo = new lasersharks.seaobjects.Ammo ( pos , size ) ; }
+{ if ( ( stateComponent.activeShapes [ position ] ) == null ) return false ; boolean retVar = moveShape ( 1 , 0 , stateComponent.activeShapes [ position ] ) ; if ( retVar ) putActiveShapeGhosts () ; return retVar ; }
+{ mRowObjs = data ; notifyDataSetChanged () ; }
+{ if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+{ int id = item . getItemId () ; if ( id == ( R.id.saveCategory ) ) {} return super . onOptionsItemSelected ( item ) ; }
+{ return a * b ; }
+public static void sleep ( int time ) { long startTime = java.lang.System . currentTimeMillis () ; while ( ( ( java.lang.System . currentTimeMillis () ) - startTime ) < time ) ; }
+@ org.junit.Test ( expected = java.lang.IllegalArgumentException . class ) public void validatingOrgMRN2 () { java.lang.String orgMrn = "urn:x-mrn:mcl:org:dma" ; boolean ret = net.maritimecloud.identityregistry.utils.MrnUtils . validateMrn ( orgMrn ) ; }
+{ int [] [] delta = Tokenizer . initDelta () ; return Tokenizer . findAllTokens ( s , delta ) ; }
+return ( result [ 2 ] ) != ' ' ;
+{ int id = menuItem . getItemId () ; doMenuAction ( id ) ; return true ; }
+public double getCostOfRoute () { double finalCost = 0 ; for ( main.logic.Route r : getBestRoute () ) { finalCost += cost ( r ) ; } return finalCost ; }
+assertEquals ( 0.0 , maxAbsoluteError , 1.0E-5 )
+{ return ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; }
+{ int handId = ( rand . nextInt ( 3 ) ) + 1 ; int handError = setHandFromId ( handId ) ; if ( handError != 0 ) { java.lang.System.out . println ( "This should be an exception!" ) ; } }
+{ drawMapElements ( g ) ; drawBuildings ( g ) ; drawOtherTrainers ( g ) ; drawTrainer ( g ) ; }
+roll = ( value . nextInt ( 10 ) ) + 1
+while ( ( i = pkgName . indexOf ( "." , i ) ) == ( - 1 ) ) { cnt ++ ; }
+assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "f" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( f ) ) )
+{ java.lang.String teaspoon = getInput () ; int Teaspoon = java.lang.Integer . parseInt ( teaspoon ) ; }
+int newCRC = ( ( int ) ( ( lznp.util.FileIO . getCRC32 ( outStream ) ) & - 1 ) ) ;
+public void setChestAngularControlOnly () { double [] controlledPositionAxes = new double [] { 0.0 , 0.0 , 0.0 } ; double [] controlledOrientationAxes = new double [] { 1.0 , 1.0 , 1.0 } ; setChestControlledAxes ( controlledPositionAxes , controlledOrientationAxes ) ; }
+{ return null ; }
+@ java.lang.Override public long refill ( long limit ) { final long now = org.apache.hadoop.hbase.util.EnvironmentEdgeManager . currentTime () ; if ( now < ( nextRefillTime ) ) { return 0 ; } nextRefillTime = now + ( super . getTimeUnitInMillis () ) ; return limit ; }
+core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed , true )
+@ java.lang.Override public org.w3c.dom.Node getParentNode () { return null ; }
+{ double percents = 0 ; if ( planned != 0 ) { percents = ( actual / planned ) * 100 ; } else { percents = 100 ; } return percents ; }
+public void setAtPosition ( long position , int value ) { ensure ( position ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( ( ( pointer ) + position ) , value ) ; }
+{ double temp = this . x ; this . x = x ; }
+assertEquals ( 2971215073L , ( a + b ) )
+boolean runCheck () { double r = java.lang.Math . random () ; return ( chance ) > r ; }
+{ applyRepository . create ( apply ) ; return apply . getId () ; }
+private double calculatePrice ( double num ) { num = ( quantity ) * 3.24 ; return num ; }
+public int collectUserOption ( java.lang.String question ) { int response = 0 ; response = javax.swing.JOptionPane . showConfirmDialog ( null , question , windowMessage , javax.swing.JOptionPane.PLAIN_MESSAGE , javax.swing.JOptionPane.PLAIN_MESSAGE , chatIcon ) ; return response ; }
+public void setRadii ( byte radii ) { this . radii = radii ; }
+{ boolean result = super . onUnbind ( intent ) ; return result ; }
+{ super . reset () ; path = new java.util.ArrayList < Agents.Node > () ; nodes = new java.util.HashMap < Agents.Node , Agents.Node > () ; pathNotCreatedYet = true ; searchSteps = 0 ; movementSteps = 0 ; }
+{ double diff = ( this . sim ) - ( o.sim ) ; if ( diff < 0 ) return 1 ; return diff == 0.0 ? 0 : - 1 ; }
+public int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; }
+@ java.lang.Override public synchronized void clientDidDisconnect ( com.tc.net.ClientID client ) { com.tc.util.Assert . assertTrue ( this . connectedClients . contains ( client ) ) ; this . connectedClients . remove ( client ) ; }
+{ boolean res = utillities.Mouse.releasedButtons [ keycode ] ; return res ; }
+{ int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; }
+private int threatLevelCalculator ( int armorRating , int potionEffectRating ) { int threatLevel = ( armorRating / 2 ) + potionEffectRating ; return threatLevel ; }
+public int pickColor ( java.lang.String key ) { final int color = ( java.lang.Math . abs ( key . hashCode () ) ) % ( com.byteshaft.contactsharing.utils.BitmapWithCharacter.NUM_OF_TILE_COLORS ) ; try { return mColors . getColor ( color , Color.BLACK ) ; } finally { mColors . recycle () ; } }
+{ int id = item . getItemId () ; return true ; }
+public boolean contains ( java.lang.String id ) { nu.xom.Element e = getElementByID ( id ) ; boolean res = false ; if ( e != null ) { res = true ; } return res ; }
+public final native int addOverlayPath ( java.lang.String idmapPath ) ;
+{ boolean retVal = super . isReady ( taskActionClient ) ; if ( ( lockAcquisitionLatch ) != null ) { lockAcquisitionLatch . countDown () ; } return retVal ; }
+return ( this . index ) < size ;
+wy = ( ( y - ( ( cvs . getHeight () ) / 2 ) ) / ( scale ) ) - ( translateY )
+private boolean shouldUpdate ( long lastUpdate ) { return true ; }
+protected void scrollToNearestPosition () { scrollToPosition ( ( ( int ) ( ( ( getFoldRotation () ) + 90.0F ) / 180.0F ) ) ) ; }
+@ java.lang.Override public void enablePackage ( long orderId ) { java.lang.String sql = "UPDATE SG_SubjectOrderPackage SET Status=1 WHERE OrderId=?" ; int updateCount = singleUpdate ( sql , new java.lang.Object [] { orderId } ) ; if ( ! ( updateCount > 0 ) ) throw new java.lang.RuntimeException ( ( "fail to enable package of order: " + orderId ) ) ; }
+{ messageHandler = new ru.ayaz.UserMessageHandler ( 500 ) ; }
+if ( gold > 0 ) { playerModel . setMoney ( ( ( playerModel . getMoney () ) + gold ) ) ; }
+return set ( other ) . multLocal ( ( n / d ) ) ;
+while ( ( java.lang.Math . abs ( ( ( getEncoderAvg () ) - start ) ) ) < distance ) { turn_basic ( power ) ; }
+public com.smoke.dto.SmokeHttpWrapperDTO [] prepareForLaunch ( org.apache.poi.xssf.usermodel.XSSFWorkbook workBook ) { int numberOfSheets = workBook . getNumberOfSheets () ; return prepareRequestFromSheet ( workBook . getSheetAt ( 0 ) ) ; }
+{ int result = ( getWRegister () ) & k ; if ( result == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( result ) ; }
+{ timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( position ) ; }
+{ int mPosition = mPendingDeleteItemPosition ; mPendingDeleteItemPosition = android.support.v7.widget.RecyclerView.NO_POSITION ; notifyItemChanged ( mPosition ) ; }
+{ long now = java.lang.System . currentTimeMillis () ; evasiveAt = now + evasiveTimeout ; expiredAt = now + expiredTimeout ; }
+{ if ( ( de.tucottbus.kt.drakon.DRAKON.drakonChart . getScale () ) > 0.2F ) { de.tucottbus.kt.drakon.DRAKON.drakonChart . setScale ( ( ( de.tucottbus.kt.drakon.DRAKON.drakonChart . getScale () ) - 0.1F ) ) ; de.tucottbus.kt.drakon.DRAKON.drakonChart . pack () ; } }
+vowels = 16
+public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { fighter . attack ( attack ) ; }
+{ java.lang.System.out . println ( "robPlayer" ) ; int victim = 1 ; shared.locations.HexLocation loc = new shared.locations.HexLocation ( 1 , 1 ) ; }
+{ settings.selectedLangIndex = ( ( javax.swing.JComboBox < ? > ) ( ev . getSource () ) ) . getSelectedIndex () ; }
+{ boolean connected = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; }
+{ android.os.Handler clientHandler = new android.os.Handler () ; com.smartmanageragent.exteriorcomm.ClientConnection clientConnection = new com.smartmanageragent.exteriorcomm.ClientConnection ( ipAd , com.smartmanageragent.exteriorcomm.CommunicationService.portNumber , clientHandler , jsmessage ) ; return clientConnection . connection () ; }
+{ if ( i == index ) { return element ; } i ++ ; }
+{ return updater . updateAchievement ( this , change , context ) ; }
+io.mangoo.utils.TwoFactorUtils . validateCurrentNumber ( number , secret , window , time )
+num2 / num1
+{ if ( ( averageScore () ) > 50 ) { pass = true ; } return pass ; }
+{ float value = minYaw + ( progress * stepYaw ) ; CurrentYawSpeed . setText ( java.lang.Float . toString ( value ) ) ; }
+{ float progress = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; updateClipPath ( ( ( clipStartRadius ) + progress ) ) ; }
+{ page -= 1 ; tableDrawer . setPage ( page ) ; setPageBtnState () ; setPageNrToField ( page ) ; draw () ; }
+{ int result = city . hashCode () ; result = ( 31 * result ) + ( street . hashCode () ) ; return result ; }
+public java.lang.String getPackage () { int dot = name . lastIndexOf ( '.' ) ; return dot > ( - 1 ) ? name . substring ( 0 , dot ) : "" ; }
+@ java.lang.Override public void redraw () { chartPanel . setChart ( this . getChart () ) ; }
+public int getNodeInDegree ( int nodeIndex ) { int degree = nodeBuf . getInt ( ( ( uk.ac.kent.dover.fastGraph.FastGraph.NODE_IN_DEGREE_OFFSET ) + ( nodeIndex * ( uk.ac.kent.dover.fastGraph.FastGraph.NODE_BYTE_SIZE ) ) ) ) ; return degree ; }
+return utcDate + gmtOffset ;
+num2 - num1
+{ @ org.checkerframework.checker.index.qual.IndexOrHigh ( value = "arr" ) int result = 1 + v ; @ org.checkerframework.checker.index.qual.IndexFor ( value = "arr" ) int indexFor = 1 + v ; }
+public void maalSelect () { if ( ( maal_list . getValue () ) != null ) { int id = java.lang.Integer . parseInt ( maal_list . getValue () ) ; retrieve . getRow ( id ) ; fillMaal ( id ) ; } }
+{ int i = categoryList . getSelectedIndex () ; catArr . get ( i ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; }
+{ return ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ; }
+public double getMult () { double b = ( difficulty . getMult () ) * ( currentStage . getMult () ) ; return b ; }
+{ edu.ncsu.monopoly.Player currentPlayer = edu.ncsu.monopoly.GameMaster . instance () . getCurrentPlayer () ; return; }
+if ( ( i >= 0 ) && ( ( floatProperties ) != null ) ) { return floatProperties [ i ] ; }
+{ fetchRequests () ; swipeLayoutRequests . setRefreshing ( false ) ; }
+{ Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; sharedPactorLocationBuckets . get ( tc ) . add ( pactorName ) ; }
+{ long x = value . longValue () ; evaluateMinMax ( x ) ; ( count ) ++ ; sum += x ; }
+return new java.lang.String ( bytes ) ;
+assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( documentId ) )
+for ( by.tarif.web.databuffer.Register register : this . list ) { sum += register . getConsumption () ; }
+{ for ( Space space : spaces ) { if ( space . isEmpty () ) return false ; } return true ; }
+{ if ( ( stateComponent.activeShapes [ position ] ) == null ) return false ; boolean retVar = moveShapeDown ( stateComponent.activeShapes [ position ] ) ; if ( retVar ) putActiveShapeGhosts () ; return retVar ; }
+{ com.alibaba.druid.filter.FilterChainImpl chain = createChain () ; boolean value = chain . statement_getMoreResults ( this ) ; updateCount = null ; recycleFilterChain ( chain ) ; return value ; }
+numOfRevenueAgenciesapp = pages.revenue.RevenuePage . GetTop5WidgetTotalCount ( WidgetOption.Top5Agencies )
+{ byte [] result = new byte [ this . subnegotiation . length ] ; java.lang.System . arraycopy ( subnegotiation , 0 , result , 0 , subnegotiation.length ) ; return result ; }
+{ if ( ( org.wso2.developerstudio.eclipse.updater.job.UpdateMetaFileReaderJobListener . getUserPreference ( org.wso2.developerstudio.eclipse.updater.job.UpdateMetaFileReaderJobListener.TITLE , org.wso2.developerstudio.eclipse.updater.job.UpdateMetaFileReaderJobListener.UPDATER_DIALOG_MESSAGE ) ) == 0 ) { runUpdaterJob () ; } }
+{ stats.count_human_dna = totalRecords ; stats.count_mutant_dna = mutantRecords ; stats . ratio ( mutantRecords , totalRecords ) ; }
+{ int pos = 0 ; for ( java.lang.Integer num : l ) { if ( num . equals ( id ) ) { return pos ; } pos ++ ; } return null ; }
+@ java.lang.Override public void run () { vn.edu.uit.jrfsit.utils.Utils . print ( activity , "Cập nhật thất bại, kiểm tra kết nối" ) ; }
+{ int len = size () ; if ( len > 0 ) { return this . exectionList . get ( ( len - 1 ) ) ; } else { return null ; } }
+public boolean contains ( java.lang.String key ) { return ( get ( key ) ) != null ; }
+{ if ( ( hashcode ) == 0 ) { hashcode = this . fs . hashCode () ; } return hashcode ; }
+{ int sid = charset . getSID ( name ) ; java.lang.Integer gid = charset . getGIDForSID ( sid ) ; if ( gid == null ) { return false ; } else { return true ; } }
+@ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+return numInputSize == 1 ? numInputSize : numInputSize * ( numInputSize - 1 ) ;
+hours = ( ( ( ( float ) ( this . toMillis () ) ) / 1000.0F ) / 60.0F ) / 60.0F
+assertTrue ( listEmptyOrBetweenNumberOfItems )
+{ int amount = Settings.IMP.QUEUE.PARALLEL_THREADS ; long time = 20 ; return next ( amount , time ) ; }
+double m = x ;
+{ long data_b = node.data ; if ( data_b > ( this . data ) ) return - 1 ; else if ( data_b < ( this . data ) ) return 1 ; else return 0 ; }
+append ( c )
+do { port = random . nextInt ( 65535 ) ; } while ( org.opencron.common.utils.HttpUtils . isLocalPortUsing ( port ) ) ;
+{ ll . removeMiddleNode () ; org.junit.Assert . assertEquals ( "1 -> 2 -> 4 -> 5" , ll . toString () ) ; }
+{ int [] keysArr = new int [ this . size ] ; if ( ( this . size ) == 0 ) { return keysArr ; } generateKeysArray ( root , keysArr , 0 ) ; return keysArr ; }
+len = ( a.length ) - 1
+assertTrue ( limitReached )
+{ boolean heavy = false ; if ( ( bagWeight ) >= 3.0 ) { heavy = true ; } return heavy ; }
+( done * 1.0 ) / ( totalCoursesNeeded )
+id < w ? id + ( w * ( ( this . height ) - 1 ) ) : id - w
+{ int index = dataset . indexOf ( movie ) ; db . deleteMovieFromWatchlist ( movie . getId () ) ; }
+public void actionPerformed ( java.awt.event.ActionEvent event ) { if ( ( clientIdChosen ) != null ) { int id = java.lang.Integer . parseInt ( clientIdChosen ) ; clientController . deleteClient ( id , panel , scroll ) ; } }
+public static void testisTo ( int heading , int radial ) { com.vor.driver.VORCalculator vc = new com.vor.driver.VORCalculator ( new com.vor.driver.VOR () ) ; boolean result = vc . isTo ( heading , radial ) ; java.lang.System.out . println ( result ) ; }
+maxMemory = ( ( int ) ( java.lang.Runtime . getRuntime () . maxMemory () ) )
+{ long currPos = ( com.kaltura.playkit.utils.Consts.MILLISECONDS_MULTIPLIER ) * ( adsProvider . getCurrentPosition () ) ; return currPos ; }
+numTransitionActions = mActions . get ( direction ) . getLeft ()
+return ( startTimeInMillis + timeoutInMillis ) < currentTimeInMillis ;
+public void populateList ( main.java.gui.TasksTableController tableControl , java.util.ArrayList < main.java.data.Task > result ) { int count = 1 ; tableControl . clearTask () ; for ( main.java.data.Task temp : result ) { tableControl . addTask ( temp , ( count ++ ) ) ; } }
+{ int hashedIndex = Key . hashCode () ; int sizeOfTable = size () ; hashedIndex = java.lang.Math . abs ( hashedIndex ) ; if ( hashedIndex > sizeOfTable ) { hashedIndex = hashedIndex % sizeOfTable ; } return hashedIndex ; }
+return a ;
+public int indexOf ( E x ) { int index = binarySearch ( x ) ; return index >= 0 ? index : - 1 ; }
+public static void main ( java.lang.String [] args ) {}
+private int accumulate ( int [] folders ) { int accum = 0 ; for ( int folder : folders ) { accum += folder ; } return accum ; }
+{ int temp = keys . get ( key ) ; temp ++ ; keys . set ( key , temp ) ; }
+{ return org.deidentifier.arx.metric.Metric . createPublisherPayoutMetric ( false , config . getGsFactor () ) ; }
+public void callTargetEvent ( org.bukkit.event.entity.EntityTargetEvent event ) { for ( net.citizensnpcs.npctypes.CitizensNPC type : types . values () ) { type . onTarget ( event ) ; } }
+@ java.lang.Override public float computeBonus () { float bonus = ( ( this . salary ) * ( this . pctBonus ) ) + 1000 ; return bonus ; }
+@ org.junit.Ignore @ org.junit.Test public void testCanEqual () {}
+return nameIsPresent && bodyIsPresent ;
+protected float scorePiece ( puzzlesolver.solver.State state , puzzlesolver.Piece foundPiece ) { int totalPotentialMatches = 0 ; for ( puzzlesolver.enums.PieceType pieceType : foundPiece . getPieceTypes () ) { totalPotentialMatches += state.unplacedPieces . sublistByType ( pieceType ) . size () ; } return 1.0F / totalPotentialMatches ; }
+public static void main ( java.lang.String [] args ) { new Main () . main () ; }
+public double getSubTotalPrice ( manufacture.entity.cart.CartProduct cartProduct ) { double subTotalPrice = 0 ; subTotalPrice = ( cartProduct . getProduct () . getPrice () ) * ( cartProduct . getQuantity () ) ; return subTotalPrice ; }
+newOpacity = ( oldOpacity ) + ( fraction * ( ( opacity ) - ( oldOpacity ) ) )
+{ int index = ( row * ( image.width ) ) + col ; return ( image.pixels [ index ] ) & 255 ; }
+@ java.lang.Override public void onLastItemVisible () {}
+{ boolean result = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return result ; }
+{ byte [] bytes = getAsBytes ( key ) ; if ( bytes == null ) return null ; return com.zhy.base.cache.disk.Utils . bytes2Bitmap ( bytes ) ; }
+{ runGPG ( java.util.Arrays . asList ( "--import" ) , key ) ; }
+{ int dispMode = getResources () . getConfiguration () . orientation ; displayMode = ( dispMode == 1 ) ? "" : "_land" ; }
+{ int a = 10 ; int b = 11 ; int c = org.tlsys.Main . get ( 1 , 2 ) ; org.tlsys.Main . giveException () ; new org.tlsys.Main () ; return; }

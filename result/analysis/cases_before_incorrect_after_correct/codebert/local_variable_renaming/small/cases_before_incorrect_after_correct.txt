@@ -1,0 +1,48 @@
+line_index: 14
+bug_before_refactoring: { int width = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int width = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+bug_after_refactoring: { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+fix_before_refactoring: { return false ; }
+fix_after_refactoring: { return false ; }
+× fix_prediction_before: { return plot . getWidth () ; }
+√ fix_prediction_after: { return false ; }
+
+line_index: 65
+bug_before_refactoring: { boolean sending = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> protected void initiateSendIfNecessary () { boolean sending = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> Updated BLE delegate state management  Fixed error that caused READY to be issued before the communicator was actually READY on Tappy devices with version >2.0 BLE module firmware  Cleared up comment on TappyBleCommunicator  Made TappyBleCommunicator return booleans from TappyBleDelegate's connect() and initialize() functions  Cleaned up a couple other issues in TappyBleDelegate
+bug_after_refactoring: { boolean onjstlkmzpoflcujuoby = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> protected void initiateSendIfNecessary () { boolean onjstlkmzpoflcujuoby = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> Updated BLE delegate state management  Fixed error that caused READY to be issued before the communicator was actually READY on Tappy devices with version >2.0 BLE module firmware  Cleared up comment on TappyBleCommunicator  Made TappyBleCommunicator return booleans from TappyBleDelegate's connect() and initialize() functions  Cleaned up a couple other issues in TappyBleDelegate
+fix_before_refactoring: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+fix_after_refactoring: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+× fix_prediction_before: { boolean sending = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+√ fix_prediction_after: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+
+line_index: 96
+bug_before_refactoring: public void setRadii ( byte radii ) { byte before = this . radii ; this . radii = radii ; if ( before != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> public void setRadii ( byte radii ) { byte before = this . radii ; this . radii = radii ; if ( before != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> - Fix minor sync issues
+bug_after_refactoring: public void setRadii ( byte radii ) { byte rhuakvfgnknohadxzzre = this . radii ; this . radii = radii ; if ( rhuakvfgnknohadxzzre != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> public void setRadii ( byte radii ) { byte rhuakvfgnknohadxzzre = this . radii ; this . radii = radii ; if ( rhuakvfgnknohadxzzre != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> - Fix minor sync issues
+fix_before_refactoring: public void setRadii ( byte radii ) { this . radii = radii ; }
+fix_after_refactoring: public void setRadii ( byte radii ) { this . radii = radii ; }
+× fix_prediction_before: public void setRadii ( byte radii ) { this . radii = radii ; if ( before != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } }
+√ fix_prediction_after: public void setRadii ( byte radii ) { this . radii = radii ; }
+
+line_index: 121
+bug_before_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; if ( position != 0 ) { onCategoryChosen ( position ) ; } } <s> @ java.lang.Override public void act () { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; if ( position != 0 ) { onCategoryChosen ( position ) ; } } <s> - Redo enable/disable spinner. Fix a bug with spinner remaining disable after user cancel climber in scan tab.
+bug_after_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; if ( zimrvexhyclawjyexzlk != 0 ) { onCategoryChosen ( zimrvexhyclawjyexzlk ) ; } } <s> @ java.lang.Override public void act () { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; if ( zimrvexhyclawjyexzlk != 0 ) { onCategoryChosen ( zimrvexhyclawjyexzlk ) ; } } <s> - Redo enable/disable spinner. Fix a bug with spinner remaining disable after user cancel climber in scan tab.
+fix_before_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( position ) ; }
+fix_after_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( zimrvexhyclawjyexzlk ) ; }
+× fix_prediction_before: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; if ( position != 0 ) { onCategoryChosen ( position ) ; } }
+√ fix_prediction_after: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( zimrvexhyclawjyexzlk ) ; }
+
+line_index: 173
+bug_before_refactoring: hours = ( ( ( ( float ) ( this . toMillis () ) ) * 1000.0F ) * 60.0F ) * 60.0F <s> public float toHours () { float hours = ( ( ( ( float ) ( this . toMillis () ) ) * 1000.0F ) * 60.0F ) * 60.0F ; return hours ; } <s> Fix error in TimeUnit conversion logic
+bug_after_refactoring: nsngeuhqzkjvkoeuegok = ( ( ( ( float ) ( this . toMillis () ) ) * 1000.0F ) * 60.0F ) * 60.0F <s> public float toHours () { float nsngeuhqzkjvkoeuegok = ( ( ( ( float ) ( this . toMillis () ) ) * 1000.0F ) * 60.0F ) * 60.0F ; return hours ; } <s> Fix error in TimeUnit conversion logic
+fix_before_refactoring: hours = ( ( ( ( float ) ( this . toMillis () ) ) / 1000.0F ) / 60.0F ) / 60.0F
+fix_after_refactoring: nsngeuhqzkjvkoeuegok = ( ( ( ( float ) ( this . toMillis () ) ) / 1000.0F ) / 60.0F ) / 60.0F
+× fix_prediction_before: hours = ( ( ( float ) ( this . toMillis () ) ) / 1000.0F ) / 60.0F
+√ fix_prediction_after: nsngeuhqzkjvkoeuegok = ( ( ( ( float ) ( this . toMillis () ) ) / 1000.0F ) / 60.0F ) / 60.0F
+
+line_index: 176
+bug_before_refactoring: float m = x ; <s> Vector2D left () { float m = x ; x = - ( y ) ; y = m ; return this ; } <s> compiler errors fixed  now have superfun array out of bounds runtime errorsgit add --all
+bug_after_refactoring: float juvsbsrnnnedrauetqzm = x ; <s> Vector2D left () { float juvsbsrnnnedrauetqzm = x ; x = - ( y ) ; y = m ; return this ; } <s> compiler errors fixed  now have superfun array out of bounds runtime errorsgit add --all
+fix_before_refactoring: double m = x ;
+fix_after_refactoring: double juvsbsrnnnedrauetqzm = x ;
+× fix_prediction_before: float m = x ;
+√ fix_prediction_after: double juvsbsrnnnedrauetqzm = x ;
+

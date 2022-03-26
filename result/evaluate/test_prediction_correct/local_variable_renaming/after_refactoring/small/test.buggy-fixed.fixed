@@ -1,0 +1,8 @@
+{ android.content.Intent intent = new android.content.Intent ( this , csci435.csci435_odbr.SnapshotIntentService . class ) ; startService ( intent ) ; }
+{ return false ; }
+{ return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+{ return ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; }
+{ drawMapElements ( g ) ; drawBuildings ( g ) ; drawOtherTrainers ( g ) ; drawTrainer ( g ) ; }
+{ android.os.Handler clientHandler = new android.os.Handler () ; com.smartmanageragent.exteriorcomm.ClientConnection clientConnection = new com.smartmanageragent.exteriorcomm.ClientConnection ( ipAd , com.smartmanageragent.exteriorcomm.CommunicationService.portNumber , clientHandler , jsmessage ) ; return clientConnection . connection () ; }
+@ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+public static void main ( java.lang.String [] args ) {}

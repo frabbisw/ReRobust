@@ -1,0 +1,256 @@
+line_index: 5
+bug_before_refactoring: { int direction = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return direction ; } <s> public int getAction ( gr.PacManAI.GameState gs ) { int direction = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return direction ; } <s> Fixed bug where coordinates of pacman weren't being updated.
+bug_after_refactoring: { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return pvkxvujxkedkmvwuymdm ; } <s> public int getAction ( gr.PacManAI.GameState gs ) { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return pvkxvujxkedkmvwuymdm ; } <s> Fixed bug where coordinates of pacman weren't being updated.
+fix_before_refactoring: { int direction = gs . closestPillDir () ; return direction ; }
+fix_after_refactoring: { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; return pvkxvujxkedkmvwuymdm ; }
+√ fix_prediction_before: { int direction = gs . closestPillDir () ; return direction ; }
+√ fix_prediction_after: { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; return pvkxvujxkedkmvwuymdm ; }
+
+line_index: 12
+bug_before_refactoring: { java.lang.System.out . println ( "in setProductManual" ) ; byte [] manualBytes = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( manualBytes ) ; this . productManual = manualBlob ; } <s> public void setProductManual ( org.springframework.web.multipart.MultipartFile productPdf ) throws java.io.IOException , java.sql.SQLException , javax.sql.rowset.serial.SerialException { java.lang.System.out . println ( "in setProductManual" ) ; byte [] manualBytes = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( manualBytes ) ; this . productManual = manualBlob ; } <s> bugfix category
+bug_after_refactoring: { java.lang.System.out . println ( "in setProductManual" ) ; byte [] tbjlmvzeplymanhledch = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( tbjlmvzeplymanhledch ) ; this . productManual = manualBlob ; } <s> public void setProductManual ( org.springframework.web.multipart.MultipartFile productPdf ) throws java.io.IOException , java.sql.SQLException , javax.sql.rowset.serial.SerialException { java.lang.System.out . println ( "in setProductManual" ) ; byte [] tbjlmvzeplymanhledch = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( tbjlmvzeplymanhledch ) ; this . productManual = manualBlob ; } <s> bugfix category
+fix_before_refactoring: { byte [] manualBytes = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( manualBytes ) ; this . productManual = manualBlob ; }
+fix_after_refactoring: { byte [] tbjlmvzeplymanhledch = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( tbjlmvzeplymanhledch ) ; this . productManual = manualBlob ; }
+√ fix_prediction_before: { byte [] manualBytes = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( manualBytes ) ; this . productManual = manualBlob ; }
+√ fix_prediction_after: { byte [] tbjlmvzeplymanhledch = productPdf . getBytes () ; java.sql.Blob manualBlob = new javax.sql.rowset.serial.SerialBlob ( tbjlmvzeplymanhledch ) ; this . productManual = manualBlob ; }
+
+line_index: 14
+bug_before_refactoring: { int width = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int width = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+bug_after_refactoring: { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> public boolean onTouch ( android.view.View v , android.view.MotionEvent event ) { int olstodipellshuosevim = plot . getWidth () ; return false ; } <s> Designanpassungen + Versuch von Bugfix  Abweichung Höhe von Balken und Durchschnittspace!
+fix_before_refactoring: { return false ; }
+fix_after_refactoring: { return false ; }
+√ fix_prediction_before: { return false ; }
+√ fix_prediction_after: { return false ; }
+
+line_index: 26
+bug_before_refactoring: preTz . convertLocalToUTC ( field . roundFloor ( local ) , true , utcMillis ) <s> @ java.lang.Override public long roundKey ( long utcMillis ) { long local = preTz . convertUTCToLocal ( utcMillis ) ; return preTz . convertLocalToUTC ( field . roundFloor ( local ) , true , utcMillis ) ; } <s> Aggregations: Be lenient when converting local to utc time in time zone roundings  This solves a problem in the time zone rounding classes where time dates that fall into a DST gap will cause joda time library to throw an exception. Changing the conversion methods 'strict' option to false prevents this.  Closes #10025
+bug_after_refactoring: preTz . convertLocalToUTC ( field . roundFloor ( ggxqkxbwwujsvwrcaoex ) , true , utcMillis ) <s> @ java.lang.Override public long roundKey ( long utcMillis ) { long local = preTz . convertUTCToLocal ( utcMillis ) ; return preTz . convertLocalToUTC ( field . roundFloor ( ggxqkxbwwujsvwrcaoex ) , true , utcMillis ) ; } <s> Aggregations: Be lenient when converting local to utc time in time zone roundings  This solves a problem in the time zone rounding classes where time dates that fall into a DST gap will cause joda time library to throw an exception. Changing the conversion methods 'strict' option to false prevents this.  Closes #10025
+fix_before_refactoring: preTz . convertLocalToUTC ( field . roundFloor ( local ) , false , utcMillis )
+fix_after_refactoring: preTz . convertLocalToUTC ( field . roundFloor ( ggxqkxbwwujsvwrcaoex ) , false , utcMillis )
+√ fix_prediction_before: preTz . convertLocalToUTC ( field . roundFloor ( local ) , false , utcMillis )
+√ fix_prediction_after: preTz . convertLocalToUTC ( field . roundFloor ( ggxqkxbwwujsvwrcaoex ) , false , utcMillis )
+
+line_index: 33
+bug_before_refactoring: if ( ( this . random () ) > ( mean - n ) ) n ++ ; <s> @ java.lang.Override public final int round ( double mean ) { int n = ( ( int ) ( mean ) ) ; if ( ( this . random () ) > ( mean - n ) ) n ++ ; return n ; } <s> Fix rounding to the closest integer  It was rounding to the further integer instead :( Bug introduced in 0b335962c919.
+bug_after_refactoring: if ( ( this . random () ) > ( mean - eylkeuekuzmnlqoewyvk ) ) eylkeuekuzmnlqoewyvk ++ ; <s> @ java.lang.Override public final int round ( double mean ) { int n = ( ( int ) ( mean ) ) ; if ( ( this . random () ) > ( mean - eylkeuekuzmnlqoewyvk ) ) eylkeuekuzmnlqoewyvk ++ ; return n ; } <s> Fix rounding to the closest integer  It was rounding to the further integer instead :( Bug introduced in 0b335962c919.
+fix_before_refactoring: if ( ( this . random () ) < ( mean - n ) ) n ++ ;
+fix_after_refactoring: if ( ( this . random () ) < ( mean - eylkeuekuzmnlqoewyvk ) ) eylkeuekuzmnlqoewyvk ++ ;
+√ fix_prediction_before: if ( ( this . random () ) < ( mean - n ) ) n ++ ;
+√ fix_prediction_after: if ( ( this . random () ) < ( mean - eylkeuekuzmnlqoewyvk ) ) eylkeuekuzmnlqoewyvk ++ ;
+
+line_index: 42
+bug_before_refactoring: id = ( com.weibo.api.motan.util.RequestIdGenerator . getRequestId () ) > > ( RequestIdGenerator.BITS ) <s> @ java.lang.Override public java.lang.Boolean call ( ) throws java.lang.Exception { cyclicBarrier . await () ; long id = ( com.weibo.api.motan.util.RequestIdGenerator . getRequestId () ) > > ( RequestIdGenerator.BITS ) ; boolean result = ( memory . putIfAbsent ( id , "" ) ) == null ; return result ; } <s> fix error in getReqeustId condition check
+bug_after_refactoring: pezwnejclrlehncbidmp = ( com.weibo.api.motan.util.RequestIdGenerator . getRequestId () ) > > ( RequestIdGenerator.BITS ) <s> @ java.lang.Override public java.lang.Boolean call ( ) throws java.lang.Exception { cyclicBarrier . await () ; long pezwnejclrlehncbidmp = ( com.weibo.api.motan.util.RequestIdGenerator . getRequestId () ) > > ( RequestIdGenerator.BITS ) ; boolean result = ( memory . putIfAbsent ( id , "" ) ) == null ; return result ; } <s> fix error in getReqeustId condition check
+fix_before_refactoring: id = com.weibo.api.motan.util.RequestIdGenerator . getRequestId ()
+fix_after_refactoring: pezwnejclrlehncbidmp = com.weibo.api.motan.util.RequestIdGenerator . getRequestId ()
+√ fix_prediction_before: id = com.weibo.api.motan.util.RequestIdGenerator . getRequestId ()
+√ fix_prediction_after: pezwnejclrlehncbidmp = com.weibo.api.motan.util.RequestIdGenerator . getRequestId ()
+
+line_index: 44
+bug_before_refactoring: public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+bug_after_refactoring: public void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } } <s> public void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+fix_before_refactoring: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+fix_after_refactoring: private void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } }
+√ fix_prediction_before: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+√ fix_prediction_after: private void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } }
+
+line_index: 52
+bug_before_refactoring: if ( ! ( storage [ index ] . contains ( key ) ) ) ( size ) -- ; <s> public java.lang.String remove ( java.lang.String key ) { int index = getIndex ( key ) ; if ( ! ( storage [ index ] . contains ( key ) ) ) ( size ) -- ; return storage [ index ] . remove ( key ) ; } <s> Fixed issues in HW1
+bug_after_refactoring: if ( ! ( storage [ nprjmrpopnxlgisvoicp ] . contains ( key ) ) ) ( size ) -- ; <s> public java.lang.String remove ( java.lang.String key ) { int index = getIndex ( key ) ; if ( ! ( storage [ nprjmrpopnxlgisvoicp ] . contains ( key ) ) ) ( size ) -- ; return storage [ index ] . remove ( key ) ; } <s> Fixed issues in HW1
+fix_before_refactoring: if ( storage [ index ] . contains ( key ) ) ( size ) -- ;
+fix_after_refactoring: if ( storage [ nprjmrpopnxlgisvoicp ] . contains ( key ) ) ( size ) -- ;
+√ fix_prediction_before: if ( storage [ index ] . contains ( key ) ) ( size ) -- ;
+√ fix_prediction_after: if ( storage [ nprjmrpopnxlgisvoicp ] . contains ( key ) ) ( size ) -- ;
+
+line_index: 56
+bug_before_refactoring: engine.DriveUtils . round ( ( ( ( num / divisor ) / divisor ) / divisor ) , 2 ) <s> public float byteToGigabyte ( float num ) { int divisor = 1000 ; return engine.DriveUtils . round ( ( ( ( num / divisor ) / divisor ) / divisor ) , 2 ) ; } <s> Fixed an issue with the Drive getCapacity not storing properly and not rounding properly for human reading. driveUtils insufficient storage is now functioning properly.
+bug_after_refactoring: engine.DriveUtils . round ( ( ( ( num / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) , 2 ) <s> public float byteToGigabyte ( float num ) { int divisor = 1000 ; return engine.DriveUtils . round ( ( ( ( num / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) , 2 ) ; } <s> Fixed an issue with the Drive getCapacity not storing properly and not rounding properly for human reading. driveUtils insufficient storage is now functioning properly.
+fix_before_refactoring: engine.DriveUtils . round ( ( ( ( num / divisor ) / divisor ) / divisor ) , 1 )
+fix_after_refactoring: engine.DriveUtils . round ( ( ( ( num / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) , 1 )
+√ fix_prediction_before: engine.DriveUtils . round ( ( ( ( num / divisor ) / divisor ) / divisor ) , 1 )
+√ fix_prediction_after: engine.DriveUtils . round ( ( ( ( num / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) / sayfdsfkrxjqenhbeksm ) , 1 )
+
+line_index: 57
+bug_before_refactoring: { int height = metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; return height ; } <s> @ java.lang.Override public int getTileSizeY () { int height = metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; return height ; } <s> Update error messages and feedback fixes
+bug_after_refactoring: { int enfkunewhlnypnwxbrih = metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; return enfkunewhlnypnwxbrih ; } <s> @ java.lang.Override public int getTileSizeY () { int enfkunewhlnypnwxbrih = metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; return enfkunewhlnypnwxbrih ; } <s> Update error messages and feedback fixes
+fix_before_refactoring: { return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+fix_after_refactoring: { return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+√ fix_prediction_before: { return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+√ fix_prediction_after: { return metadataRetrieve . getPixelsSizeY ( getSeries () ) . getValue () ; }
+
+line_index: 67
+bug_before_refactoring: { int res ; res = a * b ; return res ; } <s> public int computeProduct ( int a , int b ) { int res ; res = a * b ; return res ; } <s> fix serialization issue & clean duplicated/unused code
+bug_after_refactoring: { int lnhsinubehjptdzvxsra ; lnhsinubehjptdzvxsra = a * b ; return lnhsinubehjptdzvxsra ; } <s> public int computeProduct ( int a , int b ) { int lnhsinubehjptdzvxsra ; lnhsinubehjptdzvxsra = a * b ; return lnhsinubehjptdzvxsra ; } <s> fix serialization issue & clean duplicated/unused code
+fix_before_refactoring: { return a * b ; }
+fix_after_refactoring: { return a * b ; }
+√ fix_prediction_before: { return a * b ; }
+√ fix_prediction_after: { return a * b ; }
+
+line_index: 70
+bug_before_refactoring: { int [] [] delta = Tokenizer . initDelta () ; java.util.ArrayList < Token > Tokens = Tokenizer . findAllTokens ( s , delta ) ; return Tokens ; } <s> public static java.util.ArrayList < Token > process ( java.lang.String s ) { int [] [] delta = Tokenizer . initDelta () ; java.util.ArrayList < Token > Tokens = Tokenizer . findAllTokens ( s , delta ) ; return Tokens ; } <s> small bugfixes
+bug_after_refactoring: { int [] [] bxvmrmctfmdvloyaflkl = Tokenizer . initDelta () ; java.util.ArrayList < Token > Tokens = Tokenizer . findAllTokens ( s , bxvmrmctfmdvloyaflkl ) ; return Tokens ; } <s> public static java.util.ArrayList < Token > process ( java.lang.String s ) { int [] [] bxvmrmctfmdvloyaflkl = Tokenizer . initDelta () ; java.util.ArrayList < Token > Tokens = Tokenizer . findAllTokens ( s , bxvmrmctfmdvloyaflkl ) ; return Tokens ; } <s> small bugfixes
+fix_before_refactoring: { int [] [] delta = Tokenizer . initDelta () ; return Tokenizer . findAllTokens ( s , delta ) ; }
+fix_after_refactoring: { int [] [] bxvmrmctfmdvloyaflkl = Tokenizer . initDelta () ; return Tokenizer . findAllTokens ( s , bxvmrmctfmdvloyaflkl ) ; }
+√ fix_prediction_before: { int [] [] delta = Tokenizer . initDelta () ; return Tokenizer . findAllTokens ( s , delta ) ; }
+√ fix_prediction_after: { int [] [] bxvmrmctfmdvloyaflkl = Tokenizer . initDelta () ; return Tokenizer . findAllTokens ( s , bxvmrmctfmdvloyaflkl ) ; }
+
+line_index: 73
+bug_before_refactoring: private double getCostOfRoute () { double finalCost = 0 ; for ( main.logic.Route r : getBestRoute () ) { finalCost += cost ( r ) ; } return finalCost ; } <s> private double getCostOfRoute () { double finalCost = 0 ; for ( main.logic.Route r : getBestRoute () ) { finalCost += cost ( r ) ; } return finalCost ; } <s> Fixed large bug in monitor was using an air algorithm for everything
+bug_after_refactoring: private double getCostOfRoute () { double qipzsoevnotlihnpkigt = 0 ; for ( main.logic.Route r : getBestRoute () ) { qipzsoevnotlihnpkigt += cost ( r ) ; } return qipzsoevnotlihnpkigt ; } <s> private double getCostOfRoute () { double qipzsoevnotlihnpkigt = 0 ; for ( main.logic.Route r : getBestRoute () ) { qipzsoevnotlihnpkigt += cost ( r ) ; } return qipzsoevnotlihnpkigt ; } <s> Fixed large bug in monitor was using an air algorithm for everything
+fix_before_refactoring: public double getCostOfRoute () { double finalCost = 0 ; for ( main.logic.Route r : getBestRoute () ) { finalCost += cost ( r ) ; } return finalCost ; }
+fix_after_refactoring: public double getCostOfRoute () { double qipzsoevnotlihnpkigt = 0 ; for ( main.logic.Route r : getBestRoute () ) { qipzsoevnotlihnpkigt += cost ( r ) ; } return qipzsoevnotlihnpkigt ; }
+√ fix_prediction_before: public double getCostOfRoute () { double finalCost = 0 ; for ( main.logic.Route r : getBestRoute () ) { finalCost += cost ( r ) ; } return finalCost ; }
+√ fix_prediction_after: public double getCostOfRoute () { double qipzsoevnotlihnpkigt = 0 ; for ( main.logic.Route r : getBestRoute () ) { qipzsoevnotlihnpkigt += cost ( r ) ; } return qipzsoevnotlihnpkigt ; }
+
+line_index: 74
+bug_before_refactoring: org.junit.Assert . assertEquals ( 0.0 , maxAbsoluteError , 1.0E-5 ) <s> private void verifyEqualityConstraintsHold ( int numberOfEqualityConstraints , org.ejml.data.DenseMatrix64F linearEqualityConstraintsAMatrix , org.ejml.data.DenseMatrix64F linearEqualityConstraintsBVector , org.ejml.data.DenseMatrix64F solutionMatrix ) { double maxAbsoluteError = getMaxEqualityConstraintError ( numberOfEqualityConstraints , linearEqualityConstraintsAMatrix , linearEqualityConstraintsBVector , solutionMatrix ) ; org.junit.Assert . assertEquals ( 0.0 , maxAbsoluteError , 1.0E-5 ) ; } <s> Fixed a bug due to a bad handling of the variable bounds in the QP.
+bug_after_refactoring: org.junit.Assert . assertEquals ( 0.0 , clclcdnodhcdfycajyvs , 1.0E-5 ) <s> private void verifyEqualityConstraintsHold ( int numberOfEqualityConstraints , org.ejml.data.DenseMatrix64F linearEqualityConstraintsAMatrix , org.ejml.data.DenseMatrix64F linearEqualityConstraintsBVector , org.ejml.data.DenseMatrix64F solutionMatrix ) { double maxAbsoluteError = getMaxEqualityConstraintError ( numberOfEqualityConstraints , linearEqualityConstraintsAMatrix , linearEqualityConstraintsBVector , solutionMatrix ) ; org.junit.Assert . assertEquals ( 0.0 , clclcdnodhcdfycajyvs , 1.0E-5 ) ; } <s> Fixed a bug due to a bad handling of the variable bounds in the QP.
+fix_before_refactoring: assertEquals ( 0.0 , maxAbsoluteError , 1.0E-5 )
+fix_after_refactoring: assertEquals ( 0.0 , clclcdnodhcdfycajyvs , 1.0E-5 )
+√ fix_prediction_before: assertEquals ( 0.0 , maxAbsoluteError , 1.0E-5 )
+√ fix_prediction_after: assertEquals ( 0.0 , clclcdnodhcdfycajyvs , 1.0E-5 )
+
+line_index: 80
+bug_before_refactoring: org.junit.Assert . assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "f" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( f ) ) ) <s> @ org.junit.Test public void recordFloat ( ) throws java.lang.Exception { float f = 5.5F ; org.junit.Assert . assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "f" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( f ) ) ) ; } <s> Fix issue #2
+bug_after_refactoring: org.junit.Assert . assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "esxkumxvlvbcsadugtmm" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( esxkumxvlvbcsadugtmm ) ) ) <s> @ org.junit.Test public void recordFloat ( ) throws java.lang.Exception { float f = 5.5F ; org.junit.Assert . assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "esxkumxvlvbcsadugtmm" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( esxkumxvlvbcsadugtmm ) ) ) ; } <s> Fix issue #2
+fix_before_refactoring: assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "f" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( f ) ) )
+fix_after_refactoring: assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "esxkumxvlvbcsadugtmm" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( esxkumxvlvbcsadugtmm ) ) )
+√ fix_prediction_before: assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "f" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( f ) ) )
+√ fix_prediction_after: assertThat ( hu.advancedweb.scott.helper.TestHelper . getLastRecordedStateFor ( "esxkumxvlvbcsadugtmm" ) , org.hamcrest.CoreMatchers . equalTo ( java.lang.Float . toString ( esxkumxvlvbcsadugtmm ) ) )
+
+line_index: 84
+bug_before_refactoring: { int [] temp = new int [ nexts . size () ] ; return null ; } <s> public int [] solutionArray ( Maze.Frontier nexts ) { int [] temp = new int [ nexts . size () ] ; return null ; } <s> fixed some of generic issues if not most; double check to make sure
+bug_after_refactoring: { int [] ovbwdnnvqwxzhjxywrod = new int [ nexts . size () ] ; return null ; } <s> public int [] solutionArray ( Maze.Frontier nexts ) { int [] ovbwdnnvqwxzhjxywrod = new int [ nexts . size () ] ; return null ; } <s> fixed some of generic issues if not most; double check to make sure
+fix_before_refactoring: { return null ; }
+fix_after_refactoring: { return null ; }
+√ fix_prediction_before: { return null ; }
+√ fix_prediction_after: { return null ; }
+
+line_index: 86
+bug_before_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed ) <s> public static double playOneGame ( java.lang.String game_file , java.lang.String level_file , java.lang.String actionFile , int randomSeed ) { java.lang.String agentName = "controllers.human.Agent" ; boolean visuals = true ; return core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed ) ; } <s> bug fix in gymkhana  avatar needs to be oriented. Start/End window only appears if a human is playing now.
+bug_after_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed ) <s> public static double playOneGame ( java.lang.String game_file , java.lang.String level_file , java.lang.String actionFile , int randomSeed ) { java.lang.String agentName = "controllers.human.Agent" ; boolean visuals = true ; return core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed ) ; } <s> bug fix in gymkhana  avatar needs to be oriented. Start/End window only appears if a human is playing now.
+fix_before_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed , true )
+fix_after_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed , true )
+√ fix_prediction_before: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed , true )
+√ fix_prediction_after: core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed , true )
+
+line_index: 90
+bug_before_refactoring: { double temp = this . x ; this . x = x ; java.lang.System.out . println ( ( "Moved " + ( java.lang.Math . abs ( ( temp - ( this . x ) ) ) ) ) ) ; } <s> public void setX ( double x ) { double temp = this . x ; this . x = x ; java.lang.System.out . println ( ( "Moved " + ( java.lang.Math . abs ( ( temp - ( this . x ) ) ) ) ) ) ; } <s> Fixed movement bug
+bug_after_refactoring: { double jfzsmhcrkouvfawbcgtj = this . x ; this . x = x ; java.lang.System.out . println ( ( "Moved " + ( java.lang.Math . abs ( ( jfzsmhcrkouvfawbcgtj - ( this . x ) ) ) ) ) ) ; } <s> public void setX ( double x ) { double jfzsmhcrkouvfawbcgtj = this . x ; this . x = x ; java.lang.System.out . println ( ( "Moved " + ( java.lang.Math . abs ( ( jfzsmhcrkouvfawbcgtj - ( this . x ) ) ) ) ) ) ; } <s> Fixed movement bug
+fix_before_refactoring: { double temp = this . x ; this . x = x ; }
+fix_after_refactoring: { double jfzsmhcrkouvfawbcgtj = this . x ; this . x = x ; }
+√ fix_prediction_before: { double temp = this . x ; this . x = x ; }
+√ fix_prediction_after: { double jfzsmhcrkouvfawbcgtj = this . x ; this . x = x ; }
+
+line_index: 96
+bug_before_refactoring: public void setRadii ( byte radii ) { byte before = this . radii ; this . radii = radii ; if ( before != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> public void setRadii ( byte radii ) { byte before = this . radii ; this . radii = radii ; if ( before != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> - Fix minor sync issues
+bug_after_refactoring: public void setRadii ( byte radii ) { byte rhuakvfgnknohadxzzre = this . radii ; this . radii = radii ; if ( rhuakvfgnknohadxzzre != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> public void setRadii ( byte radii ) { byte rhuakvfgnknohadxzzre = this . radii ; this . radii = radii ; if ( rhuakvfgnknohadxzzre != ( this . radii ) ) { forceChunkLoading ( null ) ; forceChunkLoading ( null ) ; } } <s> - Fix minor sync issues
+fix_before_refactoring: public void setRadii ( byte radii ) { this . radii = radii ; }
+fix_after_refactoring: public void setRadii ( byte radii ) { this . radii = radii ; }
+√ fix_prediction_before: public void setRadii ( byte radii ) { this . radii = radii ; }
+√ fix_prediction_after: public void setRadii ( byte radii ) { this . radii = radii ; }
+
+line_index: 100
+bug_before_refactoring: private int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; } <s> private int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; } <s> Fixed a serious error with the bank and getting the count of dev cards  Accidentally accessed the resources array rather than the real array
+bug_after_refactoring: private int getDevCardCount () { int hiqvqxfmypikptqvbjcv = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { hiqvqxfmypikptqvbjcv += this . devCards [ i ] ; } return hiqvqxfmypikptqvbjcv ; } <s> private int getDevCardCount () { int hiqvqxfmypikptqvbjcv = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { hiqvqxfmypikptqvbjcv += this . devCards [ i ] ; } return hiqvqxfmypikptqvbjcv ; } <s> Fixed a serious error with the bank and getting the count of dev cards  Accidentally accessed the resources array rather than the real array
+fix_before_refactoring: public int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; }
+fix_after_refactoring: public int getDevCardCount () { int hiqvqxfmypikptqvbjcv = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { hiqvqxfmypikptqvbjcv += this . devCards [ i ] ; } return hiqvqxfmypikptqvbjcv ; }
+√ fix_prediction_before: public int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; }
+√ fix_prediction_after: public int getDevCardCount () { int hiqvqxfmypikptqvbjcv = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { hiqvqxfmypikptqvbjcv += this . devCards [ i ] ; } return hiqvqxfmypikptqvbjcv ; }
+
+line_index: 103
+bug_before_refactoring: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + totalPrice ) ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; } <s> public void setTotalPrice ( no.europark.parkingBooking.entity.TimeSpan timeSpan , no.europark.parkingBooking.entity.ParkingPlace parkingPlace ) { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + totalPrice ) ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; } <s> Fixed date issue on payment page
+bug_after_refactoring: { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + nlcqjhamwozkznckyjnz ) ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; } <s> public void setTotalPrice ( no.europark.parkingBooking.entity.TimeSpan timeSpan , no.europark.parkingBooking.entity.ParkingPlace parkingPlace ) { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + nlcqjhamwozkznckyjnz ) ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; } <s> Fixed date issue on payment page
+fix_before_refactoring: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; }
+fix_after_refactoring: { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; }
+√ fix_prediction_before: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; }
+√ fix_prediction_after: { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; }
+
+line_index: 120
+bug_before_refactoring: { int result = ( getWRegister () ) & k ; if ( result == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( result ) ; throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> public void ANDLW ( int k ) { int result = ( getWRegister () ) & k ; if ( result == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( result ) ; throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> fixed bug: setting status register and truncate to n bit
+bug_after_refactoring: { int ltfhjtwpwrptttbuetxm = ( getWRegister () ) & k ; if ( ltfhjtwpwrptttbuetxm == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( ltfhjtwpwrptttbuetxm ) ; throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> public void ANDLW ( int k ) { int ltfhjtwpwrptttbuetxm = ( getWRegister () ) & k ; if ( ltfhjtwpwrptttbuetxm == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( ltfhjtwpwrptttbuetxm ) ; throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> fixed bug: setting status register and truncate to n bit
+fix_before_refactoring: { int result = ( getWRegister () ) & k ; if ( result == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( result ) ; }
+fix_after_refactoring: { int ltfhjtwpwrptttbuetxm = ( getWRegister () ) & k ; if ( ltfhjtwpwrptttbuetxm == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( ltfhjtwpwrptttbuetxm ) ; }
+√ fix_prediction_before: { int result = ( getWRegister () ) & k ; if ( result == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( result ) ; }
+√ fix_prediction_after: { int ltfhjtwpwrptttbuetxm = ( getWRegister () ) & k ; if ( ltfhjtwpwrptttbuetxm == 0 ) { setSTATUSbitZ ( 1 ) ; } setWRegister ( ltfhjtwpwrptttbuetxm ) ; }
+
+line_index: 126
+bug_before_refactoring: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { boolean interrupted = resolveStun () ; if ( ! interrupted ) { fighter . attack ( attack ) ; } } <s> public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { boolean interrupted = resolveStun () ; if ( ! interrupted ) { fighter . attack ( attack ) ; } } <s> fixed interrupt bug
+bug_after_refactoring: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { boolean ludlglojjlhzzwnijods = resolveStun () ; if ( ! ludlglojjlhzzwnijods ) { fighter . attack ( attack ) ; } } <s> public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { boolean ludlglojjlhzzwnijods = resolveStun () ; if ( ! ludlglojjlhzzwnijods ) { fighter . attack ( attack ) ; } } <s> fixed interrupt bug
+fix_before_refactoring: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { fighter . attack ( attack ) ; }
+fix_after_refactoring: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { fighter . attack ( attack ) ; }
+√ fix_prediction_before: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { fighter . attack ( attack ) ; }
+√ fix_prediction_after: public void attack ( kru.codefight.fighter.attacks.AbstractAttack attack ) { fighter . attack ( attack ) ; }
+
+line_index: 137
+bug_before_refactoring: { float progress = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; android.util.Log . e ( "angcyo" , ( "progress-->" + progress ) ) ; updateClipPath ( ( ( clipStartRadius ) + progress ) ) ; } <s> @ java.lang.Override public void onAnimationUpdate ( android.animation.ValueAnimator valueAnimator ) { float progress = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; android.util.Log . e ( "angcyo" , ( "progress-->" + progress ) ) ; updateClipPath ( ( ( clipStartRadius ) + progress ) ) ; } <s> fix bug
+bug_after_refactoring: { float mxqrnnkeulwczbarayqs = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; android.util.Log . e ( "angcyo" , ( "mxqrnnkeulwczbarayqs-->" + mxqrnnkeulwczbarayqs ) ) ; updateClipPath ( ( ( clipStartRadius ) + mxqrnnkeulwczbarayqs ) ) ; } <s> @ java.lang.Override public void onAnimationUpdate ( android.animation.ValueAnimator valueAnimator ) { float mxqrnnkeulwczbarayqs = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; android.util.Log . e ( "angcyo" , ( "mxqrnnkeulwczbarayqs-->" + mxqrnnkeulwczbarayqs ) ) ; updateClipPath ( ( ( clipStartRadius ) + mxqrnnkeulwczbarayqs ) ) ; } <s> fix bug
+fix_before_refactoring: { float progress = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; updateClipPath ( ( ( clipStartRadius ) + progress ) ) ; }
+fix_after_refactoring: { float mxqrnnkeulwczbarayqs = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; updateClipPath ( ( ( clipStartRadius ) + mxqrnnkeulwczbarayqs ) ) ; }
+√ fix_prediction_before: { float progress = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; updateClipPath ( ( ( clipStartRadius ) + progress ) ) ; }
+√ fix_prediction_after: { float mxqrnnkeulwczbarayqs = ( ( float ) ( valueAnimator . getAnimatedValue () ) ) ; updateClipPath ( ( ( clipStartRadius ) + mxqrnnkeulwczbarayqs ) ) ; }
+
+line_index: 147
+bug_before_refactoring: { int i = categoryList . getSelectedIndex () ; categoryList . clearSelection () ; catArr . get ( i ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; } <s> @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) { int i = categoryList . getSelectedIndex () ; categoryList . clearSelection () ; catArr . get ( i ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; } <s> fixat väldigt många buggar
+bug_after_refactoring: { int mibhmpcimjucwhlrpeng = categoryList . getSelectedIndex () ; categoryList . clearSelection () ; catArr . get ( mibhmpcimjucwhlrpeng ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; } <s> @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) { int mibhmpcimjucwhlrpeng = categoryList . getSelectedIndex () ; categoryList . clearSelection () ; catArr . get ( mibhmpcimjucwhlrpeng ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; } <s> fixat väldigt många buggar
+fix_before_refactoring: { int i = categoryList . getSelectedIndex () ; catArr . get ( i ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; }
+fix_after_refactoring: { int mibhmpcimjucwhlrpeng = categoryList . getSelectedIndex () ; catArr . get ( mibhmpcimjucwhlrpeng ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; }
+√ fix_prediction_before: { int i = categoryList . getSelectedIndex () ; catArr . get ( i ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; }
+√ fix_prediction_after: { int mibhmpcimjucwhlrpeng = categoryList . getSelectedIndex () ; catArr . get ( mibhmpcimjucwhlrpeng ) . setVisible ( false ) ; validate () ; repaint () ; change = true ; }
+
+line_index: 148
+bug_before_refactoring: { boolean isUserGroupKey = false ; if ( ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ) { isUserGroupKey = true ; } return isUserGroupKey ; } <s> private boolean ifUserGroupKey ( com.deloitte.smt.dto.SearchDto searchDto ) { boolean isUserGroupKey = false ; if ( ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ) { isUserGroupKey = true ; } return isUserGroupKey ; } <s> Modified the file for sonar fix on major issues
+bug_after_refactoring: { boolean fcptfssgcjdduxshfcaj = false ; if ( ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ) { fcptfssgcjdduxshfcaj = true ; } return fcptfssgcjdduxshfcaj ; } <s> private boolean ifUserGroupKey ( com.deloitte.smt.dto.SearchDto searchDto ) { boolean fcptfssgcjdduxshfcaj = false ; if ( ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ) { fcptfssgcjdduxshfcaj = true ; } return fcptfssgcjdduxshfcaj ; } <s> Modified the file for sonar fix on major issues
+fix_before_refactoring: { return ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ; }
+fix_after_refactoring: { return ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ; }
+√ fix_prediction_before: { return ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ; }
+√ fix_prediction_after: { return ! ( org.springframework.util.CollectionUtils . isEmpty ( searchDto . getUserGroupKeys () ) ) ; }
+
+line_index: 156
+bug_before_refactoring: org.junit.Assert . assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( documentId ) ) <s> @ org.junit.Test public void buildServiceUrl () { int documentId = 17 ; java.lang.String expected = ( at.fhj.swd13.pse.test.service.DocumentServiceIT.serviceUrl ) + ( java.lang.Integer . toString ( documentId ) ) ; org.junit.Assert . assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( documentId ) ) ; } <s> Bugfix Document Service Tests
+bug_after_refactoring: org.junit.Assert . assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( gwwzyxlwwuzjuhubyfqa ) ) <s> @ org.junit.Test public void buildServiceUrl () { int documentId = 17 ; java.lang.String expected = ( at.fhj.swd13.pse.test.service.DocumentServiceIT.serviceUrl ) + ( java.lang.Integer . toString ( documentId ) ) ; org.junit.Assert . assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( gwwzyxlwwuzjuhubyfqa ) ) ; } <s> Bugfix Document Service Tests
+fix_before_refactoring: assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( documentId ) )
+fix_after_refactoring: assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( gwwzyxlwwuzjuhubyfqa ) )
+√ fix_prediction_before: assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( documentId ) )
+√ fix_prediction_after: assertEquals ( expected , at.fhj.swd13.pse.test.service.DocumentServiceIT.documentService . buildServiceUrl ( gwwzyxlwwuzjuhubyfqa ) )
+
+line_index: 171
+bug_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+bug_after_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean hvjwsvvbytnwftikrjcw = true ; while ( hvjwsvvbytnwftikrjcw ) { try { thread . join () ; hvjwsvvbytnwftikrjcw = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean hvjwsvvbytnwftikrjcw = true ; while ( hvjwsvvbytnwftikrjcw ) { try { thread . join () ; hvjwsvvbytnwftikrjcw = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+fix_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+fix_after_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+√ fix_prediction_before: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+√ fix_prediction_after: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+
+line_index: 174
+bug_before_refactoring: org.junit.Assert . assertTrue ( listEmptyOrBetweenNumberOfItems ) <s> @ org.junit.Test public void testIsListEmptyOrBetweenNumberOfItemsWhenListSizeIs1AndShouldBeBetween1And1 ( ) throws java.lang.Exception { java.util.List < java.lang.String > list = java.util.Arrays . asList ( "" ) ; boolean listEmptyOrBetweenNumberOfItems = fact . isListEmptyOrBetweenNumberOfItems ( list , 1 , 1 ) ; org.junit.Assert . assertTrue ( listEmptyOrBetweenNumberOfItems ) ; } <s> Merge pull request #130 from UnionVMS/bugfix/UNIONVMS-3042  Bugfix/unionvms 3042
+bug_after_refactoring: org.junit.Assert . assertTrue ( akmwsnvecqffnpbthmzr ) <s> @ org.junit.Test public void testIsListEmptyOrBetweenNumberOfItemsWhenListSizeIs1AndShouldBeBetween1And1 ( ) throws java.lang.Exception { java.util.List < java.lang.String > list = java.util.Arrays . asList ( "" ) ; boolean listEmptyOrBetweenNumberOfItems = fact . isListEmptyOrBetweenNumberOfItems ( list , 1 , 1 ) ; org.junit.Assert . assertTrue ( akmwsnvecqffnpbthmzr ) ; } <s> Merge pull request #130 from UnionVMS/bugfix/UNIONVMS-3042  Bugfix/unionvms 3042
+fix_before_refactoring: assertTrue ( listEmptyOrBetweenNumberOfItems )
+fix_after_refactoring: assertTrue ( akmwsnvecqffnpbthmzr )
+√ fix_prediction_before: assertTrue ( listEmptyOrBetweenNumberOfItems )
+√ fix_prediction_after: assertTrue ( akmwsnvecqffnpbthmzr )
+
+line_index: 176
+bug_before_refactoring: float m = x ; <s> Vector2D left () { float m = x ; x = - ( y ) ; y = m ; return this ; } <s> compiler errors fixed  now have superfun array out of bounds runtime errorsgit add --all
+bug_after_refactoring: float juvsbsrnnnedrauetqzm = x ; <s> Vector2D left () { float juvsbsrnnnedrauetqzm = x ; x = - ( y ) ; y = m ; return this ; } <s> compiler errors fixed  now have superfun array out of bounds runtime errorsgit add --all
+fix_before_refactoring: double m = x ;
+fix_after_refactoring: double juvsbsrnnnedrauetqzm = x ;
+√ fix_prediction_before: double m = x ;
+√ fix_prediction_after: double juvsbsrnnnedrauetqzm = x ;
+
+line_index: 192
+bug_before_refactoring: numTransitionActions = numTransitionActions = mActions . get ( direction ) . getLeft () <s> public int numTransitionActionsTaken ( java.lang.String direction ) { int numTransitionActions = numTransitionActions = mActions . get ( direction ) . getLeft () ; return numTransitionActions ; } <s> Bug fix
+bug_after_refactoring: qfkillliesaiwshomnoz = qfkillliesaiwshomnoz = mActions . get ( direction ) . getLeft () <s> public int numTransitionActionsTaken ( java.lang.String direction ) { int qfkillliesaiwshomnoz = qfkillliesaiwshomnoz = mActions . get ( direction ) . getLeft () ; return numTransitionActions ; } <s> Bug fix
+fix_before_refactoring: numTransitionActions = mActions . get ( direction ) . getLeft ()
+fix_after_refactoring: qfkillliesaiwshomnoz = mActions . get ( direction ) . getLeft ()
+√ fix_prediction_before: numTransitionActions = mActions . get ( direction ) . getLeft ()
+√ fix_prediction_after: qfkillliesaiwshomnoz = mActions . get ( direction ) . getLeft ()
+
+line_index: 198
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+bug_after_refactoring: public static void main ( java.lang.String [] args ) { long jccgguhfirnlwkrtkmaj = 0 ; jccgguhfirnlwkrtkmaj = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( jccgguhfirnlwkrtkmaj * 11 ) ) ; } <s> public static void main ( java.lang.String [] args ) { long jccgguhfirnlwkrtkmaj = 0 ; jccgguhfirnlwkrtkmaj = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( jccgguhfirnlwkrtkmaj * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void main ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+√ fix_prediction_after: public static void main ( java.lang.String [] args ) {}
+

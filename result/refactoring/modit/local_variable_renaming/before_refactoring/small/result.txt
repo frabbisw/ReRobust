@@ -1,0 +1,4 @@
+Evaluation
+Accuracy: 22.69 , BLEU: 68.59
+CodeBLEU: 68.82
+ngram_match_score: 68.82 , weighted_ngram_match_score: 70.69 , syntax_match_score: 71.06 , dataflow_match_score: 64.98

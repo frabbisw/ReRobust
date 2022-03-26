@@ -1,0 +1,152 @@
+line_index: 158
+bug_before_refactoring: @ java.lang.Override public void onItemClick ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { if ( team2beat.com.qrcodes.RegisterView.isLive ) { confirmAdd ( position ) ; } } <s> @ java.lang.Override public void onItemClick ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { if ( team2beat.com.qrcodes.RegisterView.isLive ) { confirmAdd ( position ) ; } } <s> Fixed the timer display  sorted a few small bugs. Re-enabled adding students to old lists
+bug_after_refactoring: @ java.lang.Override public void sbpzdmeokulwtngyqhhc ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { if ( team2beat.com.qrcodes.RegisterView.isLive ) { confirmAdd ( position ) ; } } <s> @ java.lang.Override public void sbpzdmeokulwtngyqhhc ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { if ( team2beat.com.qrcodes.RegisterView.isLive ) { confirmAdd ( position ) ; } } <s> Fixed the timer display  sorted a few small bugs. Re-enabled adding students to old lists
+fix_before_refactoring: @ java.lang.Override public void onItemClick ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { confirmAdd ( position ) ; }
+fix_after_refactoring: @ java.lang.Override public void sbpzdmeokulwtngyqhhc ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { confirmAdd ( position ) ; }
+× fix_prediction_before: @ java.lang.Override public void onItemClick ( android.widget.AdapterView < ? > parent , android.view.View view , int position ) { confirmAdd ( position ) ; }
+√ fix_prediction_after: @ java.lang.Override public void sbpzdmeokulwtngyqhhc ( android.widget.AdapterView < ? > parent , android.view.View view , int position , long id ) { confirmAdd ( position ) ; }
+
+line_index: 162
+bug_before_refactoring: @ java.lang.Override public boolean onPreferenceClick ( android.preference.Preference preference ) { android.widget.Toast . makeText ( context , ( "you clicl on" + prefName ) , Toast.LENGTH_SHORT ) . show () ; return false ; } <s> @ java.lang.Override public boolean onPreferenceClick ( android.preference.Preference preference ) { android.widget.Toast . makeText ( context , ( "you clicl on" + prefName ) , Toast.LENGTH_SHORT ) . show () ; return false ; } <s> fix some bug addPaypal Qrcode gen
+bug_after_refactoring: @ java.lang.Override public boolean nxstjjggpgxozlwihlhl ( android.preference.Preference preference ) { android.widget.Toast . makeText ( context , ( "you clicl on" + prefName ) , Toast.LENGTH_SHORT ) . show () ; return false ; } <s> @ java.lang.Override public boolean nxstjjggpgxozlwihlhl ( android.preference.Preference preference ) { android.widget.Toast . makeText ( context , ( "you clicl on" + prefName ) , Toast.LENGTH_SHORT ) . show () ; return false ; } <s> fix some bug addPaypal Qrcode gen
+fix_before_refactoring: @ java.lang.Override public boolean onPreferenceClick ( android.preference.Preference preference ) { return false ; }
+fix_after_refactoring: @ java.lang.Override public boolean nxstjjggpgxozlwihlhl ( android.preference.Preference preference ) { return false ; }
+× fix_prediction_before: @ java.lang.Override public boolean onPreference ( android.preference.Preference preference ) { android.widget.Toast . makeText ( context , ( "you clicl on" + prefName ) , Toast.LENGTH_SHORT ) . show () ; return false ; }
+√ fix_prediction_after: @ java.lang.Override public boolean nxstjjggpgxozlwihlhl ( android.preference.Preference preference ) { return false ; }
+
+line_index: 180
+bug_before_refactoring: @ java.lang.Override public void run () { enterBarcode . requestFocus () ; android.view.inputmethod.InputMethodManager inputMethodManager = ( ( android.view.inputmethod.InputMethodManager ) ( getSystemService ( Context.INPUT_METHOD_SERVICE ) ) ) ; inputMethodManager . showSoftInput ( enterBarcode , InputMethodManager.SHOW_IMPLICIT ) ; } <s> @ java.lang.Override public void run () { enterBarcode . requestFocus () ; android.view.inputmethod.InputMethodManager inputMethodManager = ( ( android.view.inputmethod.InputMethodManager ) ( getSystemService ( Context.INPUT_METHOD_SERVICE ) ) ) ; inputMethodManager . showSoftInput ( enterBarcode , InputMethodManager.SHOW_IMPLICIT ) ; } <s> - Added Exporting functionality. - Improved button UI. - Bug fixed in scanning automatically.
+bug_after_refactoring: @ java.lang.Override public void kzefaghtldtymbheykia () { enterBarcode . requestFocus () ; android.view.inputmethod.InputMethodManager inputMethodManager = ( ( android.view.inputmethod.InputMethodManager ) ( getSystemService ( Context.INPUT_METHOD_SERVICE ) ) ) ; inputMethodManager . showSoftInput ( enterBarcode , InputMethodManager.SHOW_IMPLICIT ) ; } <s> @ java.lang.Override public void kzefaghtldtymbheykia () { enterBarcode . requestFocus () ; android.view.inputmethod.InputMethodManager inputMethodManager = ( ( android.view.inputmethod.InputMethodManager ) ( getSystemService ( Context.INPUT_METHOD_SERVICE ) ) ) ; inputMethodManager . showSoftInput ( enterBarcode , InputMethodManager.SHOW_IMPLICIT ) ; } <s> - Added Exporting functionality. - Improved button UI. - Bug fixed in scanning automatically.
+fix_before_refactoring: @ java.lang.Override public void run () { enterBarcode . requestFocus () ; }
+fix_after_refactoring: @ java.lang.Override public void kzefaghtldtymbheykia () { enterBarcode . requestFocus () ; }
+× fix_prediction_before: @ java.lang.Override public void run () { ( ( android.view.inputmethod.InputMethodManager ) ( getSystemService ( Context.INPUT_METHOD_SERVICE ) ) ) ; inputMethodManager . showSoftInput ( enterBarcode , InputMethodManager.SHOW_IMPLICIT ) ; }
+√ fix_prediction_after: @ java.lang.Override public void kzefaghtldtymbheykia () { enterBarcode . requestFocus () ; }
+
+line_index: 225
+bug_before_refactoring: public void enableChat ( boolean enable ) { this . enableChat = enable ; writeConfig () ; } <s> public void enableChat ( boolean enable ) { this . enableChat = enable ; writeConfig () ; } <s> Fix issue #2 and #4
+bug_after_refactoring: public void sdhifdluusjarvelztor ( boolean enable ) { this . sdhifdluusjarvelztor = enable ; writeConfig () ; } <s> public void sdhifdluusjarvelztor ( boolean enable ) { this . sdhifdluusjarvelztor = enable ; writeConfig () ; } <s> Fix issue #2 and #4
+fix_before_refactoring: private void enableChat ( boolean enable ) { this . enableChat = enable ; writeConfig () ; }
+fix_after_refactoring: private void sdhifdluusjarvelztor ( boolean enable ) { this . sdhifdluusjarvelztor = enable ; writeConfig () ; }
+× fix_prediction_before: private void enableChat ( boolean enable ) { this . enableChat = enable ; }
+√ fix_prediction_after: private void sdhifdluusjarvelztor ( boolean enable ) { this . sdhifdluusjarvelztor = enable ; writeConfig () ; }
+
+line_index: 657
+bug_before_refactoring: @ java.lang.Override protected void buildShape () { throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> @ java.lang.Override protected void buildShape () { throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> Fixed a bug in rigidbody after refactoring collider code
+bug_after_refactoring: @ java.lang.Override protected void rkjqhpdzkrdzyaenpele () { throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> @ java.lang.Override protected void rkjqhpdzkrdzyaenpele () { throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; } <s> Fixed a bug in rigidbody after refactoring collider code
+fix_before_refactoring: @ java.lang.Override protected void buildShape () {}
+fix_after_refactoring: @ java.lang.Override protected void rkjqhpdzkrdzyaenpele () {}
+× fix_prediction_before: @ java.lang.Override protected void buildShape () { throw new java.lang.UnsupportedOperationException ( "Not supported yet." ) ; }
+√ fix_prediction_after: @ java.lang.Override protected void rkjqhpdzkrdzyaenpele () {}
+
+line_index: 729
+bug_before_refactoring: @ java.lang.Override public void destroy () { destroyContentStoreContext ( context ) ; org.craftercms.deployer.impl.processors.SearchIndexingProcessor.logger . debug ( "Content store context destroyed: {}" , context ) ; } <s> @ java.lang.Override public void destroy () { destroyContentStoreContext ( context ) ; org.craftercms.deployer.impl.processors.SearchIndexingProcessor.logger . debug ( "Content store context destroyed: {}" , context ) ; } <s> Bug fixes:  * Moved Context creation back into the process method. When it was done on startup it failed because the site repo didn't exist yet. * The processed commit of a target is now deleted on target deletion.
+bug_after_refactoring: @ java.lang.Override public void gynqiofoxkhshpfdozhs () { gynqiofoxkhshpfdozhsContentStoreContext ( context ) ; org.craftercms.deployer.impl.processors.SearchIndexingProcessor.logger . debug ( "Content store context gynqiofoxkhshpfdozhsed: {}" , context ) ; } <s> @ java.lang.Override public void gynqiofoxkhshpfdozhs () { gynqiofoxkhshpfdozhsContentStoreContext ( context ) ; org.craftercms.deployer.impl.processors.SearchIndexingProcessor.logger . debug ( "Content store context gynqiofoxkhshpfdozhsed: {}" , context ) ; } <s> Bug fixes:  * Moved Context creation back into the process method. When it was done on startup it failed because the site repo didn't exist yet. * The processed commit of a target is now deleted on target deletion.
+fix_before_refactoring: @ java.lang.Override public void destroy () {}
+fix_after_refactoring: @ java.lang.Override public void gynqiofoxkhshpfdozhs () {}
+× fix_prediction_before: @ java.lang.Override public void destroy () { destroyContentStoreContext ( context ) ; }
+√ fix_prediction_after: @ java.lang.Override public void gynqiofoxkhshpfdozhs () {}
+
+line_index: 787
+bug_before_refactoring: public void Pause () { android.util.Log . d ( "SOUND" , "PAUSE" ) ; isRecording = false ; } <s> public void Pause () { android.util.Log . d ( "SOUND" , "PAUSE" ) ; isRecording = false ; } <s> Fixed crash bugs
+bug_after_refactoring: public void qzzklfxetrjallyishyg () { android.util.Log . d ( "SOUND" , "PAUSE" ) ; isRecording = false ; } <s> public void qzzklfxetrjallyishyg () { android.util.Log . d ( "SOUND" , "PAUSE" ) ; isRecording = false ; } <s> Fixed crash bugs
+fix_before_refactoring: public void Pause () { isRecording = false ; }
+fix_after_refactoring: public void qzzklfxetrjallyishyg () { isRecording = false ; }
+× fix_prediction_before: public void Pause () { android.util.Log . d ( "SOUND" , "PAUSE" ) ; isRecording = false ; }
+√ fix_prediction_after: public void qzzklfxetrjallyishyg () { isRecording = false ; }
+
+line_index: 1006
+bug_before_refactoring: private void wallops ( com.adam4.irc.ParsedMessage parsed ) { com.adam4.spacenet.SpaceNetServer . wallops ( userName , parsed.trailing ) ; } <s> private void wallops ( com.adam4.irc.ParsedMessage parsed ) { com.adam4.spacenet.SpaceNetServer . wallops ( userName , parsed.trailing ) ; } <s> fixed compile issue from SpaceNet removal
+bug_after_refactoring: private void yekaoooqgovemyjfmdyv ( com.adam4.irc.ParsedMessage parsed ) { com.adam4.spacenet.SpaceNetServer . yekaoooqgovemyjfmdyv ( userName , parsed.trailing ) ; } <s> private void yekaoooqgovemyjfmdyv ( com.adam4.irc.ParsedMessage parsed ) { com.adam4.spacenet.SpaceNetServer . yekaoooqgovemyjfmdyv ( userName , parsed.trailing ) ; } <s> fixed compile issue from SpaceNet removal
+fix_before_refactoring: private void wallops ( com.adam4.irc.ParsedMessage parsed ) {}
+fix_after_refactoring: private void yekaoooqgovemyjfmdyv ( com.adam4.irc.ParsedMessage parsed ) {}
+× fix_prediction_before: private void userlops ( com.adam4.irc.ParsedMessage parsed ) { com.adam4.spacenet.SpaceNetServer . setEnabledlops ( userName , parsed. , ) ; }
+√ fix_prediction_after: private void yekaoooqgovemyjfmdyv ( com.adam4.irc.ParsedMessage parsed ) {}
+
+line_index: 1102
+bug_before_refactoring: public void setUsername ( java.lang.String username ) { if ( ( max_Char ( username , 20 ) ) && ( ( username . length () ) >= 1 ) ) { this . username = username ; } else { throw new java.lang.IllegalArgumentException () ; } } <s> public void setUsername ( java.lang.String username ) { if ( ( max_Char ( username , 20 ) ) && ( ( username . length () ) >= 1 ) ) { this . username = username ; } else { throw new java.lang.IllegalArgumentException () ; } } <s> bugfixed - userREST
+bug_after_refactoring: public void diqgdxpnhgsxmxdhykit ( java.lang.String username ) { if ( ( max_Char ( username , 20 ) ) && ( ( username . length () ) >= 1 ) ) { this . username = username ; } else { throw new java.lang.IllegalArgumentException () ; } } <s> public void diqgdxpnhgsxmxdhykit ( java.lang.String username ) { if ( ( max_Char ( username , 20 ) ) && ( ( username . length () ) >= 1 ) ) { this . username = username ; } else { throw new java.lang.IllegalArgumentException () ; } } <s> bugfixed - userREST
+fix_before_refactoring: public void setUsername ( java.lang.String username ) { this . username = username ; }
+fix_after_refactoring: public void diqgdxpnhgsxmxdhykit ( java.lang.String username ) { this . username = username ; }
+× fix_prediction_before: public void setUsername ( java.lang.String username ) { if ( ( max_Char ( username , 20 ) ) && ( ( username . length () ) >= 1 ) ) { this . username = username ; } else { throw new java.lang.IllegalArgumentException () ; } }
+√ fix_prediction_after: public void diqgdxpnhgsxmxdhykit ( java.lang.String username ) { this . username = username ; }
+
+line_index: 1233
+bug_before_refactoring: public void showPopupWindow () { displayPopupWindow () ; java.lang.System.out . println ( ( "showing: " + ( popupWindow . isShowing () ) ) ) ; setListView () ; } <s> public void showPopupWindow () { displayPopupWindow () ; java.lang.System.out . println ( ( "showing: " + ( popupWindow . isShowing () ) ) ) ; setListView () ; } <s> added new method in exerciseTable manager tofix bug in viewExercisesPopup
+bug_after_refactoring: public void kkibsqmgfdfqbrrbnmsd () { displayPopupWindow () ; java.lang.System.out . println ( ( "showing: " + ( popupWindow . isShowing () ) ) ) ; setListView () ; } <s> public void kkibsqmgfdfqbrrbnmsd () { displayPopupWindow () ; java.lang.System.out . println ( ( "showing: " + ( popupWindow . isShowing () ) ) ) ; setListView () ; } <s> added new method in exerciseTable manager tofix bug in viewExercisesPopup
+fix_before_refactoring: public void showPopupWindow () { displayPopupWindow () ; setListView () ; }
+fix_after_refactoring: public void kkibsqmgfdfqbrrbnmsd () { displayPopupWindow () ; setListView () ; }
+× fix_prediction_before: public void showPopupWindow () { displayPopupWindow () ; }
+√ fix_prediction_after: public void kkibsqmgfdfqbrrbnmsd () { displayPopupWindow () ; setListView () ; }
+
+line_index: 1279
+bug_before_refactoring: public void tick () { ( tickCount ) ++ ; for ( int i = 0 ; i < ( pixels.length ) ; i ++ ) { pixels [ i ] = i + ( tickCount ) ; } } <s> public void tick () { ( tickCount ) ++ ; for ( int i = 0 ; i < ( pixels.length ) ; i ++ ) { pixels [ i ] = i + ( tickCount ) ; } } <s> Created Screen  -Created Screen (So background is visible) -Fixed Variable Naming (Height was spelled Heigth) -Cleaned up some debug code
+bug_after_refactoring: public void zryxgggyzwypqulmnoqu () { ( zryxgggyzwypqulmnoquCount ) ++ ; for ( int i = 0 ; i < ( pixels.length ) ; i ++ ) { pixels [ i ] = i + ( zryxgggyzwypqulmnoquCount ) ; } } <s> public void zryxgggyzwypqulmnoqu () { ( zryxgggyzwypqulmnoquCount ) ++ ; for ( int i = 0 ; i < ( pixels.length ) ; i ++ ) { pixels [ i ] = i + ( zryxgggyzwypqulmnoquCount ) ; } } <s> Created Screen  -Created Screen (So background is visible) -Fixed Variable Naming (Height was spelled Heigth) -Cleaned up some debug code
+fix_before_refactoring: public void tick () { ( tickCount ) ++ ; }
+fix_after_refactoring: public void zryxgggyzwypqulmnoqu () { ( zryxgggyzwypqulmnoquCount ) ++ ; }
+× fix_prediction_before: public void tick () { tickCount = i + ( tickCount ) ; }
+√ fix_prediction_after: public void zryxgggyzwypqulmnoqu () { ( zryxgggyzwypqulmnoquCount ) ++ ; }
+
+line_index: 1629
+bug_before_refactoring: @ java.lang.Override public void deregister ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) { this . dataListenings . remove ( observer ) ; if ( this . dataListenings . isEmpty () ) { this . contactsDataManager . deleteObserver ( this ) ; } } <s> @ java.lang.Override public void deregister ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) { this . dataListenings . remove ( observer ) ; if ( this . dataListenings . isEmpty () ) { this . contactsDataManager . deleteObserver ( this ) ; } } <s> bugfix for build  removed inject annotation and inject method
+bug_after_refactoring: @ java.lang.Override public void qlsleupvsltwwgnyeooi ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) { this . dataListenings . remove ( observer ) ; if ( this . dataListenings . isEmpty () ) { this . contactsDataManager . deleteObserver ( this ) ; } } <s> @ java.lang.Override public void qlsleupvsltwwgnyeooi ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) { this . dataListenings . remove ( observer ) ; if ( this . dataListenings . isEmpty () ) { this . contactsDataManager . deleteObserver ( this ) ; } } <s> bugfix for build  removed inject annotation and inject method
+fix_before_refactoring: @ java.lang.Override public void deregister ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) {}
+fix_after_refactoring: @ java.lang.Override public void qlsleupvsltwwgnyeooi ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) {}
+× fix_prediction_before: @ java.lang.Override public void d [ ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) {}
+√ fix_prediction_after: @ java.lang.Override public void qlsleupvsltwwgnyeooi ( de.fau.amos.virtualledger.android.views.shared.transactionList.DataListening observer ) {}
+
+line_index: 1650
+bug_before_refactoring: private int getPosition ( int position ) { if ( position > 4 ) { return position - ( ( int ) ( java.lang.Math . ceil ( ( position / 4 ) ) ) ) ; } else { return position ; } } <s> private int getPosition ( int position ) { if ( position > 4 ) { return position - ( ( int ) ( java.lang.Math . ceil ( ( position / 4 ) ) ) ) ; } else { return position ; } } <s> 1.1.1  release  changes Bug Fixes
+bug_after_refactoring: private int sgcpxwduoypnwxnrecdf ( int position ) { if ( position > 4 ) { return position - ( ( int ) ( java.lang.Math . ceil ( ( position / 4 ) ) ) ) ; } else { return position ; } } <s> private int sgcpxwduoypnwxnrecdf ( int position ) { if ( position > 4 ) { return position - ( ( int ) ( java.lang.Math . ceil ( ( position / 4 ) ) ) ) ; } else { return position ; } } <s> 1.1.1  release  changes Bug Fixes
+fix_before_refactoring: private int getPosition ( int position ) { return position ; }
+fix_after_refactoring: private int sgcpxwduoypnwxnrecdf ( int position ) { return position ; }
+× fix_prediction_before: private int getPosition ( int position ) { if ( position > 4 ) { return position - ( ( int ) ( java.lang.Math . round ( ( position / 4 ) ) ) ) ; } else { return position ; } }
+√ fix_prediction_after: private int sgcpxwduoypnwxnrecdf ( int position ) { return position ; }
+
+line_index: 1714
+bug_before_refactoring: @ java.lang.Override protected void onDestroy () { android.util.Log . w ( com.example.dudgns0507.learndoin.Activity.activity.MainActivity.TAG , "Destroy background" ) ; recycleView ( R.id.list_top ) ; super . onDestroy () ; } <s> @ java.lang.Override protected void onDestroy () { android.util.Log . w ( com.example.dudgns0507.learndoin.Activity.activity.MainActivity.TAG , "Destroy background" ) ; recycleView ( R.id.list_top ) ; super . onDestroy () ; } <s> Add glide & Fix bitmap recycle issue  - Add glide library in dependencies - Fix recycled bitmap issue with glide
+bug_after_refactoring: @ java.lang.Override protected void aocwvuczgvqgerjyonzm () { android.util.Log . w ( com.example.dudgns0507.learndoin.Activity.activity.MainActivity.TAG , "Destroy background" ) ; recycleView ( R.id.list_top ) ; super . aocwvuczgvqgerjyonzm () ; } <s> @ java.lang.Override protected void aocwvuczgvqgerjyonzm () { android.util.Log . w ( com.example.dudgns0507.learndoin.Activity.activity.MainActivity.TAG , "Destroy background" ) ; recycleView ( R.id.list_top ) ; super . aocwvuczgvqgerjyonzm () ; } <s> Add glide & Fix bitmap recycle issue  - Add glide library in dependencies - Fix recycled bitmap issue with glide
+fix_before_refactoring: @ java.lang.Override protected void onDestroy () { super . onDestroy () ; }
+fix_after_refactoring: @ java.lang.Override protected void aocwvuczgvqgerjyonzm () { super . aocwvuczgvqgerjyonzm () ; }
+× fix_prediction_before: @ java.lang.Override protected void onDestroy () { android.util.Log . w ( com.example.dudgns0507.learndoin.Activity.activity.MainActivity.TAG , "Destroy background" ) ; }
+√ fix_prediction_after: @ java.lang.Override protected void aocwvuczgvqgerjyonzm () { super . aocwvuczgvqgerjyonzm () ; }
+
+line_index: 1715
+bug_before_refactoring: public void tick () { for ( int i = 0 ; i < 1000 ; i ++ ) isYellow = ! ( isYellow ) ; } <s> public void tick () { for ( int i = 0 ; i < 1000 ; i ++ ) isYellow = ! ( isYellow ) ; } <s> More bug fixes.  Fixed bugs regarding spawning and T1Kill.
+bug_after_refactoring: public void dqspjcrfgzearwvlwsnu () { for ( int i = 0 ; i < 1000 ; i ++ ) isYellow = ! ( isYellow ) ; } <s> public void dqspjcrfgzearwvlwsnu () { for ( int i = 0 ; i < 1000 ; i ++ ) isYellow = ! ( isYellow ) ; } <s> More bug fixes.  Fixed bugs regarding spawning and T1Kill.
+fix_before_refactoring: public void tick () {}
+fix_after_refactoring: public void dqspjcrfgzearwvlwsnu () {}
+× fix_prediction_before: public void tick () { for ( int i = 0 ; i < 1000 ; i ++ ) isYu = ! ( isYu ) ; }
+√ fix_prediction_after: public void dqspjcrfgzearwvlwsnu () {}
+
+line_index: 1801
+bug_before_refactoring: public static final native void OT_API_processNymbox ( java.lang.String jarg1 , java.lang.String jarg2 , java.lang.String jarg3 ) ; <s> public static final native void OT_API_processNymbox ( java.lang.String jarg1 , java.lang.String jarg2 , java.lang.String jarg3 ) ; <s> Fixed network problems! (Grab Moneychanger too.)  Signed-off-by: FellowTraveler <F3llowTraveler@gmail.com>
+bug_after_refactoring: public static final native void rdprmvowpykodfvoymwe ( java.lang.String jarg1 , java.lang.String jarg2 , java.lang.String jarg3 ) ; <s> public static final native void rdprmvowpykodfvoymwe ( java.lang.String jarg1 , java.lang.String jarg2 , java.lang.String jarg3 ) ; <s> Fixed network problems! (Grab Moneychanger too.)  Signed-off-by: FellowTraveler <F3llowTraveler@gmail.com>
+fix_before_refactoring: public static final native void OT_API_processNymbox ( java.lang.String jarg1 , java.lang.String jarg2 ) ;
+fix_after_refactoring: public static final native void rdprmvowpykodfvoymwe ( java.lang.String jarg1 , java.lang.String jarg2 ) ;
+× fix_prediction_before: public static final native void OT_API_processNymbox ( java.lang.String jarg1 , java.lang.String jarg2 , java.lang.String jarg3 ) ;
+√ fix_prediction_after: public static final native void rdprmvowpykodfvoymwe ( java.lang.String jarg1 , java.lang.String jarg2 ) ;
+
+line_index: 1938
+bug_before_refactoring: @ java.lang.Override public void preInit () { MinecraftForge.EVENT_BUS . register ( this ) ; EnderCompassMod.ENDER_COMPASS . addPropertyOverride ( new net.minecraft.util.ResourceLocation ( "angle" ) , new io.github.mribby.endercompass.client.EnderCompassAngleGetter () ) ; net.minecraftforge.client.model.ModelLoader . setCustomModelResourceLocation ( EnderCompassMod.ENDER_COMPASS , 0 , new net.minecraft.client.renderer.block.model.ModelResourceLocation ( "endercompass:ender_compass" , "inventory" ) ) ; } <s> @ java.lang.Override public void preInit () { MinecraftForge.EVENT_BUS . register ( this ) ; EnderCompassMod.ENDER_COMPASS . addPropertyOverride ( new net.minecraft.util.ResourceLocation ( "angle" ) , new io.github.mribby.endercompass.client.EnderCompassAngleGetter () ) ; net.minecraftforge.client.model.ModelLoader . setCustomModelResourceLocation ( EnderCompassMod.ENDER_COMPASS , 0 , new net.minecraft.client.renderer.block.model.ModelResourceLocation ( "endercompass:ender_compass" , "inventory" ) ) ; } <s> Move model registry to the appropriate event  - Fixes various issues and conflicts caused with others mods
+bug_after_refactoring: @ java.lang.Override public void mluddbjbjfxaotuvnndh () { MinecraftForge.EVENT_BUS . register ( this ) ; EnderCompassMod.ENDER_COMPASS . addPropertyOverride ( new net.minecraft.util.ResourceLocation ( "angle" ) , new io.github.mribby.endercompass.client.EnderCompassAngleGetter () ) ; net.minecraftforge.client.model.ModelLoader . setCustomModelResourceLocation ( EnderCompassMod.ENDER_COMPASS , 0 , new net.minecraft.client.renderer.block.model.ModelResourceLocation ( "endercompass:ender_compass" , "inventory" ) ) ; } <s> @ java.lang.Override public void mluddbjbjfxaotuvnndh () { MinecraftForge.EVENT_BUS . register ( this ) ; EnderCompassMod.ENDER_COMPASS . addPropertyOverride ( new net.minecraft.util.ResourceLocation ( "angle" ) , new io.github.mribby.endercompass.client.EnderCompassAngleGetter () ) ; net.minecraftforge.client.model.ModelLoader . setCustomModelResourceLocation ( EnderCompassMod.ENDER_COMPASS , 0 , new net.minecraft.client.renderer.block.model.ModelResourceLocation ( "endercompass:ender_compass" , "inventory" ) ) ; } <s> Move model registry to the appropriate event  - Fixes various issues and conflicts caused with others mods
+fix_before_refactoring: @ java.lang.Override public void preInit () { MinecraftForge.EVENT_BUS . register ( this ) ; }
+fix_after_refactoring: @ java.lang.Override public void mluddbjbjfxaotuvnndh () { MinecraftForge.EVENT_BUS . register ( this ) ; }
+× fix_prediction_before: @ java.lang.Override public void preInit () {}
+√ fix_prediction_after: @ java.lang.Override public void mluddbjbjfxaotuvnndh () { MinecraftForge.EVENT_BUS . register ( this ) ; }
+
+line_index: 2052
+bug_before_refactoring: @ java.lang.Override protected void execute () { if ( ! ( limitBottom . get () ) ) { Robot.lift . Lower () ; } else { Robot.lift . Stop () ; } finished = true ; } <s> @ java.lang.Override protected void execute () { if ( ! ( limitBottom . get () ) ) { Robot.lift . Lower () ; } else { Robot.lift . Stop () ; } finished = true ; } <s> Found the problems  started work   will fix by mtg tomorrow
+bug_after_refactoring: @ java.lang.Override protected void trvydoqkibpuqwthxelg () { if ( ! ( limitBottom . get () ) ) { Robot.lift . Lower () ; } else { Robot.lift . Stop () ; } finished = true ; } <s> @ java.lang.Override protected void trvydoqkibpuqwthxelg () { if ( ! ( limitBottom . get () ) ) { Robot.lift . Lower () ; } else { Robot.lift . Stop () ; } finished = true ; } <s> Found the problems  started work   will fix by mtg tomorrow
+fix_before_refactoring: @ java.lang.Override protected void execute () {}
+fix_after_refactoring: @ java.lang.Override protected void trvydoqkibpuqwthxelg () {}
+× fix_prediction_before: @ java.lang.Override protected void execute () { Robot.lift . Lower () ; }
+√ fix_prediction_after: @ java.lang.Override protected void trvydoqkibpuqwthxelg () {}
+
+line_index: 2056
+bug_before_refactoring: private void botonAniadirActionPerformed ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; if ( ! ( odb . isClosed () ) ) controlador.datos.NeoDatis . cerrarConexion () ; } <s> private void botonAniadirActionPerformed ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; if ( ! ( odb . isClosed () ) ) controlador.datos.NeoDatis . cerrarConexion () ; } <s> Now I can modify the Lodging related to the room I'm currently modifying. Check and try to find bugs / things I should fix.
+bug_after_refactoring: private void xgllyhpjhehjvkrakfoc ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; if ( ! ( odb . isClosed () ) ) controlador.datos.NeoDatis . cerrarConexion () ; } <s> private void xgllyhpjhehjvkrakfoc ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; if ( ! ( odb . isClosed () ) ) controlador.datos.NeoDatis . cerrarConexion () ; } <s> Now I can modify the Lodging related to the room I'm currently modifying. Check and try to find bugs / things I should fix.
+fix_before_refactoring: private void botonAniadirActionPerformed ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; }
+fix_after_refactoring: private void xgllyhpjhehjvkrakfoc ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; }
+× fix_prediction_before: private void botonAni ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; }
+√ fix_prediction_after: private void xgllyhpjhehjvkrakfoc ( java.awt.event.ActionEvent evt ) { recoleccionDatosVentana () ; }
+

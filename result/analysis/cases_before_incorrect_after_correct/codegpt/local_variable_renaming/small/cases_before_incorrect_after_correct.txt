@@ -1,0 +1,40 @@
+line_index: 8
+bug_before_refactoring: { int result = trackName . hashCode () ; result = ( 31 * result ) + ( trackDetails . hashCode () ) ; result = ( 31 * result ) + ( epicodusId ) ; return result ; } <s> @ java.lang.Override public int hashCode () { int result = trackName . hashCode () ; result = ( 31 * result ) + ( trackDetails . hashCode () ) ; result = ( 31 * result ) + ( epicodusId ) ; return result ; } <s> fix id issue
+bug_after_refactoring: { int rcjmssnuxxrucmfddhvv = trackName . hashCode () ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( trackDetails . hashCode () ) ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( epicodusId ) ; return rcjmssnuxxrucmfddhvv ; } <s> @ java.lang.Override public int hashCode () { int rcjmssnuxxrucmfddhvv = trackName . hashCode () ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( trackDetails . hashCode () ) ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( epicodusId ) ; return rcjmssnuxxrucmfddhvv ; } <s> fix id issue
+fix_before_refactoring: { int result = trackName . hashCode () ; result = ( 31 * result ) + ( trackDetails . hashCode () ) ; return result ; }
+fix_after_refactoring: { int rcjmssnuxxrucmfddhvv = trackName . hashCode () ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( trackDetails . hashCode () ) ; return rcjmssnuxxrucmfddhvv ; }
+× fix_prediction_before: { int result = trackName . hashCode () ; return result ; }
+√ fix_prediction_after: { int rcjmssnuxxrucmfddhvv = trackName . hashCode () ; rcjmssnuxxrucmfddhvv = ( 31 * rcjmssnuxxrucmfddhvv ) + ( trackDetails . hashCode () ) ; return rcjmssnuxxrucmfddhvv ; }
+
+line_index: 20
+bug_before_refactoring: index = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 <s> @ java.lang.Override public java.util.concurrent.ConcurrentNavigableMap < org.apache.hadoop.hbase.Cell , org.apache.hadoop.hbase.Cell > tailMap ( org.apache.hadoop.hbase.Cell fromKey , boolean inclusive ) { int index = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 ; return createCellBlocks ( comparator , index , maxCellIdx ) ; } <s> After Code Review and Bug Fixes
+bug_after_refactoring: wlfaqfdgcsfojeqteior = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 <s> @ java.lang.Override public java.util.concurrent.ConcurrentNavigableMap < org.apache.hadoop.hbase.Cell , org.apache.hadoop.hbase.Cell > tailMap ( org.apache.hadoop.hbase.Cell fromKey , boolean inclusive ) { int wlfaqfdgcsfojeqteior = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 ; return createCellBlocks ( comparator , index , maxCellIdx ) ; } <s> After Code Review and Bug Fixes
+fix_before_refactoring: index = getValidIndex ( fromKey , ( ! inclusive ) )
+fix_after_refactoring: wlfaqfdgcsfojeqteior = getValidIndex ( fromKey , ( ! inclusive ) )
+× fix_prediction_before: index = getValidIndex ( fromKey , inclusive )
+√ fix_prediction_after: wlfaqfdgcsfojeqteior = getValidIndex ( fromKey , ( ! inclusive ) )
+
+line_index: 129
+bug_before_refactoring: { boolean connected = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; java.lang.System.out . println ( "Connected to server!" ) ; } <s> public void connectToServer () { boolean connected = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; java.lang.System.out . println ( "Connected to server!" ) ; } <s> Fixed connection issues
+bug_after_refactoring: { boolean cqwvtnyxsdbeipvtiwka = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; java.lang.System.out . println ( "Connected to server!" ) ; } <s> public void connectToServer () { boolean cqwvtnyxsdbeipvtiwka = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; java.lang.System.out . println ( "Connected to server!" ) ; } <s> Fixed connection issues
+fix_before_refactoring: { boolean connected = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; }
+fix_after_refactoring: { boolean cqwvtnyxsdbeipvtiwka = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; }
+× fix_prediction_before: { boolean connected = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; java.lang.System.out . println ( "Connected to server!" ) ; }
+√ fix_prediction_after: { boolean cqwvtnyxsdbeipvtiwka = false ; gc = new orbit.OrbitGame.GameClient () ; gc . start () ; }
+
+line_index: 135
+bug_before_refactoring: { boolean pass = false ; if ( ( averageScore () ) > 50 ) { pass = true ; } return pass ; } <s> @ java.lang.Override public boolean isPass () { boolean pass = false ; if ( ( averageScore () ) > 50 ) { pass = true ; } return pass ; } <s> fixed a bug
+bug_after_refactoring: { boolean kyqydrofyokhxknwpokk = false ; if ( ( averageScore () ) > 50 ) { kyqydrofyokhxknwpokk = true ; } return kyqydrofyokhxknwpokk ; } <s> @ java.lang.Override public boolean isPass () { boolean kyqydrofyokhxknwpokk = false ; if ( ( averageScore () ) > 50 ) { kyqydrofyokhxknwpokk = true ; } return kyqydrofyokhxknwpokk ; } <s> fixed a bug
+fix_before_refactoring: { if ( ( averageScore () ) > 50 ) { pass = true ; } return pass ; }
+fix_after_refactoring: { if ( ( averageScore () ) > 50 ) { kyqydrofyokhxknwpokk = true ; } return kyqydrofyokhxknwpokk ; }
+× fix_prediction_before: { if ( ( averageScore () ) > 50 ) { pass = true ; } else { pass = false ; } return pass ; }
+√ fix_prediction_after: { if ( ( averageScore () ) > 50 ) { kyqydrofyokhxknwpokk = true ; } return kyqydrofyokhxknwpokk ; }
+
+line_index: 210
+bug_before_refactoring: { image . loadPixels () ; int index = ( row * ( image.width ) ) + col ; return ( image.pixels [ index ] ) & 255 ; } <s> public int getPixelAt ( int row , int col , processing.core.PImage image ) { image . loadPixels () ; int index = ( row * ( image.width ) ) + col ; return ( image.pixels [ index ] ) & 255 ; } <s> Friday bug fix
+bug_after_refactoring: { image . loadPixels () ; int pwtdfrrbixugbldwvxdz = ( row * ( image.width ) ) + col ; return ( image.pixels [ pwtdfrrbixugbldwvxdz ] ) & 255 ; } <s> public int getPixelAt ( int row , int col , processing.core.PImage image ) { image . loadPixels () ; int pwtdfrrbixugbldwvxdz = ( row * ( image.width ) ) + col ; return ( image.pixels [ pwtdfrrbixugbldwvxdz ] ) & 255 ; } <s> Friday bug fix
+fix_before_refactoring: { int index = ( row * ( image.width ) ) + col ; return ( image.pixels [ index ] ) & 255 ; }
+fix_after_refactoring: { int pwtdfrrbixugbldwvxdz = ( row * ( image.width ) ) + col ; return ( image.pixels [ pwtdfrrbixugbldwvxdz ] ) & 255 ; }
+× fix_prediction_before: { int index = ( ( row * ( image.width ) ) + col ) % ( image.width ) ; return ( image.pixels [ index ] ) & 255 ; }
+√ fix_prediction_after: { int pwtdfrrbixugbldwvxdz = ( row * ( image.width ) ) + col ; return ( image.pixels [ pwtdfrrbixugbldwvxdz ] ) & 255 ; }
+

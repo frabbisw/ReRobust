@@ -1,0 +1,24 @@
+line_index: 49
+bug_before_refactoring: { viewPager . setCurrentItem ( tab . getPosition () ) ; int id = tab . getPosition () ; } <s> @ java.lang.Override public void onTabSelected ( android.support.design.widget.TabLayout.Tab tab ) { viewPager . setCurrentItem ( tab . getPosition () ) ; int id = tab . getPosition () ; } <s> fixed spinner udpdate bug
+bug_after_refactoring: { viewPager . setCurrentItem ( tab . getPosition () ) ; int gsmsbpioryqjfrsbrswh = tab . getPosition () ; } <s> @ java.lang.Override public void onTabSelected ( android.support.design.widget.TabLayout.Tab tab ) { viewPager . setCurrentItem ( tab . getPosition () ) ; int gsmsbpioryqjfrsbrswh = tab . getPosition () ; } <s> fixed spinner udpdate bug
+fix_before_refactoring: { viewPager . setCurrentItem ( tab . getPosition () ) ; }
+fix_after_refactoring: { viewPager . setCurrentItem ( tab . getPosition () ) ; }
+× fix_prediction_before: { viewPager . setCurrentItem ( tab . getPosition () ) ; id = tab . getPosition () ; java.lang.System.out . println ( tab . getPosition () ) ; }
+√ fix_prediction_after: { viewPager . setCurrentItem ( tab . getPosition () ) ; }
+
+line_index: 168
+bug_before_refactoring: public boolean contains ( java.lang.String key ) { int arrayIndex = hash ( key ) ; return ( ( array [ arrayIndex ] ) != null ) && ( ( array [ arrayIndex ] . get ( key ) ) != null ) ; } <s> public boolean contains ( java.lang.String key ) { int arrayIndex = hash ( key ) ; return ( ( array [ arrayIndex ] ) != null ) && ( ( array [ arrayIndex ] . get ( key ) ) != null ) ; } <s> added two tests on the collision and key with negative hashCode  fixed bug with negative hashCode
+bug_after_refactoring: public boolean contains ( java.lang.String key ) { int ffzlzuyeseazjlfygiqu = hash ( key ) ; return ( ( array [ ffzlzuyeseazjlfygiqu ] ) != null ) && ( ( array [ ffzlzuyeseazjlfygiqu ] . get ( key ) ) != null ) ; } <s> public boolean contains ( java.lang.String key ) { int ffzlzuyeseazjlfygiqu = hash ( key ) ; return ( ( array [ ffzlzuyeseazjlfygiqu ] ) != null ) && ( ( array [ ffzlzuyeseazjlfygiqu ] . get ( key ) ) != null ) ; } <s> added two tests on the collision and key with negative hashCode  fixed bug with negative hashCode
+fix_before_refactoring: public boolean contains ( java.lang.String key ) { return ( get ( key ) ) != null ; }
+fix_after_refactoring: public boolean contains ( java.lang.String key ) { return ( get ( key ) ) != null ; }
+× fix_prediction_before: public boolean contains ( java.lang.String key ) { int arrayIndex = array [ ( ( arrayIndex ) != null ) ] ; return array [ ( ( arrayIndex ) != null ) ] ; }
+√ fix_prediction_after: public boolean contains ( java.lang.String key ) { return ( get ( key ) ) != null ; }
+
+line_index: 171
+bug_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+bug_after_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean hvjwsvvbytnwftikrjcw = true ; while ( hvjwsvvbytnwftikrjcw ) { try { thread . join () ; hvjwsvvbytnwftikrjcw = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean hvjwsvvbytnwftikrjcw = true ; while ( hvjwsvvbytnwftikrjcw ) { try { thread . join () ; hvjwsvvbytnwftikrjcw = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+fix_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+fix_after_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+× fix_prediction_before: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { retry = true ; if ( retry ) { try { thread . join () ; } catch ( java.lang.InterruptedException e ) {} } }
+√ fix_prediction_after: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+

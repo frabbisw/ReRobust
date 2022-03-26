@@ -1,0 +1,1040 @@
+line_index: 8
+bug_before_refactoring: @ java.lang.Override public void onConnectionFailed ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) { android.util.Log . d ( com.whirlwind.school1.activity.GoogleSignInActivity.TAG , ( "onConnectionFailed:" + connectionResult ) ) ; android.widget.Toast . makeText ( this , "Google Play Services error." , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override public void onConnectionFailed ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) { android.util.Log . d ( com.whirlwind.school1.activity.GoogleSignInActivity.TAG , ( "onConnectionFailed:" + connectionResult ) ) ; android.widget.Toast . makeText ( this , "Google Play Services error." , Toast.LENGTH_SHORT ) . show () ; } <s> Fixed build errors
+bug_after_refactoring: @ java.lang.Override public void giepvfzjbyxfpnvviuso ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) { android.util.Log . d ( com.whirlwind.school1.activity.GoogleSignInActivity.TAG , ( "giepvfzjbyxfpnvviuso:" + connectionResult ) ) ; android.widget.Toast . makeText ( this , "Google Play Services error." , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override public void giepvfzjbyxfpnvviuso ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) { android.util.Log . d ( com.whirlwind.school1.activity.GoogleSignInActivity.TAG , ( "giepvfzjbyxfpnvviuso:" + connectionResult ) ) ; android.widget.Toast . makeText ( this , "Google Play Services error." , Toast.LENGTH_SHORT ) . show () ; } <s> Fixed build errors
+fix_before_refactoring: @ java.lang.Override public void onConnectionFailed ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) {}
+fix_after_refactoring: @ java.lang.Override public void giepvfzjbyxfpnvviuso ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) {}
+√ fix_prediction_before: @ java.lang.Override public void onConnectionFailed ( @ android.support.annotation.NonNull com.google.android.gms.common.ConnectionResult connectionResult ) {}
+× fix_prediction_after: @ java.lang.Override public void show () { android.widget.Toast . makeText ( this , "Google Play . connectionResult ) ; }
+
+line_index: 48
+bug_before_refactoring: @ java.lang.Override public void run () { if ( ( Build.VERSION.SDK_INT ) < 21 ) {} else { mLEScanner . stopScan ( mScanCallback ) ; } } <s> @ java.lang.Override public void run () { if ( ( Build.VERSION.SDK_INT ) < 21 ) {} else { mLEScanner . stopScan ( mScanCallback ) ; } } <s> code cleaned + showing inactive beacons problem is fixed
+bug_after_refactoring: @ java.lang.Override public void fntdtgxvhgozayzlktkr () { if ( ( Build.VERSION.SDK_INT ) < 21 ) {} else { mLEScanner . stopScan ( mScanCallback ) ; } } <s> @ java.lang.Override public void fntdtgxvhgozayzlktkr () { if ( ( Build.VERSION.SDK_INT ) < 21 ) {} else { mLEScanner . stopScan ( mScanCallback ) ; } } <s> code cleaned + showing inactive beacons problem is fixed
+fix_before_refactoring: @ java.lang.Override public void run () { mLEScanner . stopScan ( mScanCallback ) ; }
+fix_after_refactoring: @ java.lang.Override public void fntdtgxvhgozayzlktkr () { mLEScanner . stopScan ( mScanCallback ) ; }
+√ fix_prediction_before: @ java.lang.Override public void run () { mLEScanner . stopScan ( mScanCallback ) ; }
+× fix_prediction_after: @ java.lang.Override public void fntdtgxThgozayzlktkr () { mLEScanner . stopScan ( mScanCallback ) ; }
+
+line_index: 67
+bug_before_refactoring: @ java.lang.Override public void start ( ) throws java.lang.Exception { nextMessage () ; } <s> @ java.lang.Override public void start ( ) throws java.lang.Exception { nextMessage () ; } <s> fix kafka8 unparsable message halt job issue (#4164)
+bug_after_refactoring: @ java.lang.Override public void ldbtizutpbldzkodnvye ( ) throws java.lang.Exception { nextMessage () ; } <s> @ java.lang.Override public void ldbtizutpbldzkodnvye ( ) throws java.lang.Exception { nextMessage () ; } <s> fix kafka8 unparsable message halt job issue (#4164)
+fix_before_refactoring: @ java.lang.Override public void start ( ) throws java.lang.Exception {}
+fix_after_refactoring: @ java.lang.Override public void ldbtizutpbldzkodnvye ( ) throws java.lang.Exception {}
+√ fix_prediction_before: @ java.lang.Override public void start ( ) throws java.lang.Exception {}
+× fix_prediction_after: @ java.lang.Override public void endtizutpbldzkod .ye ( ) throws java.lang.Exception { nextMessage () ; }
+
+line_index: 121
+bug_before_refactoring: private void Update_Month () { ucsp.is2.model.Calendar Today = ucsp.is2.model.Calendar . getInstance () ; if ( ( Month ) != ( Today . get ( Calendar.MONTH ) ) ) { Month = Today . get ( Calendar.MONTH ) ; Play_Counter = 0 ; } } <s> private void Update_Month () { ucsp.is2.model.Calendar Today = ucsp.is2.model.Calendar . getInstance () ; if ( ( Month ) != ( Today . get ( Calendar.MONTH ) ) ) { Month = Today . get ( Calendar.MONTH ) ; Play_Counter = 0 ; } } <s> fixed errors on code
+bug_after_refactoring: private void ryvdbczwtmrnykmpsldc () { ucsp.is2.model.Calendar Today = ucsp.is2.model.Calendar . getInstance () ; if ( ( Month ) != ( Today . get ( Calendar.MONTH ) ) ) { Month = Today . get ( Calendar.MONTH ) ; Play_Counter = 0 ; } } <s> private void ryvdbczwtmrnykmpsldc () { ucsp.is2.model.Calendar Today = ucsp.is2.model.Calendar . getInstance () ; if ( ( Month ) != ( Today . get ( Calendar.MONTH ) ) ) { Month = Today . get ( Calendar.MONTH ) ; Play_Counter = 0 ; } } <s> fixed errors on code
+fix_before_refactoring: private void Update_Month () {}
+fix_after_refactoring: private void ryvdbczwtmrnykmpsldc () {}
+√ fix_prediction_before: private void Update_Month () {}
+× fix_prediction_after: @ java.lang.Override public java.lang.String toString () { final java.lang.System.out . println ( ( ( java.lang.Math . abs ( java.lang.Math . abs ( 0 ) ) ) ) ) ; }
+
+line_index: 136
+bug_before_refactoring: public java.lang.String getAirCode () { android.util.Log . i ( model.SingleFlightResult.TAG , "getAirCode: " ) ; return airCode ; } <s> public java.lang.String getAirCode () { android.util.Log . i ( model.SingleFlightResult.TAG , "getAirCode: " ) ; return airCode ; } <s> added all flight logo  loads airline logo dynamically  solved negative total flight duration time issue  added recycler view animation
+bug_after_refactoring: public java.lang.String xtjpfkkvkrwebbfqxcgv () { android.util.Log . i ( model.SingleFlightResult.TAG , "xtjpfkkvkrwebbfqxcgv: " ) ; return airCode ; } <s> public java.lang.String xtjpfkkvkrwebbfqxcgv () { android.util.Log . i ( model.SingleFlightResult.TAG , "xtjpfkkvkrwebbfqxcgv: " ) ; return airCode ; } <s> added all flight logo  loads airline logo dynamically  solved negative total flight duration time issue  added recycler view animation
+fix_before_refactoring: public java.lang.String getAirCode () { return airCode ; }
+fix_after_refactoring: public java.lang.String xtjpfkkvkrwebbfqxcgv () { return airCode ; }
+√ fix_prediction_before: public java.lang.String getAirCode () { return airCode ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String xtjp returnwebbfqxcgv () { return airCode ; }
+
+line_index: 206
+bug_before_refactoring: @ java.lang.Override public void onSuccess ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) { android.widget.Toast . makeText ( this , "Transcript Download Complete" , Toast.LENGTH_SHORT ) . show () ; mProgress . dismiss () ; } <s> @ java.lang.Override public void onSuccess ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) { android.widget.Toast . makeText ( this , "Transcript Download Complete" , Toast.LENGTH_SHORT ) . show () ; mProgress . dismiss () ; } <s> A few Memo storage errors fixed.
+bug_after_refactoring: @ java.lang.Override public void dmbpbfspufyhbjillkgo ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) { android.widget.Toast . makeText ( this , "Transcript Download Complete" , Toast.LENGTH_SHORT ) . show () ; mProgress . dismiss () ; } <s> @ java.lang.Override public void dmbpbfspufyhbjillkgo ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) { android.widget.Toast . makeText ( this , "Transcript Download Complete" , Toast.LENGTH_SHORT ) . show () ; mProgress . dismiss () ; } <s> A few Memo storage errors fixed.
+fix_before_refactoring: @ java.lang.Override public void onSuccess ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) {}
+fix_after_refactoring: @ java.lang.Override public void dmbpbfspufyhbjillkgo ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) {}
+√ fix_prediction_before: @ java.lang.Override public void onSuccess ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) {}
+× fix_prediction_after: @ java.lang.Override public void dmbpb.ufyhbjillkgo ( com.google.firebase.storage.FileDownloadTask.TaskSnapshot taskSnapshot ) {}
+
+line_index: 214
+bug_before_refactoring: public void setScrollEnabled ( boolean status ) { mDisableScrolling = ! status ; } <s> public void setScrollEnabled ( boolean status ) { mDisableScrolling = ! status ; } <s> Added changes in trying to solve scrolling issue in GiveActivity
+bug_after_refactoring: public void uxsboacejkkypbcznpqh ( boolean status ) { mDisableScrolling = ! status ; } <s> public void uxsboacejkkypbcznpqh ( boolean status ) { mDisableScrolling = ! status ; } <s> Added changes in trying to solve scrolling issue in GiveActivity
+fix_before_refactoring: public void setScrollEnabled ( boolean status ) { mDisableScrolling = status ; }
+fix_after_refactoring: public void uxsboacejkkypbcznpqh ( boolean status ) { mDisableScrolling = status ; }
+√ fix_prediction_before: public void setScrollEnabled ( boolean status ) { mDisableScrolling = status ; }
+× fix_prediction_after: public void uxsboacejkkypbcznpqh ( boolean status ) { mDisableScrolling = false ; }
+
+line_index: 220
+bug_before_refactoring: protected void nextSingle ( int token ) { this . token = token ; source . nextChar () ; } <s> protected void nextSingle ( int token ) { this . token = token ; source . nextChar () ; } <s> commented all methods  tested and bug fixed  Scanner is complete (hopefully)
+bug_after_refactoring: protected void ywdowvooxhdkitijxikb ( int token ) { this . token = token ; source . nextChar () ; } <s> protected void ywdowvooxhdkitijxikb ( int token ) { this . token = token ; source . nextChar () ; } <s> commented all methods  tested and bug fixed  Scanner is complete (hopefully)
+fix_before_refactoring: private void nextSingle ( int token ) { this . token = token ; source . nextChar () ; }
+fix_after_refactoring: private void ywdowvooxhdkitijxikb ( int token ) { this . token = token ; source . nextChar () ; }
+√ fix_prediction_before: private void nextSingle ( int token ) { this . token = token ; source . nextChar () ; }
+× fix_prediction_after: private void ywdowvooxhdkitijxik ( int token ) { this . token = token ; source . nextChar () ; }
+
+line_index: 221
+bug_before_refactoring: public void setX ( int x ) { this . x = x ; } <s> public void setX ( int x ) { this . x = x ; } <s> API restructuring  bugfixes
+bug_after_refactoring: public void ycxwifrjyzcszhhkpcmk ( int x ) { this . x = x ; } <s> public void ycxwifrjyzcszhhkpcmk ( int x ) { this . x = x ; } <s> API restructuring  bugfixes
+fix_before_refactoring: private void setX ( int x ) { this . x = x ; }
+fix_after_refactoring: private void ycxwifrjyzcszhhkpcmk ( int x ) { this . x = x ; }
+√ fix_prediction_before: private void setX ( int x ) { this . x = x ; }
+× fix_prediction_after: private void y >=wifrjEmailcszhhkpcmk ( int x ) { this . x = x ; }
+
+line_index: 244
+bug_before_refactoring: private static native void _imaqSetBitDepth ( long image , int bitDepth ) ; <s> private static native void _imaqSetBitDepth ( long image , int bitDepth ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void nmfpybfhtflzuiauboal ( long image , int bitDepth ) ; <s> private static native void nmfpybfhtflzuiauboal ( long image , int bitDepth ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqSetBitDepth ( long image , int bitDepth ) {}
+fix_after_refactoring: private static void nmfpybfhtflzuiauboal ( long image , int bitDepth ) {}
+√ fix_prediction_before: private static void _imaqSetBitDepth ( long image , int bitDepth ) {}
+× fix_prediction_after: private static void namefpybfhtflzuiauboal ( long image , int bitDepth ) {}
+
+line_index: 246
+bug_before_refactoring: public void setExported ( boolean isExported ) { mIsExported = ( isExported ) ? 1 : 0 ; } <s> public void setExported ( boolean isExported ) { mIsExported = ( isExported ) ? 1 : 0 ; } <s> Added UX for explicit creation of transaction templates  Fixed: bug causing no transaction templates to be saved Autocomplete in the transaction description field only filters through templates Recurring transactions always trigger a template to be saved  TODO: Add view for viewing  editing and deleting existing transaction templates
+bug_after_refactoring: public void jilkseqpewgipcacqhgf ( boolean isExported ) { mIsExported = ( isExported ) ? 1 : 0 ; } <s> public void jilkseqpewgipcacqhgf ( boolean isExported ) { mIsExported = ( isExported ) ? 1 : 0 ; } <s> Added UX for explicit creation of transaction templates  Fixed: bug causing no transaction templates to be saved Autocomplete in the transaction description field only filters through templates Recurring transactions always trigger a template to be saved  TODO: Add view for viewing  editing and deleting existing transaction templates
+fix_before_refactoring: public void setExported ( boolean isExported ) { mIsExported = isExported ; }
+fix_after_refactoring: public void jilkseqpewgipcacqhgf ( boolean isExported ) { mIsExported = isExported ; }
+√ fix_prediction_before: public void setExported ( boolean isExported ) { mIsExported = isExported ; }
+× fix_prediction_after: public void jilkseqpewgipcacq.f ( boolean isExported ) { mIsExported = isExported ; }
+
+line_index: 279
+bug_before_refactoring: @ java.lang.Override public void imageComplete ( javax.imageio.ImageReader source ) { if ( isProgressRangeCorrected () ) { processImageComplete () ; } } <s> @ java.lang.Override public void imageComplete ( javax.imageio.ImageReader source ) { if ( isProgressRangeCorrected () ) { processImageComplete () ; } } <s> TMI-40: Fixed subsampling offset bug (and removed the slow  stepwise reading + simplified the code  at the cost of higher memory consumption).
+bug_after_refactoring: @ java.lang.Override public void tgqsaujvwkcspggnhcgr ( javax.imageio.ImageReader source ) { if ( isProgressRangeCorrected () ) { processImageComplete () ; } } <s> @ java.lang.Override public void tgqsaujvwkcspggnhcgr ( javax.imageio.ImageReader source ) { if ( isProgressRangeCorrected () ) { processImageComplete () ; } } <s> TMI-40: Fixed subsampling offset bug (and removed the slow  stepwise reading + simplified the code  at the cost of higher memory consumption).
+fix_before_refactoring: @ java.lang.Override public void imageComplete ( javax.imageio.ImageReader source ) { processImageComplete () ; }
+fix_after_refactoring: @ java.lang.Override public void tgqsaujvwkcspggnhcgr ( javax.imageio.ImageReader source ) { processImageComplete () ; }
+√ fix_prediction_before: @ java.lang.Override public void imageComplete ( javax.imageio.ImageReader source ) { processImageComplete () ; }
+× fix_prediction_after: @ java.lang.Override public void (qsauj ) { processImageComplete () ; }
+
+line_index: 284
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { edu.stanford.nlp.Tagging t = new edu.stanford.nlp.Tagging () ; java.lang.String sent = "Showers continued throughout the week in the Bahia cocoa zone." ; java.util.List l = t . searchByTag ( t . TaggingSentence ( sent ) , "NN" ) ; java.lang.System.out . println ( l ) ; } <s> public static void main ( java.lang.String [] args ) { edu.stanford.nlp.Tagging t = new edu.stanford.nlp.Tagging () ; java.lang.String sent = "Showers continued throughout the week in the Bahia cocoa zone." ; java.util.List l = t . searchByTag ( t . TaggingSentence ( sent ) , "NN" ) ; java.lang.System.out . println ( l ) ; } <s> fix HBaseDAO bug and finish part of WorksProbFromTopic
+bug_after_refactoring: public static void qrowfwajxrssnykdyykz ( java.lang.String [] args ) { edu.stanford.nlp.Tagging t = new edu.stanford.nlp.Tagging () ; java.lang.String sent = "Showers continued throughout the week in the Bahia cocoa zone." ; java.util.List l = t . searchByTag ( t . TaggingSentence ( sent ) , "NN" ) ; java.lang.System.out . println ( l ) ; } <s> public static void qrowfwajxrssnykdyykz ( java.lang.String [] args ) { edu.stanford.nlp.Tagging t = new edu.stanford.nlp.Tagging () ; java.lang.String sent = "Showers continued throughout the week in the Bahia cocoa zone." ; java.util.List l = t . searchByTag ( t . TaggingSentence ( sent ) , "NN" ) ; java.lang.System.out . println ( l ) ; } <s> fix HBaseDAO bug and finish part of WorksProbFromTopic
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void qrowfwajxrssnykdyykz ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: public static void qrowfwaj { edu.stanford.nlp.Tagging t = new edu.stanford.nlp.Tagging () ; }
+
+line_index: 295
+bug_before_refactoring: private boolean isSpeedForSureRiding ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; } <s> private boolean isSpeedForSureRiding ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; } <s> ffixed red bugs
+bug_after_refactoring: private boolean sigwfhyfnbwfwstbdowa ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; } <s> private boolean sigwfhyfnbwfwstbdowa ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; } <s> ffixed red bugs
+fix_before_refactoring: protected boolean isSpeedForSureRiding ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; }
+fix_after_refactoring: protected boolean sigwfhyfnbwfwstbdowa ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; }
+√ fix_prediction_before: protected boolean isSpeedForSureRiding ( float speedKmh ) { return speedKmh >= ( this . sureRidingSpeed ) ; }
+× fix_prediction_after: protected boolean isEmpty () { return speedKmh >= ( this . sureRidingSpeed ) ; }
+
+line_index: 296
+bug_before_refactoring: com.centric.centricexpress.models.EventDay findById ( java.lang.String id ) {} <s> com.centric.centricexpress.models.EventDay findById ( java.lang.String id ) {} <s> Fixed merge problems
+bug_after_refactoring: com.centric.centricexpress.models.EventDay iuynyrxlvskpauhguttc ( java.lang.String id ) {} <s> com.centric.centricexpress.models.EventDay iuynyrxlvskpauhguttc ( java.lang.String id ) {} <s> Fixed merge problems
+fix_before_refactoring: com.centric.centricexpress.models.EventDay findById ( java.lang.String id ) ;
+fix_after_refactoring: com.centric.centricexpress.models.EventDay iuynyrxlvskpauhguttc ( java.lang.String id ) ;
+√ fix_prediction_before: com.centric.centricexpress.models.EventDay findById ( java.lang.String id ) ;
+× fix_prediction_after: com.centric.centricexpress.models.EventDay iuynyrxlvskpau =uttc ( java.lang.String id ) ;
+
+line_index: 297
+bug_before_refactoring: private boolean boolOp ( boolean a , boolean b ) { return false ; } <s> private boolean boolOp ( boolean a , boolean b ) { return false ; } <s> Fixed bug in binary operation application
+bug_after_refactoring: private boolean sjeoyztlhgqedlvovocw ( boolean a , boolean b ) { return false ; } <s> private boolean sjeoyztlhgqedlvovocw ( boolean a , boolean b ) { return false ; } <s> Fixed bug in binary operation application
+fix_before_refactoring: protected boolean boolOp ( boolean a , boolean b ) { return false ; }
+fix_after_refactoring: protected boolean sjeoyztlhgqedlvovocw ( boolean a , boolean b ) { return false ; }
+√ fix_prediction_before: protected boolean boolOp ( boolean a , boolean b ) { return false ; }
+× fix_prediction_after: protected boolean sjeogdxtl {qedlvovocw ( boolean a , boolean b ) { return false ; }
+
+line_index: 298
+bug_before_refactoring: @ java.lang.Override public void setParameters ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) { logMessage = parameterHolder . getParameter ( "parameters" ) . getValue () ; } <s> @ java.lang.Override public void setParameters ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) { logMessage = parameterHolder . getParameter ( "parameters" ) . getValue () ; } <s> Fix errors due to change ParameterHolder API at gateway core.
+bug_after_refactoring: @ java.lang.Override public void lojqeiyctsfwqczpmsxv ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) { logMessage = parameterHolder . getParameter ( "parameters" ) . getValue () ; } <s> @ java.lang.Override public void lojqeiyctsfwqczpmsxv ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) { logMessage = parameterHolder . getParameter ( "parameters" ) . getValue () ; } <s> Fix errors due to change ParameterHolder API at gateway core.
+fix_before_refactoring: @ java.lang.Override public void setParameters ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) {}
+fix_after_refactoring: @ java.lang.Override public void lojqeiyctsfwqczpmsxv ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) {}
+√ fix_prediction_before: @ java.lang.Override public void setParameters ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) {}
+× fix_prediction_after: @ java.lang.Override public void lojqeiyctsfwqczpmsxv ( org.wso2.carbon.gateway.core.config.ParameterHolder parameterHolder ) { logMessage = parameterHolder . getParameter ( "parameters" ) . getValue () ; }
+
+line_index: 301
+bug_before_refactoring: @ java.lang.Override protected void onResume () { super . onResume () ; profile = com.facebook.Profile . getCurrentProfile () ; nextActivity ( profile ) ; } <s> @ java.lang.Override protected void onResume () { super . onResume () ; profile = com.facebook.Profile . getCurrentProfile () ; nextActivity ( profile ) ; } <s> profile tracker bug detected & fixed
+bug_after_refactoring: @ java.lang.Override protected void kxuygrzaxkapsepcdjut () { super . kxuygrzaxkapsepcdjut () ; profile = com.facebook.Profile . getCurrentProfile () ; nextActivity ( profile ) ; } <s> @ java.lang.Override protected void kxuygrzaxkapsepcdjut () { super . kxuygrzaxkapsepcdjut () ; profile = com.facebook.Profile . getCurrentProfile () ; nextActivity ( profile ) ; } <s> profile tracker bug detected & fixed
+fix_before_refactoring: @ java.lang.Override protected void onResume () { super . onResume () ; }
+fix_after_refactoring: @ java.lang.Override protected void kxuygrzaxkapsepcdjut () { super . kxuygrzaxkapsepcdjut () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onResume () { super . onResume () ; }
+× fix_prediction_after: @ java.lang.Override protected void kxuygrzaxkNamepcdjut () { super . kxuygrzaxk playpcdjut () ; }
+
+line_index: 312
+bug_before_refactoring: public void seekToPosition ( int i ) { if ( i > 10000 ) { this . player . seekToPosition ( i ) ; } else { android.util.Log . d ( saiboten.no.synclistener.musicservice.SpotifyPlayerWrapper.TAG , ( ( "Position " + i ) + " is less than three seconds. Let's just skip the seek. Probably a new track" ) ) ; } } <s> public void seekToPosition ( int i ) { if ( i > 10000 ) { this . player . seekToPosition ( i ) ; } else { android.util.Log . d ( saiboten.no.synclistener.musicservice.SpotifyPlayerWrapper.TAG , ( ( "Position " + i ) + " is less than three seconds. Let's just skip the seek. Probably a new track" ) ) ; } } <s> Fixing notification and some other small issues
+bug_after_refactoring: public void nvmftlehrguxdafpvgtu ( int i ) { if ( i > 10000 ) { this . player . nvmftlehrguxdafpvgtu ( i ) ; } else { android.util.Log . d ( saiboten.no.synclistener.musicservice.SpotifyPlayerWrapper.TAG , ( ( "Position " + i ) + " is less than three seconds. Let's just skip the seek. Probably a new track" ) ) ; } } <s> public void nvmftlehrguxdafpvgtu ( int i ) { if ( i > 10000 ) { this . player . nvmftlehrguxdafpvgtu ( i ) ; } else { android.util.Log . d ( saiboten.no.synclistener.musicservice.SpotifyPlayerWrapper.TAG , ( ( "Position " + i ) + " is less than three seconds. Let's just skip the seek. Probably a new track" ) ) ; } } <s> Fixing notification and some other small issues
+fix_before_refactoring: public void seekToPosition ( int i ) { this . player . seekToPosition ( i ) ; }
+fix_after_refactoring: public void nvmftlehrguxdafpvgtu ( int i ) { this . player . nvmftlehrguxdafpvgtu ( i ) ; }
+√ fix_prediction_before: public void seekToPosition ( int i ) { this . player . seekToPosition ( i ) ; }
+× fix_prediction_after: public void nvmftlehrguxdafpvgtu ( int i ) { if ( i > 10000 ) { this . player . nvmftlehrguxdafpvgtu ( i ) ; } }
+
+line_index: 317
+bug_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { android.content.Intent Carnetintent = new android.content.Intent ( this , fr.diabhelp.diabhelp.Core.CoreActivity . class ) ; this . startActivity ( Carnetintent ) ; this . finish () ; } <s> @ java.lang.Override public void onClick ( android.view.View v ) { android.content.Intent Carnetintent = new android.content.Intent ( this , fr.diabhelp.diabhelp.Core.CoreActivity . class ) ; this . startActivity ( Carnetintent ) ; this . finish () ; } <s> fix bug lifecycle profil  fix design profil
+bug_after_refactoring: @ java.lang.Override public void qaoazbapvubshwmqqntf ( android.view.View v ) { android.content.Intent Carnetintent = new android.content.Intent ( this , fr.diabhelp.diabhelp.Core.CoreActivity . class ) ; this . startActivity ( Carnetintent ) ; this . finish () ; } <s> @ java.lang.Override public void qaoazbapvubshwmqqntf ( android.view.View v ) { android.content.Intent Carnetintent = new android.content.Intent ( this , fr.diabhelp.diabhelp.Core.CoreActivity . class ) ; this . startActivity ( Carnetintent ) ; this . finish () ; } <s> fix bug lifecycle profil  fix design profil
+fix_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { this . finish () ; }
+fix_after_refactoring: @ java.lang.Override public void qaoazbapvubshwmqqntf ( android.view.View v ) { this . finish () ; }
+√ fix_prediction_before: @ java.lang.Override public void onClick ( android.view.View v ) { this . finish () ; }
+× fix_prediction_after: @ java.lang.Override public void qaoazbapvubshwmqqntf ( android.view.View v ) {}
+
+line_index: 340
+bug_before_refactoring: public void onComplete () { fadeTimer . dispose () ; dispose () ; } <s> public void onComplete () { fadeTimer . dispose () ; dispose () ; } <s> Fixed some thread flexibility issues.
+bug_after_refactoring: public void anmqrjtckljcssghwgcy () { fadeTimer . dispose () ; dispose () ; } <s> public void anmqrjtckljcssghwgcy () { fadeTimer . dispose () ; dispose () ; } <s> Fixed some thread flexibility issues.
+fix_before_refactoring: public void onComplete () { dispose () ; }
+fix_after_refactoring: public void anmqrjtckljcssghwgcy () { dispose () ; }
+√ fix_prediction_before: public void onComplete () { dispose () ; }
+× fix_prediction_after: public void anmqrjtckljcssghwgcy () { fadeTimer . dispose () ; dispose () ; }
+
+line_index: 351
+bug_before_refactoring: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl getInstance ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context , new taskr.se.taskr.repository.RefreshItemsListener () { @ java.lang.Override public void refreshItems () {} } ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; } <s> public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl getInstance ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context , new taskr.se.taskr.repository.RefreshItemsListener () { @ java.lang.Override public void refreshItems () {} } ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; } <s> fixed bug where lists did not update correctly
+bug_after_refactoring: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl vjuwhkgjtdvatmdybguj ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context , new taskr.se.taskr.repository.RefreshItemsListener () { @ java.lang.Override public void vgsppbyfkvsxwhefqubd () {} } ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; } <s> public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl vjuwhkgjtdvatmdybguj ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context , new taskr.se.taskr.repository.RefreshItemsListener () { @ java.lang.Override public void vgsppbyfkvsxwhefqubd () {} } ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; } <s> fixed bug where lists did not update correctly
+fix_before_refactoring: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl getInstance ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; }
+fix_after_refactoring: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl vjuwhkgjtdvatmdybguj ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; }
+√ fix_prediction_before: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl getInstance ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; }
+× fix_prediction_after: public static synchronized taskr.se.taskr.repository.TaskRContentProviderImpl vjuwhkgjtdvatmdybguj ( android.content.Context context ) { if ( ( taskr.se.taskr.repository.TaskRContentProviderImpl.instance ) == null ) { taskr.se.taskr.repository.TaskRContentProviderImpl.instance = new taskr.se.taskr.repository.TaskRContentProviderImpl ( context , new taskr.se.taskr.repository.RefreshItemsListener () ) ; } return taskr.se.taskr.repository.TaskRContentProviderImpl.instance ; }
+
+line_index: 371
+bug_before_refactoring: @ java.lang.Override public void onTabSelected ( int position ) { SameActionTab ( position ) ; } <s> @ java.lang.Override public void onTabSelected ( int position ) { SameActionTab ( position ) ; } <s> bugs fixed
+bug_after_refactoring: @ java.lang.Override public void xaymsiuqnqnervdpiubv ( int position ) { SameActionTab ( position ) ; } <s> @ java.lang.Override public void xaymsiuqnqnervdpiubv ( int position ) { SameActionTab ( position ) ; } <s> bugs fixed
+fix_before_refactoring: @ java.lang.Override public void onTabSelected ( int position ) {}
+fix_after_refactoring: @ java.lang.Override public void xaymsiuqnqnervdpiubv ( int position ) {}
+√ fix_prediction_before: @ java.lang.Override public void onTabSelected ( int position ) {}
+× fix_prediction_after: @ java.lang.Override public void xaymsiuqnqnerlabpiubv ( int position ) {}
+
+line_index: 405
+bug_before_refactoring: private static native void _imaqEqualize ( long dest , long source , float min , float max , long mask ) ; <s> private static native void _imaqEqualize ( long dest , long source , float min , float max , long mask ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void pyovslhphkfbkmcdlfgw ( long dest , long source , float min , float max , long mask ) ; <s> private static native void pyovslhphkfbkmcdlfgw ( long dest , long source , float min , float max , long mask ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqEqualize ( long dest , long source , float min , float max , long mask ) {}
+fix_after_refactoring: private static void pyovslhphkfbkmcdlfgw ( long dest , long source , float min , float max , long mask ) {}
+√ fix_prediction_before: private static void _imaqEqualize ( long dest , long source , float min , float max , long mask ) {}
+× fix_prediction_after: private static void onResumeovslhphkfb_cdlfgw ( long dest , long source , float min , float max , long mask ) ;
+
+line_index: 422
+bug_before_refactoring: public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+bug_after_refactoring: public void whgeevpuuhdvntkkygkl () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> public void whgeevpuuhdvntkkygkl () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+fix_before_refactoring: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+fix_after_refactoring: private void whgeevpuuhdvntkkygkl () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+√ fix_prediction_before: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+× fix_prediction_after: private void fgeevpuuhdv.kygkl () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+
+line_index: 436
+bug_before_refactoring: @ java.lang.Override public void setupProperties () { super . setupProperties () ; table = new org.talend.components.snowflake.SnowflakeTableProperties ( "table" ) ; table.connection = getConnectionProperties () ; } <s> @ java.lang.Override public void setupProperties () { super . setupProperties () ; table = new org.talend.components.snowflake.SnowflakeTableProperties ( "table" ) ; table.connection = getConnectionProperties () ; } <s> feat(TDI-39295): fix minor issues  added display names for properties
+bug_after_refactoring: @ java.lang.Override public void auwtfbjixvkjpvwyseyn () { super . auwtfbjixvkjpvwyseyn () ; table = new org.talend.components.snowflake.SnowflakeTableProperties ( "table" ) ; table.connection = getConnectionProperties () ; } <s> @ java.lang.Override public void auwtfbjixvkjpvwyseyn () { super . auwtfbjixvkjpvwyseyn () ; table = new org.talend.components.snowflake.SnowflakeTableProperties ( "table" ) ; table.connection = getConnectionProperties () ; } <s> feat(TDI-39295): fix minor issues  added display names for properties
+fix_before_refactoring: @ java.lang.Override public void setupProperties () { super . setupProperties () ; }
+fix_after_refactoring: @ java.lang.Override public void auwtfbjixvkjpvwyseyn () { super . auwtfbjixvkjpvwyseyn () ; }
+√ fix_prediction_before: @ java.lang.Override public void setupProperties () { super . setupProperties () ; }
+× fix_prediction_after: @ java.lang.Override public void auwtfbjixvkjpvwyseyn () { super . auwtfbjixvkjpvwyseyn () ; table = new org.talend.components.snowflake.SnowflakeTableProperties ( "table" ) ; table.connection = null ; }
+
+line_index: 455
+bug_before_refactoring: public void addedToEngine ( com.badlogic.ashley.core.Engine e ) { for ( com.badlogic.ashley.core.Entity add : e . getEntitiesFor ( Families.GRAVITY_ATTRACTED ) ) entities () . add ( add ) ; } <s> public void addedToEngine ( com.badlogic.ashley.core.Engine e ) { for ( com.badlogic.ashley.core.Entity add : e . getEntitiesFor ( Families.GRAVITY_ATTRACTED ) ) entities () . add ( add ) ; } <s> tested normal force  fixed bugs in normal force system
+bug_after_refactoring: public void nugsnexutluvbkbwpxfw ( com.badlogic.ashley.core.Engine e ) { for ( com.badlogic.ashley.core.Entity add : e . getEntitiesFor ( Families.GRAVITY_ATTRACTED ) ) entities () . add ( add ) ; } <s> public void nugsnexutluvbkbwpxfw ( com.badlogic.ashley.core.Engine e ) { for ( com.badlogic.ashley.core.Entity add : e . getEntitiesFor ( Families.GRAVITY_ATTRACTED ) ) entities () . add ( add ) ; } <s> tested normal force  fixed bugs in normal force system
+fix_before_refactoring: public void addedToEngine ( com.badlogic.ashley.core.Engine e ) {}
+fix_after_refactoring: public void nugsnexutluvbkbwpxfw ( com.badlogic.ashley.core.Engine e ) {}
+√ fix_prediction_before: public void addedToEngine ( com.badlogic.ashley.core.Engine e ) {}
+× fix_prediction_after: public void nugsnexutlu_kbwpxfw ( com.badlogic.ashley.core.Engine e ) { for ( com.badlogic.ashley.core.Entity add : e . getEntitiesFor ( Fam from.GRAVITY_ATTRA- ) ) entities () . add ( add ) ; }
+
+line_index: 475
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { com.mecasa.Main.A a = new com.mecasa.Main.A () ; a . func ( new java.lang.Object [] { "Hello" , "World" } ) ; } <s> public static void main ( java.lang.String [] args ) { com.mecasa.Main.A a = new com.mecasa.Main.A () ; a . func ( new java.lang.Object [] { "Hello" , "World" } ) ; } <s> fixed buidl errors
+bug_after_refactoring: public static void lyouoxwmpfashfapfnvc ( java.lang.String [] args ) { com.mecasa.Main.A a = new com.mecasa.Main.A () ; a . func ( new java.lang.Object [] { "Hello" , "World" } ) ; } <s> public static void lyouoxwmpfashfapfnvc ( java.lang.String [] args ) { com.mecasa.Main.A a = new com.mecasa.Main.A () ; a . func ( new java.lang.Object [] { "Hello" , "World" } ) ; } <s> fixed buidl errors
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void lyouoxwmpfashfapfnvc ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: public static void lyouoxwmpfashfap = {} ( java.lang.String [] args ) {}
+
+line_index: 476
+bug_before_refactoring: @ org.junit.Test public void testAccountKeyRetrieve ( ) throws com.kloudless.exception.KloudlessException { com.kloudless.model.Key key = com.kloudless.model.Key . retrieve ( "12666" , "1" , null ) ; java.lang.System.out . println ( key ) ; } <s> @ org.junit.Test public void testAccountKeyRetrieve ( ) throws com.kloudless.exception.KloudlessException { com.kloudless.model.Key key = com.kloudless.model.Key . retrieve ( "12666" , "1" , null ) ; java.lang.System.out . println ( key ) ; } <s> kloudless: adding custom headers support  and non-https support pom: fixing compilation errors tests: updating tests
+bug_after_refactoring: @ org.junit.Test public void pyeyzbhdiwjrqrvxnexh ( ) throws com.kloudless.exception.KloudlessException { com.kloudless.model.Key key = com.kloudless.model.Key . retrieve ( "12666" , "1" , null ) ; java.lang.System.out . println ( key ) ; } <s> @ org.junit.Test public void pyeyzbhdiwjrqrvxnexh ( ) throws com.kloudless.exception.KloudlessException { com.kloudless.model.Key key = com.kloudless.model.Key . retrieve ( "12666" , "1" , null ) ; java.lang.System.out . println ( key ) ; } <s> kloudless: adding custom headers support  and non-https support pom: fixing compilation errors tests: updating tests
+fix_before_refactoring: @ org.junit.Test public void testAccountKeyRetrieve ( ) throws com.kloudless.exception.KloudlessException {}
+fix_after_refactoring: @ org.junit.Test public void pyeyzbhdiwjrqrvxnexh ( ) throws com.kloudless.exception.KloudlessException {}
+√ fix_prediction_before: @ org.junit.Test public void testAccountKeyRetrieve ( ) throws com.kloudless.exception.KloudlessException {}
+× fix_prediction_after: @ org.junit.Test public void onResumeeyzbhdiwjrqrvxnexh ( ) throws com.kloudless.exception.KloudlessException { com.kloudless.model.Key key = com.kloudless.model.Key . retrieve () ; java.lang.System.out . println ( key ) ; }
+
+line_index: 482
+bug_before_refactoring: public void setSavedPageCheckComplete ( boolean complete ) { savedPageCheckComplete = complete ; if ( ! ( isAdded () ) ) { return; } getActivity () . supportInvalidateOptionsMenu () ; } <s> public void setSavedPageCheckComplete ( boolean complete ) { savedPageCheckComplete = complete ; if ( ! ( isAdded () ) ) { return; } getActivity () . supportInvalidateOptionsMenu () ; } <s> Fix saved page status bugs  Change-Id: I595a19b722ad7a7764a3fe865bf232e91351f4df
+bug_after_refactoring: public void nkosgesarxmsgjwuwlsu ( boolean complete ) { savedPageCheckComplete = complete ; if ( ! ( isAdded () ) ) { return; } getActivity () . supportInvalidateOptionsMenu () ; } <s> public void nkosgesarxmsgjwuwlsu ( boolean complete ) { savedPageCheckComplete = complete ; if ( ! ( isAdded () ) ) { return; } getActivity () . supportInvalidateOptionsMenu () ; } <s> Fix saved page status bugs  Change-Id: I595a19b722ad7a7764a3fe865bf232e91351f4df
+fix_before_refactoring: public void setSavedPageCheckComplete ( boolean complete ) { savedPageCheckComplete = complete ; }
+fix_after_refactoring: public void nkosgesarxmsgjwuwlsu ( boolean complete ) { savedPageCheckComplete = complete ; }
+√ fix_prediction_before: public void setSavedPageCheckComplete ( boolean complete ) { savedPageCheckComplete = complete ; }
+× fix_prediction_after: public void nkoscorearxmsgjwuwlsu ( boolean complete ) { savedPageCheckComplete = complete ; }
+
+line_index: 488
+bug_before_refactoring: protected void setFloat ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; } <s> protected void setFloat ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; } <s> fixed Functionbugs and created Diff64 test
+bug_after_refactoring: protected void nxhdxepxfhzzzkfkasbc ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; } <s> protected void nxhdxepxfhzzzkfkasbc ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; } <s> fixed Functionbugs and created Diff64 test
+fix_before_refactoring: public void setFloat ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; }
+fix_after_refactoring: public void nxhdxepxfhzzzkfkasbc ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; }
+√ fix_prediction_before: public void setFloat ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; }
+× fix_prediction_after: public void remove ( java.lang.String var ) { this . argument . put ( var , new org.real2space.neumann.approssi.core.function.Variable < java.lang.Float > () ) ; }
+
+line_index: 502
+bug_before_refactoring: protected net.anomalyxii.werewolves.parser.Vitality getVitalityForUser ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; } <s> protected net.anomalyxii.werewolves.parser.Vitality getVitalityForUser ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; } <s> Fix some issues with Puppet swapping in LIVE games
+bug_after_refactoring: protected net.anomalyxii.werewolves.parser.Vitality wpuogmvupuhpnjdedbee ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; } <s> protected net.anomalyxii.werewolves.parser.Vitality wpuogmvupuhpnjdedbee ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; } <s> Fix some issues with Puppet swapping in LIVE games
+fix_before_refactoring: public net.anomalyxii.werewolves.parser.Vitality getVitalityForUser ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; }
+fix_after_refactoring: public net.anomalyxii.werewolves.parser.Vitality wpuogmvupuhpnjdedbee ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; }
+√ fix_prediction_before: public net.anomalyxii.werewolves.parser.Vitality getVitalityForUser ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; }
+× fix_prediction_after: public net.anomalyxii.werewolves.parser.Vitality wpuogmvupuhpnj ;bee ( net.anomalyxii.werewolves.parser.User user ) { java.lang.Character character = getCharacterFor ( user ) ; if ( character == null ) return Vitality.ALIVE ; return characterVitalityMap . get ( character ) ; }
+
+line_index: 510
+bug_before_refactoring: @ java.lang.Override public void effect ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { if ( level == 1 ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } } } <s> @ java.lang.Override public void effect ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { if ( level == 1 ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } } } <s> Final overview + bug fix on volley 2.
+bug_after_refactoring: @ java.lang.Override public void pbntilizptkhwtobjvbt ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { if ( level == 1 ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } } } <s> @ java.lang.Override public void pbntilizptkhwtobjvbt ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { if ( level == 1 ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } } } <s> Final overview + bug fix on volley 2.
+fix_before_refactoring: @ java.lang.Override public void effect ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } }
+fix_after_refactoring: @ java.lang.Override public void pbntilizptkhwtobjvbt ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } }
+√ fix_prediction_before: @ java.lang.Override public void effect ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } }
+× fix_prediction_after: @ java.lang.Override public void add ( org.bukkit.event.Event e , org.bukkit.inventory.ItemStack item , int level ) { if ( e instanceof org.bukkit.event.entity.EntityShootBowEvent ) { volley ( ( ( org.bukkit.event.entity.EntityShootBowEvent ) ( e ) ) , item , level ) ; } }
+
+line_index: 551
+bug_before_refactoring: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner createInstance () { de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl wifiScannerImpl = new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; return wifiScannerImpl ; } <s> public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner createInstance () { de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl wifiScannerImpl = new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; return wifiScannerImpl ; } <s> Fixed permission bug with wifimanager
+bug_after_refactoring: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner rhssnffnpcffwaknwlep () { de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl wifiScannerImpl = new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; return wifiScannerImpl ; } <s> public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner rhssnffnpcffwaknwlep () { de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl wifiScannerImpl = new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; return wifiScannerImpl ; } <s> Fixed permission bug with wifimanager
+fix_before_refactoring: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner createInstance () { return new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; }
+fix_after_refactoring: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner rhssnffnpcffwaknwlep () { return new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; }
+√ fix_prediction_before: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner createInstance () { return new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; }
+× fix_prediction_after: public static de.htwberlin.f4.ai.ma.wifi_scanner.WifiScanner publicssnffnpcffwaknwlep () { return new de.htwberlin.f4.ai.ma.wifi_scanner.WifiScannerImpl () ; }
+
+line_index: 562
+bug_before_refactoring: @ java.lang.Override public int getItemCount () { if ( ( ( mMoviePosters ) == null ) || ( ( mMoviePosters . size () ) == 0 ) ) { return 0 ; } return mMoviePosters . size () ; } <s> @ java.lang.Override public int getItemCount () { if ( ( ( mMoviePosters ) == null ) || ( ( mMoviePosters . size () ) == 0 ) ) { return 0 ; } return mMoviePosters . size () ; } <s> Fixed recyclerview issue
+bug_after_refactoring: @ java.lang.Override public int cawbzdpufstbqsesozfo () { if ( ( ( mMoviePosters ) == null ) || ( ( mMoviePosters . size () ) == 0 ) ) { return 0 ; } return mMoviePosters . size () ; } <s> @ java.lang.Override public int cawbzdpufstbqsesozfo () { if ( ( ( mMoviePosters ) == null ) || ( ( mMoviePosters . size () ) == 0 ) ) { return 0 ; } return mMoviePosters . size () ; } <s> Fixed recyclerview issue
+fix_before_refactoring: @ java.lang.Override public int getItemCount () { return mMoviePosters . size () ; }
+fix_after_refactoring: @ java.lang.Override public int cawbzdpufstbqsesozfo () { return mMoviePosters . size () ; }
+√ fix_prediction_before: @ java.lang.Override public int getItemCount () { return mMoviePosters . size () ; }
+× fix_prediction_after: @ java.lang.Override public int caw () { if ( ( mMoviePosters ) == null ) { return 0 ; } return mMoviePosters . size () ; }
+
+line_index: 645
+bug_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { if ( ! ( POIpath . getText () . toString () . equals ( "" ) ) ) checkPathField () ; else addNewPOI () ; } <s> @ java.lang.Override public void onClick ( android.view.View v ) { if ( ! ( POIpath . getText () . toString () . equals ( "" ) ) ) checkPathField () ; else addNewPOI () ; } <s> bug fixes
+bug_after_refactoring: @ java.lang.Override public void xbegwfmgyekjfpkuxibf ( android.view.View v ) { if ( ! ( POIpath . getText () . toString () . equals ( "" ) ) ) checkPathField () ; else addNewPOI () ; } <s> @ java.lang.Override public void xbegwfmgyekjfpkuxibf ( android.view.View v ) { if ( ! ( POIpath . getText () . toString () . equals ( "" ) ) ) checkPathField () ; else addNewPOI () ; } <s> bug fixes
+fix_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { addNewPOI () ; }
+fix_after_refactoring: @ java.lang.Override public void xbegwfmgyekjfpkuxibf ( android.view.View v ) { addNewPOI () ; }
+√ fix_prediction_before: @ java.lang.Override public void onClick ( android.view.View v ) { addNewPOI () ; }
+× fix_prediction_after: @ java.lang.Override public void appendegwfmgyekjfpkuxibf ( android.view.View v ) { addNewPOI () ; }
+
+line_index: 660
+bug_before_refactoring: @ java.lang.Override public void onTouched ( nl.saxion.act.playground.model.GameBoard gameBoard ) { android.util.Log . d ( SoZGame.TAG , "Touched Enemy" ) ; callMovement ( gameBoard ) ; gameBoard . updateView () ; } <s> @ java.lang.Override public void onTouched ( nl.saxion.act.playground.model.GameBoard gameBoard ) { android.util.Log . d ( SoZGame.TAG , "Touched Enemy" ) ; callMovement ( gameBoard ) ; gameBoard . updateView () ; } <s> enemy bug fix
+bug_after_refactoring: @ java.lang.Override public void vanrklamljcighkcrxud ( nl.saxion.act.playground.model.GameBoard gameBoard ) { android.util.Log . d ( SoZGame.TAG , "Touched Enemy" ) ; callMovement ( gameBoard ) ; gameBoard . updateView () ; } <s> @ java.lang.Override public void vanrklamljcighkcrxud ( nl.saxion.act.playground.model.GameBoard gameBoard ) { android.util.Log . d ( SoZGame.TAG , "Touched Enemy" ) ; callMovement ( gameBoard ) ; gameBoard . updateView () ; } <s> enemy bug fix
+fix_before_refactoring: @ java.lang.Override public void onTouched ( nl.saxion.act.playground.model.GameBoard gameBoard ) {}
+fix_after_refactoring: @ java.lang.Override public void vanrklamljcighkcrxud ( nl.saxion.act.playground.model.GameBoard gameBoard ) {}
+√ fix_prediction_before: @ java.lang.Override public void onTouched ( nl.saxion.act.playground.model.GameBoard gameBoard ) {}
+× fix_prediction_after: @ java.lang.Override public void newrklamljcighkcrxud ( nl.saxion.act.playground.model.GameBoard gameBoard ) { callMovement ( gameBoard ) ; gameBoard . updateView () ; }
+
+line_index: 662
+bug_before_refactoring: @ java.lang.Override public void onChage () { headersData = headersCodeMirror . getValue () ; headersRawInput . setValue ( headersData ) ; org.rest.client.log.Log . info ( ( "Code mirror change fired actually now::" + ( headersData ) ) ) ; } <s> @ java.lang.Override public void onChage () { headersData = headersCodeMirror . getValue () ; headersRawInput . setValue ( headersData ) ; org.rest.client.log.Log . info ( ( "Code mirror change fired actually now::" + ( headersData ) ) ) ; } <s> Fixed issue with code-mirror for headers change event. Now headers are send when they are needed
+bug_after_refactoring: @ java.lang.Override public void rmimtkdjfpplioypatwz () { headersData = headersCodeMirror . getValue () ; headersRawInput . setValue ( headersData ) ; org.rest.client.log.Log . info ( ( "Code mirror change fired actually now::" + ( headersData ) ) ) ; } <s> @ java.lang.Override public void rmimtkdjfpplioypatwz () { headersData = headersCodeMirror . getValue () ; headersRawInput . setValue ( headersData ) ; org.rest.client.log.Log . info ( ( "Code mirror change fired actually now::" + ( headersData ) ) ) ; } <s> Fixed issue with code-mirror for headers change event. Now headers are send when they are needed
+fix_before_refactoring: @ java.lang.Override public void onChage () {}
+fix_after_refactoring: @ java.lang.Override public void rmimtkdjfpplioypatwz () {}
+√ fix_prediction_before: @ java.lang.Override public void onChage () {}
+× fix_prediction_after: @ java.lang.Override public void rmimtkdjfpplioypatwzwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww ; }
+
+line_index: 667
+bug_before_refactoring: public com.lost.blocks.ModelView.Block getBlock ( short index ) { return blocks [ ( index + ( com.lost.blocks.ModelView.ColorIndexer.SHIFT ) ) ] ; } <s> public com.lost.blocks.ModelView.Block getBlock ( short index ) { return blocks [ ( index + ( com.lost.blocks.ModelView.ColorIndexer.SHIFT ) ) ] ; } <s> Fixed exported issues.  Signed-off-by: TheDudeFromCI <linktheblademaster@yahoo.com>
+bug_after_refactoring: public com.lost.blocks.ModelView.Block xgxkpspeuduskisapwvw ( short index ) { return blocks [ ( index + ( com.lost.blocks.ModelView.ColorIndexer.SHIFT ) ) ] ; } <s> public com.lost.blocks.ModelView.Block xgxkpspeuduskisapwvw ( short index ) { return blocks [ ( index + ( com.lost.blocks.ModelView.ColorIndexer.SHIFT ) ) ] ; } <s> Fixed exported issues.  Signed-off-by: TheDudeFromCI <linktheblademaster@yahoo.com>
+fix_before_refactoring: public com.lost.blocks.ModelView.Block getBlock ( short index ) { return blocks [ index ] ; }
+fix_after_refactoring: public com.lost.blocks.ModelView.Block xgxkpspeuduskisapwvw ( short index ) { return blocks [ index ] ; }
+√ fix_prediction_before: public com.lost.blocks.ModelView.Block getBlock ( short index ) { return blocks [ index ] ; }
+× fix_prediction_after: public com.lost.blocks.ModelView.Block xgxkpspeuduskisapw {} ( short index ) { return blocks [ index ] ; }
+
+line_index: 716
+bug_before_refactoring: public void actionPerformed ( java.awt.event.ActionEvent e ) { if ( ( selectCartaoExcluir ) == null ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; } selectCartaoExcluir . setVisible ( true ) ; } <s> public void actionPerformed ( java.awt.event.ActionEvent e ) { if ( ( selectCartaoExcluir ) == null ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; } selectCartaoExcluir . setVisible ( true ) ; } <s> * versao 1.5  Bug fix: -> As telas carregam com as informações corretas agora (não há mais testes para ver se a instância da tela é nula  sempre que for abrir uma nova ele instancia de novo)
+bug_after_refactoring: public void iycvifzpdgmbmpboxdrv ( java.awt.event.ActionEvent e ) { if ( ( selectCartaoExcluir ) == null ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; } selectCartaoExcluir . setVisible ( true ) ; } <s> public void iycvifzpdgmbmpboxdrv ( java.awt.event.ActionEvent e ) { if ( ( selectCartaoExcluir ) == null ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; } selectCartaoExcluir . setVisible ( true ) ; } <s> * versao 1.5  Bug fix: -> As telas carregam com as informações corretas agora (não há mais testes para ver se a instância da tela é nula  sempre que for abrir uma nova ele instancia de novo)
+fix_before_refactoring: public void actionPerformed ( java.awt.event.ActionEvent e ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; selectCartaoExcluir . setVisible ( true ) ; }
+fix_after_refactoring: public void iycvifzpdgmbmpboxdrv ( java.awt.event.ActionEvent e ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; selectCartaoExcluir . setVisible ( true ) ; }
+√ fix_prediction_before: public void actionPerformed ( java.awt.event.ActionEvent e ) { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; selectCartaoExcluir . setVisible ( true ) ; }
+× fix_prediction_after: public void iycvifzpdgmbmp () { selectCartaoExcluir = new view.SelecionarCartao ( "Excluir" ) ; selectCartaoExcluir . setVisible ( true ) ; }
+
+line_index: 720
+bug_before_refactoring: public void actionPerformed ( java.awt.event.ActionEvent e ) { if ( GameBoard.isSolving ) { javax.swing.JOptionPane . showMessageDialog ( null , "Please wait for puzzle to solve!" ) ; } else { new InputGrid () ; } } <s> public void actionPerformed ( java.awt.event.ActionEvent e ) { if ( GameBoard.isSolving ) { javax.swing.JOptionPane . showMessageDialog ( null , "Please wait for puzzle to solve!" ) ; } else { new InputGrid () ; } } <s> fixed problem where boolean would occasionaly not trigger
+bug_after_refactoring: public void fuwmtaxpzlcsxgfyyjqv ( java.awt.event.ActionEvent e ) { if ( GameBoard.isSolving ) { javax.swing.JOptionPane . showMessageDialog ( null , "Please wait for puzzle to solve!" ) ; } else { new InputGrid () ; } } <s> public void fuwmtaxpzlcsxgfyyjqv ( java.awt.event.ActionEvent e ) { if ( GameBoard.isSolving ) { javax.swing.JOptionPane . showMessageDialog ( null , "Please wait for puzzle to solve!" ) ; } else { new InputGrid () ; } } <s> fixed problem where boolean would occasionaly not trigger
+fix_before_refactoring: public void actionPerformed ( java.awt.event.ActionEvent e ) { new InputGrid () ; }
+fix_after_refactoring: public void fuwmtaxpzlcsxgfyyjqv ( java.awt.event.ActionEvent e ) { new InputGrid () ; }
+√ fix_prediction_before: public void actionPerformed ( java.awt.event.ActionEvent e ) { new InputGrid () ; }
+× fix_prediction_after: public void java.awt.event.ActionEvent e ) { new InputGrid () ; }
+
+line_index: 743
+bug_before_refactoring: @ java.lang.Override public java.lang.String getSavePath () { java.lang.String mcDataLocation = net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; return mcDataLocation . substring ( 0 , ( ( mcDataLocation . length () ) - 2 ) ) ; } <s> @ java.lang.Override public java.lang.String getSavePath () { java.lang.String mcDataLocation = net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; return mcDataLocation . substring ( 0 , ( ( mcDataLocation . length () ) - 2 ) ) ; } <s> Bugfix: A folder with the instance name minus two letters gets generated when a Circuit Database template is saved.
+bug_after_refactoring: @ java.lang.Override public java.lang.String jbduezvtxpqvyzhczpkn () { java.lang.String mcDataLocation = net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; return mcDataLocation . substring ( 0 , ( ( mcDataLocation . length () ) - 2 ) ) ; } <s> @ java.lang.Override public java.lang.String jbduezvtxpqvyzhczpkn () { java.lang.String mcDataLocation = net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; return mcDataLocation . substring ( 0 , ( ( mcDataLocation . length () ) - 2 ) ) ; } <s> Bugfix: A folder with the instance name minus two letters gets generated when a Circuit Database template is saved.
+fix_before_refactoring: @ java.lang.Override public java.lang.String getSavePath () { return net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; }
+fix_after_refactoring: @ java.lang.Override public java.lang.String jbduezvtxpqvyzhczpkn () { return net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; }
+√ fix_prediction_before: @ java.lang.Override public java.lang.String getSavePath () { return net.minecraft.client.Minecraft . getMinecraft () . mcDataDir . getAbsolutePath () ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String jbduezvtxpqvyzhczpknzvtxpqvyzhczpkn () { return mcDataLocation . substring ( 0 , ( ( mcDataLocation . length () ) - 1 ) ) ; }
+
+line_index: 756
+bug_before_refactoring: private static native void _IMAQdxSnap ( int id , long image ) ; <s> private static native void _IMAQdxSnap ( int id , long image ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void xrmeudhoethgilnxzleo ( int id , long image ) ; <s> private static native void xrmeudhoethgilnxzleo ( int id , long image ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _IMAQdxSnap ( int id , long image ) {}
+fix_after_refactoring: private static void xrmeudhoethgilnxzleo ( int id , long image ) {}
+√ fix_prediction_before: private static void _IMAQdxSnap ( int id , long image ) {}
+× fix_prediction_after: private static void newmeudhoethgilServicezleo ( int id , long image ) {}
+
+line_index: 777
+bug_before_refactoring: public boolean isEmpty () { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> public boolean isEmpty () { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> fixed checkstyle errors as well as small issue in Deque
+bug_after_refactoring: public boolean oidsahmpczfctgqkmizm () { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> public boolean oidsahmpczfctgqkmizm () { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> fixed checkstyle errors as well as small issue in Deque
+fix_before_refactoring: public boolean isEmpty () { return false ; }
+fix_after_refactoring: public boolean oidsahmpczfctgqkmizm () { return false ; }
+√ fix_prediction_before: public boolean isEmpty () { return false ; }
+× fix_prediction_after: public boolean oidsahmpczfctgqOrderizm () { throw new sun.reflect.ddics.reflectiveObjects.Not ( this ) ; }
+
+line_index: 786
+bug_before_refactoring: public int getEvent () { try { mEvent = mJSONObject . getInt ( JsonCommadConstant.INTDATA ) ; } catch ( org.json.JSONException e ) { e . printStackTrace () ; } return mEvent ; } <s> public int getEvent () { try { mEvent = mJSONObject . getInt ( JsonCommadConstant.INTDATA ) ; } catch ( org.json.JSONException e ) { e . printStackTrace () ; } return mEvent ; } <s> [fix connection bug] fix connection bug
+bug_after_refactoring: public int ymqlpjmompvgukhorfre () { try { mEvent = mJSONObject . getInt ( JsonCommadConstant.INTDATA ) ; } catch ( org.json.JSONException e ) { e . printStackTrace () ; } return mEvent ; } <s> public int ymqlpjmompvgukhorfre () { try { mEvent = mJSONObject . getInt ( JsonCommadConstant.INTDATA ) ; } catch ( org.json.JSONException e ) { e . printStackTrace () ; } return mEvent ; } <s> [fix connection bug] fix connection bug
+fix_before_refactoring: public int getEvent () { return mEvent ; }
+fix_after_refactoring: public int ymqlpjmompvgukhorfre () { return mEvent ; }
+√ fix_prediction_before: public int getEvent () { return mEvent ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String toStringqlpjmompvgukhorfre () { return mEvent . getInt ( JsonCommadConstant.INTDATA ) ; }
+
+line_index: 791
+bug_before_refactoring: @ java.lang.Override protected void end () { Robot.driveTrain . setDriveMotors ( 0 ) ; } <s> @ java.lang.Override protected void end () { Robot.driveTrain . setDriveMotors ( 0 ) ; } <s> Version 3.0 of the MecDrive  Fixed a bug where the wheels did not go the way they were suppose to go. Check the comments below the code for the specific instructions.
+bug_after_refactoring: @ java.lang.Override protected void vhynacgrwvlqvjqvkxpr () { Robot.driveTrain . setDriveMotors ( 0 ) ; } <s> @ java.lang.Override protected void vhynacgrwvlqvjqvkxpr () { Robot.driveTrain . setDriveMotors ( 0 ) ; } <s> Version 3.0 of the MecDrive  Fixed a bug where the wheels did not go the way they were suppose to go. Check the comments below the code for the specific instructions.
+fix_before_refactoring: @ java.lang.Override protected void end () {}
+fix_after_refactoring: @ java.lang.Override protected void vhynacgrwvlqvjqvkxpr () {}
+√ fix_prediction_before: @ java.lang.Override protected void end () {}
+× fix_prediction_after: @ java.lang.Override protected void returnynacgrvlqvjqvkxpr () {}
+
+line_index: 793
+bug_before_refactoring: @ java.lang.Override public void onStart () { super . onStart () ; client . connect () ; AppIndex.AppIndexApi . start ( client , getIndexApiAction () ) ; } <s> @ java.lang.Override public void onStart () { super . onStart () ; client . connect () ; AppIndex.AppIndexApi . start ( client , getIndexApiAction () ) ; } <s> add friend bug fix
+bug_after_refactoring: @ java.lang.Override public void sjvdhqggmcewlwjnhrym () { super . sjvdhqggmcewlwjnhrym () ; client . connect () ; AppIndex.AppIndexApi . start ( client , getIndexApiAction () ) ; } <s> @ java.lang.Override public void sjvdhqggmcewlwjnhrym () { super . sjvdhqggmcewlwjnhrym () ; client . connect () ; AppIndex.AppIndexApi . start ( client , getIndexApiAction () ) ; } <s> add friend bug fix
+fix_before_refactoring: @ java.lang.Override public void onStart () { super . onStart () ; }
+fix_after_refactoring: @ java.lang.Override public void sjvdhqggmcewlwjnhrym () { super . sjvdhqggmcewlwjnhrym () ; }
+√ fix_prediction_before: @ java.lang.Override public void onStart () { super . onStart () ; }
+× fix_prediction_after: @ java.lang.Override public void sjnamehqggmcewlwjnhrym () { super . sjnamehqggmcewlwjnhrym () ; }
+
+line_index: 800
+bug_before_refactoring: public java.lang.String toString () { return ( ( namespace ) + "/" ) + ( name ) ; } <s> public java.lang.String toString () { return ( ( namespace ) + "/" ) + ( name ) ; } <s> Fixing errors to get the compiler to run
+bug_after_refactoring: public java.lang.String mrvucovrwzqygwgsggpu () { return ( ( namespace ) + "/" ) + ( name ) ; } <s> public java.lang.String mrvucovrwzqygwgsggpu () { return ( ( namespace ) + "/" ) + ( name ) ; } <s> Fixing errors to get the compiler to run
+fix_before_refactoring: public java.lang.String toString () { return name ; }
+fix_after_refactoring: public java.lang.String mrvucovrwzqygwgsggpu () { return name ; }
+√ fix_prediction_before: public java.lang.String toString () { return name ; }
+× fix_prediction_after: public java.lang.String toString () { return ( ( namespace ) + "/" ) + ( name ) ; }
+
+line_index: 816
+bug_before_refactoring: public java.lang.String computerMove ( org.traxgame.main.Traxboard tb ) { try { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; } catch ( org.traxgame.main.IllegalMoveException e ) { e . printStackTrace () ; throw new java.lang.RuntimeException () ; } } <s> public java.lang.String computerMove ( org.traxgame.main.Traxboard tb ) { try { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; } catch ( org.traxgame.main.IllegalMoveException e ) { e . printStackTrace () ; throw new java.lang.RuntimeException () ; } } <s> fixed a few compile error.
+bug_after_refactoring: public java.lang.String yulblbhcfaiyyhtdteig ( org.traxgame.main.Traxboard tb ) { try { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; } catch ( org.traxgame.main.IllegalMoveException e ) { e . printStackTrace () ; throw new java.lang.RuntimeException () ; } } <s> public java.lang.String yulblbhcfaiyyhtdteig ( org.traxgame.main.Traxboard tb ) { try { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; } catch ( org.traxgame.main.IllegalMoveException e ) { e . printStackTrace () ; throw new java.lang.RuntimeException () ; } } <s> fixed a few compile error.
+fix_before_refactoring: public java.lang.String computerMove ( org.traxgame.main.Traxboard tb ) { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; }
+fix_after_refactoring: public java.lang.String yulblbhcfaiyyhtdteig ( org.traxgame.main.Traxboard tb ) { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; }
+√ fix_prediction_before: public java.lang.String computerMove ( org.traxgame.main.Traxboard tb ) { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String yulblbhcfaiyyhtcfaiyyhtcfaiyyhtcfioyyhtdteig tb ) { return org.traxgame.main.TraxUtil . getRandomMove ( tb ) ; }
+
+line_index: 853
+bug_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { android.widget.Toast . makeText ( this , "Question sent!" , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override public void onClick ( android.view.View v ) { android.widget.Toast . makeText ( this , "Question sent!" , Toast.LENGTH_SHORT ) . show () ; } <s> fixed some issues with tinder card listener callbacks
+bug_after_refactoring: @ java.lang.Override public void xydakuctcscghnoczudm ( android.view.View v ) { android.widget.Toast . makeText ( this , "Question sent!" , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override public void xydakuctcscghnoczudm ( android.view.View v ) { android.widget.Toast . makeText ( this , "Question sent!" , Toast.LENGTH_SHORT ) . show () ; } <s> fixed some issues with tinder card listener callbacks
+fix_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) {}
+fix_after_refactoring: @ java.lang.Override public void xydakuctcscghnoczudm ( android.view.View v ) {}
+√ fix_prediction_before: @ java.lang.Override public void onClick ( android.view.View v ) {}
+× fix_prediction_after: @ java.lang.Override public void xydakbcscghnoczudm ( android.view.View v ) { android.widget.Toast . makeText ( this , "Question sent!" , Toast.LENGTH_SHORT ) ; }
+
+line_index: 854
+bug_before_refactoring: private static native void _imaqSetMaskOffset ( long image , long offset ) ; <s> private static native void _imaqSetMaskOffset ( long image , long offset ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void lgfliqorxqxmhymekhdy ( long image , long offset ) ; <s> private static native void lgfliqorxqxmhymekhdy ( long image , long offset ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqSetMaskOffset ( long image , long offset ) {}
+fix_after_refactoring: private static void lgfliqorxqxmhymekhdy ( long image , long offset ) {}
+√ fix_prediction_before: private static void _imaqSetMaskOffset ( long image , long offset ) {}
+× fix_prediction_after: private static void keyfliqorxqxmhymekhdy ( long image , long offset ) {}
+
+line_index: 856
+bug_before_refactoring: @ org.junit.After public void tearDown ( ) throws java.lang.Exception { try { DB . ExecuteQuery ( "DELETE from Bets where username=\"bettest\";" ) ; DB . ExecuteQuery ( "DELETE from Players where username=\"bettest\";" ) ; } catch ( java.sql.SQLException e ) { e . printStackTrace () ; } } <s> @ org.junit.After public void tearDown ( ) throws java.lang.Exception { try { DB . ExecuteQuery ( "DELETE from Bets where username=\"bettest\";" ) ; DB . ExecuteQuery ( "DELETE from Players where username=\"bettest\";" ) ; } catch ( java.sql.SQLException e ) { e . printStackTrace () ; } } <s> Solved ArrayList decleration bug  some mockito tests on bets
+bug_after_refactoring: @ org.junit.After public void hqmslklrqggunsftczfv ( ) throws java.lang.Exception { try { DB . ExecuteQuery ( "DELETE from Bets where username=\"bettest\";" ) ; DB . ExecuteQuery ( "DELETE from Players where username=\"bettest\";" ) ; } catch ( java.sql.SQLException e ) { e . printStackTrace () ; } } <s> @ org.junit.After public void hqmslklrqggunsftczfv ( ) throws java.lang.Exception { try { DB . ExecuteQuery ( "DELETE from Bets where username=\"bettest\";" ) ; DB . ExecuteQuery ( "DELETE from Players where username=\"bettest\";" ) ; } catch ( java.sql.SQLException e ) { e . printStackTrace () ; } } <s> Solved ArrayList decleration bug  some mockito tests on bets
+fix_before_refactoring: @ org.junit.After public void tearDown ( ) throws java.lang.Exception {}
+fix_after_refactoring: @ org.junit.After public void hqmslklrqggunsftczfv ( ) throws java.lang.Exception {}
+√ fix_prediction_before: @ org.junit.After public void tearDown ( ) throws java.lang.Exception {}
+× fix_prediction_after: @ java.lang.Override @ org.junit.After public void hqmslkl () { try { DB . executeQuery ( "DELETE from Bets where username=\"bettest\" ) ; DB . executeQuery ( "DELETE from Players where username=\"bettest\" ) ; } catch ( java.sql.SQLException e ) { e . printStackTrace () ; } }
+
+line_index: 864
+bug_before_refactoring: @ java.lang.Override protected void onStop () { super . onStop () ; if ( org.greenrobot.eventbus.EventBus . getDefault () . isRegistered ( this ) ) { org.greenrobot.eventbus.EventBus . getDefault () . unregister ( this ) ; } } <s> @ java.lang.Override protected void onStop () { super . onStop () ; if ( org.greenrobot.eventbus.EventBus . getDefault () . isRegistered ( this ) ) { org.greenrobot.eventbus.EventBus . getDefault () . unregister ( this ) ; } } <s> Fix some bugs to make the code work.
+bug_after_refactoring: @ java.lang.Override protected void wngmmzpwxiradwnutevg () { super . wngmmzpwxiradwnutevg () ; if ( org.greenrobot.eventbus.EventBus . getDefault () . isRegistered ( this ) ) { org.greenrobot.eventbus.EventBus . getDefault () . unregister ( this ) ; } } <s> @ java.lang.Override protected void wngmmzpwxiradwnutevg () { super . wngmmzpwxiradwnutevg () ; if ( org.greenrobot.eventbus.EventBus . getDefault () . isRegistered ( this ) ) { org.greenrobot.eventbus.EventBus . getDefault () . unregister ( this ) ; } } <s> Fix some bugs to make the code work.
+fix_before_refactoring: @ java.lang.Override protected void onStop () { super . onStop () ; }
+fix_after_refactoring: @ java.lang.Override protected void wngmmzpwxiradwnutevg () { super . wngmmzpwxiradwnutevg () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onStop () { super . onStop () ; }
+× fix_prediction_after: @ java.lang.Override protected void wngmmzpiviradpivir () { super . wngmmzpiviradwnutegoogle () ; super . wngmmzpiviradwnuteine () ; }
+
+line_index: 868
+bug_before_refactoring: @ java.lang.Override public void onPlanClicked ( com.spadatech.mobile.android.foodframer.models.Plan plan ) { android.util.Log . d ( "Ludens" , ( "plan: " + ( plan . getName () . toString () ) ) ) ; } <s> @ java.lang.Override public void onPlanClicked ( com.spadatech.mobile.android.foodframer.models.Plan plan ) { android.util.Log . d ( "Ludens" , ( "plan: " + ( plan . getName () . toString () ) ) ) ; } <s> Fixed issue saving new plans
+bug_after_refactoring: @ java.lang.Override public void chutrtxarbcsjpyceizn ( com.spadatech.mobile.android.foodframer.models.Plan plan ) { android.util.Log . d ( "Ludens" , ( "plan: " + ( plan . getName () . toString () ) ) ) ; } <s> @ java.lang.Override public void chutrtxarbcsjpyceizn ( com.spadatech.mobile.android.foodframer.models.Plan plan ) { android.util.Log . d ( "Ludens" , ( "plan: " + ( plan . getName () . toString () ) ) ) ; } <s> Fixed issue saving new plans
+fix_before_refactoring: @ java.lang.Override public void onPlanClicked ( com.spadatech.mobile.android.foodframer.models.Plan plan ) {}
+fix_after_refactoring: @ java.lang.Override public void chutrtxarbcsjpyceizn ( com.spadatech.mobile.android.foodframer.models.Plan plan ) {}
+√ fix_prediction_before: @ java.lang.Override public void onPlanClicked ( com.spadatech.mobile.android.foodframer.models.Plan plan ) {}
+× fix_prediction_after: @ java.lang.Override public void chutrtxarbcsjpyceizn ( com.spadatech.mobile.android.foodframer.models.Plan plan ) { android.util.Log . d ( "Ludens" , ( "plan: " + ( plan . getName () ) ) ) ; }
+
+line_index: 878
+bug_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; android.content.Intent intent ; intent = new android.content.Intent ( this , com.breadwallet.presenter.activities.MainActivity . class ) ; startActivity ( intent ) ; if ( ! ( isDestroyed () ) ) { finish () ; } } <s> @ java.lang.Override protected void onPause () { super . onPause () ; android.content.Intent intent ; intent = new android.content.Intent ( this , com.breadwallet.presenter.activities.MainActivity . class ) ; startActivity ( intent ) ; if ( ! ( isDestroyed () ) ) { finish () ; } } <s> bug fix when on the custom keyboard screen going in the background crahes the app
+bug_after_refactoring: @ java.lang.Override protected void rtluajfmfnbawvsonnbz () { super . rtluajfmfnbawvsonnbz () ; android.content.Intent intent ; intent = new android.content.Intent ( this , com.breadwallet.presenter.activities.MainActivity . class ) ; startActivity ( intent ) ; if ( ! ( isDestroyed () ) ) { finish () ; } } <s> @ java.lang.Override protected void rtluajfmfnbawvsonnbz () { super . rtluajfmfnbawvsonnbz () ; android.content.Intent intent ; intent = new android.content.Intent ( this , com.breadwallet.presenter.activities.MainActivity . class ) ; startActivity ( intent ) ; if ( ! ( isDestroyed () ) ) { finish () ; } } <s> bug fix when on the custom keyboard screen going in the background crahes the app
+fix_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; }
+fix_after_refactoring: @ java.lang.Override protected void rtluajfmfnbawvsonnbz () { super . rtluajfmfnbawvsonnbz () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onPause () { super . onPause () ; }
+× fix_prediction_after: @ java.lang.Override protected void rtluajfm =bawvsonnbz () { super . rtluajfm =bawvsonnbz () ; android.content.Intent intent ; intent = new android.content.Intent ( this ) ; startActivity ( intent ) ; }
+
+line_index: 880
+bug_before_refactoring: protected native void nativeBetween ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ; <s> protected native void nativeBetween ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ; <s> Merge branch 'master' of github.com:realm/realm-java into kg/bugfix-binary-isnotnull
+bug_after_refactoring: protected native void sjgzypgmkogmlxpgwsci ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ; <s> protected native void sjgzypgmkogmlxpgwsci ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ; <s> Merge branch 'master' of github.com:realm/realm-java into kg/bugfix-binary-isnotnull
+fix_before_refactoring: private native void nativeBetween ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ;
+fix_after_refactoring: private native void sjgzypgmkogmlxpgwsci ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ;
+√ fix_prediction_before: private native void nativeBetween ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ;
+× fix_prediction_after: private native void sj =ypgmkogmlpgwsci ( long nativeQueryPtr , long [] columnIndex , float value1 , float value2 ) ;
+
+line_index: 881
+bug_before_refactoring: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > getAdmins () { return ( admins ) == null ? null : java.util.Collections . unmodifiableList ( admins ) ; } <s> public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > getAdmins () { return ( admins ) == null ? null : java.util.Collections . unmodifiableList ( admins ) ; } <s> ARUHA-765: fixed the problem with nulls;
+bug_after_refactoring: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > zppvfdcmhxoafodbqxjp () { return ( admins ) == null ? null : java.util.Collections . unmodifiableList ( admins ) ; } <s> public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > zppvfdcmhxoafodbqxjp () { return ( admins ) == null ? null : java.util.Collections . unmodifiableList ( admins ) ; } <s> ARUHA-765: fixed the problem with nulls;
+fix_before_refactoring: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > getAdmins () { return admins ; }
+fix_after_refactoring: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > zppvfdcmhxoafodbqxjp () { return admins ; }
+√ fix_prediction_before: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > getAdmins () { return admins ; }
+× fix_prediction_after: public java.util.List < org.zalando.nakadi.domain.EventTypeAuthorizationAttribute > zppvfdcmh.afodbqxjp () { return admins ; }
+
+line_index: 882
+bug_before_refactoring: public void setTempMin ( java.lang.Double tm ) { data . put ( "tmin" , ( tm == null ? - 99.99 : tm ) ) ; } <s> public void setTempMin ( java.lang.Double tm ) { data . put ( "tmin" , ( tm == null ? - 99.99 : tm ) ) ; } <s> Bug fixes for Double
+bug_after_refactoring: public void edsgtdrtitfdyowuidxf ( java.lang.Double tm ) { data . put ( "tmin" , ( tm == null ? - 99.99 : tm ) ) ; } <s> public void edsgtdrtitfdyowuidxf ( java.lang.Double tm ) { data . put ( "tmin" , ( tm == null ? - 99.99 : tm ) ) ; } <s> Bug fixes for Double
+fix_before_refactoring: public void setTempMin ( java.lang.Double tm ) { data . put ( "tmin" , tm ) ; }
+fix_after_refactoring: public void edsgtdrtitfdyowuidxf ( java.lang.Double tm ) { data . put ( "tmin" , tm ) ; }
+√ fix_prediction_before: public void setTempMin ( java.lang.Double tm ) { data . put ( "tmin" , tm ) ; }
+× fix_prediction_after: public void edsgtdrtitfdyowuid remove ( java.lang.Double tm ) { data . put ( "tmin" , tm ) ; }
+
+line_index: 888
+bug_before_refactoring: public int getLastNumber () { return ( mLastPuzzleId ) + 1 ; } <s> public int getLastNumber () { return ( mLastPuzzleId ) + 1 ; } <s> moved statistics logic into StatisticsUtils fixed bug with total puzzle count
+bug_after_refactoring: public int sydmduifcfoqqsoujfdc () { return ( mLastPuzzleId ) + 1 ; } <s> public int sydmduifcfoqqsoujfdc () { return ( mLastPuzzleId ) + 1 ; } <s> moved statistics logic into StatisticsUtils fixed bug with total puzzle count
+fix_before_refactoring: public int getLastNumber () { return mLastPuzzleId ; }
+fix_after_refactoring: public int sydmduifcfoqqsoujfdc () { return mLastPuzzleId ; }
+√ fix_prediction_before: public int getLastNumber () { return mLastPuzzleId ; }
+× fix_prediction_after: public int getMaxdmduifcfoqqsoujfdc () { return ( mLastPuzzleId ) + 1 ; }
+
+line_index: 912
+bug_before_refactoring: private void okButtonActionPerformed ( java.awt.event.ActionEvent evt ) { new gui.HumanPlayer ( this . nicknameField . getText () , this . passwordField . getText () ) ; } <s> private void okButtonActionPerformed ( java.awt.event.ActionEvent evt ) { new gui.HumanPlayer ( this . nicknameField . getText () , this . passwordField . getText () ) ; } <s> bugfix
+bug_after_refactoring: private void fbppryientgasjmrjrsr ( java.awt.event.ActionEvent evt ) { new gui.HumanPlayer ( this . nicknameField . getText () , this . passwordField . getText () ) ; } <s> private void fbppryientgasjmrjrsr ( java.awt.event.ActionEvent evt ) { new gui.HumanPlayer ( this . nicknameField . getText () , this . passwordField . getText () ) ; } <s> bugfix
+fix_before_refactoring: private void okButtonActionPerformed ( java.awt.event.ActionEvent evt ) {}
+fix_after_refactoring: private void fbppryientgasjmrjrsr ( java.awt.event.ActionEvent evt ) {}
+√ fix_prediction_before: private void okButtonActionPerformed ( java.awt.event.ActionEvent evt ) {}
+× fix_prediction_after: private void *ppryientgasjmrjrsr ( java.awt.event.ActionEvent evt ) {}
+
+line_index: 921
+bug_before_refactoring: public java.lang.String [] getTools () {} <s> public java.lang.String [] getTools () {} <s> errors "fixed
+bug_after_refactoring: public java.lang.String [] aishltpocwtrddejyong () {} <s> public java.lang.String [] aishltpocwtrddejyong () {} <s> errors "fixed
+fix_before_refactoring: { return null ; }
+fix_after_refactoring: { return null ; }
+√ fix_prediction_before: { return null ; }
+× fix_prediction_after: public java.lang.String [] aishltpocwtrddejyong () ;
+
+line_index: 960
+bug_before_refactoring: @ java.lang.Override protected void onPreExecute () { super . onPreExecute () ; android.widget.Toast . makeText ( com.example.nicholasesposito.posapp.activities.MainActivity . getMainActivity () , "Uploading Data" , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override protected void onPreExecute () { super . onPreExecute () ; android.widget.Toast . makeText ( com.example.nicholasesposito.posapp.activities.MainActivity . getMainActivity () , "Uploading Data" , Toast.LENGTH_SHORT ) . show () ; } <s> solved a bug that would cause sales not to be increased when Firebase returned a Long value
+bug_after_refactoring: @ java.lang.Override protected void zneuhbacjzegxagyfmil () { super . zneuhbacjzegxagyfmil () ; android.widget.Toast . makeText ( com.example.nicholasesposito.posapp.activities.MainActivity . getMainActivity () , "Uploading Data" , Toast.LENGTH_SHORT ) . show () ; } <s> @ java.lang.Override protected void zneuhbacjzegxagyfmil () { super . zneuhbacjzegxagyfmil () ; android.widget.Toast . makeText ( com.example.nicholasesposito.posapp.activities.MainActivity . getMainActivity () , "Uploading Data" , Toast.LENGTH_SHORT ) . show () ; } <s> solved a bug that would cause sales not to be increased when Firebase returned a Long value
+fix_before_refactoring: @ java.lang.Override protected void onPreExecute () { super . onPreExecute () ; }
+fix_after_refactoring: @ java.lang.Override protected void zneuhbacjzegxagyfmil () { super . zneuhbacjzegxagyfmil () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onPreExecute () { super . onPreExecute () ; }
+× fix_prediction_after: @ java.lang.Override protected void zneuhegxagyfmil () { super . zneuhbacjzegxagyfmil () ; }
+
+line_index: 961
+bug_before_refactoring: @ java.lang.Override public void debug ( java.lang.String str ) { java.lang.System.err . println ( ( "Debug: " + str ) ) ; } <s> @ java.lang.Override public void debug ( java.lang.String str ) { java.lang.System.err . println ( ( "Debug: " + str ) ) ; } <s> Fix for #305: Ceylond: disable debug log
+bug_after_refactoring: @ java.lang.Override public void bhgqcufbbqnrbckcyoli ( java.lang.String str ) { java.lang.System.err . println ( ( "Debug: " + str ) ) ; } <s> @ java.lang.Override public void bhgqcufbbqnrbckcyoli ( java.lang.String str ) { java.lang.System.err . println ( ( "Debug: " + str ) ) ; } <s> Fix for #305: Ceylond: disable debug log
+fix_before_refactoring: @ java.lang.Override public void debug ( java.lang.String str ) {}
+fix_after_refactoring: @ java.lang.Override public void bhgqcufbbqnrbckcyoli ( java.lang.String str ) {}
+√ fix_prediction_before: @ java.lang.Override public void debug ( java.lang.String str ) {}
+× fix_prediction_after: @ java.lang.Override public void b =qcufbbqnrbckcyoli ( java.lang.String str ) { java.lang.System.err . println ( str ) ; }
+
+line_index: 992
+bug_before_refactoring: @ java.lang.Override public java.lang.String getFormula () { try { return isEmpty () ? null : poiCell . getCellFormula () ; } catch ( java.lang.Exception e ) { throw newIllegalStateException ( e ) ; } } <s> @ java.lang.Override public java.lang.String getFormula () { try { return isEmpty () ? null : poiCell . getCellFormula () ; } catch ( java.lang.Exception e ) { throw newIllegalStateException ( e ) ; } } <s> -added FindBugs to build.gradle -fixed the first few issues reported by FindBugs
+bug_after_refactoring: @ java.lang.Override public java.lang.String mnjzekwozsawxglvgtkt () { try { return isEmpty () ? null : poiCell . getCellFormula () ; } catch ( java.lang.Exception e ) { throw newIllegalStateException ( e ) ; } } <s> @ java.lang.Override public java.lang.String mnjzekwozsawxglvgtkt () { try { return isEmpty () ? null : poiCell . getCellFormula () ; } catch ( java.lang.Exception e ) { throw newIllegalStateException ( e ) ; } } <s> -added FindBugs to build.gradle -fixed the first few issues reported by FindBugs
+fix_before_refactoring: @ java.lang.Override public java.lang.String getFormula () { return poiCell . getCellFormula () ; }
+fix_after_refactoring: @ java.lang.Override public java.lang.String mnjzekwozsawxglvgtkt () { return poiCell . getCellFormula () ; }
+√ fix_prediction_before: @ java.lang.Override public java.lang.String getFormula () { return poiCell . getCellFormula () ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String getName () { return poiCell . getCellFormula () ; }
+
+line_index: 1016
+bug_before_refactoring: public java.lang.Integer getType () { return ( type ) == 0 ? null : type ; } <s> public java.lang.Integer getType () { return ( type ) == 0 ? null : type ; } <s> fixed bad enum error
+bug_after_refactoring: public java.lang.Integer vofeguspfxvbqteilkte () { return ( type ) == 0 ? null : type ; } <s> public java.lang.Integer vofeguspfxvbqteilkte () { return ( type ) == 0 ? null : type ; } <s> fixed bad enum error
+fix_before_refactoring: public java.lang.Integer getType () { return type ; }
+fix_after_refactoring: public java.lang.Integer vofeguspfxvbqteilkte () { return type ; }
+√ fix_prediction_before: public java.lang.Integer getType () { return type ; }
+× fix_prediction_after: public java.lang.Integer vofeguspfx () { return ( type ) == 0 ? null : type ; }
+
+line_index: 1089
+bug_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { com.spatialdev.osm.model.OSMNode node = osmMap . addNode () ; toggleNodeMode () ; node . select () ; identifyOSMFeature ( node ) ; } <s> @ java.lang.Override public void onClick ( android.view.View v ) { com.spatialdev.osm.model.OSMNode node = osmMap . addNode () ; toggleNodeMode () ; node . select () ; identifyOSMFeature ( node ) ; } <s> Rolling Back When GPS is OFF  Add functionallity in settings to handle situations where GPS is turned off  Fix for issue #68  Signed-off-by: Jason Rogena <jasonrogena@gmail.com>
+bug_after_refactoring: @ java.lang.Override public void qabqdnnftkbzqmfgaqny ( android.view.View v ) { com.spatialdev.osm.model.OSMNode node = osmMap . addNode () ; toggleNodeMode () ; node . select () ; identifyOSMFeature ( node ) ; } <s> @ java.lang.Override public void qabqdnnftkbzqmfgaqny ( android.view.View v ) { com.spatialdev.osm.model.OSMNode node = osmMap . addNode () ; toggleNodeMode () ; node . select () ; identifyOSMFeature ( node ) ; } <s> Rolling Back When GPS is OFF  Add functionallity in settings to handle situations where GPS is turned off  Fix for issue #68  Signed-off-by: Jason Rogena <jasonrogena@gmail.com>
+fix_before_refactoring: @ java.lang.Override public void onClick ( android.view.View v ) { toggleNodeMode () ; }
+fix_after_refactoring: @ java.lang.Override public void qabqdnnftkbzqmfgaqny ( android.view.View v ) { toggleNodeMode () ; }
+√ fix_prediction_before: @ java.lang.Override public void onClick ( android.view.View v ) { toggleNodeMode () ; }
+× fix_prediction_after: @ java.lang.Override public void qabqdnnftkbzServicefgaqny ( android.view.View v ) { toggleNodeMode () ; node . select () ; }
+
+line_index: 1090
+bug_before_refactoring: private static void toast ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; } <s> private static void toast ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; } <s> Fix compilation problems
+bug_after_refactoring: private static void dhpevczsiyrlyqroapex ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; } <s> private static void dhpevczsiyrlyqroapex ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; } <s> Fix compilation problems
+fix_before_refactoring: public static void toast ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; }
+fix_after_refactoring: public static void dhpevczsiyrlyqroapex ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; }
+√ fix_prediction_before: public static void toast ( android.content.Context context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; }
+× fix_prediction_after: @ java.lang.SuppressWarnings ( value = "rawtypes" ) private static void . . . makeText ( context , final java.lang.String message , final int length ) { android.widget.Toast . makeText ( context , message , length ) . show () ; }
+
+line_index: 1095
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { server.DatabaseManager db = new server.DatabaseManager () ; db . addNewActivity ( "GFGF" , 500 , 5 , 3 , 6 , "2016-02-12" , "10:00:00" , "mjhb" , "kjh" ) ; } <s> public static void main ( java.lang.String [] args ) { server.DatabaseManager db = new server.DatabaseManager () ; db . addNewActivity ( "GFGF" , 500 , 5 , 3 , 6 , "2016-02-12" , "10:00:00" , "mjhb" , "kjh" ) ; } <s> fixed error in DBManager
+bug_after_refactoring: public static void jbqaxzlhntzduqrnhdmv ( java.lang.String [] args ) { server.DatabaseManager db = new server.DatabaseManager () ; db . addNewActivity ( "GFGF" , 500 , 5 , 3 , 6 , "2016-02-12" , "10:00:00" , "mjhb" , "kjh" ) ; } <s> public static void jbqaxzlhntzduqrnhdmv ( java.lang.String [] args ) { server.DatabaseManager db = new server.DatabaseManager () ; db . addNewActivity ( "GFGF" , 500 , 5 , 3 , 6 , "2016-02-12" , "10:00:00" , "mjhb" , "kjh" ) ; } <s> fixed error in DBManager
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void jbqaxzlhntzduqrnhdmv ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: @ java.lang.Override public static void jbqaxzlhntzduqrnhdmv ( java.lang.String [] args ) { server.DatabaseManager db = new server.DatabaseManager () ; }
+
+line_index: 1106
+bug_before_refactoring: public void tearDown () { clear () ; if ( false ) try {} catch ( java.lang.RuntimeException e ) { com.google.common.base.Throwables . propagate ( e ) ; } } <s> public void tearDown () { clear () ; if ( false ) try {} catch ( java.lang.RuntimeException e ) { com.google.common.base.Throwables . propagate ( e ) ; } } <s> Add some javadoc and fix single key factory issue.
+bug_after_refactoring: public void kyikucisjwngijvbosnf () { clear () ; if ( false ) try {} catch ( java.lang.RuntimeException e ) { com.google.common.base.Throwables . propagate ( e ) ; } } <s> public void kyikucisjwngijvbosnf () { clear () ; if ( false ) try {} catch ( java.lang.RuntimeException e ) { com.google.common.base.Throwables . propagate ( e ) ; } } <s> Add some javadoc and fix single key factory issue.
+fix_before_refactoring: public void tearDown () { clear () ; }
+fix_after_refactoring: public void kyikucisjwngijvbosnf () { clear () ; }
+√ fix_prediction_before: public void tearDown () { clear () ; }
+× fix_prediction_after: @ java.lang.Override public void kyikucisjwngij_os {} () { clear () ; }
+
+line_index: 1138
+bug_before_refactoring: public void setValue ( int value ) { validateValue ( value ) ; this . value = value ; } <s> public void setValue ( int value ) { validateValue ( value ) ; this . value = value ; } <s> Make improvements to nested SudokuSquares  A bug was fixed in the solver and other methods were changed due to making SudokuSquare nested within SudokuBoard.
+bug_after_refactoring: public void vzjwfgtowbysvfjtipft ( int value ) { validateValue ( value ) ; this . value = value ; } <s> public void vzjwfgtowbysvfjtipft ( int value ) { validateValue ( value ) ; this . value = value ; } <s> Make improvements to nested SudokuSquares  A bug was fixed in the solver and other methods were changed due to making SudokuSquare nested within SudokuBoard.
+fix_before_refactoring: private void setValue ( int value ) { validateValue ( value ) ; this . value = value ; }
+fix_after_refactoring: private void vzjwfgtowbysvfjtipft ( int value ) { validateValue ( value ) ; this . value = value ; }
+√ fix_prediction_before: private void setValue ( int value ) { validateValue ( value ) ; this . value = value ; }
+× fix_prediction_after: private void vzjwfgtowbysvfj 1ft ( int value ) { validateValue ( value ) ; this . value = value ; }
+
+line_index: 1139
+bug_before_refactoring: @ java.lang.Override public boolean onTarget () { return ( ! ( justReset ) ) && ( super . onTarget () ) ; } <s> @ java.lang.Override public boolean onTarget () { return ( ! ( justReset ) ) && ( super . onTarget () ) ; } <s> Fixed threading issues with justReset  privitized justReset  then added synchronizes
+bug_after_refactoring: @ java.lang.Override public boolean neiptqnrmwjqgxhjiutb () { return ( ! ( justReset ) ) && ( super . neiptqnrmwjqgxhjiutb () ) ; } <s> @ java.lang.Override public boolean neiptqnrmwjqgxhjiutb () { return ( ! ( justReset ) ) && ( super . neiptqnrmwjqgxhjiutb () ) ; } <s> Fixed threading issues with justReset  privitized justReset  then added synchronizes
+fix_before_refactoring: @ java.lang.Override public boolean onTarget () { return super . onTarget () ; }
+fix_after_refactoring: @ java.lang.Override public boolean neiptqnrmwjqgxhjiutb () { return super . neiptqnrmwjqgxhjiutb () ; }
+√ fix_prediction_before: @ java.lang.Override public boolean onTarget () { return super . onTarget () ; }
+× fix_prediction_after: @ java.lang.Override public boolean neiptqnrmwjqgxhjiutbb () { return super . neiptqnrmwjqgxhjiutb () ; }
+
+line_index: 1167
+bug_before_refactoring: private static native void _IMAQdxSetAttributeEnum ( int id , long name , long value ) ; <s> private static native void _IMAQdxSetAttributeEnum ( int id , long name , long value ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void tyswauvvittdqgjzllcr ( int id , long name , long value ) ; <s> private static native void tyswauvvittdqgjzllcr ( int id , long name , long value ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _IMAQdxSetAttributeEnum ( int id , long name , long value ) {}
+fix_after_refactoring: private static void tyswauvvittdqgjzllcr ( int id , long name , long value ) {}
+√ fix_prediction_before: private static void _IMAQdxSetAttributeEnum ( int id , long name , long value ) {}
+× fix_prediction_after: private static void returnswau.ittdqgjzllcr () ;
+
+line_index: 1187
+bug_before_refactoring: public void init ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) { NetworkRegistry.INSTANCE . registerGuiHandler ( main.instance , new com.Sandvoxel.appeng.Proxy.GUIHandler () ) ; } <s> public void init ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) { NetworkRegistry.INSTANCE . registerGuiHandler ( main.instance , new com.Sandvoxel.appeng.Proxy.GUIHandler () ) ; } <s> fixed a bug loook at the commit under this one
+bug_after_refactoring: public void eclwtkugwkmhyvnnybhy ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) { NetworkRegistry.INSTANCE . registerGuiHandler ( main.instance , new com.Sandvoxel.appeng.Proxy.GUIHandler () ) ; } <s> public void eclwtkugwkmhyvnnybhy ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) { NetworkRegistry.INSTANCE . registerGuiHandler ( main.instance , new com.Sandvoxel.appeng.Proxy.GUIHandler () ) ; } <s> fixed a bug loook at the commit under this one
+fix_before_refactoring: public void init ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) {}
+fix_after_refactoring: public void eclwtkugwkmhyvnnybhy ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) {}
+√ fix_prediction_before: public void init ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) {}
+× fix_prediction_after: public void eclwtkugwapphyvnnybhy ( net.minecraftforge.fml.common.event.FMLInitializationEvent e ) {}
+
+line_index: 1193
+bug_before_refactoring: private void initializeArrayList ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } } <s> private void initializeArrayList ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } } <s> PasswordTest.java - added all of the JUnit tests  with javadoc comments - resolves issue #14 (100 points)
+bug_after_refactoring: private void hmizktajxgjsenwgviun ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } } <s> private void hmizktajxgjsenwgviun ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } } <s> PasswordTest.java - added all of the JUnit tests  with javadoc comments - resolves issue #14 (100 points)
+fix_before_refactoring: protected void initializeArrayList ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } }
+fix_after_refactoring: protected void hmizktajxgjsenwgviun ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } }
+√ fix_prediction_before: protected void initializeArrayList ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } }
+× fix_prediction_after: protected void initializeizktajxgjsenwgviun ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } }
+
+line_index: 1204
+bug_before_refactoring: public void reveal ( org.minesweeper.core.Cell cell ) { reveal ( cell . getX () , cell . getY () ) ; } <s> public void reveal ( org.minesweeper.core.Cell cell ) { reveal ( cell . getX () , cell . getY () ) ; } <s> API restructuring  bugfixes
+bug_after_refactoring: public void nhaybowzyiozqgkpqadu ( org.minesweeper.core.Cell cell ) { nhaybowzyiozqgkpqadu ( cell . getX () , cell . getY () ) ; } <s> public void nhaybowzyiozqgkpqadu ( org.minesweeper.core.Cell cell ) { nhaybowzyiozqgkpqadu ( cell . getX () , cell . getY () ) ; } <s> API restructuring  bugfixes
+fix_before_refactoring: private void reveal ( org.minesweeper.core.Cell cell ) { reveal ( cell . getX () , cell . getY () ) ; }
+fix_after_refactoring: private void nhaybowzyiozqgkpqadu ( org.minesweeper.core.Cell cell ) { nhaybowzyiozqgkpqadu ( cell . getX () , cell . getY () ) ; }
+√ fix_prediction_before: private void reveal ( org.minesweeper.core.Cell cell ) { reveal ( cell . getX () , cell . getY () ) ; }
+× fix_prediction_after: private void nhayExceptionzyiozqgkpqadu ( org.minesweeper.core.Cell cell ) { nhayExceptionzyiozqgkpqadu ( cell . getX () , cell . getY () ) ; }
+
+line_index: 1315
+bug_before_refactoring: private static native void _imaqWriteTIFFFile ( long image , long fileName , long options , long colorTable ) ; <s> private static native void _imaqWriteTIFFFile ( long image , long fileName , long options , long colorTable ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void sllwehmmffaftlihqefb ( long image , long fileName , long options , long colorTable ) ; <s> private static native void sllwehmmffaftlihqefb ( long image , long fileName , long options , long colorTable ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqWriteTIFFFile ( long image , long fileName , long options , long colorTable ) {}
+fix_after_refactoring: private static void sllwehmmffaftlihqefb ( long image , long fileName , long options , long colorTable ) {}
+√ fix_prediction_before: private static void _imaqWriteTIFFFile ( long image , long fileName , long options , long colorTable ) {}
+× fix_prediction_after: private static void sllwehmmffaftlihqefb ( long image , long fileName ) {}
+
+line_index: 1324
+bug_before_refactoring: @ java.lang.Override protected boolean isFinished () { if ( ( ( leftFollower.error ) < 0.1 ) && ( ( rightFollower.error ) < 0.1 ) ) { return true ; } return false ; } <s> @ java.lang.Override protected boolean isFinished () { if ( ( ( leftFollower.error ) < 0.1 ) && ( ( rightFollower.error ) < 0.1 ) ) { return true ; } return false ; } <s> Miscellaneous bugfixes
+bug_after_refactoring: @ java.lang.Override protected boolean yldwuklolfnagamihpgs () { if ( ( ( leftFollower.error ) < 0.1 ) && ( ( rightFollower.error ) < 0.1 ) ) { return true ; } return false ; } <s> @ java.lang.Override protected boolean yldwuklolfnagamihpgs () { if ( ( ( leftFollower.error ) < 0.1 ) && ( ( rightFollower.error ) < 0.1 ) ) { return true ; } return false ; } <s> Miscellaneous bugfixes
+fix_before_refactoring: @ java.lang.Override protected boolean isFinished () { return false ; }
+fix_after_refactoring: @ java.lang.Override protected boolean yldwuklolfnagamihpgs () { return false ; }
+√ fix_prediction_before: @ java.lang.Override protected boolean isFinished () { return false ; }
+× fix_prediction_after: @ java.lang.Override protected boolean yldwuklolfnagamihpgs () { return true ; }
+
+line_index: 1328
+bug_before_refactoring: private static native void _imaqRenameChar ( long set , int index , long newCharValue ) ; <s> private static native void _imaqRenameChar ( long set , int index , long newCharValue ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void emrfezvjjpokvbupaegr ( long set , int index , long newCharValue ) ; <s> private static native void emrfezvjjpokvbupaegr ( long set , int index , long newCharValue ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqRenameChar ( long set , int index , long newCharValue ) {}
+fix_after_refactoring: private static void emrfezvjjpokvbupaegr ( long set , int index , long newCharValue ) {}
+√ fix_prediction_before: private static void _imaqRenameChar ( long set , int index , long newCharValue ) {}
+× fix_prediction_after: private static void emrfezvjjpokFupaegr ( long set , int index , long newCharValue ) ;
+
+line_index: 1343
+bug_before_refactoring: public void enqueue ( Item item ) { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> public void enqueue ( Item item ) { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> fixed checkstyle errors as well as small issue in Deque
+bug_after_refactoring: public void sbzyzyqwbzmbdsrfbjgs ( Item item ) { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> public void sbzyzyqwbzmbdsrfbjgs ( Item item ) { throw new sun.reflect.generics.reflectiveObjects.NotImplementedException () ; } <s> fixed checkstyle errors as well as small issue in Deque
+fix_before_refactoring: public void enqueue ( Item item ) {}
+fix_after_refactoring: public void sbzyzyqwbzmbdsrfbjgs ( Item item ) {}
+√ fix_prediction_before: public void enqueue ( Item item ) {}
+× fix_prediction_after: public void sbzyzyqwbzmbdsrfbjgs ( Item item ) { return null ; }
+
+line_index: 1362
+bug_before_refactoring: private void setHeight ( final int height ) { this . height = height + ( 2 * ( model.Map.borderSize ) ) ; } <s> private void setHeight ( final int height ) { this . height = height + ( 2 * ( model.Map.borderSize ) ) ; } <s> Fixed errors in JDBC
+bug_after_refactoring: private void whhuabyiltsuirnxcrys ( final int height ) { this . height = height + ( 2 * ( model.Map.borderSize ) ) ; } <s> private void whhuabyiltsuirnxcrys ( final int height ) { this . height = height + ( 2 * ( model.Map.borderSize ) ) ; } <s> Fixed errors in JDBC
+fix_before_refactoring: private void setHeight ( final int height ) { this . height = height ; }
+fix_after_refactoring: private void whhuabyiltsuirnxcrys ( final int height ) { this . height = height ; }
+√ fix_prediction_before: private void setHeight ( final int height ) { this . height = height ; }
+× fix_prediction_after: private java.lang.String getText () { this . height = height + ( 2 * ( model.Map.borderSize ) ) ; }
+
+line_index: 1370
+bug_before_refactoring: @ java.lang.Override public void run () { if ( status >= 0 ) { onUSBDataReceive ( buffer ) ; } } <s> @ java.lang.Override public void run () { if ( status >= 0 ) { onUSBDataReceive ( buffer ) ; } } <s> refactoring  removed isinterrupted check fixed performance issue removed try block
+bug_after_refactoring: @ java.lang.Override public void fplddvhdsxpouqtohstf () { if ( status >= 0 ) { onUSBDataReceive ( buffer ) ; } } <s> @ java.lang.Override public void fplddvhdsxpouqtohstf () { if ( status >= 0 ) { onUSBDataReceive ( buffer ) ; } } <s> refactoring  removed isinterrupted check fixed performance issue removed try block
+fix_before_refactoring: @ java.lang.Override public void run () { onUSBDataReceive ( buffer ) ; }
+fix_after_refactoring: @ java.lang.Override public void fplddvhdsxpouqtohstf () { onUSBDataReceive ( buffer ) ; }
+√ fix_prediction_before: @ java.lang.Override public void run () { onUSBDataReceive ( buffer ) ; }
+× fix_prediction_after: @ java.lang.Override public void fplddThdsxpouqtostf () { if ( status >= 0 ) { onUSBDataReceive ( buffer ) ; } }
+
+line_index: 1371
+bug_before_refactoring: @ java.lang.Override public void onCreate ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; mobidev.com.notesfeed.User accessUser = ( ( mobidev.com.notesfeed.User ) ( savedInstanceState . getSerializable ( "currentUser" ) ) ) ; java.lang.String userId = accessUser . getUserId () ; } <s> @ java.lang.Override public void onCreate ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; mobidev.com.notesfeed.User accessUser = ( ( mobidev.com.notesfeed.User ) ( savedInstanceState . getSerializable ( "currentUser" ) ) ) ; java.lang.String userId = accessUser . getUserId () ; } <s> * fixed User having static constant variables (object will return an error)
+bug_after_refactoring: @ java.lang.Override public void harlesekebjaczxrnagw ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . harlesekebjaczxrnagw ( savedInstanceState ) ; mobidev.com.notesfeed.User accessUser = ( ( mobidev.com.notesfeed.User ) ( savedInstanceState . getSerializable ( "currentUser" ) ) ) ; java.lang.String userId = accessUser . getUserId () ; } <s> @ java.lang.Override public void harlesekebjaczxrnagw ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . harlesekebjaczxrnagw ( savedInstanceState ) ; mobidev.com.notesfeed.User accessUser = ( ( mobidev.com.notesfeed.User ) ( savedInstanceState . getSerializable ( "currentUser" ) ) ) ; java.lang.String userId = accessUser . getUserId () ; } <s> * fixed User having static constant variables (object will return an error)
+fix_before_refactoring: @ java.lang.Override public void onCreate ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; }
+fix_after_refactoring: @ java.lang.Override public void harlesekebjaczxrnagw ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . harlesekebjaczxrnagw ( savedInstanceState ) ; }
+√ fix_prediction_before: @ java.lang.Override public void onCreate ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; }
+× fix_prediction_after: @ java.lang.Override public void onDestroylesekebjaczxrnagw ( @ android.support.annotation.Nullable android.os.Bundle savedInstanceState ) { if ( savedInstanceState == null ) { return; mobidev.com.notesfeed.User accessUser = ( ( mobidev.com.notesfeed.User ) ( savedInstanceState . getSerializable ( "currentUser" ) ) ) ; java.lang.String userId = accessUser . getUserId () ; } }
+
+line_index: 1378
+bug_before_refactoring: @ java.lang.Override public void onCreate ( android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; android.net.ConnectivityManager connMgr = ( ( android.net.ConnectivityManager ) ( getActivity () . getSystemService ( Context.CONNECTIVITY_SERVICE ) ) ) ; android.net.NetworkInfo networkInfo = connMgr . getActiveNetworkInfo () ; } <s> @ java.lang.Override public void onCreate ( android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; android.net.ConnectivityManager connMgr = ( ( android.net.ConnectivityManager ) ( getActivity () . getSystemService ( Context.CONNECTIVITY_SERVICE ) ) ) ; android.net.NetworkInfo networkInfo = connMgr . getActiveNetworkInfo () ; } <s> commented out old ip and port method of retrieving announcements - will be removed soon populate data now returns a boolean (always false) that is used to fix the problem of refreshing ending too soon. announcements now show date the announcement was created  not the current date announcement spreadsheet temporarily changed to my testing one - will be changed back in final release
+bug_after_refactoring: @ java.lang.Override public void xekzqddbnuvjxilkiipe ( android.os.Bundle savedInstanceState ) { super . xekzqddbnuvjxilkiipe ( savedInstanceState ) ; android.net.ConnectivityManager connMgr = ( ( android.net.ConnectivityManager ) ( getActivity () . getSystemService ( Context.CONNECTIVITY_SERVICE ) ) ) ; android.net.NetworkInfo networkInfo = connMgr . getActiveNetworkInfo () ; } <s> @ java.lang.Override public void xekzqddbnuvjxilkiipe ( android.os.Bundle savedInstanceState ) { super . xekzqddbnuvjxilkiipe ( savedInstanceState ) ; android.net.ConnectivityManager connMgr = ( ( android.net.ConnectivityManager ) ( getActivity () . getSystemService ( Context.CONNECTIVITY_SERVICE ) ) ) ; android.net.NetworkInfo networkInfo = connMgr . getActiveNetworkInfo () ; } <s> commented out old ip and port method of retrieving announcements - will be removed soon populate data now returns a boolean (always false) that is used to fix the problem of refreshing ending too soon. announcements now show date the announcement was created  not the current date announcement spreadsheet temporarily changed to my testing one - will be changed back in final release
+fix_before_refactoring: @ java.lang.Override public void onCreate ( android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; }
+fix_after_refactoring: @ java.lang.Override public void xekzqddbnuvjxilkiipe ( android.os.Bundle savedInstanceState ) { super . xekzqddbnuvjxilkiipe ( savedInstanceState ) ; }
+√ fix_prediction_before: @ java.lang.Override public void onCreate ( android.os.Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; }
+× fix_prediction_after: @ java.lang.Override public void xekzqipe ( android.os.Bundle savedInstanceState ) { super . xekzqipe () ; android.net.ConnectivityManager connMgr = ( ( android.net.ConnectivityManager ) ( getActivity () . getSystemService ( Context.CONNECTIVITY_SERVICE ) ) ) ; android.net.NetworkInfo networkInfo = connMgr . getActiveNetworkInfo () ; }
+
+line_index: 1392
+bug_before_refactoring: @ java.lang.Override protected void onStop () { super . onStop () ; android.view.Menu mMenu = mNavigationView . getMenu () ; android.view.MenuItem home = mMenu . findItem ( R.id.nav_home ) ; if ( home . isChecked () ) { it.uniba.di.ivu.sms16.gruppo3.fasterfood.HomeActivity.STARTED = false ; } } <s> @ java.lang.Override protected void onStop () { super . onStop () ; android.view.Menu mMenu = mNavigationView . getMenu () ; android.view.MenuItem home = mMenu . findItem ( R.id.nav_home ) ; if ( home . isChecked () ) { it.uniba.di.ivu.sms16.gruppo3.fasterfood.HomeActivity.STARTED = false ; } } <s> change configuration bug fixed
+bug_after_refactoring: @ java.lang.Override protected void zhyfhrpewgzwgnsnzndv () { super . zhyfhrpewgzwgnsnzndv () ; android.view.Menu mMenu = mNavigationView . getMenu () ; android.view.MenuItem home = mMenu . findItem ( R.id.nav_home ) ; if ( home . isChecked () ) { it.uniba.di.ivu.sms16.gruppo3.fasterfood.HomeActivity.STARTED = false ; } } <s> @ java.lang.Override protected void zhyfhrpewgzwgnsnzndv () { super . zhyfhrpewgzwgnsnzndv () ; android.view.Menu mMenu = mNavigationView . getMenu () ; android.view.MenuItem home = mMenu . findItem ( R.id.nav_home ) ; if ( home . isChecked () ) { it.uniba.di.ivu.sms16.gruppo3.fasterfood.HomeActivity.STARTED = false ; } } <s> change configuration bug fixed
+fix_before_refactoring: @ java.lang.Override protected void onStop () { super . onStop () ; }
+fix_after_refactoring: @ java.lang.Override protected void zhyfhrpewgzwgnsnzndv () { super . zhyfhrpewgzwgnsnzndv () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onStop () { super . onStop () ; }
+× fix_prediction_after: @ java.lang.Override protected void zhyfhrpew =wgnsnzndv () { super . zhyfhrpew =wgnsnzndv () ; }
+
+line_index: 1426
+bug_before_refactoring: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) private java.lang.String handleServerException () { return errorController . displayErrorPage ( "error.server" ) ; } <s> @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) private java.lang.String handleServerException () { return errorController . displayErrorPage ( "error.server" ) ; } <s> Fixed some Codacy error reports
+bug_after_refactoring: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) private java.lang.String eepekgnloymavisyxmrt () { return errorController . displayErrorPage ( "error.server" ) ; } <s> @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) private java.lang.String eepekgnloymavisyxmrt () { return errorController . displayErrorPage ( "error.server" ) ; } <s> Fixed some Codacy error reports
+fix_before_refactoring: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) public java.lang.String handleServerException () { return errorController . displayErrorPage ( "error.server" ) ; }
+fix_after_refactoring: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) public java.lang.String eepekgnloymavisyxmrt () { return errorController . displayErrorPage ( "error.server" ) ; }
+√ fix_prediction_before: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) public java.lang.String handleServerException () { return errorController . displayErrorPage ( "error.server" ) ; }
+× fix_prediction_after: @ org.springframework.web.bind.annotation.ResponseStatus ( value = org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR ) @ org.springframework.web.bind.annotation.ExceptionHandler ( value = net.identio.server.exceptions.ServerException . class ) ;
+
+line_index: 1441
+bug_before_refactoring: public void setST ( main.java.DisplayST st ) { if ( st == null ) { this . st = st ; } else { java.lang.System.err . println ( "Failed to set ST : ST is protected and already has a value." ) ; } } <s> public void setST ( main.java.DisplayST st ) { if ( st == null ) { this . st = st ; } else { java.lang.System.err . println ( "Failed to set ST : ST is protected and already has a value." ) ; } } <s> Major Bug Fixes  This makes it 1.0 technically (I think) Wohoo. First working version ^.^
+bug_after_refactoring: public void tyvzjyjanlaryjmlkjur ( main.java.DisplayST st ) { if ( st == null ) { this . st = st ; } else { java.lang.System.err . println ( "Failed to set ST : ST is protected and already has a value." ) ; } } <s> public void tyvzjyjanlaryjmlkjur ( main.java.DisplayST st ) { if ( st == null ) { this . st = st ; } else { java.lang.System.err . println ( "Failed to set ST : ST is protected and already has a value." ) ; } } <s> Major Bug Fixes  This makes it 1.0 technically (I think) Wohoo. First working version ^.^
+fix_before_refactoring: public void setST ( main.java.DisplayST st ) { this . st = st ; }
+fix_after_refactoring: public void tyvzjyjanlaryjmlkjur ( main.java.DisplayST st ) { this . st = st ; }
+√ fix_prediction_before: public void setST ( main.java.DisplayST st ) { this . st = st ; }
+× fix_prediction_after: public void addvzjyjanlaryjmlkjur ( main.java.DisplayST st ) { this . st = st ; }
+
+line_index: 1472
+bug_before_refactoring: @ java.lang.Override protected void handleResponse ( java.lang.String response ) { com.hazelcast.simulator.worker.tasks.LOGGER . info ( ( ( ( ( "########## " + ( workerId ) ) + " handleResponse(" ) + response ) + ")" ) ) ; responseLatch . countDown () ; } <s> @ java.lang.Override protected void handleResponse ( java.lang.String response ) { com.hazelcast.simulator.worker.tasks.LOGGER . info ( ( ( ( ( "########## " + ( workerId ) ) + " handleResponse(" ) + response ) + ")" ) ) ; responseLatch . countDown () ; } <s> Fixed AbstractAsyncWorkerTest which stopped the TestContext instead of an individual worker thread  which sometimes caused the test to fail. Removed debug logging.
+bug_after_refactoring: @ java.lang.Override protected void etikqkvywpjsckklqfjr ( java.lang.String response ) { com.hazelcast.simulator.worker.tasks.LOGGER . info ( ( ( ( ( "########## " + ( workerId ) ) + " etikqkvywpjsckklqfjr(" ) + response ) + ")" ) ) ; responseLatch . countDown () ; } <s> @ java.lang.Override protected void etikqkvywpjsckklqfjr ( java.lang.String response ) { com.hazelcast.simulator.worker.tasks.LOGGER . info ( ( ( ( ( "########## " + ( workerId ) ) + " etikqkvywpjsckklqfjr(" ) + response ) + ")" ) ) ; responseLatch . countDown () ; } <s> Fixed AbstractAsyncWorkerTest which stopped the TestContext instead of an individual worker thread  which sometimes caused the test to fail. Removed debug logging.
+fix_before_refactoring: @ java.lang.Override protected void handleResponse ( java.lang.String response ) { responseLatch . countDown () ; }
+fix_after_refactoring: @ java.lang.Override protected void etikqkvywpjsckklqfjr ( java.lang.String response ) { responseLatch . countDown () ; }
+√ fix_prediction_before: @ java.lang.Override protected void handleResponse ( java.lang.String response ) { responseLatch . countDown () ; }
+× fix_prediction_after: @ java.lang.Override protected void etikq , java.lang.String response ) { responseLatch . countDown () ; }
+
+line_index: 1473
+bug_before_refactoring: public void doJob () { for ( java.lang.Object socialUser : models.SocialUser . findAll () ) { models.MessageCenter messageCenter = new models.MessageCenter ( ( ( models.SocialUser ) ( socialUser ) ) ) ; messageCenter . save () ; } } <s> public void doJob () { for ( java.lang.Object socialUser : models.SocialUser . findAll () ) { models.MessageCenter messageCenter = new models.MessageCenter ( ( ( models.SocialUser ) ( socialUser ) ) ) ; messageCenter . save () ; } } <s> Fixed Internal Error while registering new users
+bug_after_refactoring: public void gmbscvhanenymfmouyyn () { for ( java.lang.Object socialUser : models.SocialUser . findAll () ) { models.MessageCenter messageCenter = new models.MessageCenter ( ( ( models.SocialUser ) ( socialUser ) ) ) ; messageCenter . save () ; } } <s> public void gmbscvhanenymfmouyyn () { for ( java.lang.Object socialUser : models.SocialUser . findAll () ) { models.MessageCenter messageCenter = new models.MessageCenter ( ( ( models.SocialUser ) ( socialUser ) ) ) ; messageCenter . save () ; } } <s> Fixed Internal Error while registering new users
+fix_before_refactoring: public void doJob () {}
+fix_after_refactoring: public void gmbscvhanenymfmouyyn () {}
+√ fix_prediction_before: public void doJob () {}
+× fix_prediction_after: public void gmbscThanenymfmouyyn () { for ( java.lang.ObjectPointerExceptionUser : models.length ) { models.MessageCenter messageCenter = new models.MessageCenter ( ( ( models.osUser ) ( java.lang.Integer ) ) ) ; messageCenter . save () ; } }
+
+line_index: 1495
+bug_before_refactoring: @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) { new org.netbeans.modules.git.ui.clone.CloneAction ( new org.netbeans.modules.git.ui.actions.ContextHolder ( org.netbeans.modules.versioning.spi.VCSContext.EMPTY ) ) . actionPerformed ( e ) ; } <s> @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) { new org.netbeans.modules.git.ui.clone.CloneAction ( new org.netbeans.modules.git.ui.actions.ContextHolder ( org.netbeans.modules.versioning.spi.VCSContext.EMPTY ) ) . actionPerformed ( e ) ; } <s> Fixed some small issues with actions available on ROSProject nodes. Removed Git / Version Control module dependencies.
+bug_after_refactoring: @ java.lang.Override public void umumzuvqwfgmzzcaduxw ( java.awt.event.ActionEvent e ) { new org.netbeans.modules.git.ui.clone.CloneAction ( new org.netbeans.modules.git.ui.actions.ContextHolder ( org.netbeans.modules.versioning.spi.VCSContext.EMPTY ) ) . umumzuvqwfgmzzcaduxw ( e ) ; } <s> @ java.lang.Override public void umumzuvqwfgmzzcaduxw ( java.awt.event.ActionEvent e ) { new org.netbeans.modules.git.ui.clone.CloneAction ( new org.netbeans.modules.git.ui.actions.ContextHolder ( org.netbeans.modules.versioning.spi.VCSContext.EMPTY ) ) . umumzuvqwfgmzzcaduxw ( e ) ; } <s> Fixed some small issues with actions available on ROSProject nodes. Removed Git / Version Control module dependencies.
+fix_before_refactoring: @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) {}
+fix_after_refactoring: @ java.lang.Override public void umumzuvqwfgmzzcaduxw ( java.awt.event.ActionEvent e ) {}
+√ fix_prediction_before: @ java.lang.Override public void actionPerformed ( java.awt.event.ActionEvent e ) {}
+× fix_prediction_after: @ java.lang.Override public void endumzuvqwfgmzzcaduxw ( java.awt.event.ActionEvent e ) { new org.netbeans.modules.git.ui.clone.CloneAction ( new org.netbeans.modules.git.ui.actions.ContextHolder ( org.netbeans.modules.versioning.spi.VCSContext.EMPTY ) ) . startumzuvqwfgmzzcaduxw ( e ) ; }
+
+line_index: 1508
+bug_before_refactoring: @ com.google.common.eventbus.Subscribe private void handleLocalModelChangedEvent ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; } <s> @ com.google.common.eventbus.Subscribe private void handleLocalModelChangedEvent ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; } <s> Fix test error
+bug_after_refactoring: @ com.google.common.eventbus.Subscribe private void wstkupkbcbpbowwcypaa ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; } <s> @ com.google.common.eventbus.Subscribe private void wstkupkbcbpbowwcypaa ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; } <s> Fix test error
+fix_before_refactoring: @ com.google.common.eventbus.Subscribe public void handleLocalModelChangedEvent ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; }
+fix_after_refactoring: @ com.google.common.eventbus.Subscribe public void wstkupkbcbpbowwcypaa ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; }
+√ fix_prediction_before: @ com.google.common.eventbus.Subscribe public void handleLocalModelChangedEvent ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; }
+× fix_prediction_after: @ com.google.common.eventbus.Subscribe public void wstkupkbcbpbowpypaa ( seedu.jobs.commons.events.model.TaskBookChangedEvent abce ) throws seedu.jobs.model.task.UniqueTaskList.IllegalTimeException { latestTaskAddressBook = new seedu.jobs.model.TaskBook ( abce.data ) ; }
+
+line_index: 1513
+bug_before_refactoring: public void windowClosing ( java.awt.event.WindowEvent windowEvent ) { new GUI.spellingWindow.quitPopUp () ; } <s> public void windowClosing ( java.awt.event.WindowEvent windowEvent ) { new GUI.spellingWindow.quitPopUp () ; } <s> bug fixes to game new method in backend
+bug_after_refactoring: public void mhbvngqscptnqsrsairm ( java.awt.event.WindowEvent windowEvent ) { new GUI.spellingWindow.quitPopUp () ; } <s> public void mhbvngqscptnqsrsairm ( java.awt.event.WindowEvent windowEvent ) { new GUI.spellingWindow.quitPopUp () ; } <s> bug fixes to game new method in backend
+fix_before_refactoring: public void windowClosing ( java.awt.event.WindowEvent windowEvent ) {}
+fix_after_refactoring: public void mhbvngqscptnqsrsairm ( java.awt.event.WindowEvent windowEvent ) {}
+√ fix_prediction_before: public void windowClosing ( java.awt.event.WindowEvent windowEvent ) {}
+× fix_prediction_after: public void.bvngqscptnqsrsairm ( java.awt.event.WindowEvent windowEvent ) { new GUI.spellingWindow.quitPopUp () ; }
+
+line_index: 1515
+bug_before_refactoring: private static native void _imaqOverlayClosedContour ( long image , long points , int numPoints , long color , int drawMode , long group ) ; <s> private static native void _imaqOverlayClosedContour ( long image , long points , int numPoints , long color , int drawMode , long group ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void wfkycwzoovdsgrxllmpl ( long image , long points , int numPoints , long color , int drawMode , long group ) ; <s> private static native void wfkycwzoovdsgrxllmpl ( long image , long points , int numPoints , long color , int drawMode , long group ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqOverlayClosedContour ( long image , long points , int numPoints , long color , int drawMode , long group ) {}
+fix_after_refactoring: private static void wfkycwzoovdsgrxllmpl ( long image , long points , int numPoints , long color , int drawMode , long group ) {}
+√ fix_prediction_before: private static void _imaqOverlayClosedContour ( long image , long points , int numPoints , long color , int drawMode , long group ) {}
+× fix_prediction_after: private static void wfkycwzoolabsgrxllmpl ( long image , long points , int numPoints , long color , int drawMode , long group ) {}
+
+line_index: 1517
+bug_before_refactoring: private boolean emptyUnitBoard () { unitBoard . removeAll () ; return false ; } <s> private boolean emptyUnitBoard () { unitBoard . removeAll () ; return false ; } <s> Bug fix : button use stopped the reponse from the keys
+bug_after_refactoring: private boolean kjbezlzagnszkegqndcz () { unitBoard . removeAll () ; return false ; } <s> private boolean kjbezlzagnszkegqndcz () { unitBoard . removeAll () ; return false ; } <s> Bug fix : button use stopped the reponse from the keys
+fix_before_refactoring: public boolean emptyUnitBoard () { unitBoard . removeAll () ; return false ; }
+fix_after_refactoring: public boolean kjbezlzagnszkegqndcz () { unitBoard . removeAll () ; return false ; }
+√ fix_prediction_before: public boolean emptyUnitBoard () { unitBoard . removeAll () ; return false ; }
+× fix_prediction_after: public boolean kjbezlzagnszkegqndcz () { return false ; }
+
+line_index: 1548
+bug_before_refactoring: private boolean objOp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; } <s> private boolean objOp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; } <s> Fixed bug in binary operation application
+bug_after_refactoring: private boolean durbuaauoyzceqjfbljp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; } <s> private boolean durbuaauoyzceqjfbljp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; } <s> Fixed bug in binary operation application
+fix_before_refactoring: protected boolean objOp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; }
+fix_after_refactoring: protected boolean durbuaauoyzceqjfbljp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; }
+√ fix_prediction_before: protected boolean objOp ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; }
+× fix_prediction_after: protected boolean equals ( java.lang.Object obj1 , java.lang.Object obj2 ) { return ! ( obj1 . equals ( obj2 ) ) ; }
+
+line_index: 1551
+bug_before_refactoring: public boolean onOptionsItemSelected ( android.view.MenuItem item ) { try { c . close () ; finish () ; return true ; } catch ( java.io.IOException e ) { e . printStackTrace () ; return false ; } } <s> public boolean onOptionsItemSelected ( android.view.MenuItem item ) { try { c . close () ; finish () ; return true ; } catch ( java.io.IOException e ) { e . printStackTrace () ; return false ; } } <s> Fixed some merge errors with c.close.
+bug_after_refactoring: public boolean ndqqerywbslricwgcjvh ( android.view.MenuItem item ) { try { c . close () ; finish () ; return true ; } catch ( java.io.IOException e ) { e . printStackTrace () ; return false ; } } <s> public boolean ndqqerywbslricwgcjvh ( android.view.MenuItem item ) { try { c . close () ; finish () ; return true ; } catch ( java.io.IOException e ) { e . printStackTrace () ; return false ; } } <s> Fixed some merge errors with c.close.
+fix_before_refactoring: public boolean onOptionsItemSelected ( android.view.MenuItem item ) { finish () ; return true ; }
+fix_after_refactoring: public boolean ndqqerywbslricwgcjvh ( android.view.MenuItem item ) { finish () ; return true ; }
+√ fix_prediction_before: public boolean onOptionsItemSelected ( android.view.MenuItem item ) { finish () ; return true ; }
+× fix_prediction_after: public boolean keysTimeerywbslricwgcjResource ( android.view.MenuItem item ) { finish () ; return true ; }
+
+line_index: 1564
+bug_before_refactoring: private void verwijderActionPerformed ( java.awt.event.ActionEvent evt ) { if ( ( checkFields () ) == true ) { deletePerson () ; } } <s> private void verwijderActionPerformed ( java.awt.event.ActionEvent evt ) { if ( ( checkFields () ) == true ) { deletePerson () ; } } <s> bugfixes leden edit   toevoegen fix veranderen fix clear lknop toegevoegd zoekfunctie voorbereid db koppeling hersteld verwijderen werkt NIET
+bug_after_refactoring: private void hizomfvaagkpydcxwwzu ( java.awt.event.ActionEvent evt ) { if ( ( checkFields () ) == true ) { deletePerson () ; } } <s> private void hizomfvaagkpydcxwwzu ( java.awt.event.ActionEvent evt ) { if ( ( checkFields () ) == true ) { deletePerson () ; } } <s> bugfixes leden edit   toevoegen fix veranderen fix clear lknop toegevoegd zoekfunctie voorbereid db koppeling hersteld verwijderen werkt NIET
+fix_before_refactoring: private void verwijderActionPerformed ( java.awt.event.ActionEvent evt ) { deletePerson () ; }
+fix_after_refactoring: private void hizomfvaagkpydcxwwzu ( java.awt.event.ActionEvent evt ) { deletePerson () ; }
+√ fix_prediction_before: private void verwijderActionPerformed ( java.awt.event.ActionEvent evt ) { deletePerson () ; }
+× fix_prediction_after: private void hizomfvaagkpydcxwwzueld verwijderen () { if ( ( checkFields () ) == true ) { deletePerson () ; } }
+
+line_index: 1569
+bug_before_refactoring: private static native void _imaqDrawShapeOnImage ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) ; <s> private static native void _imaqDrawShapeOnImage ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) ; <s> Fixing bugs
+bug_after_refactoring: private static native void hketjqrnpcmeaydhpnsg ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) ; <s> private static native void hketjqrnpcmeaydhpnsg ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) ; <s> Fixing bugs
+fix_before_refactoring: private static void _imaqDrawShapeOnImage ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) {}
+fix_after_refactoring: private static void hketjqrnpcmeaydhpnsg ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) {}
+√ fix_prediction_before: private static void _imaqDrawShapeOnImage ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) {}
+× fix_prediction_after: private static void hketjqrnpcmeaydhpnsg ( long dest , long source , long rect , int mode , int shape , float newPixelValue ) ;
+
+line_index: 1595
+bug_before_refactoring: public void onStart () { super . onStart () ; java.util.Hashtable < java.lang.String , java.lang.String > contactList = new java.util.Hashtable <> () ; android.mission.accidentdetection.Intent.GetterContactsPhone getterContactsPhone = new android.mission.accidentdetection.Intent.GetterContactsPhone ( getContext () ) ; } <s> public void onStart () { super . onStart () ; java.util.Hashtable < java.lang.String , java.lang.String > contactList = new java.util.Hashtable <> () ; android.mission.accidentdetection.Intent.GetterContactsPhone getterContactsPhone = new android.mission.accidentdetection.Intent.GetterContactsPhone ( getContext () ) ; } <s> fix timestamp error
+bug_after_refactoring: public void pevwydvzcniiyfyovvvu () { super . pevwydvzcniiyfyovvvu () ; java.util.Hashtable < java.lang.String , java.lang.String > contactList = new java.util.Hashtable <> () ; android.mission.accidentdetection.Intent.GetterContactsPhone getterContactsPhone = new android.mission.accidentdetection.Intent.GetterContactsPhone ( getContext () ) ; } <s> public void pevwydvzcniiyfyovvvu () { super . pevwydvzcniiyfyovvvu () ; java.util.Hashtable < java.lang.String , java.lang.String > contactList = new java.util.Hashtable <> () ; android.mission.accidentdetection.Intent.GetterContactsPhone getterContactsPhone = new android.mission.accidentdetection.Intent.GetterContactsPhone ( getContext () ) ; } <s> fix timestamp error
+fix_before_refactoring: public void onStart () { super . onStart () ; }
+fix_after_refactoring: public void pevwydvzcniiyfyovvvu () { super . pevwydvzcniiyfyovvvu () ; }
+√ fix_prediction_before: public void onStart () { super . onStart () ; }
+× fix_prediction_after: @ java.lang.Override public void pevwydvzcniiy.ov.u () { super . pevwydvzcniiy.ov.u () ; super . pevwydvzcniiy.ov.u () ; }
+
+line_index: 1599
+bug_before_refactoring: @ java.lang.Override public void onPause () { super . onPause () ; mManager . release () ; wycliffeassociates.recordingapp.AudioVisualization.SectionMarkers . clearMarkers ( mManager ) ; } <s> @ java.lang.Override public void onPause () { super . onPause () ; mManager . release () ; wycliffeassociates.recordingapp.AudioVisualization.SectionMarkers . clearMarkers ( mManager ) ; } <s> Merge pull request #326 from WycliffeAssociates/jbs-bugfixes  Jbs bugfixes
+bug_after_refactoring: @ java.lang.Override public void bgzoipilydpculijxiqb () { super . bgzoipilydpculijxiqb () ; mManager . release () ; wycliffeassociates.recordingapp.AudioVisualization.SectionMarkers . clearMarkers ( mManager ) ; } <s> @ java.lang.Override public void bgzoipilydpculijxiqb () { super . bgzoipilydpculijxiqb () ; mManager . release () ; wycliffeassociates.recordingapp.AudioVisualization.SectionMarkers . clearMarkers ( mManager ) ; } <s> Merge pull request #326 from WycliffeAssociates/jbs-bugfixes  Jbs bugfixes
+fix_before_refactoring: @ java.lang.Override public void onPause () { super . onPause () ; }
+fix_after_refactoring: @ java.lang.Override public void bgzoipilydpculijxiqb () { super . bgzoipilydpculijxiqb () ; }
+√ fix_prediction_before: @ java.lang.Override public void onPause () { super . onPause () ; }
+× fix_prediction_after: @ java.lang.Override public void bgzoipilydpculijxiqb () { super . bgMatrixipilydpculijxiqb () ; }
+
+line_index: 1600
+bug_before_refactoring: @ java.lang.Override public long getId () { return this . id ; } <s> @ java.lang.Override public long getId () { return this . id ; } <s> Fixing PriceImpl style issues
+bug_after_refactoring: @ java.lang.Override public long awlswirklztucviayagc () { return this . id ; } <s> @ java.lang.Override public long awlswirklztucviayagc () { return this . id ; } <s> Fixing PriceImpl style issues
+fix_before_refactoring: @ java.lang.Override public long getId () { return id ; }
+fix_after_refactoring: @ java.lang.Override public long awlswirklztucviayagc () { return id ; }
+√ fix_prediction_before: @ java.lang.Override public long getId () { return id ; }
+× fix_prediction_after: @ java.lang.Override public long isEmpty () { return this . id ; }
+
+line_index: 1610
+bug_before_refactoring: @ java.lang.Override public int getPoints () { android.util.Log . d ( "myLog" , ( "points = " + ( points ) ) ) ; return points ; } <s> @ java.lang.Override public int getPoints () { android.util.Log . d ( "myLog" , ( "points = " + ( points ) ) ) ; return points ; } <s> fix bug with toolbar
+bug_after_refactoring: @ java.lang.Override public int kkdmlownvgicxyxegjqm () { android.util.Log . d ( "myLog" , ( "points = " + ( points ) ) ) ; return points ; } <s> @ java.lang.Override public int kkdmlownvgicxyxegjqm () { android.util.Log . d ( "myLog" , ( "points = " + ( points ) ) ) ; return points ; } <s> fix bug with toolbar
+fix_before_refactoring: @ java.lang.Override public int getPoints () { return points ; }
+fix_after_refactoring: @ java.lang.Override public int kkdmlownvgicxyxegjqm () { return points ; }
+√ fix_prediction_before: @ java.lang.Override public int getPoints () { return points ; }
+× fix_prediction_after: @ java.lang.Override public int kkdmlown { android.util.Log . d ( "myLog" , ( "points = " + ( points ) ) ) ; return points ; }
+
+line_index: 1614
+bug_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+bug_after_refactoring: @ java.lang.Override public void fiuqpielcbqfchrwsfbe ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> @ java.lang.Override public void fiuqpielcbqfchrwsfbe ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; retry = false ; } catch ( java.lang.InterruptedException e ) {} } } <s> Various cleanups and attempted bugfixes. Still freezes on startup
+fix_before_refactoring: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+fix_after_refactoring: @ java.lang.Override public void fiuqpielcbqfchrwsfbe ( android.view.SurfaceHolder holder ) {}
+√ fix_prediction_before: @ java.lang.Override public void surfaceDestroyed ( android.view.SurfaceHolder holder ) {}
+× fix_prediction_after: @ java.lang.Override public void fiuqpielcbqfchrwsfbe ( android.view.SurfaceHolder holder ) { boolean retry = true ; while ( retry ) { try { thread . join () ; } catch ( java.lang.InterruptedException e ) {} } }
+
+line_index: 1622
+bug_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; changeToPauseFragment () ; isResumeAfterPause = true ; gcs . sendGameEvent ( "game_pause" , new java.lang.String [] {} ) ; } <s> @ java.lang.Override protected void onPause () { super . onPause () ; changeToPauseFragment () ; isResumeAfterPause = true ; gcs . sendGameEvent ( "game_pause" , new java.lang.String [] {} ) ; } <s> Pause Result bug fix #5
+bug_after_refactoring: @ java.lang.Override protected void mzjmntygtdyypfrcaelu () { super . mzjmntygtdyypfrcaelu () ; changeToPauseFragment () ; isResumeAfterPause = true ; gcs . sendGameEvent ( "game_pause" , new java.lang.String [] {} ) ; } <s> @ java.lang.Override protected void mzjmntygtdyypfrcaelu () { super . mzjmntygtdyypfrcaelu () ; changeToPauseFragment () ; isResumeAfterPause = true ; gcs . sendGameEvent ( "game_pause" , new java.lang.String [] {} ) ; } <s> Pause Result bug fix #5
+fix_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; }
+fix_after_refactoring: @ java.lang.Override protected void mzjmntygtdyypfrcaelu () { super . mzjmntygtdyypfrcaelu () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onPause () { super . onPause () ; }
+× fix_prediction_after: @ java.lang.Override protected void mzjListygtdyypfrconu () { super . mzj . appendGameEvent ( "game_pause" , new java.lang.String [] {} ) ; }
+
+line_index: 1671
+bug_before_refactoring: public void replaceKey ( int index , K key , K newKey ) { this . replaceKey ( index , key , newKey ) ; } <s> public void replaceKey ( int index , K key , K newKey ) { this . replaceKey ( index , key , newKey ) ; } <s> Update: version 1.1  - Optimized some loops - Implemented weakRefferences for the SubMaps. - Fixed SubMap update issue. - Fixed SubMap #size() mismatch - Expanded some documentation.
+bug_after_refactoring: public void umntapnvaiuydjlnttuf ( int index , K key , K newKey ) { this . umntapnvaiuydjlnttuf ( index , key , newKey ) ; } <s> public void umntapnvaiuydjlnttuf ( int index , K key , K newKey ) { this . umntapnvaiuydjlnttuf ( index , key , newKey ) ; } <s> Update: version 1.1  - Optimized some loops - Implemented weakRefferences for the SubMaps. - Fixed SubMap update issue. - Fixed SubMap #size() mismatch - Expanded some documentation.
+fix_before_refactoring: public boolean replaceKey ( int index , K key , K newKey ) { return this . replaceKey ( index , key , newKey ) ; }
+fix_after_refactoring: public boolean umntapnvaiuydjlnttuf ( int index , K key , K newKey ) { return this . umntapnvaiuydjlnttuf ( index , key , newKey ) ; }
+√ fix_prediction_before: public boolean replaceKey ( int index , K key , K newKey ) { return this . replaceKey ( index , key , newKey ) ; }
+× fix_prediction_after: public boolean isEmptyntapnvaiuydjlnttuf ( int index , K key , K newKey ) { this . endntapnvaiuydjlnttuf ( index , key , newKey ) ; }
+
+line_index: 1698
+bug_before_refactoring: @ java.lang.Override public void init () { try { javafx.scene.text.Font . loadFont ( com.jfxbe.MemeMaker . class . getClassLoader () . getResource ( "Oswald-Bold.ttf" ) . openStream () , 80 ) ; } catch ( java.io.IOException e ) { e . printStackTrace () ; } } <s> @ java.lang.Override public void init () { try { javafx.scene.text.Font . loadFont ( com.jfxbe.MemeMaker . class . getClassLoader () . getResource ( "Oswald-Bold.ttf" ) . openStream () , 80 ) ; } catch ( java.io.IOException e ) { e . printStackTrace () ; } } <s> Changed out a font that works when using loadFont(). Fixed a bug in loading an image from the filechooser
+bug_after_refactoring: @ java.lang.Override public void mtikwulsqmiwpcyamywe () { try { javafx.scene.text.Font . loadFont ( com.jfxbe.MemeMaker . class . getClassLoader () . getResource ( "Oswald-Bold.ttf" ) . openStream () , 80 ) ; } catch ( java.io.IOException e ) { e . printStackTrace () ; } } <s> @ java.lang.Override public void mtikwulsqmiwpcyamywe () { try { javafx.scene.text.Font . loadFont ( com.jfxbe.MemeMaker . class . getClassLoader () . getResource ( "Oswald-Bold.ttf" ) . openStream () , 80 ) ; } catch ( java.io.IOException e ) { e . printStackTrace () ; } } <s> Changed out a font that works when using loadFont(). Fixed a bug in loading an image from the filechooser
+fix_before_refactoring: @ java.lang.Override public void init () {}
+fix_after_refactoring: @ java.lang.Override public void mtikwulsqmiwpcyamywe () {}
+√ fix_prediction_before: @ java.lang.Override public void init () {}
+× fix_prediction_after: @ java.lang.Override public void mtikwulsqmiwpcyamywe () { try { javafx.scene.text.Font . loadFont ( com.jfxbe.MemeMaker . class . getClassLoader () ) ; } catch ( java.io.IOException e ) { e . printStackTrace () ; } }
+
+line_index: 1706
+bug_before_refactoring: @ java.lang.Override protected void execute () { org.usfirst.frc4904.standard.LogKitten . wtf ( ( ( motor . get () ) + "" ) ) ; } <s> @ java.lang.Override protected void execute () { org.usfirst.frc4904.standard.LogKitten . wtf ( ( ( motor . get () ) + "" ) ) ; } <s> Fixed issues with timer tasks
+bug_after_refactoring: @ java.lang.Override protected void fwjqqcrcoolrkahcdbob () { org.usfirst.frc4904.standard.LogKitten . wtf ( ( ( motor . get () ) + "" ) ) ; } <s> @ java.lang.Override protected void fwjqqcrcoolrkahcdbob () { org.usfirst.frc4904.standard.LogKitten . wtf ( ( ( motor . get () ) + "" ) ) ; } <s> Fixed issues with timer tasks
+fix_before_refactoring: @ java.lang.Override protected void execute () {}
+fix_after_refactoring: @ java.lang.Override protected void fwjqqcrcoolrkahcdbob () {}
+√ fix_prediction_before: @ java.lang.Override protected void execute () {}
+× fix_prediction_after: @ java.lang.Override protected java.lang.String toString () { return ( motor . get () ) + "" ) ; }
+
+line_index: 1721
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { org.flywaydb.core.Flyway flyway = new org.flywaydb.core.Flyway () ; flyway . setDataSource ( "jdbc:h2:file:./target/foobar" , "sa" , null ) ; flyway . migrate () ; } <s> public static void main ( java.lang.String [] args ) { org.flywaydb.core.Flyway flyway = new org.flywaydb.core.Flyway () ; flyway . setDataSource ( "jdbc:h2:file:./target/foobar" , "sa" , null ) ; flyway . migrate () ; } <s> create file view anda fix some error issues
+bug_after_refactoring: public static void xgnzkikbzxdagmociwca ( java.lang.String [] args ) { org.flywaydb.core.Flyway flyway = new org.flywaydb.core.Flyway () ; flyway . setDataSource ( "jdbc:h2:file:./target/foobar" , "sa" , null ) ; flyway . migrate () ; } <s> public static void xgnzkikbzxdagmociwca ( java.lang.String [] args ) { org.flywaydb.core.Flyway flyway = new org.flywaydb.core.Flyway () ; flyway . setDataSource ( "jdbc:h2:file:./target/foobar" , "sa" , null ) ; flyway . migrate () ; } <s> create file view anda fix some error issues
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void xgnzkikbzxdagmociwca ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: @ java.lang.Override public static void xgnzkik () { org.flywaydb.core.textway.way = new org.flywaydb.core.Flyway () ; }
+
+line_index: 1736
+bug_before_refactoring: protected void gotoPage () { browser . gotoPage ( location ) ; } <s> protected void gotoPage () { browser . gotoPage ( location ) ; } <s> Bugfix
+bug_after_refactoring: protected void vbenqanxzzlrpwmvsycw () { browser . vbenqanxzzlrpwmvsycw ( location ) ; } <s> protected void vbenqanxzzlrpwmvsycw () { browser . vbenqanxzzlrpwmvsycw ( location ) ; } <s> Bugfix
+fix_before_refactoring: public void gotoPage () { browser . gotoPage ( location ) ; }
+fix_after_refactoring: public void vbenqanxzzlrpwmvsycw () { browser . vbenqanxzzlrpwmvsycw ( location ) ; }
+√ fix_prediction_before: public void gotoPage () { browser . gotoPage ( location ) ; }
+× fix_prediction_after: public void removeenqanxzzlrpwmvsycw () { browser . ( ( browser ) != null ) ? 0 : 0 ; }
+
+line_index: 1746
+bug_before_refactoring: @ java.lang.Override public void run () { return average ; } <s> @ java.lang.Override public void run () { return average ; } <s> recorder Error Resolved
+bug_after_refactoring: @ java.lang.Override public void ztduufmqqmwfnxssbeay () { return average ; } <s> @ java.lang.Override public void ztduufmqqmwfnxssbeay () { return average ; } <s> recorder Error Resolved
+fix_before_refactoring: @ java.lang.Override public void run () {}
+fix_after_refactoring: @ java.lang.Override public void ztduufmqqmwfnxssbeay () {}
+√ fix_prediction_before: @ java.lang.Override public void run () {}
+× fix_prediction_after: @ java.lang.Override public void ztduufmq ) { if ( ( average ) != null ) { return average ; } return average ; }
+
+line_index: 1771
+bug_before_refactoring: @ java.lang.Override public int getCount () { android.util.Log . d ( "cursor" , ( ( java.lang.Integer . toString ( mDB . getCursor () . getCount () ) ) + " getCount" ) ) ; return mCS . getCount () ; } <s> @ java.lang.Override public int getCount () { android.util.Log . d ( "cursor" , ( ( java.lang.Integer . toString ( mDB . getCursor () . getCount () ) ) + " getCount" ) ) ; return mCS . getCount () ; } <s> Fixed bug with the back button behavior
+bug_after_refactoring: @ java.lang.Override public int mfhdcgrobephvsvlzkoi () { android.util.Log . d ( "cursor" , ( ( java.lang.Integer . toString ( mDB . getCursor () . mfhdcgrobephvsvlzkoi () ) ) + " mfhdcgrobephvsvlzkoi" ) ) ; return mCS . mfhdcgrobephvsvlzkoi () ; } <s> @ java.lang.Override public int mfhdcgrobephvsvlzkoi () { android.util.Log . d ( "cursor" , ( ( java.lang.Integer . toString ( mDB . getCursor () . mfhdcgrobephvsvlzkoi () ) ) + " mfhdcgrobephvsvlzkoi" ) ) ; return mCS . mfhdcgrobephvsvlzkoi () ; } <s> Fixed bug with the back button behavior
+fix_before_refactoring: @ java.lang.Override public int getCount () { return mCS . getCount () ; }
+fix_after_refactoring: @ java.lang.Override public int mfhdcgrobephvsvlzkoi () { return mCS . mfhdcgrobephvsvlzkoi () ; }
+√ fix_prediction_before: @ java.lang.Override public int getCount () { return mCS . getCount () ; }
+× fix_prediction_after: @ java.lang.Override public int mfhdcgrobephvsvlzkoi () { return mCS . get ( ( ( java.lang.Integer . toString ( mDB . getCursor () . mfhdcgrobephvsvlzkoi () ) ) + " mfhdcgrobephvsvlzkoi" ) ) ; }
+
+line_index: 1777
+bug_before_refactoring: public java.lang.String getUrl () { if ( android.text.TextUtils . isEmpty ( url ) ) return "" ; else return url ; } <s> public java.lang.String getUrl () { if ( android.text.TextUtils . isEmpty ( url ) ) return "" ; else return url ; } <s> Bug fixes
+bug_after_refactoring: public java.lang.String apongfesugekougokqjd () { if ( android.text.TextUtils . isEmpty ( url ) ) return "" ; else return url ; } <s> public java.lang.String apongfesugekougokqjd () { if ( android.text.TextUtils . isEmpty ( url ) ) return "" ; else return url ; } <s> Bug fixes
+fix_before_refactoring: public java.lang.String getUrl () { return url ; }
+fix_after_refactoring: public java.lang.String apongfesugekougokqjd () { return url ; }
+√ fix_prediction_before: public java.lang.String getUrl () { return url ; }
+× fix_prediction_after: public java.lang.String apongfesugekougokqjd () { if ( android.text.TextUtils . isEmpty ( url ) ) return "" ; else return url ; }
+
+line_index: 1793
+bug_before_refactoring: private static void stopServer ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; } <s> private static void stopServer ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; } <s> Fix axis2Server.bat file does not start issue  This is to reverting the fix in PR #147. Set startServer  stopServer methods as public
+bug_after_refactoring: private static void diesygsgofpmxgiqegxe ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; } <s> private static void diesygsgofpmxgiqegxe ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; } <s> Fix axis2Server.bat file does not start issue  This is to reverting the fix in PR #147. Set startServer  stopServer methods as public
+fix_before_refactoring: public static void stopServer ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; }
+fix_after_refactoring: public static void diesygsgofpmxgiqegxe ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; }
+√ fix_prediction_before: public static void stopServer ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; }
+× fix_prediction_after: public static void diesygsgofpmxgiqegal ( ) throws java.lang.Exception { samples.util.SampleAxis2ServerManager . getInstance () . stop () ; }
+
+line_index: 1825
+bug_before_refactoring: public void removeGroceryItem ( int position ) { groceryList . remove ( position ) ; } <s> public void removeGroceryItem ( int position ) { groceryList . remove ( position ) ; } <s> GroceryList bug fixed. Arraylist copy
+bug_after_refactoring: public void cdibgxstptwmhdwabwzq ( int position ) { groceryList . remove ( position ) ; } <s> public void cdibgxstptwmhdwabwzq ( int position ) { groceryList . remove ( position ) ; } <s> GroceryList bug fixed. Arraylist copy
+fix_before_refactoring: private void removeGroceryItem ( int position ) { groceryList . remove ( position ) ; }
+fix_after_refactoring: private void cdibgxstptwmhdwabwzq ( int position ) { groceryList . remove ( position ) ; }
+√ fix_prediction_before: private void removeGroceryItem ( int position ) { groceryList . remove ( position ) ; }
+× fix_prediction_after: private void onStopibgxstptwmhdwabwzq ( int position ) { groceryList . remove ( position ) ; }
+
+line_index: 1839
+bug_before_refactoring: @ java.lang.Override public void failure ( retrofit.RetrofitError error ) { com.chopping.utils.Utils . showLongToast ( getApplicationContext () , "failure" ) ; } <s> @ java.lang.Override public void failure ( retrofit.RetrofitError error ) { com.chopping.utils.Utils . showLongToast ( getApplicationContext () , "failure" ) ; } <s> Add "to top"  bug fix  etc.
+bug_after_refactoring: @ java.lang.Override public void hlnxkgotsncwwrybvxvv ( retrofit.RetrofitError error ) { com.chopping.utils.Utils . showLongToast ( getApplicationContext () , "hlnxkgotsncwwrybvxvv" ) ; } <s> @ java.lang.Override public void hlnxkgotsncwwrybvxvv ( retrofit.RetrofitError error ) { com.chopping.utils.Utils . showLongToast ( getApplicationContext () , "hlnxkgotsncwwrybvxvv" ) ; } <s> Add "to top"  bug fix  etc.
+fix_before_refactoring: @ java.lang.Override public void failure ( retrofit.RetrofitError error ) {}
+fix_after_refactoring: @ java.lang.Override public void hlnxkgotsncwwrybvxvv ( retrofit.RetrofitError error ) {}
+√ fix_prediction_before: @ java.lang.Override public void failure ( retrofit.RetrofitError error ) {}
+× fix_prediction_after: @ java.lang.Override public void hlnxkgotsncwwrybvx () {}
+
+line_index: 1855
+bug_before_refactoring: protected void newLine ( ) throws java.io.IOException { tab ( out , 0 ) ; } <s> protected void newLine ( ) throws java.io.IOException { tab ( out , 0 ) ; } <s> Merge pull request #97 from darmbrust/master  fix for https://github.com/jdereg/json-io/issues/96
+bug_after_refactoring: protected void rovbphzmkzfgaaupnrze ( ) throws java.io.IOException { tab ( out , 0 ) ; } <s> protected void rovbphzmkzfgaaupnrze ( ) throws java.io.IOException { tab ( out , 0 ) ; } <s> Merge pull request #97 from darmbrust/master  fix for https://github.com/jdereg/json-io/issues/96
+fix_before_refactoring: public void newLine ( ) throws java.io.IOException { tab ( out , 0 ) ; }
+fix_after_refactoring: public void rovbphzmkzfgaaupnrze ( ) throws java.io.IOException { tab ( out , 0 ) ; }
+√ fix_prediction_before: public void newLine ( ) throws java.io.IOException { tab ( out , 0 ) ; }
+× fix_prediction_after: protected void roLoadphzmkzfgaaupnrze ( ) throws java.io.IOException {}
+
+line_index: 1876
+bug_before_refactoring: void loadOrderData ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; orderHistory = orderSubsystem . getOrderHistory () ; business.customersubsystem.CustomerSubsystemFacade.LOGGER . info ( ( "total count of order history = " + ( orderHistory . size () ) ) ) ; } <s> void loadOrderData ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; orderHistory = orderSubsystem . getOrderHistory () ; business.customersubsystem.CustomerSubsystemFacade.LOGGER . info ( ( "total count of order history =  " + ( orderHistory . size () ) ) ) ; } <s> Review orders issue resolved! changes made in viewOrderData and viewOrderControl and Util.java. Works fine!
+bug_after_refactoring: void gufwsxvgpniuubumqcbn ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; orderHistory = orderSubsystem . getOrderHistory () ; business.customersubsystem.CustomerSubsystemFacade.LOGGER . info ( ( "total count of order history = " + ( orderHistory . size () ) ) ) ; } <s> void loadOrderData ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; orderHistory = orderSubsystem . getOrderHistory () ; business.customersubsystem.CustomerSubsystemFacade.LOGGER . info ( ( "total count of order history =  " + ( orderHistory . size () ) ) ) ; } <s> Review orders issue resolved! changes made in viewOrderData and viewOrderControl and Util.java. Works fine!
+fix_before_refactoring: void loadOrderData ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; }
+fix_after_refactoring: void gufwsxvgpniuubumqcbn ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; }
+√ fix_prediction_before: void loadOrderData ( ) throws business.exceptions.BackendException { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; }
+× fix_prediction_after: void gufwsx () ; if ( ( orderHistory . size () ) == 0 ) { orderSubsystem = new business.ordersubsystem.OrderSubsystemFacade ( customerProfile ) ; orderHistory = orderSubsystem . getOrderHistory () ; } }
+
+line_index: 1881
+bug_before_refactoring: @ java.lang.Override public void run () { org.owntracks.android.App.contactsViewModel.items . add ( c ) ; if ( org.owntracks.android.support.Preferences . getEnableWidget () ) org.owntracks.android.services.ServiceProxy . getServiceApplication () . requestWaypoints ( c ) ; } <s> @ java.lang.Override public void run () { org.owntracks.android.App.contactsViewModel.items . add ( c ) ; if ( org.owntracks.android.support.Preferences . getEnableWidget () ) org.owntracks.android.services.ServiceProxy . getServiceApplication () . requestWaypoints ( c ) ; } <s> Fixed some compile errors  still WIP
+bug_after_refactoring: @ java.lang.Override public void qzwocnfyjeeixgwweotx () { org.owntracks.android.App.contactsViewModel.items . add ( c ) ; if ( org.owntracks.android.support.Preferences . getEnableWidget () ) org.owntracks.android.services.ServiceProxy . getServiceApplication () . requestWaypoints ( c ) ; } <s> @ java.lang.Override public void qzwocnfyjeeixgwweotx () { org.owntracks.android.App.contactsViewModel.items . add ( c ) ; if ( org.owntracks.android.support.Preferences . getEnableWidget () ) org.owntracks.android.services.ServiceProxy . getServiceApplication () . requestWaypoints ( c ) ; } <s> Fixed some compile errors  still WIP
+fix_before_refactoring: @ java.lang.Override public void run () {}
+fix_after_refactoring: @ java.lang.Override public void qzwocnfyjeeixgwweotx () {}
+√ fix_prediction_before: @ java.lang.Override public void run () {}
+× fix_prediction_after: @ java.lang.Override public void qzwocnujeeixgwweotx () { org.own query.android.App.contactsViewModel.items . add ( c ) ; if ( org.own data.android.support.Preferences . getEnableWidget () ) org.ownfirst.android.services.ServiceProxy . getServiceApplication () . requestWaypoints ( c ) ; }
+
+line_index: 1886
+bug_before_refactoring: @ java.lang.Override protected void onAttachedToWindow () { super . onAttachedToWindow () ; mChildView = getChildAt ( 0 ) ; addHeadView () ; addFooterView () ; } <s> @ java.lang.Override protected void onAttachedToWindow () { super . onAttachedToWindow () ; mChildView = getChildAt ( 0 ) ; addHeadView () ; addFooterView () ; } <s> 1、fix bug <br /> 2、新增自动刷新(autoRefresh) 禁止刷新(canRefresh)
+bug_after_refactoring: @ java.lang.Override protected void tbnwjimbhcubkjifycpu () { super . tbnwjimbhcubkjifycpu () ; mChildView = getChildAt ( 0 ) ; addHeadView () ; addFooterView () ; } <s> @ java.lang.Override protected void tbnwjimbhcubkjifycpu () { super . tbnwjimbhcubkjifycpu () ; mChildView = getChildAt ( 0 ) ; addHeadView () ; addFooterView () ; } <s> 1、fix bug <br /> 2、新增自动刷新(autoRefresh) 禁止刷新(canRefresh)
+fix_before_refactoring: @ java.lang.Override protected void onAttachedToWindow () { super . onAttachedToWindow () ; }
+fix_after_refactoring: @ java.lang.Override protected void tbnwjimbhcubkjifycpu () { super . tbnwjimbhcubkjifycpu () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onAttachedToWindow () { super . onAttachedToWindow () ; }
+× fix_prediction_after: @ java.lang.Override protected void tbnwjimbhcubkjify dispose () { super . tbnwjimbhcubkjify dispose () ; mChildView = getChildAt ( 0 ) ; addHeadView () ; addFooterView () ; }
+
+line_index: 1913
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> public static void main ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+bug_after_refactoring: public static void yznhvmctkqhvbvrdhquv ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> public static void yznhvmctkqhvbvrdhquv ( java.lang.String [] args ) { long starttime = 0 ; starttime = java.lang.Long . parseLong ( "1253663" ) ; java.lang.System.out . println ( ( starttime * 11 ) ) ; } <s> 可以提交CloudArch jobs  fix bugs
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void yznhvmctkqhvbvrdhquv ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: public static void yznhvmctkqh_vrdhquv ( java.lang.String [] args ) {}
+
+line_index: 1922
+bug_before_refactoring: @ org.junit.Test public void testGenerateCombos ( ) throws java.lang.Exception { java.util.List < java.lang.String > tsRespContainer = telephoneService . getPaginatedCombinations ( 36 , 1 , 3 ) ; } <s> @ org.junit.Test public void testGenerateCombos ( ) throws java.lang.Exception { java.util.List < java.lang.String > tsRespContainer = telephoneService . getPaginatedCombinations ( 36 , 1 , 3 ) ; } <s> Fix String Integer converting problem
+bug_after_refactoring: @ org.junit.Test public void tgogntkdmypbahgcwyoz ( ) throws java.lang.Exception { java.util.List < java.lang.String > tsRespContainer = telephoneService . getPaginatedCombinations ( 36 , 1 , 3 ) ; } <s> @ org.junit.Test public void tgogntkdmypbahgcwyoz ( ) throws java.lang.Exception { java.util.List < java.lang.String > tsRespContainer = telephoneService . getPaginatedCombinations ( 36 , 1 , 3 ) ; } <s> Fix String Integer converting problem
+fix_before_refactoring: @ org.junit.Test public void testGenerateCombos ( ) throws java.lang.Exception {}
+fix_after_refactoring: @ org.junit.Test public void tgogntkdmypbahgcwyoz ( ) throws java.lang.Exception {}
+√ fix_prediction_before: @ org.junit.Test public void testGenerateCombos ( ) throws java.lang.Exception {}
+× fix_prediction_after: @ org.junit.Test public void getog.dmypbahgcwyoz ( ) throws java.lang.Exception {}
+
+line_index: 1949
+bug_before_refactoring: @ java.lang.Override public void onNothingSelected ( android.widget.AdapterView < ? > parent ) { if ( ( chosenManufacturer ) == 0 ) { android.support.design.widget.Snackbar . make ( spinnerManufacturer . getRootView () , "Please choose your camera Manufacturer" , Snackbar.LENGTH_LONG ) . show () ; } } <s> @ java.lang.Override public void onNothingSelected ( android.widget.AdapterView < ? > parent ) { if ( ( chosenManufacturer ) == 0 ) { android.support.design.widget.Snackbar . make ( spinnerManufacturer . getRootView () , "Please choose your camera Manufacturer" , Snackbar.LENGTH_LONG ) . show () ; } } <s> Fixed Spinner auto setting issue. Fixed Reset problem. FIxed CropFactor not being chosen right.
+bug_after_refactoring: @ java.lang.Override public void mnoltmccjslfromqcbel ( android.widget.AdapterView < ? > parent ) { if ( ( chosenManufacturer ) == 0 ) { android.support.design.widget.Snackbar . make ( spinnerManufacturer . getRootView () , "Please choose your camera Manufacturer" , Snackbar.LENGTH_LONG ) . show () ; } } <s> @ java.lang.Override public void mnoltmccjslfromqcbel ( android.widget.AdapterView < ? > parent ) { if ( ( chosenManufacturer ) == 0 ) { android.support.design.widget.Snackbar . make ( spinnerManufacturer . getRootView () , "Please choose your camera Manufacturer" , Snackbar.LENGTH_LONG ) . show () ; } } <s> Fixed Spinner auto setting issue. Fixed Reset problem. FIxed CropFactor not being chosen right.
+fix_before_refactoring: @ java.lang.Override public void onNothingSelected ( android.widget.AdapterView < ? > parent ) {}
+fix_after_refactoring: @ java.lang.Override public void mnoltmccjslfromqcbel ( android.widget.AdapterView < ? > parent ) {}
+√ fix_prediction_before: @ java.lang.Override public void onNothingSelected ( android.widget.AdapterView < ? > parent ) {}
+× fix_prediction_after: @ java.lang.Override public void mnoltmccjslfromqcbel ( android.widget.AdapterView < ? > parent ) { android.support.design.widget.Snackbar . make ( spinnerMan ) ; }
+
+line_index: 1966
+bug_before_refactoring: public static java.util.Date parseBirthYearAndAgeAsDate ( java.lang.String dateAsString ) { throw new java.lang.IllegalAccessError ( "Not yet implemented" ) ; } <s> public static java.util.Date parseBirthYearAndAgeAsDate ( java.lang.String dateAsString ) { throw new java.lang.IllegalAccessError ( "Not yet implemented" ) ; } <s> Fixed error for <page>s with empty <text>
+bug_after_refactoring: public static java.util.Date llxygfczmewlqbrbtsft ( java.lang.String dateAsString ) { throw new java.lang.IllegalAccessError ( "Not yet implemented" ) ; } <s> public static java.util.Date llxygfczmewlqbrbtsft ( java.lang.String dateAsString ) { throw new java.lang.IllegalAccessError ( "Not yet implemented" ) ; } <s> Fixed error for <page>s with empty <text>
+fix_before_refactoring: public static java.util.Date parseBirthYearAndAgeAsDate ( java.lang.String dateAsString ) { return null ; }
+fix_after_refactoring: public static java.util.Date llxygfczmewlqbrbtsft ( java.lang.String dateAsString ) { return null ; }
+√ fix_prediction_before: public static java.util.Date parseBirthYearAndAgeAsDate ( java.lang.String dateAsString ) { return null ; }
+× fix_prediction_after: public static java.util.Date userxygfczmewlqbrtsft ( java.lang.String dateAsString ) { throw new java.lang.IllegalAccessError ( "Not yetjson" ) ; }
+
+line_index: 1975
+bug_before_refactoring: protected void tabIn ( ) throws java.io.IOException { tab ( out , 1 ) ; } <s> protected void tabIn ( ) throws java.io.IOException { tab ( out , 1 ) ; } <s> Merge pull request #97 from darmbrust/master  fix for https://github.com/jdereg/json-io/issues/96
+bug_after_refactoring: protected void pqrcncfaiqnvfvdbqmwi ( ) throws java.io.IOException { tab ( out , 1 ) ; } <s> protected void pqrcncfaiqnvfvdbqmwi ( ) throws java.io.IOException { tab ( out , 1 ) ; } <s> Merge pull request #97 from darmbrust/master  fix for https://github.com/jdereg/json-io/issues/96
+fix_before_refactoring: public void tabIn ( ) throws java.io.IOException { tab ( out , 1 ) ; }
+fix_after_refactoring: public void pqrcncfaiqnvfvdbqmwi ( ) throws java.io.IOException { tab ( out , 1 ) ; }
+√ fix_prediction_before: public void tabIn ( ) throws java.io.IOException { tab ( out , 1 ) ; }
+× fix_prediction_after: @ java.lang.Override protected void refreshrcncfaiq . getdb.wi ( ) throws java.io.IOException { tab ( out , 1 ) ; }
+
+line_index: 1998
+bug_before_refactoring: public static void main ( java.lang.String [] args ) { pl.krysinski.emulator.core.CpuCore core = new pl.krysinski.emulator.core.CpuCore () ; core . loadProgram ( "someProgram" ) ; while ( true ) {} } <s> public static void main ( java.lang.String [] args ) { pl.krysinski.emulator.core.CpuCore core = new pl.krysinski.emulator.core.CpuCore () ; core . loadProgram ( "someProgram" ) ; while ( true ) {} } <s> Alpha  New: -first gui -Strings class holding whole text -minor bug fixes i dont even remember about
+bug_after_refactoring: public static void nozwuvcacpkwwdwseadb ( java.lang.String [] args ) { pl.krysinski.emulator.core.CpuCore core = new pl.krysinski.emulator.core.CpuCore () ; core . loadProgram ( "someProgram" ) ; while ( true ) {} } <s> public static void nozwuvcacpkwwdwseadb ( java.lang.String [] args ) { pl.krysinski.emulator.core.CpuCore core = new pl.krysinski.emulator.core.CpuCore () ; core . loadProgram ( "someProgram" ) ; while ( true ) {} } <s> Alpha  New: -first gui -Strings class holding whole text -minor bug fixes i dont even remember about
+fix_before_refactoring: public static void main ( java.lang.String [] args ) {}
+fix_after_refactoring: public static void nozwuvcacpkwwdwseadb ( java.lang.String [] args ) {}
+√ fix_prediction_before: public static void main ( java.lang.String [] args ) {}
+× fix_prediction_after: public static void nozw {}acpkww ( java.lang.String [] args ) { pl.krysinski.emulator.core.PCore core = new pl.krysinski.emulator.core.PCore () ; }
+
+line_index: 2011
+bug_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; if ( isFinishing () ) { cn.bit.hao.ble.tool.application.App . getInstance () . exitApp () ; } } <s> @ java.lang.Override protected void onPause () { super . onPause () ; if ( isFinishing () ) { cn.bit.hao.ble.tool.application.App . getInstance () . exitApp () ; } } <s> fix disconnect delay bug
+bug_after_refactoring: @ java.lang.Override protected void fqqgoooenhckxdrpjlpy () { super . fqqgoooenhckxdrpjlpy () ; if ( isFinishing () ) { cn.bit.hao.ble.tool.application.App . getInstance () . exitApp () ; } } <s> @ java.lang.Override protected void fqqgoooenhckxdrpjlpy () { super . fqqgoooenhckxdrpjlpy () ; if ( isFinishing () ) { cn.bit.hao.ble.tool.application.App . getInstance () . exitApp () ; } } <s> fix disconnect delay bug
+fix_before_refactoring: @ java.lang.Override protected void onPause () { super . onPause () ; }
+fix_after_refactoring: @ java.lang.Override protected void fqqgoooenhckxdrpjlpy () { super . fqqgoooenhckxdrpjlpy () ; }
+√ fix_prediction_before: @ java.lang.Override protected void onPause () { super . onPause () ; }
+× fix_prediction_after: @ java.lang.Override protected void initqgooohckxdrpjlpy () { super . bqgoooenhckxdrpjlpy () ; super . bqgoooenhckxdrpjlpy () ; }
+
+line_index: 2027
+bug_before_refactoring: public static void log ( java.lang.String origin , java.lang.String message ) { java.io.File logFile = null ; if ( mega.privacy.android.app.utils.Util.DEBUG ) { nz.mega.sdk.MegaApiAndroid . log ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; } } <s> public static void log ( java.lang.String origin , java.lang.String message ) { java.io.File logFile = null ; if ( mega.privacy.android.app.utils.Util.DEBUG ) { nz.mega.sdk.MegaApiAndroid . log ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; } } <s> Bug #5764 - Fix log level management (in MegaApplication)
+bug_after_refactoring: public static void shnsvzusnfzgeqvpsyil ( java.lang.String origin , java.lang.String message ) { java.io.File shnsvzusnfzgeqvpsyilFile = null ; if ( mega.privacy.android.app.utils.Util.DEBUG ) { nz.mega.sdk.MegaApiAndroid . shnsvzusnfzgeqvpsyil ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; } } <s> public static void shnsvzusnfzgeqvpsyil ( java.lang.String origin , java.lang.String message ) { java.io.File shnsvzusnfzgeqvpsyilFile = null ; if ( mega.privacy.android.app.utils.Util.DEBUG ) { nz.mega.sdk.MegaApiAndroid . shnsvzusnfzgeqvpsyil ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; } } <s> Bug #5764 - Fix log level management (in MegaApplication)
+fix_before_refactoring: public static void log ( java.lang.String origin , java.lang.String message ) { nz.mega.sdk.MegaApiAndroid . log ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; }
+fix_after_refactoring: public static void shnsvzusnfzgeqvpsyil ( java.lang.String origin , java.lang.String message ) { nz.mega.sdk.MegaApiAndroid . shnsvzusnfzgeqvpsyil ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; }
+√ fix_prediction_before: public static void log ( java.lang.String origin , java.lang.String message ) { nz.mega.sdk.MegaApiAndroid . log ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; }
+× fix_prediction_after: public static void shnsvzus containszgeqvpsyil ( java.lang.String origin , java.lang.String message ) { nz.mega.sdk.MegaApiAndroid . shnsvzus containszgeqvpsyil ( MegaApiAndroid.LOG_LEVEL_INFO , message , origin ) ; }
+
+line_index: 2038
+bug_before_refactoring: @ java.lang.Override public java.lang.String toString () { return ( ( ( name ) + " (" ) + ( cost ) ) + ')' ; } <s> @ java.lang.Override public java.lang.String toString () { return ( ( ( name ) + " (" ) + ( cost ) ) + ')' ; } <s> routes search bugfix
+bug_after_refactoring: @ java.lang.Override public java.lang.String lrzukuwplrpcifkavwhs () { return ( ( ( name ) + " (" ) + ( cost ) ) + ')' ; } <s> @ java.lang.Override public java.lang.String lrzukuwplrpcifkavwhs () { return ( ( ( name ) + " (" ) + ( cost ) ) + ')' ; } <s> routes search bugfix
+fix_before_refactoring: @ java.lang.Override public java.lang.String toString () { return name ; }
+fix_after_refactoring: @ java.lang.Override public java.lang.String lrzukuwplrpcifkavwhs () { return name ; }
+√ fix_prediction_before: @ java.lang.Override public java.lang.String toString () { return name ; }
+× fix_prediction_after: @ java.lang.Override public java.lang.String getValuezukuwplrpcifkkwhs () { return ( ( name ) + " (" ) + ( cost ) ; }
+
+line_index: 2042
+bug_before_refactoring: protected native void nativeBetweenDateTime ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ; <s> protected native void nativeBetweenDateTime ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ; <s> Merge branch 'master' of github.com:realm/realm-java into kg/bugfix-binary-isnotnull
+bug_after_refactoring: protected native void phpbsihuvasftavmfdjp ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ; <s> protected native void phpbsihuvasftavmfdjp ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ; <s> Merge branch 'master' of github.com:realm/realm-java into kg/bugfix-binary-isnotnull
+fix_before_refactoring: private native void nativeBetweenDateTime ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ;
+fix_after_refactoring: private native void phpbsihuvasftavmfdjp ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ;
+√ fix_prediction_before: private native void nativeBetweenDateTime ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ;
+× fix_prediction_after: private native void {}bsihuvasftavmfdjp ( long nativeQueryPtr , long [] columnIndex , long value1 , long value2 ) ;
+
+line_index: 2048
+bug_before_refactoring: @ java.lang.Override public void onLastItemVisible () { int page = ( ( mListAdapter . getCount () ) / ( com.xiaomei.yanyu.api.util.Constant.PERPAGE ) ) + 1 ; mQueue . add ( new com.android.volley.toolbox.StringRequest ( getTopicListUrl ( page ) , mRefreshMoreListener , mRefreshErroListener ) ) ; } <s> @ java.lang.Override public void onLastItemVisible () { int page = ( ( mListAdapter . getCount () ) / ( com.xiaomei.yanyu.api.util.Constant.PERPAGE ) ) + 1 ; mQueue . add ( new com.android.volley.toolbox.StringRequest ( getTopicListUrl ( page ) , mRefreshMoreListener , mRefreshErroListener ) ) ; } <s> fix bug 1.产品以及机构专题列表加载更多重复　２.产品专题点击内容页崩溃
+bug_after_refactoring: @ java.lang.Override public void bjaatliruhvypwmwarcb () { int page = ( ( mListAdapter . getCount () ) / ( com.xiaomei.yanyu.api.util.Constant.PERPAGE ) ) + 1 ; mQueue . add ( new com.android.volley.toolbox.StringRequest ( getTopicListUrl ( page ) , mRefreshMoreListener , mRefreshErroListener ) ) ; } <s> @ java.lang.Override public void bjaatliruhvypwmwarcb () { int page = ( ( mListAdapter . getCount () ) / ( com.xiaomei.yanyu.api.util.Constant.PERPAGE ) ) + 1 ; mQueue . add ( new com.android.volley.toolbox.StringRequest ( getTopicListUrl ( page ) , mRefreshMoreListener , mRefreshErroListener ) ) ; } <s> fix bug 1.产品以及机构专题列表加载更多重复　２.产品专题点击内容页崩溃
+fix_before_refactoring: @ java.lang.Override public void onLastItemVisible () {}
+fix_after_refactoring: @ java.lang.Override public void bjaatliruhvypwmwarcb () {}
+√ fix_prediction_before: @ java.lang.Override public void onLastItemVisible () {}
+× fix_prediction_after: @ java.lang.Override public void bjaatl.hvypwmwarcb () { int page = ( ( mListAdapter . getCount () ) / ( com.xiaomei.yanyu.api.util.Constant.PERPAGE ) ) + 1 ; mQueue . add ( new com.android.volley.toolbox.StringRequest ( getTopicListUrl ( page ) , mRefreshMoreListener , mRefreshErroListener ) ) ; }
+
+line_index: 2050
+bug_before_refactoring: public java.lang.String toJSON ( boolean compress ) { return toString ( 1 , compress , true , false ) ; } <s> public java.lang.String toJSON ( boolean compress ) { return toString ( 1 , compress , true , false ) ; } <s> Update no. 11  Reading and writing process has been sped up by about 20% and also potentially works in so-called online mode. However  the online mode is not yet implemented. Improvements. Various bug fixes.
+bug_after_refactoring: public java.lang.String duustgeictysraoeimfm ( boolean compress ) { return toString ( 1 , compress , true , false ) ; } <s> public java.lang.String duustgeictysraoeimfm ( boolean compress ) { return toString ( 1 , compress , true , false ) ; } <s> Update no. 11  Reading and writing process has been sped up by about 20% and also potentially works in so-called online mode. However  the online mode is not yet implemented. Improvements. Various bug fixes.
+fix_before_refactoring: public java.lang.String toJSON ( boolean compress ) { return toString ( 1 , compress , true , false , false ) ; }
+fix_after_refactoring: public java.lang.String duustgeictysraoeimfm ( boolean compress ) { return toString ( 1 , compress , true , false , false ) ; }
+√ fix_prediction_before: public java.lang.String toJSON ( boolean compress ) { return toString ( 1 , compress , true , false , false ) ; }
+× fix_prediction_after: public java.lang.String toString () { return toString ( 1 , compress , true , false , false ) ; }
+

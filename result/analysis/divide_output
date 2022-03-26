@@ -1,0 +1,6 @@
+divide data by prediction: 
+refactoring type is local_variable_renaming, on small dataset, on model lstm:
+Total:  216
+correct_count_before:  17  correct_acc_before:  7.87
+correct_count_after:  6  correct_acc_after:  2.78
+---------------------------------------------------------------------------------------------

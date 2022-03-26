@@ -1,0 +1,184 @@
+line_index: 5
+bug_before_refactoring: { int direction = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return direction ; } <s> public int getAction ( gr.PacManAI.GameState gs ) { int direction = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return direction ; } <s> Fixed bug where coordinates of pacman weren't being updated.
+bug_after_refactoring: { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return pvkxvujxkedkmvwuymdm ; } <s> public int getAction ( gr.PacManAI.GameState gs ) { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; java.lang.System.out . println ( "Action choosen" ) ; return pvkxvujxkedkmvwuymdm ; } <s> Fixed bug where coordinates of pacman weren't being updated.
+fix_before_refactoring: { int direction = gs . closestPillDir () ; return direction ; }
+fix_after_refactoring: { int pvkxvujxkedkmvwuymdm = gs . closestPillDir () ; return pvkxvujxkedkmvwuymdm ; }
+√ fix_prediction_before: { int direction = gs . closestPillDir () ; return direction ; }
+× fix_prediction_after: { int pvkxvujxkedkmmskakamdm = gs . closestPillDir () ; return pvkxvujxkedkmmskakamdm ; }
+
+line_index: 7
+bug_before_refactoring: numPlays = - 5 <s> @ Test.Network.Test public void agricolaShouldHaveNumPlays0 () { int numPlays = - 5 ; Main.Containers.Boardgame game = games . get ( 0 ) ; numPlays = game . getNumberOfPlays () ; assertEquals ( 0 , numPlays ) ; } <s> Fixed error. The problem lied in that TestCollectionBuilder used an incomplete mock. Complexity is now being added to all games when collection is built
+bug_after_refactoring: fyonoynezhlykppyngtj = - 5 <s> @ Test.Network.Test public void agricolaShouldHaveNumPlays0 () { int fyonoynezhlykppyngtj = - 5 ; Main.Containers.Boardgame game = games . get ( 0 ) ; numPlays = game . getNumberOfPlays () ; assertEquals ( 0 , numPlays ) ; } <s> Fixed error. The problem lied in that TestCollectionBuilder used an incomplete mock. Complexity is now being added to all games when collection is built
+fix_before_refactoring: numPlays
+fix_after_refactoring: fyonoynezhlykppyngtj
+√ fix_prediction_before: numPlays
+× fix_prediction_after: fyonoynezhlykppyngtj = 0
+
+line_index: 20
+bug_before_refactoring: index = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 <s> @ java.lang.Override public java.util.concurrent.ConcurrentNavigableMap < org.apache.hadoop.hbase.Cell , org.apache.hadoop.hbase.Cell > tailMap ( org.apache.hadoop.hbase.Cell fromKey , boolean inclusive ) { int index = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 ; return createCellBlocks ( comparator , index , maxCellIdx ) ; } <s> After Code Review and Bug Fixes
+bug_after_refactoring: wlfaqfdgcsfojeqteior = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 <s> @ java.lang.Override public java.util.concurrent.ConcurrentNavigableMap < org.apache.hadoop.hbase.Cell , org.apache.hadoop.hbase.Cell > tailMap ( org.apache.hadoop.hbase.Cell fromKey , boolean inclusive ) { int wlfaqfdgcsfojeqteior = ( getValidIndex ( fromKey , ( ! inclusive ) ) ) - 1 ; return createCellBlocks ( comparator , index , maxCellIdx ) ; } <s> After Code Review and Bug Fixes
+fix_before_refactoring: index = getValidIndex ( fromKey , ( ! inclusive ) )
+fix_after_refactoring: wlfaqfdgcsfojeqteior = getValidIndex ( fromKey , ( ! inclusive ) )
+√ fix_prediction_before: index = getValidIndex ( fromKey , ( ! inclusive ) )
+× fix_prediction_after: wloolsfdgcsfojeqteior = getValidIndex ( fromKey , ( ! inclusive ) )
+
+line_index: 29
+bug_before_refactoring: { int code = connection . getResponseCode () ; if ( code == 404 ) { return null ; } return super . processResponse ( connection , typeOfT ) ; } <s> @ java.lang.Override protected < T > T processResponse ( java.net.HttpURLConnection connection , java.lang.reflect.Type typeOfT ) throws java.io.IOException , me.figo.FigoException { int code = connection . getResponseCode () ; if ( code == 404 ) { return null ; } return super . processResponse ( connection , typeOfT ) ; } <s> fixed error responses  removed unused test cases
+bug_after_refactoring: { int dvhqsjgtkslimnxmkvdq = connection . getResponseCode () ; if ( dvhqsjgtkslimnxmkvdq == 404 ) { return null ; } return super . processResponse ( connection , typeOfT ) ; } <s> @ java.lang.Override protected < T > T processResponse ( java.net.HttpURLConnection connection , java.lang.reflect.Type typeOfT ) throws java.io.IOException , me.figo.FigoException { int dvhqsjgtkslimnxmkvdq = connection . getResponseCode () ; if ( dvhqsjgtkslimnxmkvdq == 404 ) { return null ; } return super . processResponse ( connection , typeOfT ) ; } <s> fixed error responses  removed unused test cases
+fix_before_refactoring: { int code = connection . getResponseCode () ; return super . processResponse ( connection , typeOfT ) ; }
+fix_after_refactoring: { int dvhqsjgtkslimnxmkvdq = connection . getResponseCode () ; return super . processResponse ( connection , typeOfT ) ; }
+√ fix_prediction_before: { int code = connection . getResponseCode () ; return super . processResponse ( connection , typeOfT ) ; }
+× fix_prediction_after: { return super . processResponse ( connection , typeOfT ) ; }
+
+line_index: 38
+bug_before_refactoring: getSlotFromIndex ( index ) <s> @ java.lang.Override public net.minecraft.item.ItemStack getStackInSlot ( int slot ) { int index = getIndexForSlot ( slot ) ; net.minecraftforge.items.IItemHandlerModifiable handler = getHandlerFromIndex ( index ) ; slot = getSlotFromIndex ( index ) ; return handler . getStackInSlot ( slot ) ; } <s> Merge pull request #2539 from bonii-xx/bugfix  Fix CombinedInvWrapper accessing incorrect slots
+bug_after_refactoring: getSlotFromIndex ( nyjdginfqbfucgnhquuf ) <s> @ java.lang.Override public net.minecraft.item.ItemStack getStackInSlot ( int slot ) { int index = getIndexForSlot ( slot ) ; net.minecraftforge.items.IItemHandlerModifiable handler = getHandlerFromIndex ( index ) ; slot = getSlotFromIndex ( nyjdginfqbfucgnhquuf ) ; return handler . getStackInSlot ( slot ) ; } <s> Merge pull request #2539 from bonii-xx/bugfix  Fix CombinedInvWrapper accessing incorrect slots
+fix_before_refactoring: getSlotFromIndex ( slot , index )
+fix_after_refactoring: getSlotFromIndex ( slot , nyjdginfqbfucgnhquuf )
+√ fix_prediction_before: getSlotFromIndex ( slot , index )
+× fix_prediction_after: getSlotFromIndex ( nyjdginfqbfucgnhquuf , 0 )
+
+line_index: 44
+bug_before_refactoring: public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> public void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+bug_after_refactoring: public void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } } <s> public void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } } <s> Add drag and zoom for Pdf Renderer Fix a bug where pdfActivty started even if the pdf was not downloaded (network error) Add gesture-imageview.jar lib @see github.com/jasonpolites/gesture-imageview Cleaned useless imports
+fix_before_refactoring: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+fix_after_refactoring: private void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } }
+√ fix_prediction_before: private void nextPdfPage () { int next = ( mCurrentPage . getIndex () ) + 1 ; if ( ( next < ( getPageCount () ) ) && ( next >= 0 ) ) { showPage ( next ) ; } }
+× fix_prediction_after: public void nextPdfPage () { int pdecdbatynycwqgloqhu = ( mCurrentPage . getIndex () ) + 1 ; if ( ( pdecdbatynycwqgloqhu < ( getPageCount () ) ) && ( pdecdbatynycwqgloqhu >= 0 ) ) { showPage ( pdecdbatynycwqgloqhu ) ; } }
+
+line_index: 51
+bug_before_refactoring: fireAxisLogScaleChanged ( old , logScaleEnabled ) <s> @ java.lang.Override public void setLogScale ( boolean enabled ) throws java.lang.IllegalStateException { boolean old = isLogScaleEnabled () ; super . setLogScale ( enabled ) ; fireAxisLogScaleChanged ( old , logScaleEnabled ) ; } <s> Bug 514432 - Fix method behaviour of DAxis methods  * Use internalSetFormatPattern to set formatPattern instead of using super class setFormatPattern method * Restore old behaviour of setRange method for DAxis * Add figureLayout method in LinearScale so we can call a simple layout in DAxis * Make logScaleEnabled in AbstractScale private
+bug_after_refactoring: fireAxisLogScaleChanged ( qcmndsejfcafvpffvrwk , logScaleEnabled ) <s> @ java.lang.Override public void setLogScale ( boolean enabled ) throws java.lang.IllegalStateException { boolean old = isLogScaleEnabled () ; super . setLogScale ( enabled ) ; fireAxisLogScaleChanged ( qcmndsejfcafvpffvrwk , logScaleEnabled ) ; } <s> Bug 514432 - Fix method behaviour of DAxis methods  * Use internalSetFormatPattern to set formatPattern instead of using super class setFormatPattern method * Restore old behaviour of setRange method for DAxis * Add figureLayout method in LinearScale so we can call a simple layout in DAxis * Make logScaleEnabled in AbstractScale private
+fix_before_refactoring: fireAxisLogScaleChanged ( old , enabled )
+fix_after_refactoring: fireAxisLogScaleChanged ( qcmndsejfcafvpffvrwk , enabled )
+√ fix_prediction_before: fireAxisLogScaleChanged ( old , enabled )
+× fix_prediction_after: fireAxisLogScaleChanged ( this , qcmndsejfcafvpffvrwk , logScaleEnabled )
+
+line_index: 58
+bug_before_refactoring: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean executed = executeCommand ( "set saturation" , params ) ; if ( executed ) { setSaturation ( 254 ) ; } } <s> @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean executed = executeCommand ( "set saturation" , params ) ; if ( executed ) { setSaturation ( 254 ) ; } } <s> solved issue for white color
+bug_after_refactoring: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean xwgnhltgrbkkvepneaqr = executeCommand ( "set saturation" , params ) ; if ( xwgnhltgrbkkvepneaqr ) { setSaturation ( 254 ) ; } } <s> @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean xwgnhltgrbkkvepneaqr = executeCommand ( "set saturation" , params ) ; if ( xwgnhltgrbkkvepneaqr ) { setSaturation ( 254 ) ; } } <s> solved issue for white color
+fix_before_refactoring: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean executed = executeCommand ( "set saturation" , params ) ; setSaturation ( 254 ) ; }
+fix_after_refactoring: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean xwgnhltgrbkkvepneaqr = executeCommand ( "set saturation" , params ) ; setSaturation ( 254 ) ; }
+√ fix_prediction_before: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) { boolean executed = executeCommand ( "set saturation" , params ) ; setSaturation ( 254 ) ; }
+× fix_prediction_after: @ java.lang.Override public void onUpperBoundValue ( com.freedomotic.model.ds.Config params , boolean fireCommand ) {}
+
+line_index: 65
+bug_before_refactoring: { boolean sending = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> protected void initiateSendIfNecessary () { boolean sending = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> Updated BLE delegate state management  Fixed error that caused READY to be issued before the communicator was actually READY on Tappy devices with version >2.0 BLE module firmware  Cleared up comment on TappyBleCommunicator  Made TappyBleCommunicator return booleans from TappyBleDelegate's connect() and initialize() functions  Cleaned up a couple other issues in TappyBleDelegate
+bug_after_refactoring: { boolean onjstlkmzpoflcujuoby = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> protected void initiateSendIfNecessary () { boolean onjstlkmzpoflcujuoby = isSending . get () ; if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } } <s> Updated BLE delegate state management  Fixed error that caused READY to be issued before the communicator was actually READY on Tappy devices with version >2.0 BLE module firmware  Cleared up comment on TappyBleCommunicator  Made TappyBleCommunicator return booleans from TappyBleDelegate's connect() and initialize() functions  Cleaned up a couple other issues in TappyBleDelegate
+fix_before_refactoring: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+fix_after_refactoring: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+√ fix_prediction_before: { if ( ! ( isSending . getAndSet ( true ) ) ) { sendBytesFromBuffer () ; } }
+× fix_prediction_after: { boolean onjstlkmzpoflcujuoby = isSending . get () ; sendBytesFromBuffer () ; }
+
+line_index: 67
+bug_before_refactoring: { int res ; res = a * b ; return res ; } <s> public int computeProduct ( int a , int b ) { int res ; res = a * b ; return res ; } <s> fix serialization issue & clean duplicated/unused code
+bug_after_refactoring: { int lnhsinubehjptdzvxsra ; lnhsinubehjptdzvxsra = a * b ; return lnhsinubehjptdzvxsra ; } <s> public int computeProduct ( int a , int b ) { int lnhsinubehjptdzvxsra ; lnhsinubehjptdzvxsra = a * b ; return lnhsinubehjptdzvxsra ; } <s> fix serialization issue & clean duplicated/unused code
+fix_before_refactoring: { return a * b ; }
+fix_after_refactoring: { return a * b ; }
+√ fix_prediction_before: { return a * b ; }
+× fix_prediction_after: { return lnhsinubehjptdzvxsra = a * b ; }
+
+line_index: 78
+bug_before_refactoring: roll = value . nextInt ( 10 ) <s> public int roll () { int roll = value . nextInt ( 10 ) ; return roll ; } <s> fixed the same tedious error from the 10 system
+bug_after_refactoring: hnwtipaodnibqhhljgig = value . nextInt ( 10 ) <s> public int roll () { int hnwtipaodnibqhhljgig = value . nextInt ( 10 ) ; return roll ; } <s> fixed the same tedious error from the 10 system
+fix_before_refactoring: roll = ( value . nextInt ( 10 ) ) + 1
+fix_after_refactoring: hnwtipaodnibqhhljgig = ( value . nextInt ( 10 ) ) + 1
+√ fix_prediction_before: roll = ( value . nextInt ( 10 ) ) + 1
+× fix_prediction_after: hnwtipaodnibqhhljgig = value . nextInt ( 10 )
+
+line_index: 86
+bug_before_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed ) <s> public static double playOneGame ( java.lang.String game_file , java.lang.String level_file , java.lang.String actionFile , int randomSeed ) { java.lang.String agentName = "controllers.human.Agent" ; boolean visuals = true ; return core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed ) ; } <s> bug fix in gymkhana  avatar needs to be oriented. Start/End window only appears if a human is playing now.
+bug_after_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed ) <s> public static double playOneGame ( java.lang.String game_file , java.lang.String level_file , java.lang.String actionFile , int randomSeed ) { java.lang.String agentName = "controllers.human.Agent" ; boolean visuals = true ; return core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed ) ; } <s> bug fix in gymkhana  avatar needs to be oriented. Start/End window only appears if a human is playing now.
+fix_before_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed , true )
+fix_after_refactoring: core.ArcadeMachine . runOneGame ( game_file , level_file , tuiabgxoajakshqaprdj , agentName , actionFile , randomSeed , true )
+√ fix_prediction_before: core.ArcadeMachine . runOneGame ( game_file , level_file , visuals , agentName , actionFile , randomSeed , true )
+× fix_prediction_after: core.ArcadeMachine . runOneGame ( game_file , level_file , agentName , actionFile , randomSeed )
+
+line_index: 87
+bug_before_refactoring: @ java.lang.Override public org.w3c.dom.Node getParentNode () { final int parent = document.attrParent [ nodeNumber ] ; if ( parent > 0 ) { return document . getNode ( parent ) ; } return null ; } <s> @ java.lang.Override public org.w3c.dom.Node getParentNode () { final int parent = document.attrParent [ nodeNumber ] ; if ( parent > 0 ) { return document . getNode ( parent ) ; } return null ; } <s> [bugfix] Attr#getParentNode must return null
+bug_after_refactoring: @ java.lang.Override public org.w3c.dom.Node getParentNode () { final int zfweajrczudikppwmwny = document.attrParent [ nodeNumber ] ; if ( zfweajrczudikppwmwny > 0 ) { return document . getNode ( zfweajrczudikppwmwny ) ; } return null ; } <s> @ java.lang.Override public org.w3c.dom.Node getParentNode () { final int zfweajrczudikppwmwny = document.attrParent [ nodeNumber ] ; if ( zfweajrczudikppwmwny > 0 ) { return document . getNode ( zfweajrczudikppwmwny ) ; } return null ; } <s> [bugfix] Attr#getParentNode must return null
+fix_before_refactoring: @ java.lang.Override public org.w3c.dom.Node getParentNode () { return null ; }
+fix_after_refactoring: @ java.lang.Override public org.w3c.dom.Node getParentNode () { return null ; }
+√ fix_prediction_before: @ java.lang.Override public org.w3c.dom.Node getParentNode () { return null ; }
+× fix_prediction_after: @ java.lang.Override public org.w3c.dom.Node getParentNode () { return document.attrParent [ nodeNumber ] ; }
+
+line_index: 89
+bug_before_refactoring: public void setAtPosition ( long position , int value ) { long i = ( pointer ) + ( position * ( com.heerbann.unsafe.UnsafeBuffer.sizeOfInt ) ) ; ensure ( i ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( i , value ) ; } <s> public void setAtPosition ( long position , int value ) { long i = ( pointer ) + ( position * ( com.heerbann.unsafe.UnsafeBuffer.sizeOfInt ) ) ; ensure ( i ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( i , value ) ; } <s> Tests added and tons of bug fixes
+bug_after_refactoring: public void setAtPosition ( long position , int value ) { long newaenqylbbfnllypfmc = ( pointer ) + ( position * ( com.heerbann.unsafe.UnsafeBuffer.sizeOfInt ) ) ; ensure ( newaenqylbbfnllypfmc ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( newaenqylbbfnllypfmc , value ) ; } <s> public void setAtPosition ( long position , int value ) { long newaenqylbbfnllypfmc = ( pointer ) + ( position * ( com.heerbann.unsafe.UnsafeBuffer.sizeOfInt ) ) ; ensure ( newaenqylbbfnllypfmc ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( newaenqylbbfnllypfmc , value ) ; } <s> Tests added and tons of bug fixes
+fix_before_refactoring: public void setAtPosition ( long position , int value ) { ensure ( position ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( ( ( pointer ) + position ) , value ) ; }
+fix_after_refactoring: public void setAtPosition ( long position , int value ) { ensure ( position ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( ( ( pointer ) + position ) , value ) ; }
+√ fix_prediction_before: public void setAtPosition ( long position , int value ) { ensure ( position ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( ( ( pointer ) + position ) , value ) ; }
+× fix_prediction_after: public void setAtPosition ( long position , int value ) { ensure ( position ) ; com.heerbann.unsafe.UnsafeBuffer.unsafe . putInt ( position , value ) ; }
+
+line_index: 103
+bug_before_refactoring: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + totalPrice ) ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; } <s> public void setTotalPrice ( no.europark.parkingBooking.entity.TimeSpan timeSpan , no.europark.parkingBooking.entity.ParkingPlace parkingPlace ) { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + totalPrice ) ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; } <s> Fixed date issue on payment page
+bug_after_refactoring: { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + nlcqjhamwozkznckyjnz ) ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; } <s> public void setTotalPrice ( no.europark.parkingBooking.entity.TimeSpan timeSpan , no.europark.parkingBooking.entity.ParkingPlace parkingPlace ) { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; java.lang.System.out . println ( ( "TOT.PRICE: " + nlcqjhamwozkznckyjnz ) ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; } <s> Fixed date issue on payment page
+fix_before_refactoring: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; }
+fix_after_refactoring: { int nlcqjhamwozkznckyjnz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyjnz ) ; }
+√ fix_prediction_before: { int totalPrice = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , totalPrice ) ; }
+× fix_prediction_after: { int nlcqjhamwozkznckyj nz = no.europark.parkingBooking.Utility . CalculatePrice ( timeSpan , parkingPlace ) ; addModelVariable ( "TotalPrice" , nlcqjhamwozkznckyj nz ) ; }
+
+line_index: 115
+bug_before_refactoring: { int queueSize = 500 ; messageHandler = new ru.ayaz.UserMessageHandler ( queueSize ) ; } <s> @ org.junit.Before public final void before () { int queueSize = 500 ; messageHandler = new ru.ayaz.UserMessageHandler ( queueSize ) ; } <s> forgot to fix some issues
+bug_after_refactoring: { int gvmjqmgdaqcxxkqwfvfh = 500 ; messageHandler = new ru.ayaz.UserMessageHandler ( gvmjqmgdaqcxxkqwfvfh ) ; } <s> @ org.junit.Before public final void before () { int gvmjqmgdaqcxxkqwfvfh = 500 ; messageHandler = new ru.ayaz.UserMessageHandler ( gvmjqmgdaqcxxkqwfvfh ) ; } <s> forgot to fix some issues
+fix_before_refactoring: { messageHandler = new ru.ayaz.UserMessageHandler ( 500 ) ; }
+fix_after_refactoring: { messageHandler = new ru.ayaz.UserMessageHandler ( 500 ) ; }
+√ fix_prediction_before: { messageHandler = new ru.ayaz.UserMessageHandler ( 500 ) ; }
+× fix_prediction_after: { messageHandler = new ru.ayaz.UserMessageHandler ( gvmjqmgdaqcxxkqwfvfh ) ; }
+
+line_index: 117
+bug_before_refactoring: return set ( other ) . normalizeLocal () . multLocal ( ( n / d ) ) ; <s> public com.jme3.math.Vector3f projectLocal ( com.jme3.math.Vector3f other ) { float n = this . dot ( other ) ; float d = other . lengthSquared () ; return set ( other ) . normalizeLocal () . multLocal ( ( n / d ) ) ; } <s> Merge pull request #602 from stephengold/v3.1  fix errors in how vector projection is calculated
+bug_after_refactoring: return set ( other ) . normalizeLocal () . multLocal ( ( lhugozsqqzisqoiqwmft / htwfvyxzbzxqfsdlzajj ) ) ; <s> public com.jme3.math.Vector3f projectLocal ( com.jme3.math.Vector3f other ) { float n = this . dot ( other ) ; float d = other . lengthSquared () ; return set ( other ) . normalizeLocal () . multLocal ( ( lhugozsqqzisqoiqwmft / htwfvyxzbzxqfsdlzajj ) ) ; } <s> Merge pull request #602 from stephengold/v3.1  fix errors in how vector projection is calculated
+fix_before_refactoring: return set ( other ) . multLocal ( ( n / d ) ) ;
+fix_after_refactoring: return set ( other ) . multLocal ( ( lhugozsqqzisqoiqwmft / htwfvyxzbzxqfsdlzajj ) ) ;
+√ fix_prediction_before: return set ( other ) . multLocal ( ( n / d ) ) ;
+× fix_prediction_after: return set ( other ) . multLocal ( ( sbugozsqqzisqoiqwmft / htwfvyxzbzxqfsdlzajj ) ) ;
+
+line_index: 121
+bug_before_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; if ( position != 0 ) { onCategoryChosen ( position ) ; } } <s> @ java.lang.Override public void act () { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; if ( position != 0 ) { onCategoryChosen ( position ) ; } } <s> - Redo enable/disable spinner. Fix a bug with spinner remaining disable after user cancel climber in scan tab.
+bug_after_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; if ( zimrvexhyclawjyexzlk != 0 ) { onCategoryChosen ( zimrvexhyclawjyexzlk ) ; } } <s> @ java.lang.Override public void act () { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; if ( zimrvexhyclawjyexzlk != 0 ) { onCategoryChosen ( zimrvexhyclawjyexzlk ) ; } } <s> - Redo enable/disable spinner. Fix a bug with spinner remaining disable after user cancel climber in scan tab.
+fix_before_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( position ) ; }
+fix_after_refactoring: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( zimrvexhyclawjyexzlk ) ; }
+√ fix_prediction_before: { timber.log.Timber . d ( "categorySpinner selected %d" , mCategorySpinner . getSelectedItemPosition () ) ; int position = mCategorySpinner . getSelectedItemPosition () ; onCategoryChosen ( position ) ; }
+× fix_prediction_after: { int zimrvexhyclawjyexzlk = mCategorySpinner . getSelectedItemPosition () ; if ( zimrvexhyclawjyexzlk != 0 ) { onCategoryChosen ( zimrvexhyclawjyexzlk ) ; } }
+
+line_index: 134
+bug_before_refactoring: num1 / num2 <s> @ java.lang.Override public void exec ( com.ninty.runtime.NiFrame frame ) { com.ninty.runtime.OperandStack stack = frame . getOperandStack () ; int num1 = stack . popInt () ; int num2 = stack . popInt () ; stack . pushInt ( ( num1 / num2 ) ) ; } <s> fix bug
+bug_after_refactoring: mckytwwlllyghceoyktz / ipfiilxrabnsoazreyyb <s> @ java.lang.Override public void exec ( com.ninty.runtime.NiFrame frame ) { com.ninty.runtime.OperandStack stack = frame . getOperandStack () ; int num1 = stack . popInt () ; int num2 = stack . popInt () ; stack . pushInt ( ( mckytwwlllyghceoyktz / ipfiilxrabnsoazreyyb ) ) ; } <s> fix bug
+fix_before_refactoring: num2 / num1
+fix_after_refactoring: ipfiilxrabnsoazreyyb / mckytwwlllyghceoyktz
+√ fix_prediction_before: num2 / num1
+× fix_prediction_after: mckytwwlllyghceoyktz / ipfiilxrabnsoazreyyb
+
+line_index: 144
+bug_before_refactoring: num1 - num2 <s> @ java.lang.Override public void exec ( com.ninty.runtime.NiFrame frame ) { com.ninty.runtime.OperandStack stack = frame . getOperandStack () ; double num1 = stack . popDouble () ; double num2 = stack . popDouble () ; stack . pushDouble ( ( num1 - num2 ) ) ; } <s> fix bug
+bug_after_refactoring: aqnztxhnvigdennaruck - vjszfauhjenchnrswqbk <s> @ java.lang.Override public void exec ( com.ninty.runtime.NiFrame frame ) { com.ninty.runtime.OperandStack stack = frame . getOperandStack () ; double num1 = stack . popDouble () ; double num2 = stack . popDouble () ; stack . pushDouble ( ( aqnztxhnvigdennaruck - vjszfauhjenchnrswqbk ) ) ; } <s> fix bug
+fix_before_refactoring: num2 - num1
+fix_after_refactoring: vjszfauhjenchnrswqbk - aqnztxhnvigdennaruck
+√ fix_prediction_before: num2 - num1
+× fix_prediction_after: aqnztxhnvigdennaruck - vjszfauhjenchnrswqbk
+
+line_index: 153
+bug_before_refactoring: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; int id = tc . hashCode () ; sharedPactorLocationBuckets . get ( id ) . add ( pactorName ) ; } <s> private void setPactorInCollisionBucket ( java.lang.String pactorName ) { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; int id = tc . hashCode () ; sharedPactorLocationBuckets . get ( id ) . add ( pactorName ) ; } <s> - Refactoring - Fixed concurrent modification issues by utilizing concurrency-supporting data structures - Updated executable
+bug_after_refactoring: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; int nuggripbmnnhnrgfbxgv = tc . hashCode () ; sharedPactorLocationBuckets . get ( nuggripbmnnhnrgfbxgv ) . add ( pactorName ) ; } <s> private void setPactorInCollisionBucket ( java.lang.String pactorName ) { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; int nuggripbmnnhnrgfbxgv = tc . hashCode () ; sharedPactorLocationBuckets . get ( nuggripbmnnhnrgfbxgv ) . add ( pactorName ) ; } <s> - Refactoring - Fixed concurrent modification issues by utilizing concurrency-supporting data structures - Updated executable
+fix_before_refactoring: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; sharedPactorLocationBuckets . get ( tc ) . add ( pactorName ) ; }
+fix_after_refactoring: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; sharedPactorLocationBuckets . get ( tc ) . add ( pactorName ) ; }
+√ fix_prediction_before: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; sharedPactorLocationBuckets . get ( tc ) . add ( pactorName ) ; }
+× fix_prediction_after: { Engine.TileCoordinate tc = getPositionFor ( pactorName ) ; createCollisionBucketForTileCoordinateIfBucketAbsent ( tc ) ; sharedPactorLocationBuckets . get ( nuggripbmnnhnrgfbxgv ) . add ( pactorName ) ; }
+
+line_index: 204
+bug_before_refactoring: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () { java.lang.System.out . println ( "canEqual" ) ; java.lang.Object other = null ; com.negod.generics.persistence.GenericDao instance = null ; boolean expResult = false ; boolean result = instance . canEqual ( other ) ; assertEquals ( expResult , result ) ; fail ( "The test case is a prototype." ) ; } <s> @ org.junit.Ignore @ org.junit.Test public void testCanEqual () { java.lang.System.out . println ( "canEqual" ) ; java.lang.Object other = null ; com.negod.generics.persistence.GenericDao instance = null ; boolean expResult = false ; boolean result = instance . canEqual ( other ) ; assertEquals ( expResult , result ) ; fail ( "The test case is a prototype." ) ; } <s> Fixed StackOverFlow bug
+bug_after_refactoring: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () { java.lang.System.out . println ( "canEqual" ) ; java.lang.Object other = null ; com.negod.generics.persistence.GenericDao instance = null ; boolean eyottkdtyaszklgojeyf = false ; boolean deufvskhvjcsiptroxvh = instance . canEqual ( other ) ; assertEquals ( eyottkdtyaszklgojeyf , deufvskhvjcsiptroxvh ) ; fail ( "The test case is a prototype." ) ; } <s> @ org.junit.Ignore @ org.junit.Test public void testCanEqual () { java.lang.System.out . println ( "canEqual" ) ; java.lang.Object other = null ; com.negod.generics.persistence.GenericDao instance = null ; boolean eyottkdtyaszklgojeyf = false ; boolean deufvskhvjcsiptroxvh = instance . canEqual ( other ) ; assertEquals ( eyottkdtyaszklgojeyf , deufvskhvjcsiptroxvh ) ; fail ( "The test case is a prototype." ) ; } <s> Fixed StackOverFlow bug
+fix_before_refactoring: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () {}
+fix_after_refactoring: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () {}
+√ fix_prediction_before: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () {}
+× fix_prediction_after: @ org.junit.Ignore @ org.junit.Test public void testCanEqual () { java.lang.System.out . println ( "canEqual" ) ; java.lang.Object other = null ; com.negod.generics.persistence.GenericDao instance = null ; boolean eyottkdtyaszklgojeyf = false ; boolean deufvskhvjcsiptroxvh = instance . canEqual ( other ) ; assertEquals ( eyottkdtyaszklgojeyf , deufvskhvjcsiptroxvh ) ; }
+
+line_index: 212
+bug_before_refactoring: { te . setEmployeeLogin ( de.fhbingen.wbs.translation.LocalizedStrings . getLogin () . login () ) ; boolean result = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return result ; } <s> public boolean addTestExecution ( de.fhbingen.wbs.dbaccess.data.TestExecution te ) { te . setEmployeeLogin ( de.fhbingen.wbs.translation.LocalizedStrings . getLogin () . login () ) ; boolean result = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return result ; } <s> fixed WP-endDate-Issue >>> DATES ARE CALCULATED CORRECT NOW
+bug_after_refactoring: { te . setEmployeeLogin ( de.fhbingen.wbs.translation.LocalizedStrings . getLogin () . login () ) ; boolean ymvcgcrcchgzsjyqzxsn = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return ymvcgcrcchgzsjyqzxsn ; } <s> public boolean addTestExecution ( de.fhbingen.wbs.dbaccess.data.TestExecution te ) { te . setEmployeeLogin ( de.fhbingen.wbs.translation.LocalizedStrings . getLogin () . login () ) ; boolean ymvcgcrcchgzsjyqzxsn = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return ymvcgcrcchgzsjyqzxsn ; } <s> fixed WP-endDate-Issue >>> DATES ARE CALCULATED CORRECT NOW
+fix_before_refactoring: { boolean result = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return result ; }
+fix_after_refactoring: { boolean ymvcgcrcchgzsjyqzxsn = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return ymvcgcrcchgzsjyqzxsn ; }
+√ fix_prediction_before: { boolean result = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return result ; }
+× fix_prediction_after: { te . setEmployeeLogin ( de.fhbingen.wbs.translation.LocalizedStrings . getLogin () . login () ) ; boolean ymvcgcrcchgzsjyqzxsn = de.fhbingen.wbs.dbaccess.DBModelManager . getTestExecutionModel () . addNewTestExecution ( te ) ; de.fhbingen.wbs.dbaccess.repositories.TestCaseExecutionRepository . reloadCache () ; return ymvcgcrcchgzsjyqzxsn ; }
+
