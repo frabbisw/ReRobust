@@ -4,7 +4,7 @@ from .CodeBLEU import syntax_match, bleu, dataflow_match
 from .bleu import _bleu
 
 def calculate_and_write_excel():
-
+    print(os.getcwd())
     import argparse
     parser = argparse.ArgumentParser(description='Evaluate')
     parser.add_argument('--reference', '-ref', help="filename of the labels, in txt format.")
@@ -22,6 +22,7 @@ def calculate_and_write_excel():
     model = args.model
     whether_refactoring = args.whether_refactoring
 
+
     # reference = '/home/y_shi202/python-projects/APR-Refactoring/result/refactoring/modit/local_variable_renaming/before_refactoring/small/output.ref'
     # prediction = '/home/y_shi202/python-projects/APR-Refactoring/result/refactoring/modit/local_variable_renaming/before_refactoring/small/output.hyp'
 
@@ -31,7 +32,7 @@ def calculate_and_write_excel():
     # titles = ['refactoring type', 'dataset', 'data_size', 'model',
     #           'Accuracy', 'BLEU', 'CodeBLEU',
     #           'ngram_match_score', 'weighted_ngram_match_score', 'syntax_match_score', 'dataflow_match_score']
-    file_name = 'experiment result.xlsx'
+    file_name = '/home/y_shi202/thesis-project/APR-Models-Performance/evaluate/experiment result.xlsx'
     sheet_name = 'sheet1'
     workbook = opx.load_workbook(file_name)
     sheet = workbook.get_sheet_by_name(sheet_name)

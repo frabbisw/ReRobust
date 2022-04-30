@@ -18,7 +18,7 @@ TARGET_LENGTH=256
 
 TEST_FILE=${DATA_DIR}/${WHETHER_REFACTORING}/${DATA_SIZE}/test.buggy-fixed.buggy,${DATA_DIR}/${WHETHER_REFACTORING}/${DATA_SIZE}/test.buggy-fixed.fixed
 TEST_MODEL=${MODEL_DIR}/${DATA_SIZE}/pytorch_model.bin
-RESULT_FILE=${OUTPUT_DIR}/evaluation_result.txt
+RESULT_FILE=${OUTPUT_DIR}/result.txt
 MODEL_NAME=codebert
 
 function generate () {
