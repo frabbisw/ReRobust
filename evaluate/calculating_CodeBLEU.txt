@@ -1,0 +1,108 @@
+on small dataset, refactoring type is local_variable_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/local_variable_renaming/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/local_variable_renaming/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.81621065419328, weighted ngram match: 0.821623704025635, syntax_match: 1.0, dataflow_match: 0.9831539541413196
+CodeBLEU score: 90.52
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is method_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/method_renaming/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/method_renaming/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.8977925791043634, weighted ngram match: 0.9009374292868655, syntax_match: 0.9996962607762799, dataflow_match: 0.998504844877656
+CodeBLEU score: 94.92
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is parameter_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/parameter_renaming/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/parameter_renaming/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.7060557578646366, weighted ngram match: 0.7137901547338046, syntax_match: 0.9743689082826965, dataflow_match: 0.9698557158712542
+CodeBLEU score: 84.10
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is boolean_exchange
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/boolean_exchange/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/boolean_exchange/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.5412737858074697, weighted ngram match: 0.5526681570678624, syntax_match: 0.7693989071038252, dataflow_match: 1.0
+CodeBLEU score: 71.58
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is loop_exchange
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/loop_exchange/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/loop_exchange/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.4318616036890919, weighted ngram match: 0.43601833352402924, syntax_match: 0.8605927552140505, dataflow_match: 0.8641063515509602
+CodeBLEU score: 64.81
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is reorder_condition
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/reorder_condition/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/reorder_condition/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.5632124725222878, weighted ngram match: 0.5737518014720704, syntax_match: 0.833446550978818, dataflow_match: 0.9947995666305526
+CodeBLEU score: 74.13
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is convert_switch_to_if
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/convert_switch_to_if/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/convert_switch_to_if/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.3537034608513977, weighted ngram match: 0.376833576246056, syntax_match: 0.6872274143302181, dataflow_match: 0.24317617866004962
+CodeBLEU score: 41.52
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is insert_log_statement
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_log_statement/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_log_statement/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.550970559190473, weighted ngram match: 0.5607038930205164, syntax_match: 0.9262494657635373, dataflow_match: 0.9923210375131538
+CodeBLEU score: 75.76
+---------------------------------------------------------------------------------------------
+on small dataset, refactoring type is insert_try_catch
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_try_catch/before_refactoring/small/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_try_catch/after_refactoring/small/test.buggy-fixed.buggy
+ngram match: 0.44672418930335506, weighted ngram match: 0.5511409045898106, syntax_match: 0.9378863826232248, dataflow_match: 0.9670096433350251
+CodeBLEU score: 72.57
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is local_variable_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/local_variable_renaming/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/local_variable_renaming/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.8581732934365054, weighted ngram match: 0.8618798020618232, syntax_match: 0.9997434976658287, dataflow_match: 0.9822910540416911
+CodeBLEU score: 92.55
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is method_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/method_renaming/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/method_renaming/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.9554916667068105, weighted ngram match: 0.9567423033831688, syntax_match: 0.9997690837821768, dataflow_match: 0.9970973212732649
+CodeBLEU score: 97.73
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is parameter_renaming
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/parameter_renaming/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/parameter_renaming/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.7964176080807875, weighted ngram match: 0.8014588815804873, syntax_match: 0.9830531470083994, dataflow_match: 0.9551674043041994
+CodeBLEU score: 88.40
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is boolean_exchange
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/boolean_exchange/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/boolean_exchange/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.5223493994068121, weighted ngram match: 0.5362819976756945, syntax_match: 0.8313770036602297, dataflow_match: 0.9993412384716732
+CodeBLEU score: 72.23
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is loop_exchange
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/loop_exchange/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/loop_exchange/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.4429684140702347, weighted ngram match: 0.45716651147382587, syntax_match: 0.9195402298850575, dataflow_match: 0.9183095842279914
+CodeBLEU score: 68.45
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is reorder_condition
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/reorder_condition/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/reorder_condition/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.5224554869159381, weighted ngram match: 0.5399017084390955, syntax_match: 0.9061241350821027, dataflow_match: 0.990979496157384
+CodeBLEU score: 73.99
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is convert_switch_to_if
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/convert_switch_to_if/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/convert_switch_to_if/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.4078164649441997, weighted ngram match: 0.40981432952483493, syntax_match: 0.7695432477955019, dataflow_match: 0.3163091590057882
+CodeBLEU score: 47.59
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is insert_log_statement
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_log_statement/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_log_statement/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.5232324403150796, weighted ngram match: 0.5365636158841383, syntax_match: 0.9640023024220138, dataflow_match: 0.9800968150748967
+CodeBLEU score: 75.10
+---------------------------------------------------------------------------------------------
+on medium dataset, refactoring type is insert_try_catch
+BEFORE_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_try_catch/before_refactoring/medium/test.buggy-fixed.buggy
+AFTER_PATH is /home/y_shi202/thesis-project/APR-Models-Performance/data/refactoring/insert_try_catch/after_refactoring/medium/test.buggy-fixed.buggy
+ngram match: 0.512729600138598, weighted ngram match: 0.5224290594163506, syntax_match: 0.9664163116724918, dataflow_match: 0.942585782619515
+CodeBLEU score: 73.60
+---------------------------------------------------------------------------------------------

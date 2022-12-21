@@ -1,0 +1,257 @@
+######## start ##############
+#############################################################################################
+Experiment for transformer-refactoring
+=============================================================================================
+on small dataset, before_refactoring, refactoring type is local_variable_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 56.0 79.5/63.9/52.1/43.5 (BP = 0.961 ratio = 0.962 hyp_len = 8536 ref_len = 8876)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 5.58 , BLEU: 55.99
+CodeBLEU: 59.84
+ngram_match_score: 59.84 , weighted_ngram_match_score: 56.71 , syntax_match_score: 67.82 , dataflow_match_score: 58.85
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is local_variable_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 51.1 77.7/59.9/46.4/37.0 (BP = 0.961 ratio = 0.962 hyp_len = 8536 ref_len = 8876)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 2.79 , BLEU: 51.08
+CodeBLEU: 56.35
+ngram_match_score: 56.35 , weighted_ngram_match_score: 51.75 , syntax_match_score: 65.32 , dataflow_match_score: 57.24
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is local_variable_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 72.3 88.2/77.6/68.7/61.4 (BP = 0.986 ratio = 0.986 hyp_len = 82097 ref_len = 83233)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 2.73 , BLEU: 72.3
+CodeBLEU: 72.8
+ngram_match_score: 72.8 , weighted_ngram_match_score: 72.75 , syntax_match_score: 78.33 , dataflow_match_score: 67.84
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is local_variable_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 68.7 86.9/74.8/64.8/56.6 (BP = 0.983 ratio = 0.983 hyp_len = 81859 ref_len = 83233)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.64 , BLEU: 68.72
+CodeBLEU: 69.98
+ngram_match_score: 69.98 , weighted_ngram_match_score: 69.2 , syntax_match_score: 76.69 , dataflow_match_score: 65.29
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is method_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 57.3 79.7/65.9/54.4/45.3 (BP = 0.956 ratio = 0.957 hyp_len = 159659 ref_len = 166917)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 5.59 , BLEU: 57.33
+CodeBLEU: 62.6
+ngram_match_score: 62.6 , weighted_ngram_match_score: 58.05 , syntax_match_score: 70.88 , dataflow_match_score: 64.16
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is method_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 54.8 78.5/63.6/51.3/41.8 (BP = 0.957 ratio = 0.958 hyp_len = 159915 ref_len = 166952)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 4.07 , BLEU: 54.77
+CodeBLEU: 60.88
+ngram_match_score: 60.88 , weighted_ngram_match_score: 55.51 , syntax_match_score: 70.41 , dataflow_match_score: 62.83
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is method_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 71.2 87.2/76.5/67.6/60.0 (BP = 0.987 ratio = 0.987 hyp_len = 447037 ref_len = 452830)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.96 , BLEU: 71.2
+CodeBLEU: 73.78
+ngram_match_score: 73.78 , weighted_ngram_match_score: 71.61 , syntax_match_score: 79.72 , dataflow_match_score: 72.59
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is method_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 70.3 86.8/75.8/66.5/58.8 (BP = 0.987 ratio = 0.987 hyp_len = 447123 ref_len = 452888)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.35 , BLEU: 70.32
+CodeBLEU: 73.15
+ngram_match_score: 73.15 , weighted_ngram_match_score: 70.74 , syntax_match_score: 79.42 , dataflow_match_score: 72.1
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is parameter_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 58.2 80.6/66.8/55.5/46.6 (BP = 0.953 ratio = 0.954 hyp_len = 101938 ref_len = 106825)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 5.46 , BLEU: 58.25
+CodeBLEU: 63.49
+ngram_match_score: 63.49 , weighted_ngram_match_score: 58.95 , syntax_match_score: 71.68 , dataflow_match_score: 65.08
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is parameter_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 46.4 74.5/56.0/42.1/32.4 (BP = 0.951 ratio = 0.952 hyp_len = 102023 ref_len = 107194)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.74 , BLEU: 46.43
+CodeBLEU: 55.04
+ngram_match_score: 55.04 , weighted_ngram_match_score: 47.26 , syntax_match_score: 67.46 , dataflow_match_score: 59.01
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is parameter_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 71.7 87.4/76.9/68.0/60.4 (BP = 0.988 ratio = 0.989 hyp_len = 312823 ref_len = 316454)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.88 , BLEU: 71.66
+CodeBLEU: 74.04
+ngram_match_score: 74.04 , weighted_ngram_match_score: 72.05 , syntax_match_score: 79.82 , dataflow_match_score: 72.65
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is parameter_renaming:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 64.8 84.2/70.9/60.4/51.9 (BP = 0.985 ratio = 0.985 hyp_len = 312438 ref_len = 317141)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.79 , BLEU: 64.8
+CodeBLEU: 69.04
+ngram_match_score: 69.04 , weighted_ngram_match_score: 65.32 , syntax_match_score: 76.73 , dataflow_match_score: 69.32
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is boolean_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 51.9 85.1/67.1/54.3/44.7 (BP = 0.850 ratio = 0.860 hyp_len = 1053 ref_len = 1224)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 51.91
+CodeBLEU: 55.97
+ngram_match_score: 55.97 , weighted_ngram_match_score: 53.03 , syntax_match_score: 64.4 , dataflow_match_score: 54.58
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is boolean_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 27.3 76.0/50.9/34.2/24.4 (BP = 0.644 ratio = 0.694 hyp_len = 834 ref_len = 1201)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 27.34
+CodeBLEU: 34.06
+ngram_match_score: 34.06 , weighted_ngram_match_score: 30.02 , syntax_match_score: 43.0 , dataflow_match_score: 35.93
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is boolean_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 71.5 87.6/76.8/67.7/60.1 (BP = 0.989 ratio = 0.989 hyp_len = 10792 ref_len = 10913)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.37 , BLEU: 71.53
+CodeBLEU: 73.26
+ngram_match_score: 73.26 , weighted_ngram_match_score: 72.05 , syntax_match_score: 79.21 , dataflow_match_score: 70.25
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is boolean_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 43.4 73.2/52.3/36.8/26.0 (BP = 0.993 ratio = 0.993 hyp_len = 9655 ref_len = 9720)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 43.45
+CodeBLEU: 46.95
+ngram_match_score: 46.95 , weighted_ngram_match_score: 44.27 , syntax_match_score: 57.55 , dataflow_match_score: 42.55
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is convert_switch_to_if:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 63.7 84.9/72.6/63.1/55.5 (BP = 0.935 ratio = 0.937 hyp_len = 1558 ref_len = 1663)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 2.27 , BLEU: 63.73
+CodeBLEU: 68.64
+ngram_match_score: 68.64 , weighted_ngram_match_score: 64.29 , syntax_match_score: 75.38 , dataflow_match_score: 71.18
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is convert_switch_to_if:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 43.3 75.0/56.3/42.4/33.0 (BP = 0.878 ratio = 0.885 hyp_len = 1557 ref_len = 1759)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 43.33
+CodeBLEU: 46.61
+ngram_match_score: 46.61 , weighted_ngram_match_score: 44.01 , syntax_match_score: 59.29 , dataflow_match_score: 39.84
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is convert_switch_to_if:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 68.3 86.5/75.0/65.8/57.9 (BP = 0.969 ratio = 0.970 hyp_len = 12234 ref_len = 12618)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.2 , BLEU: 68.33
+CodeBLEU: 74.34
+ngram_match_score: 74.34 , weighted_ngram_match_score: 68.98 , syntax_match_score: 80.91 , dataflow_match_score: 79.15
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is convert_switch_to_if:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 44.1 72.6/51.9/36.8/27.2 (BP = 1.000 ratio = 1.015 hyp_len = 13059 ref_len = 12868)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 44.08
+CodeBLEU: 48.67
+ngram_match_score: 48.67 , weighted_ngram_match_score: 45.47 , syntax_match_score: 56.69 , dataflow_match_score: 48.42
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is insert_log_statement:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 57.3 79.6/65.9/54.4/45.3 (BP = 0.956 ratio = 0.957 hyp_len = 159261 ref_len = 166357)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 5.33 , BLEU: 57.34
+CodeBLEU: 62.56
+ngram_match_score: 62.56 , weighted_ngram_match_score: 58.06 , syntax_match_score: 70.81 , dataflow_match_score: 64.03
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is insert_log_statement:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 29.0 74.8/50.9/35.0/24.4 (BP = 0.684 ratio = 0.724 hyp_len = 121825 ref_len = 168155)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 29.04
+CodeBLEU: 38.21
+ngram_match_score: 38.21 , weighted_ngram_match_score: 31.33 , syntax_match_score: 50.06 , dataflow_match_score: 42.41
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is insert_log_statement:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 71.2 87.1/76.5/67.5/59.9 (BP = 0.988 ratio = 0.988 hyp_len = 459964 ref_len = 465432)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.99 , BLEU: 71.2
+CodeBLEU: 73.82
+ngram_match_score: 73.82 , weighted_ngram_match_score: 71.61 , syntax_match_score: 79.75 , dataflow_match_score: 72.71
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is insert_log_statement:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 39.7 71.4/48.7/33.9/24.2 (BP = 0.966 ratio = 0.966 hyp_len = 396509 ref_len = 410370)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 39.71
+CodeBLEU: 46.57
+ngram_match_score: 46.57 , weighted_ngram_match_score: 40.52 , syntax_match_score: 57.77 , dataflow_match_score: 48.28
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is insert_try_catch:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 57.1 81.5/67.7/56.1/46.8 (BP = 0.926 ratio = 0.929 hyp_len = 99910 ref_len = 107568)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 3.85 , BLEU: 57.15
+CodeBLEU: 62.2
+ngram_match_score: 62.2 , weighted_ngram_match_score: 57.91 , syntax_match_score: 70.43 , dataflow_match_score: 63.3
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is insert_try_catch:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 34.1 76.7/54.2/37.0/23.7 (BP = 0.781 ratio = 0.802 hyp_len = 106925 ref_len = 133334)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 34.14
+CodeBLEU: 40.03
+ngram_match_score: 40.03 , weighted_ngram_match_score: 35.42 , syntax_match_score: 46.06 , dataflow_match_score: 44.5
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is insert_try_catch:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 70.9 87.1/76.3/67.3/59.6 (BP = 0.987 ratio = 0.987 hyp_len = 364207 ref_len = 369153)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.89 , BLEU: 70.85
+CodeBLEU: 73.4
+ngram_match_score: 73.4 , weighted_ngram_match_score: 71.25 , syntax_match_score: 79.79 , dataflow_match_score: 71.68
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is insert_try_catch:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 42.7 74.2/52.9/37.5/26.6 (BP = 0.960 ratio = 0.961 hyp_len = 350205 ref_len = 364407)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 42.69
+CodeBLEU: 47.18
+ngram_match_score: 47.18 , weighted_ngram_match_score: 43.54 , syntax_match_score: 55.33 , dataflow_match_score: 47.17
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is loop_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 65.8 88.9/77.0/66.5/58.1 (BP = 0.918 ratio = 0.921 hyp_len = 2361 ref_len = 2563)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.54 , BLEU: 65.82
+CodeBLEU: 66.87
+ngram_match_score: 66.87 , weighted_ngram_match_score: 66.36 , syntax_match_score: 68.87 , dataflow_match_score: 66.45
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is loop_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 29.1 74.0/48.8/30.8/20.5 (BP = 0.748 ratio = 0.775 hyp_len = 1749 ref_len = 2256)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 29.11
+CodeBLEU: 34.45
+ngram_match_score: 34.45 , weighted_ngram_match_score: 30.5 , syntax_match_score: 45.43 , dataflow_match_score: 32.82
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is loop_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 77.2 91.0/82.6/75.3/69.0 (BP = 0.976 ratio = 0.976 hyp_len = 52332 ref_len = 53620)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 2.68 , BLEU: 77.15
+CodeBLEU: 75.8
+ngram_match_score: 75.8 , weighted_ngram_match_score: 77.53 , syntax_match_score: 78.99 , dataflow_match_score: 69.55
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is loop_exchange:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 40.0 70.9/48.5/32.6/22.8 (BP = 1.000 ratio = 1.024 hyp_len = 45033 ref_len = 43988)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 39.98
+CodeBLEU: 45.13
+ngram_match_score: 45.13 , weighted_ngram_match_score: 41.72 , syntax_match_score: 54.01 , dataflow_match_score: 44.82
+---------------------------------------------------------------------------------------------
+on small dataset, before_refactoring, refactoring type is reorder_condition:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 57.4 84.6/70.9/58.9/49.6 (BP = 0.887 ratio = 0.893 hyp_len = 36794 ref_len = 41210)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 3.56 , BLEU: 57.37
+CodeBLEU: 61.39
+ngram_match_score: 61.39 , weighted_ngram_match_score: 58.27 , syntax_match_score: 66.82 , dataflow_match_score: 63.08
+---------------------------------------------------------------------------------------------
+on small dataset, after_refactoring, refactoring type is reorder_condition:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 35.6 76.6/52.9/37.1/26.4 (BP = 0.798 ratio = 0.816 hyp_len = 29517 ref_len = 36185)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.18 , BLEU: 35.57
+CodeBLEU: 41.73
+ngram_match_score: 41.73 , weighted_ngram_match_score: 36.96 , syntax_match_score: 51.74 , dataflow_match_score: 42.65
+---------------------------------------------------------------------------------------------
+on medium dataset, before_refactoring, refactoring type is reorder_condition:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 72.2 88.2/77.9/69.1/61.6 (BP = 0.981 ratio = 0.981 hyp_len = 263052 ref_len = 268022)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 1.73 , BLEU: 72.16
+CodeBLEU: 73.08
+ngram_match_score: 73.08 , weighted_ngram_match_score: 72.57 , syntax_match_score: 78.04 , dataflow_match_score: 69.56
+---------------------------------------------------------------------------------------------
+on medium dataset, after_refactoring, refactoring type is reorder_condition:
+BLEU+case.mixed+numrefs.1+smooth.none+tok.none+version.1.5.1 = 42.9 72.5/50.6/35.8/25.7 (BP = 1.000 ratio = 1.008 hyp_len = 224370 ref_len = 222617)
+/home/y_shi202/thesis-project/APR-Models-Performance
+Accuracy: 0.0 , BLEU: 42.87
+CodeBLEU: 48.07
+ngram_match_score: 48.07 , weighted_ngram_match_score: 43.97 , syntax_match_score: 57.11 , dataflow_match_score: 48.33
+---------------------------------------------------------------------------------------------
+######## end ################
