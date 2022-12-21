@@ -1,0 +1,5 @@
+public void addNewDevice(android.support.v4.util.Pair<java.lang.String, java.lang.String> newDevice) {
+    System.out.println("log");
+    mNewDevices.add(newDevice);
+    notifyDataSetChanged();
+}

@@ -1,0 +1,1 @@
+void runDiagnostics () { validateContentPath () ; generateStatus () ; } 

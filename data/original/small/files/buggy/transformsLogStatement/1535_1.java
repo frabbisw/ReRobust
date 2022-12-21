@@ -1,0 +1,9 @@
+public void orders() {
+    System.out.println("log");
+    if ((a.compareTo(b)) == (-1)) {
+        wslf.geometry.Point t;
+        t = a;
+        a = b;
+        b = t;
+    }
+}

@@ -1,0 +1,9 @@
+@java.lang.Override
+public void onSuccess(java.lang.Object target, java.lang.Object returnValue) {
+    java.util.Iterator<org.ovirt.engine.ui.uicommonweb.models.vms.InstanceImageLineModel> lineModelIterator = orderedDisksIterator(((java.util.List<org.ovirt.engine.core.common.businessentities.storage.Disk>) (returnValue)));
+    try {
+        storeNextDisk(lineModelIterator, vm);
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+}

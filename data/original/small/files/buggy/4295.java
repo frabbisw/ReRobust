@@ -1,0 +1,1 @@
+protected void interrupted () { end () ; } 

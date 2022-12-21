@@ -1,0 +1,6 @@
+public void hideFooterView() {
+    System.out.println("log");
+    footerTextView.setText("Pull up to refresh");
+    footerView.setPadding(0, 0, 0, (-(footerHeight)));
+    state = PULLING_UP;
+}

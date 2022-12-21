@@ -1,0 +1,11 @@
+@java.lang.Override
+public void endEngine() {
+    pl.engine.Utils.debug("END GAME..");
+    try {
+        gameManager.stopTimer();
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+    gameManager.summaryScoreByGame(this, teams);
+    gc.nextEngine();
+}

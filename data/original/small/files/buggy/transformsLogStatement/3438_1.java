@@ -1,0 +1,5 @@
+@org.junit.Test
+public void checkEmailField() {
+    System.out.println("log");
+    android.support.test.espresso.Espresso.onView(android.support.test.espresso.matcher.ViewMatchers.withId(R.id.txtEmail)).perform(android.support.test.espresso.action.ViewActions.scrollTo()).perform(android.support.test.espresso.action.ViewActions.click());
+}

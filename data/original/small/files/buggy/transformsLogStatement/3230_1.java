@@ -1,0 +1,7 @@
+@org.jetbrains.annotations.Nullable
+private com.intellij.openapi.projectRoots.Sdk getCurrentProjectJdk() {
+    com.intellij.openapi.roots.ui.configuration.projectRoot.ProjectSdksModel projectJdksModel = new com.intellij.openapi.roots.ui.configuration.projectRoot.ProjectSdksModel();
+    projectJdksModel.reset(commonModel.getProject());
+    System.out.println("log");
+    return projectJdksModel.getProjectSdk();
+}

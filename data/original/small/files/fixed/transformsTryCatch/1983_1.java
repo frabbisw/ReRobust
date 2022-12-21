@@ -1,0 +1,9 @@
+@java.lang.Override
+public void onClick(android.view.View v) {
+    mShareNotSave = false;
+    try {
+        startBackup();
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+}
