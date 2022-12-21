@@ -1,8 +1,0 @@
-line_index: 75
-bug_before_refactoring: { float mapPixelWidth = ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; return mapPixelWidth ; } <s> public float getMapPixelWidth () { float mapPixelWidth = ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; return mapPixelWidth ; } <s> Projectile collision bug fixed.
-bug_after_refactoring: { float enzouetxaeesbftnmwsv = ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; return enzouetxaeesbftnmwsv ; } <s> public float getMapPixelWidth () { float enzouetxaeesbftnmwsv = ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; return enzouetxaeesbftnmwsv ; } <s> Projectile collision bug fixed.
-fix_before_refactoring: { return ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; }
-fix_after_refactoring: { return ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; }
-× fix_prediction_before: { float mapPixelWidth = ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; return mapPixelWidth ; }
-√ fix_prediction_after: { return ( ( getMapWidth () ) * ( getMapTileWidth () ) ) * ( levelScale ) ; }
-
