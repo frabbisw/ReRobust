@@ -1,4 +1,5 @@
 ﻿import javalang
+import random
 
 reserved_kws = ["abstract", "assert", "boolean",
                 "break", "byte", "case", "catch", "char", "class", "const",
@@ -49,6 +50,13 @@ def verify_method_syntax(data):
         print("syantax check success")
     except:
         print("syantax check failed")
+
+def get_synonym_var_name():
+
+    res_string = ''
+    for x in range(random_variable_name_length):
+        res_string += random.choice('abcdefghijklmnopqrstuvwxyz')
+    return res_string
 
 
 def get_tree(data):

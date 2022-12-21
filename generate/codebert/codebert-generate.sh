@@ -32,14 +32,14 @@ function generate () {
         --max_source_length $SOURCE_LENGTH \
         --max_target_length $TARGET_LENGTH \
         --beam_size $BEAM_SIZE \
-        --eval_batch_size 16 | tee ${RESULT_FILE};
+        --eval_batch_size 32 | tee ${RESULT_FILE};
 
   FILE_REFERENCE="${DATA_DIR}/${WHETHER_REFACTORING}/${DATA_SIZE}/test.buggy-fixed.fixed"
   FILE_PREDICTION="${OUTPUT_DIR}/test_0.output"
 
   cd ${CODE_DIR}
   echo "Evaluation" > ${RESULT_FILE}
-  python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_REFERENCE} --pre ${FILE_PREDICTION} --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING} >> ${RESULT_FILE}
+  python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_REFERENCE} --pre ${FILE_PREDICTION} --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING}
 
 
 #  printf "CodeXGlue Evaluation: \t" >>${RESULT_FILE}

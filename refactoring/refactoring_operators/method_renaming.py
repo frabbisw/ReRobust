@@ -16,13 +16,17 @@ def get_method_names(tree):
     return method_names
 
 
-def refactoring_method_renaming(buggy, fixed):
+def refactoring_method_renaming(buggy, fixed, substitutes_dict):
     format_buggy = format_code(buggy)
     tree = get_tree(format_buggy)
     method_names = get_method_names(tree)
     for method_name in method_names:
-        method_name_random = get_random_method_name()
-        buggy = buggy.replace(method_name, method_name_random)
+
+        candidate_method_names = substitutes_dict[method_name]
+        candidate_method_name = candidate_method_names[0]
+
+        # method_name_random = get_random_method_name()
+        buggy = buggy.replace(method_name, candidate_method_name)
         if method_name in fixed:
-            fixed = fixed.replace(method_name, method_name_random)
+            fixed = fixed.replace(method_name, candidate_method_name)
     return buggy, fixed

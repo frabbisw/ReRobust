@@ -27,6 +27,7 @@ MODEL_NAME=modit
 function generate() {
 
   fairseq-generate $DATA_BIN_PATH \
+    --fp16 \
     --user-dir $USER_DIR \
     --path $TEST_MODEL \
     --truncate-source \
@@ -44,7 +45,7 @@ function generate() {
 
   cd ${CODE_DIR}
   echo "Evaluation" > ${RESULT_FILE}
-  python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_PREF}.ref --pre ${FILE_PREF}.hyp --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING} >> ${RESULT_FILE}
+  python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_PREF}.ref --pre ${FILE_PREF}.hyp --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING}
 
 #  printf "CodeXGlue Evaluation: \t" >>${RESULT_FILE}
 #  cd ${EVALUATE_DIR}

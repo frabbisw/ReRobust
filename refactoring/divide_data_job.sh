@@ -1,14 +1,12 @@
 #!/bin/bash -l
 
 CODE_DIR=$(realpath ../../)
-JOB_OUTPUT=${CODE_DIR}/job/refactoring
-if [ ! -d "$JOB_OUTPUT" ]; then
-        mkdir -p $JOB_OUTPUT
-fi
+
 #$ -N divide_data_job
-#$ -l h_vmem=600G
+#$ -l h_vmem=100G
 #$ -cwd
-#$ -o ${JOB_OUTPUT}
+#$ -m bea
+#$ -M shi.yu.general@gmail.com
 
 # set environment
 module load anaconda/3.2019.10/default

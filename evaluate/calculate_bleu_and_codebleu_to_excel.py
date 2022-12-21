@@ -34,14 +34,14 @@ def calculate_and_write_excel():
     #           'ngram_match_score', 'weighted_ngram_match_score', 'syntax_match_score', 'dataflow_match_score']
     file_name = '/home/y_shi202/thesis-project/APR-Models-Performance/evaluate/experiment result.xlsx'
     sheet_name = 'sheet1'
-    workbook = opx.load_workbook(file_name)
-    sheet = workbook.get_sheet_by_name(sheet_name)
+    # workbook = opx.load_workbook(file_name)
+    # sheet = workbook.get_sheet_by_name(sheet_name)
     # sheet.append(titles)
     pre_title = [type_refactoring, dataset, model, whether_refactoring]
     result_ = pre_title + calculate_acc_bleu(reference, prediction) + calculate_code_bleu(reference, prediction, 'java')
-    sheet.append(result_)
-    workbook.save(file_name)
-    workbook.close()
+    # sheet.append(result_)
+    # workbook.save(file_name)
+    # workbook.close()
 
 
 def calculate_acc_bleu(reference, prediction):

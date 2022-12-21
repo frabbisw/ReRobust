@@ -1,5 +1,6 @@
 ﻿import sys
 import os
+import json
 
 sys.path.append("..")
 import refactoring.refactoring_operators.local_variable_renaming as local_variable_renaming
@@ -7,15 +8,30 @@ import refactoring.refactoring_operators.method_renaming as method_renaming
 import refactoring.refactoring_operators.parameter_renaming as parameter_renaming
 
 
-def refactoring_by_operators(opt, buggy, context, fixed):
+# def refactoring_by_operators(opt, buggy, context, fixed):
+#     # data = util.format_code(data)
+#     try:
+#         if opt == 'local_variable_renaming':
+#             buggy, fixed = local_variable_renaming.refactoring_local_variable_renaming(buggy, context, fixed)
+#         elif opt == 'method_renaming':
+#             buggy, fixed = method_renaming.refactoring_method_renaming(buggy, fixed)
+#         elif opt == 'parameter_renaming':
+#             buggy, fixed = parameter_renaming.refactoring_parameter_renaming(buggy, fixed)
+#     except:
+#         print("except when refactoring")
+#         pass
+#     # verify_method_syntax(after)
+#     return buggy, fixed
+
+def refactoring_by_operators(opt, buggy, fixed, substitutes_dict):
     # data = util.format_code(data)
     try:
         if opt == 'local_variable_renaming':
-            buggy, fixed = local_variable_renaming.refactoring_local_variable_renaming(buggy, context, fixed)
+            buggy, fixed = local_variable_renaming.refactoring_local_variable_renaming(buggy, fixed, substitutes_dict)
         elif opt == 'method_renaming':
-            buggy, fixed = method_renaming.refactoring_method_renaming(buggy, fixed)
+            buggy, fixed = method_renaming.refactoring_method_renaming(buggy, fixed, substitutes_dict)
         elif opt == 'parameter_renaming':
-            buggy, fixed = parameter_renaming.refactoring_parameter_renaming(buggy, fixed)
+            buggy, fixed = parameter_renaming.refactoring_parameter_renaming(buggy, fixed, substitutes_dict)
     except:
         print("except when refactoring")
         pass
@@ -59,21 +75,58 @@ def refactoring_file():
 
     assert len(bug_file_lines) == len(fix_file_lines)
 
+
+
+
+    # refactoring_type = "local_variable_renaming"
+    # bug_file = "E:/PythonProjects/APR-Models-Performance/data/original/small/test.buggy-fixed.buggy"
+    # fix_file = "E:/PythonProjects/APR-Models-Performance/data/original/small/test.buggy-fixed.fixed"
+    # bug_file_lines = open(bug_file, 'r', encoding='utf-8').readlines()
+    # fix_file_lines = open(fix_file, 'r', encoding='utf-8').readlines()
+    #
+    # before_refactored_bug_file_path = "E:/PythonProjects/APR-Models-Performance/data/refactoring/local_variable_renaming/before_refactoring/small/test.buggy-fixed.buggy"
+    # before_refactored_fix_file_path = "E:/PythonProjects/APR-Models-Performance/data/refactoring/local_variable_renaming/before_refactoring/small/test.buggy-fixed.fixed"
+    # after_refactored_bug_file_path = "E:/PythonProjects/APR-Models-Performance/data/refactoring/local_variable_renaming/after_refactoring/small/test.buggy-fixed.buggy"
+    # after_refactored_fix_file_path = "E:/PythonProjects/APR-Models-Performance/data/refactoring/local_variable_renaming/after_refactoring/small/test.buggy-fixed.fixed"
+    #
+    # before_refactored_bug_file_path = open(before_refactored_bug_file_path, 'w', encoding='utf-8')
+    # before_refactored_fix_file_path = open(before_refactored_fix_file_path, 'w', encoding='utf-8')
+    # after_refactored_bug_file_path = open(after_refactored_bug_file_path, 'w', encoding='utf-8')
+    # after_refactored_fix_file_path = open(after_refactored_fix_file_path, 'w', encoding='utf-8')
+
+
+    assert len(bug_file_lines) == len(fix_file_lines)
     total_data = len(bug_file_lines)
     effective_refactoring = []
     effective_refactoring_line_list = []
 
-    for index, bug_file_line in enumerate(bug_file_lines):
-        buggy_context_commit = bug_file_line.split('<s>')
-        assert len(buggy_context_commit) == 3
-        buggy = buggy_context_commit[0]
-        context = buggy_context_commit[1]
-        commit = buggy_context_commit[2]
+    if "small" in args.bug_file:
+        substitutes_dataset = './generate-substitutes-small.jsonl'
+    else:
+        substitutes_dataset = './generate-substitutes-medium.jsonl'
+    print("substitutes_dataset: " + substitutes_dataset)
+    substitutes = []
+    with open(substitutes_dataset) as f:
+        for line in f:
+            js = json.loads(line.strip())
+            substitutes.append(js["substitutes"])
 
+    for index, bug_file_line in enumerate(bug_file_lines):
+        # buggy_context_commit = bug_file_line.split('<s>')
+        # assert len(buggy_context_commit) == 3
+        # buggy = buggy_context_commit[0]
+        # context = buggy_context_commit[1]
+        # commit = buggy_context_commit[2]
+
+
+        buggy = bug_file_line
         fixed = fix_file_lines[index]
         # if index == 1211:
         #     a = 1
-        mutate_buggy, mutate_fixed = refactoring_by_operators(refactoring_type, buggy, context, fixed)
+        # mutate_buggy, mutate_fixed = refactoring_by_operators(refactoring_type, buggy, context, fixed)
+
+        mutate_buggy, mutate_fixed = refactoring_by_operators(refactoring_type, buggy, fixed, substitutes[index])
+
 
         if mutate_buggy != buggy:
             effective_refactoring.append({index + 1: mutate_buggy})

@@ -34,7 +34,7 @@ function generate () {
         -t $TARGET -s $SOURCE \
         --scoring sacrebleu --remove-bpe 'sentencepiece' \
         --max-len-b 500 --beam 5 \
-        --batch-size 8 --langs $langs > $FILE_PREF
+        --batch-size 32 --langs $langs > $FILE_PREF
 
     cat $FILE_PREF | grep -P "^H" |sort -V |cut -f 3- | sed 's/\[${TARGET}\]//g' > $FILE_PREF.hyp
     cat $FILE_PREF | grep -P "^T" |sort -V |cut -f 2- | sed 's/\[${TARGET}\]//g' > $FILE_PREF.ref
@@ -42,7 +42,7 @@ function generate () {
 
     cd ${CODE_DIR}
     echo "Evaluation" > ${RESULT_FILE}
-    python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_PREF}.ref --pre ${FILE_PREF}.hyp --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING} >> ${RESULT_FILE}
+    python -m evaluate.calculate_bleu_and_codebleu_to_excel --ref ${FILE_PREF}.ref --pre ${FILE_PREF}.hyp --type_refactoring ${REFACTORING_TYPE} --dataset ${DATA_SIZE} --model ${MODEL_NAME} --whether_refactoring ${WHETHER_REFACTORING}
 
 
 #    printf "CodeXGlue Evaluation: \t" >> ${RESULT_FILE}
