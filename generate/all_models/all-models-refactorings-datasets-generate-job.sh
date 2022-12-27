@@ -1,16 +1,12 @@
 #!/bin/bash -l
 
 CODE_DIR=$(realpath ../../)
-JOB_OUTPUT=${CODE_DIR}/job/generate
-if [ ! -d "$JOB_OUTPUT" ]; then
-        mkdir -p $JOB_OUTPUT
-fi
+
 #$ -N all-models-refactorings-datasets-generate-job
-#$ -l h_vmem=100G,g=1
-#$ -cwd
+#$ -l m_mem_free=60G,g=1
+# $ -cwd
 #$ -m bea
 #$ -M shi.yu.general@gmail.com
-#$ -o /home/y_shi202/thesis-project/APR-Models-Performance/job/generate/
 
 # set environment
 module load anaconda/3.2019.10/default

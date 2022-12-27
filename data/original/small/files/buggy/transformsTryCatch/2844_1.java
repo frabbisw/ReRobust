@@ -1,8 +1,0 @@
-@java.lang.Override
-public void run(org.eclipse.jface.action.IAction action) {
-    try {
-        featureHouseComposer.setUseFuji((!(featureHouseComposer.usesFuji())));
-    } catch (Exception ex) {
-        ex.printStackTrace();
-    }
-}

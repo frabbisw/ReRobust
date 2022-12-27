@@ -2,4 +2,6 @@
 *.pt
 *.bin
 result/
-data/
+data/transformed/
+job-log-backup/
+models/

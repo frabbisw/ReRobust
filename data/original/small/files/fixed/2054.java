@@ -1,1 +1,0 @@
-private void incrementFileCount () { ( fileCount ) ++ ; } 

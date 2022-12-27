@@ -1,14 +1,10 @@
 #!/bin/bash -l
 
 CODE_DIR=$(realpath ../../)
-JOB_OUTPUT=${CODE_DIR}/job/preprocess
-if [ ! -d "$JOB_OUTPUT" ]; then
-        mkdir -p $JOB_OUTPUT
-fi
+
 #$ -N original-preprocessing-job
 #$ -l h_vmem=600G
 #$ -cwd
-#$ -o ${JOB_OUTPUT}
 
 # set environment
 module load anaconda/3.2019.10/default

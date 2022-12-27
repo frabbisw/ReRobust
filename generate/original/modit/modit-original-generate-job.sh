@@ -5,7 +5,6 @@
 #$ -cwd
 #$ -m bea
 #$ -M shi.yu.general@gmail.com
-#$ -o /home/y_shi202/python-projects/APR-Refactoring/generate/original/modit/job/
 
 # set environment
 module load anaconda/3.2019.10/default

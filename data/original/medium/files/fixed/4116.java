@@ -1,1 +1,0 @@
-private void setLanguage ( java.lang.String lang ) { java.util.Locale locale = null ; if ( lang == null ) { locale = java.util.Locale . getDefault () ; } else { locale = new java.util.Locale ( lang ) ; } map = be.nikiroo.jvcard.resources.Bundles . getBundle ( "resources" , locale ) ; } 
