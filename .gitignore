@@ -1,5 +1,4 @@
 .idea/
-*.backup
 *.r
 *.xlsx
 *.pt
