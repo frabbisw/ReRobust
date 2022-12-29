@@ -6,6 +6,5 @@
 result/
 data/transformed/
 job-log-backup/
-models/
 refactoring/JavaTransformer/data/
 refactoring/JavaTransformer/target/

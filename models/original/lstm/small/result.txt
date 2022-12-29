@@ -1,3 +1,0 @@
-CodeBLEU Evaluation
-ngram match: 0.549751432105541, weighted ngram match: 0.5509817660519585, syntax_match: 0.6074171554335371, dataflow_match: 0.497205389186327
-CodeBLEU score: 55.13
