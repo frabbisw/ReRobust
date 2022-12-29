@@ -29,8 +29,8 @@ See the instructions in these repositories to download and use these pre-trained
 
 We fine-tune pre-trained models on Abstract BFPs and Concrete BFPs for program repair, respectively.
 
-- Models fine-tuned on Concrete BFPs can be downloaded from [here]().
-- Models fine-tuned on Abstract BFPs can be downloaded from [here]().
+- Models fine-tuned (trained) on Concrete BFPs can be downloaded from [here](https://zenodo.org/record/7487472#.Y64Jt3bMK3B). transformer model on Concrete BFPs can be downloaded from [here](https://drive.google.com/file/d/1rrQzr8JqRpAAT2CLv4xs8VbGtYvM9uHl/view?usp=sharing).
+- Models fine-tuned (trained) on Abstract BFPs can be downloaded from [here](https://zenodo.org/record/7487490#.Y64Jq3bMK3B). transformer model on Abstract BFPs can be downloaded from [here](https://drive.google.com/file/d/1LfE4J5PeLhV_dZYtiagzLoyZof1AU_Hi/view?usp=sharing).
 
 ### Datasets
 
