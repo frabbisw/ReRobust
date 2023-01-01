@@ -57,7 +57,6 @@ For running RQ1, see the instructions in corresponding repositories on how to fi
 
 For running RQ2, see scripts under ../generate and put datasets and fine-tuned models on corresponding directories. See [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code) for the details on utilizing pre-trained models to predict masked tokens for renaming-related transformations. See [JavaTransformer](https://github.com/mdrafiqulrabin/JavaTransformer) for the detailed implementation of the other six semantic-preserving transformations.
 
-- 
 ### Acknowledgement
  
 [MODIT](https://github.com/modit-team/MODIT), [PLBART](https://github.com/wasiahmad/PLBART), [Fairseq](https://github.com/pytorch/fairseq), 
