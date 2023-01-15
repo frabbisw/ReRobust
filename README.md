@@ -12,6 +12,8 @@ We present the repository of this work, including models, datasets, and code.
 
 Please make sure all the packages in [`requirement.txt`](https://github.com/ThomasShiyu/APR-Models-Performance/blob/master/config/requirement.txt) are installed.
 
+- Run `cat requirements.txt | xargs -n 1 pip install` for setting environment.
+
 ## Models
 
 ### Pre-trained Models
@@ -67,7 +69,7 @@ Models:
 
 Dataset:
 
-- 
+- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
 
 For testing the robustness of SPT-Code:
 
@@ -75,8 +77,7 @@ For testing the robustness of SPT-Code:
 
 Dataset:
 
-- 
-
+- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
 
 For testing the robustness of CodeT5:
 
@@ -85,7 +86,7 @@ For testing the robustness of CodeT5:
 
 Dataset:
 
-- 
+- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
 
 
 
