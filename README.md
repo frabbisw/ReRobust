@@ -12,7 +12,7 @@ We present the repository of this work, including models, datasets, and code.
 
 Please make sure all the packages in [`requirement.txt`](https://github.com/ThomasShiyu/APR-Models-Performance/blob/master/config/requirement.txt) are installed.
 
-- Run `cat requirements.txt | xargs -n 1 pip install` for setting environment.
+- Run `cat requirement.txt | xargs -n 1 pip install` for setting environment.
 
 ## Models
 
