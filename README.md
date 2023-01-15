@@ -39,7 +39,7 @@ We fine-tune pre-trained models on Abstract BFPs and Concrete BFPs for program r
 
 - Abstract BFPs are initially released by [Tufano et al., 2019](https://sites.google.com/view/learning-fixes/), 
 Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github.com/modit-team/MODIT). See the details about how they are extracted from these original repositories.
-- We also provide a [link](https://drive.google.com/file/d/1xNjo48jOliT7vLmTMOYBRziRocwpDhPg/view?usp=sharing), to download these 2 datasets.
+- We also provide a [link](https://drive.google.com/file/d/1xNjo48jOliT7vLmTMOYBRziRocwpDhPg/view?usp=sharing), to download these 2 datasets. Remember to change the directory name "transformed" to "refactoring".
 - The 9 transformed datasets and corresponding original datasets are also in the link above. Files named "before_refactoring" stand for original datasets, and files named "after_refactoring" stand for transformed datasets.
 
 ## Experiment1 - RQ1
@@ -69,7 +69,12 @@ Models:
 
 Dataset:
 
-- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
+- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/refactoring/`
+
+Script:
+
+- Run scripts under path: `APR-Models-Performance/generate/`, such as `codebert-generate-job.sh`.
+- Make sure to check scripts before running, fit the recent changes of GPU cluster.
 
 For testing the robustness of SPT-Code:
 
@@ -77,7 +82,11 @@ For testing the robustness of SPT-Code:
 
 Dataset:
 
-- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
+- Download transformed dataset mentioned above, put it under the path: `CodeT5/data/refactoring/`
+
+Script:
+
+- Run SPT-Code/sources/spt-generate-job.sh
 
 For testing the robustness of CodeT5:
 
@@ -86,8 +95,11 @@ For testing the robustness of CodeT5:
 
 Dataset:
 
-- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/transformed/`
+- Download transformed dataset mentioned above, put it under the path: `/refactoring-dataset`. Note that this path should be same as SPT-Code path. 
 
+Script:
+
+- Run CodeT5/sh/codet5-generate-job.sh and codet5base-generate-job.sh
 
 
 
