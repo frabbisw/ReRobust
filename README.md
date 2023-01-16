@@ -46,64 +46,76 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 
 Please make sure the environment libraries mentioned above installed.
 
-For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT):
+1. For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT):
+
 - `git clone https://github.com/modit-team/MODIT`
 - Following the original instructions in [MODIT](https://github.com/modit-team/MODIT) to fine-tune these models.
 
-For fine-tuning CodeT5, SPT-Code:
+2. For fine-tuning CodeT5, SPT-Code:
 - `git clone https://github.com/salesforce/CodeT5`
 - Following the original instructions in [CodeT5](https://github.com/salesforce/CodeT5) to fine-tune it.
 - `git clone https://github.com/NougatCA/SPT-Code`
 - Following the original instructions in [SPT-Code](https://github.com/NougatCA/SPT-Code) to fine-tune it.
 
+**RQ1: What is the repair performance of different DL-based APR models?**
+
+![RQ1-Results](images/RQ1_Results.png)
+
 ## Experiment2 - RQ2
 
 Please make sure the environment libraries mentioned above installed.
 
-For testing the robustness of CodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:
+1. For testing the robustness of CodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:
 
-Models:
+- Models:
 
-- Download fine-tuned models, then put the fine-tuned models on the corresponding directories.
-- For example, CodeBERT model fine-tuned on small-BFPs of Concrete BFPs should be under the path: `APR-Models-Performance/models/original/codebert/small/pytorch_model.bin`
+   - Download fine-tuned models, then put the fine-tuned models on the corresponding directories.
+   - For example, CodeBERT model fine-tuned on small-BFPs of Concrete BFPs should be under the path: `APR-Models-Performance/models/original/codebert/small/pytorch_model.bin`
 
-Dataset:
+- Dataset:
 
-- Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/refactoring/`
+   - Download transformed dataset mentioned above, put it under the path: `APR-Models-Performance/data/refactoring/`
 
-Script:
+- Script:
 
-- Run scripts under path: `APR-Models-Performance/generate/`, such as `codebert-generate-job.sh`.
-- Make sure to check scripts before running, fit the recent changes of GPU cluster.
+  - Run scripts under path: `APR-Models-Performance/generate/`, such as `codebert-generate-job.sh`.
+  - Make sure to check scripts before running, fit the recent changes of GPU cluster.
 
-For testing the robustness of SPT-Code:
+2. For testing the robustness of SPT-Code:
 
-- Download fine-tuned SPT-Code on small-BFPs and medium-BFPs, then put them under `SPT-Code/fine_tuned_models_final/small/` and `SPT-Code/fine_tuned_models_final/medium/`
+- Models:
 
-Dataset:
+  - Download fine-tuned SPT-Code on small-BFPs and medium-BFPs, then put them under `SPT-Code/fine_tuned_models_final/small/` and `SPT-Code/fine_tuned_models_final/medium/`
 
-- Download transformed dataset mentioned above, put it under the path: `CodeT5/data/refactoring/`
+- Dataset:
 
-Script:
+  - Download transformed dataset mentioned above, put it under the path: `CodeT5/data/refactoring/`
 
-- Run SPT-Code/sources/spt-generate-job.sh
+- Script:
 
-For testing the robustness of CodeT5:
+  - Run `SPT-Code/sources/spt-generate-job.sh`
 
-- Download fine-tuned CodeT5-small on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-small/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-small/medium/pytorch_model.bin`
-- Download fine-tuned CodeT5-base on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-base/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-base/medium/pytorch_model.bin`
+3. For testing the robustness of CodeT5:
 
-Dataset:
+- Models:
+  - Download fine-tuned CodeT5-small on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-small/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-small/medium/pytorch_model.bin`
+  - Download fine-tuned CodeT5-base on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-base/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-base/medium/pytorch_model.bin`
 
-- Download transformed dataset mentioned above, put it under the path: `/refactoring-dataset`. Note that this path should be same as SPT-Code path. 
+- Dataset:
 
-Script:
+  - Download transformed dataset mentioned above, put it under the path: `/refactoring-dataset`. Note that this path should be same as SPT-Code path. 
 
-- Run CodeT5/sh/codet5-generate-job.sh and codet5base-generate-job.sh
+- Script:
+
+  - Run `CodeT5/sh/codet5-generate-job.sh` and `codet5base-generate-job.sh`
+
+**RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
+
+![RQ2-Results_small](images/RQ2_Results_small.png)
+![RQ2-Results-medium](images/RQ2_Results_medium.png)
 
 
-
-## Code
+## Code Structure
 
 - ../data: Abstract BFPs and Concrete BFPs.
 
