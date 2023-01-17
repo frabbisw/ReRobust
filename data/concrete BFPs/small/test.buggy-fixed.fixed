@@ -1,4 +1,5 @@
-private com.ge.research.sadl.jena.JenaBasedSadlModelValidator.TypeCheckInfo getType ( com.ge.research.sadl.sADL.SadlUnionType expression ) { com.ge.research.sadl.model.ConceptName declarationConceptName = new com.ge.research.sadl.model.ConceptName ( "TODO" ) ; return new com.ge.research.sadl.jena.JenaBasedSadlModelValidator.TypeCheckInfo ( declarationConceptName , declarationConceptName , this , expression ) ; } 
+
+private com.ge.research.sadl.jena.JenaBasedSadlModelValidator.TypeCheckInfo getType ( com.ge.research.sadl.sADL.SadlUnionType expression ) { com.ge.research.sadl.model.ConceptName declarationConceptName = new com.ge.research.sadl.model.ConceptName ( "TODO" ) ; return new com.ge.research.sadl.jena.JenaBasedSadlModelValidator.TypeCheckInfo ( declarationConceptName , declarationConceptName , this , expression ) ; }
 public G pop () { G output = storage [ i_head ] ; if ( ( i_head ) >= 0 ) { i_head = ( i_head ) - 1 ; } else {} return output ; } 
 public void navigate2Intent ( java.lang.Class cl ) { android.content.Intent intent = new android.content.Intent ( this , cl ) ; startActivity ( intent ) ; } 
 @ butterknife.OnClick ( value = R.id.break_time_ok ) public void onOkClicked () { hide () ; if ( ( callback ) != null ) callback . onOkClicked ( times ) ; } 

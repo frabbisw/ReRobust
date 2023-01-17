@@ -38,9 +38,30 @@ We fine-tune pre-trained models on Abstract BFPs and Concrete BFPs for program r
 ## Datasets
 
 - Abstract BFPs are initially released by [Tufano et al., 2019](https://sites.google.com/view/learning-fixes/), 
-Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github.com/modit-team/MODIT). See the details about how they are extracted from these original repositories.
+Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github.com/modit-team/MODIT). We directly reuse them.
 - We also provide a [link](https://drive.google.com/file/d/1xNjo48jOliT7vLmTMOYBRziRocwpDhPg/view?usp=sharing), to download these 2 datasets. Remember to change the directory name "transformed" to "refactoring".
 - The 9 transformed datasets and corresponding original datasets are also in the link above. Files named "before_refactoring" stand for original datasets, and files named "after_refactoring" stand for transformed datasets.
+- The 9 transformed datasets can be directly used for running RQ2, see the following section "Experiment2 - RQ2". The next section introduce how to generate the transformed datasets.
+
+## How to Generate Transformed Datasets?
+
+1. For constructing transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*:
+
+- We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code).
+- `git clone https://github.com/soarsmu/attack-pretrain-models-of-code.git`
+- Copy the files "test.buggy-fixed.buggy" of the Small-BFPs and Medium-BFPs of concrete BFPs to `\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively.
+- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\`.
+- Run the script `generate-substitutes-job.sh`.
+- Remember to change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, then rerun `generate-substitutes-job.sh`.
+- Finally you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
+- Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\`.
+- So far, you will obtain the first transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*.
+
+2. For constructing transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:
+
+
+Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
+![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
 
 ## Experiment1 - RQ1
 
@@ -65,7 +86,7 @@ Please make sure the environment libraries mentioned above installed.
 
 Please make sure the environment libraries mentioned above installed.
 
-1. For testing the robustness of CodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:
+**1. For testing the robustness of CodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:**
 
 - Models:
 
@@ -81,7 +102,7 @@ Please make sure the environment libraries mentioned above installed.
   - Run scripts under path: `APR-Models-Performance/generate/`, such as `codebert-generate-job.sh`.
   - Make sure to check scripts before running, fit the recent changes of GPU cluster.
 
-2. For testing the robustness of SPT-Code:
+**2. For testing the robustness of SPT-Code:**
 
 - Models:
 
@@ -95,7 +116,7 @@ Please make sure the environment libraries mentioned above installed.
 
   - Run `SPT-Code/sources/spt-generate-job.sh`
 
-3. For testing the robustness of CodeT5:
+**3. For testing the robustness of CodeT5:**
 
 - Models:
   - Download fine-tuned CodeT5-small on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-small/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-small/medium/pytorch_model.bin`
