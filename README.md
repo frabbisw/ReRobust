@@ -45,7 +45,7 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 
 ## How to Generate Transformed Datasets?
 
-1. For constructing transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*:
+**1. For constructing transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*:**
 
 - We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code).
 - `git clone https://github.com/soarsmu/attack-pretrain-models-of-code.git`
@@ -57,7 +57,7 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 - Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\`.
 - So far, you will obtain the first transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*.
 
-2. For constructing transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:
+**2. For constructing transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
 
 
 Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
@@ -67,12 +67,12 @@ Finally, you will obtain the transformed datasets, the statistics of these datas
 
 Please make sure the environment libraries mentioned above installed.
 
-1. For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT):
+**1. For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT):**
 
 - `git clone https://github.com/modit-team/MODIT`
 - Following the original instructions in [MODIT](https://github.com/modit-team/MODIT) to fine-tune these models.
 
-2. For fine-tuning CodeT5, SPT-Code:
+**2. For fine-tuning CodeT5, SPT-Code:**
 - `git clone https://github.com/salesforce/CodeT5`
 - Following the original instructions in [CodeT5](https://github.com/salesforce/CodeT5) to fine-tune it.
 - `git clone https://github.com/NougatCA/SPT-Code`
