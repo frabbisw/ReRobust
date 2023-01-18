@@ -50,8 +50,8 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 - We use tree-sitter to parse the code to AST, and identify the target position for renaming an identifier.
 - We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code) for generating renaming substitutions.
 - `git clone https://github.com/soarsmu/attack-pretrain-models-of-code.git`
-- Copy the files "test.buggy-fixed.buggy" (located in `APR-Models-Performance\data\concrete BFPs\`) of the Small-BFPs and Medium-BFPs to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively in current project (i.e., attack-pretrain-models-of-code).
-- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` in current project (i.e., attack-pretrain-models-of-code).
+- Copy the files "test.buggy-fixed.buggy" of the Small-BFPs and Medium-BFPs of concrete BFPs to `\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively.
+- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\`.
 - Run the script `generate-substitutes-job.sh`.
 - Remember to change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, then rerun `generate-substitutes-job.sh`.
 - Finally, you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
