@@ -47,30 +47,36 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 
 **1. For constructing transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*:**
 
-- We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code).
+- We use tree-sitter to parse the code to AST, and identify the target position for renaming an identifier.
+- We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code) for generating renaming substitutions.
 - `git clone https://github.com/soarsmu/attack-pretrain-models-of-code.git`
-- Copy the files "test.buggy-fixed.buggy" of the Small-BFPs and Medium-BFPs of concrete BFPs to `\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively.
-- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\`.
+- Copy the files "test.buggy-fixed.buggy" (located in `APR-Models-Performance\data\concrete BFPs\`) of the Small-BFPs and Medium-BFPs to `\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively in current project (i.e., attack-pretrain-models-of-code).
+- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` in current project (i.e., attack-pretrain-models-of-code).
 - Run the script `generate-substitutes-job.sh`.
 - Remember to change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, then rerun `generate-substitutes-job.sh`.
-- Finally you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
-- Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\`.
-- So far, you will obtain the first transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*.
+- Finally, you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
 
-**2. For constructing transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
+So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) for the following transformations.
+
+- Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\` for transforming code based on renaming substitutions on the jsonl files above.
+- So far, you will obtain the first 3 transformed datasets of *local_variable_renaming, method_renaming, parameter_renaming*, which are located in 'APR-Models-Performance\data\refactoring\'.
+
+**2. For constructing other 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
 
 - We use the existing tool proposed by [JavaTransformer](https://github.com/mdrafiqulrabin/JavaTransformer).
 - `git clone https://github.com/mdrafiqulrabin/JavaTransformer.git`
-- As this tool only accept .java file, first you need you transform each line of code in testing dataset to .java file.
+- As this tool only accept .java file, first we transform each line of code in testing dataset to .java file to fit the input of this tool.
 - Check the path in line 10-13 in `\APR-Models-Performance\refactoring\line_to_file.py` to fit your computer's environment.
-- Run `Python line_to_file.py`.
-- You will obtain the transformed files of Small-BFPs and Medium-BFPs.
+- Run `Python line_to_file.py`, to convert each line of code to one .java file.
+- You will obtain the transformed files of Small-BFPs and Medium-BFPs, which located in `\APR-Models-Performance\refactoring\`.
 - Copy the transformed files of Small-BFPs and Medium-BFPs to `\JavaTransformer\data\small` and `\JavaTransformer\data\medium` respectively.
-- Run `Main.java` on path `JavaTransformer\src\main\java`.
-- You will obtain the files of transformed datasets, then you need to construct these .java files back to transformed dataset files.
+- Run `Main.java` on path `JavaTransformer\src\main\java`, to start transforming each Java file.
+- You will obtain the transformed files, then you need to construct these .java files back to transformed dataset files.
 - Check the path in line 13 in `\APR-Models-Performance\refactoring\file_to_line.py` to fit your computer's environment.
-- Run `Python file_to_line.py`.
-- So far, you will obtain the first transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*.
+- Run `Python file_to_line.py` to construct the datasets.
+- So far, you will obtain the 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*.
+- For viewing the transformed datasets, check whether there are 9 transformations directories under path `\APR-Models-Performance\refactoring\`.
+
 
 Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
 ![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
@@ -79,10 +85,10 @@ Finally, you will obtain the transformed datasets, the statistics of these datas
 
 Please make sure the environment libraries mentioned above installed.
 
-**1. For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT):**
+**1. For fine-tuning CodeBERT, GraphCodeBERT, CodeGPT and PLBART, we reuse the code from [MODIT](https://github.com/modit-team/MODIT). We also reuse their work for training LSTM and Transformer:**
 
 - `git clone https://github.com/modit-team/MODIT`
-- Following the original instructions in [MODIT](https://github.com/modit-team/MODIT) to fine-tune these models.
+- Following the original instructions in [MODIT](https://github.com/modit-team/MODIT) to fine-tune/train these models.
 
 **2. For fine-tuning CodeT5, SPT-Code:**
 - `git clone https://github.com/salesforce/CodeT5`
@@ -98,11 +104,11 @@ Please make sure the environment libraries mentioned above installed.
 
 Please make sure the environment libraries mentioned above installed.
 
-**1. For testing the robustness of CodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:**
+**1. For testing the robustness of CodeBERT, GraphCodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:**
 
 - Models:
 
-   - Download fine-tuned models, then put the fine-tuned models on the corresponding directories.
+   - Download fine-tuned models, then put the fine-tuned models on the corresponding directories (explained in the next step).
    - For example, CodeBERT model fine-tuned on small-BFPs of Concrete BFPs should be under the path: `APR-Models-Performance/models/original/codebert/small/pytorch_model.bin`
 
 - Dataset:
@@ -113,8 +119,12 @@ Please make sure the environment libraries mentioned above installed.
 
   - Run scripts under path: `APR-Models-Performance/generate/`, such as `codebert-generate-job.sh`.
   - Make sure to check scripts before running, fit the recent changes of GPU cluster.
+  - After running job, you will obtain a log file under the same path. Check it and check `Accuracy` and `CodeBLEU` in the final stage of log to verify the value with the thesis.
 
 **2. For testing the robustness of SPT-Code:**
+
+We will directly use SPT-Code repository to perform RQ2, so download it first by 
+- `git clone https://github.com/NougatCA/SPT-Code.git`. Then prepare the fine-tuned models, datasets and scripts.
 
 - Models:
 
@@ -122,13 +132,19 @@ Please make sure the environment libraries mentioned above installed.
 
 - Dataset:
 
-  - Download transformed dataset mentioned above, put it under the path: `CodeT5/data/refactoring/`
+  - Download transformed dataset mentioned above, copy it under the path: `CodeT5/data/refactoring/`
 
 - Script:
 
-  - Run `SPT-Code/sources/spt-generate-job.sh`
+  - Run `SPT-Code/sources/spt-generate-job.sh`. This file is currently located in `/APR-Models-Performance/train/SPT-Code/sources/spt-generate-job.sh`, so copy it to your current SPT-Code.
+  - Make sure to check scripts before running, fit the recent changes of GPU cluster.
+  - After running job, you will obtain a log file under the same path. Check it and check `Accuracy` and `CodeBLEU` in the final stage of log to verify the value with the thesis.
+
 
 **3. For testing the robustness of CodeT5:**
+
+We will directly use SPT-Code repository to perform RQ2, so download it first by 
+- `git clone https://github.com/salesforce/CodeT5.git`. Then prepare the fine-tuned models, datasets and scripts.
 
 - Models:
   - Download fine-tuned CodeT5-small on small-BFPs and medium-BFPs, then put them under `CodeT5/sh/fine_tuned_models_final/codet5-small/small/pytorch_model.bin` and `CodeT5/sh/fine_tuned_models_final/codet5-small/medium/pytorch_model.bin`
@@ -140,7 +156,9 @@ Please make sure the environment libraries mentioned above installed.
 
 - Script:
 
-  - Run `CodeT5/sh/codet5-generate-job.sh` and `codet5base-generate-job.sh`
+  - Run `CodeT5/sh/codet5-generate-job.sh` and `codet5base-generate-job.sh`. (This file is currently located in `/APR-Models-Performance/train/CodeT5/sh/codet5-generate-job.sh`, so copy it to your current CodeT5.)
+  - After running job, you will obtain a log file under the same path. Check it and check `Accuracy` and `CodeBLEU` in the final stage of log to verify the value with the thesis.
+
 
 **RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
 
