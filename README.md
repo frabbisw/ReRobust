@@ -53,8 +53,8 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 - Copy the files "test.buggy-fixed.buggy" (located in \APR-Models-Performance\data\concrete BFPs) of the Small-BFPs and Medium-BFPs to the cloned repository `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` + `small` or `medium` respectively.
 - Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to the cloned repository:`\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` in current project (i.e., attack-pretrain-models-of-code).
 - Copy the file "my-languages.so" under `\APR-Models-Performance\train\attack-pretrain-models-of-code\python_parser\parser_folder` to the cloned repository `attack-pretrain-models-of-code\python_parser\parser_folder\`.
-- Run the script `generate-substitutes-job.sh`.
-- Remember to change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, then rerun `generate-substitutes-job.sh`.
+- Run the script `bash generate.sh` in interactive job instead of batch job (Concordia ENCS GPU Cluster).
+- Change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, and change the code of line 41 in `get_substitutes1.py`, change `with open('./medium/test.buggy-fixed.buggy')` to `with open('./small/test.buggy-fixed.buggy')`, then rerun `bash generate.sh`.
 - Finally, you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
 
 So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) for the following transformations.
