@@ -50,8 +50,8 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 - We use tree-sitter to parse the code to AST, and identify the target position for renaming an identifier.
 - We use naturalness-aware substitution algorithm proposed by [attack-pretrain-models-of-code](https://github.com/soarsmu/attack-pretrain-models-of-code) for generating renaming substitutions.
 - `git clone https://github.com/soarsmu/attack-pretrain-models-of-code.git`
-- Copy the files "test.buggy-fixed.buggy" (located in \APR-Models-Performance\data\concrete BFPs) of the Small-BFPs and Medium-BFPs of concrete BFPs to `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\` + `small` or `medium` respectively.
-- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to the cloned repository:`\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\`.
+- Copy the files "test.buggy-fixed.buggy" (located in \APR-Models-Performance\data\concrete BFPs) of the Small-BFPs and Medium-BFPs to the cloned repository `\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` + `small` or `medium` respectively.
+- Copy the files "generate.sh", "generate-substitutes-job.sh" and "get_substitutes1.py" from `\APR-Models-Performance\train\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` to the cloned repository:`\attack-pretrain-models-of-code\GraphCodeBERT\clonedetection\dataset\` in current project (i.e., attack-pretrain-models-of-code).
 - Run the script `generate-substitutes-job.sh`.
 - Remember to change the `generate-substitutes-medium.jsonl` to `generate-substitutes-small.jsonl` in `generate.sh`, then rerun `generate-substitutes-job.sh`.
 - Finally, you will obtain 2 files: `generate-substitutes-small.jsonl` and `generate-substitutes-medium.jsonl` as already shown in path `\APR-Models-Performance\refactoring\`. You can copy and cover them again.
@@ -60,6 +60,8 @@ So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) 
 
 - Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\` for transforming code based on renaming substitutions on the jsonl files above.
 - So far, you will obtain the first 3 transformed datasets of *local_variable_renaming, method_renaming, parameter_renaming*, which are located in 'APR-Models-Performance\data\refactoring\'.
+
+
 
 **2. For constructing other 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
 
@@ -80,6 +82,32 @@ So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) 
 
 Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
 ![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
+
+
+
+
+**2. For constructing other 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
+
+- We use the existing tool proposed by [JavaTransformer](https://github.com/mdrafiqulrabin/JavaTransformer).
+- `git clone https://github.com/mdrafiqulrabin/JavaTransformer.git`
+- As this tool only accept .java file, first we transform each line of code in testing dataset to .java file to fit the input of this tool.
+- Check the path in line 10-13 in `\APR-Models-Performance\refactoring\line_to_file.py` to fit your computer's environment.
+- Run `Python line_to_file.py`, to convert each line of code to one .java file.
+- You will obtain the transformed files of Small-BFPs and Medium-BFPs, which located in `\APR-Models-Performance\refactoring\`.
+- Copy the transformed files of Small-BFPs and Medium-BFPs to `\JavaTransformer\data\small` and `\JavaTransformer\data\medium` respectively.
+- Run `Main.java` on path `JavaTransformer\src\main\java`, to start transforming each Java file.
+- You will obtain the transformed files, then you need to construct these .java files back to transformed dataset files.
+- Check the path in line 13 in `\APR-Models-Performance\refactoring\file_to_line.py` to fit your computer's environment.
+- Run `Python file_to_line.py` to construct the datasets.
+- So far, you will obtain the 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*.
+- For viewing the transformed datasets, check whether there are 9 transformations directories under path `\APR-Models-Performance\refactoring\`.
+
+
+Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
+![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
+
+
+
 
 ## Experiment1 - RQ1
 
