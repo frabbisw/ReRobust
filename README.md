@@ -85,8 +85,6 @@ Finally, you will obtain the transformed datasets, the statistics of these datas
 ![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
 
 
-
-
 **2. For constructing other 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
 
 - We use the existing tool proposed by [JavaTransformer](https://github.com/mdrafiqulrabin/JavaTransformer).
@@ -197,7 +195,7 @@ We will directly use SPT-Code repository to perform RQ2, so download it first by
 
 ## Code Structure
 
-- ../data: Abstract BFPs and Concrete BFPs.
+- ../data: Abstract BFPs and Concrete BFPs. The transformed dataset should also be here after you download it.
 
 - ../train: fine-tuning (training) code, see the corresponding original mentioned above for details.
 
