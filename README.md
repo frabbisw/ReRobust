@@ -60,7 +60,7 @@ Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github
 
 So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) for the following transformations.
 
-- Run `Bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\` for transforming code based on renaming substitutions on the jsonl files above.
+- Run `bash divide_data.sh` under the path `\APR-Models-Performance\refactoring\` for transforming code based on renaming substitutions on the jsonl files above.
 - So far, you will obtain the first 3 transformed datasets of *local_variable_renaming, method_renaming, parameter_renaming*, which are located in 'APR-Models-Performance\data\refactoring\'.
 
 
