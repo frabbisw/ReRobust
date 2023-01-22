@@ -86,28 +86,6 @@ Finally, you will obtain the transformed datasets, the statistics of these datas
 ![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
 
 
-**2. For constructing other 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*:**
-
-- We use the existing tool proposed by [JavaTransformer](https://github.com/mdrafiqulrabin/JavaTransformer).
-- `git clone https://github.com/mdrafiqulrabin/JavaTransformer.git`
-- As this tool only accept .java file, first we transform each line of code in testing dataset to .java file to fit the input of this tool.
-- Check the path in line 10-13 in `\APR-Models-Performance\refactoring\line_to_file.py` to fit your computer's environment.
-- Run `Python line_to_file.py`, to convert each line of code to one .java file.
-- You will obtain the transformed files of Small-BFPs and Medium-BFPs, which located in `\APR-Models-Performance\refactoring\`.
-- Copy the transformed files of Small-BFPs and Medium-BFPs to `\JavaTransformer\data\small` and `\JavaTransformer\data\medium` respectively.
-- Run `Main.java` on path `JavaTransformer\src\main\java`, to start transforming each Java file.
-- You will obtain the transformed files, then you need to construct these .java files back to transformed dataset files.
-- Check the path in line 13 in `\APR-Models-Performance\refactoring\file_to_line.py` to fit your computer's environment.
-- Run `Python file_to_line.py` to construct the datasets.
-- So far, you will obtain the 6 transformed datasets by *boolean_exchange, loop_exchange, reorder_condition, convert_switch_to_if, insert_log_statement, insert_try_catch*.
-- For viewing the transformed datasets, check whether there are 9 transformations directories under path `\APR-Models-Performance\refactoring\`.
-
-
-Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
-![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
-
-
-
 
 ## Experiment1 - RQ1
 
