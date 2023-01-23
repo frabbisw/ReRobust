@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CODE_DIR=$(realpath ../);
-ORIGINAL_DATA_DIR="${CODE_DIR}/data/original/";
+ORIGINAL_DATA_DIR="${CODE_DIR}/data/concreteBFPs/";
 REFACTORING_DATA_DIR="${CODE_DIR}/data/refactoring/";
 
 function divide_data_to_files() {
