@@ -1,0 +1,1442 @@
+{
+    "BooleanExchange": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        2,
+                        7
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        1,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        2,
+                        7
+                    ],
+                    "original": [
+                        2,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        1,
+                        7
+                    ],
+                    "original": [
+                        1,
+                        7
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        1,
+                        7
+                    ],
+                    "original": [
+                        2,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        1,
+                        7
+                    ],
+                    "original": [
+                        2,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        1,
+                        7
+                    ]
+                }
+            }
+        }
+    },
+    "LogStatement": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        31,
+                        173
+                    ],
+                    "original": [
+                        54,
+                        173
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        19,
+                        173
+                    ],
+                    "original": [
+                        39,
+                        173
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        22,
+                        173
+                    ],
+                    "original": [
+                        42,
+                        173
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        5,
+                        173
+                    ],
+                    "original": [
+                        18,
+                        173
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        5,
+                        173
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        6,
+                        173
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        5,
+                        173
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        21,
+                        173
+                    ],
+                    "original": [
+                        48,
+                        173
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        14,
+                        173
+                    ],
+                    "original": [
+                        35,
+                        173
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        14,
+                        173
+                    ],
+                    "original": [
+                        41,
+                        173
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        21,
+                        173
+                    ],
+                    "original": [
+                        55,
+                        173
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        26,
+                        173
+                    ],
+                    "original": [
+                        57,
+                        173
+                    ]
+                }
+            }
+        }
+    },
+    "LoopExchange": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        14,
+                        142
+                    ],
+                    "original": [
+                        44,
+                        142
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        6,
+                        142
+                    ],
+                    "original": [
+                        35,
+                        142
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        5,
+                        142
+                    ],
+                    "original": [
+                        40,
+                        142
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        2,
+                        142
+                    ],
+                    "original": [
+                        12,
+                        142
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        142
+                    ],
+                    "original": [
+                        2,
+                        142
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        142
+                    ],
+                    "original": [
+                        10,
+                        142
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        142
+                    ],
+                    "original": [
+                        0,
+                        142
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        11,
+                        142
+                    ],
+                    "original": [
+                        48,
+                        142
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        8,
+                        142
+                    ],
+                    "original": [
+                        34,
+                        142
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        8,
+                        142
+                    ],
+                    "original": [
+                        39,
+                        142
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        9,
+                        142
+                    ],
+                    "original": [
+                        50,
+                        142
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        13,
+                        142
+                    ],
+                    "original": [
+                        56,
+                        142
+                    ]
+                }
+            }
+        }
+    },
+    "MethodRenaming": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        48,
+                        149
+                    ],
+                    "original": [
+                        52,
+                        149
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        31,
+                        149
+                    ],
+                    "original": [
+                        38,
+                        149
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        38,
+                        149
+                    ],
+                    "original": [
+                        39,
+                        149
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        21,
+                        149
+                    ],
+                    "original": [
+                        18,
+                        149
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        149
+                    ],
+                    "original": [
+                        5,
+                        149
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        149
+                    ],
+                    "original": [
+                        6,
+                        149
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        149
+                    ],
+                    "original": [
+                        5,
+                        149
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        44,
+                        149
+                    ],
+                    "original": [
+                        47,
+                        149
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        33,
+                        149
+                    ],
+                    "original": [
+                        36,
+                        149
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        36,
+                        149
+                    ],
+                    "original": [
+                        40,
+                        149
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        48,
+                        149
+                    ],
+                    "original": [
+                        52,
+                        149
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        47,
+                        149
+                    ],
+                    "original": [
+                        49,
+                        149
+                    ]
+                }
+            }
+        }
+    },
+    "ParameterRenaming": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        52,
+                        161
+                    ],
+                    "original": [
+                        52,
+                        161
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        39,
+                        161
+                    ],
+                    "original": [
+                        38,
+                        161
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        38,
+                        161
+                    ],
+                    "original": [
+                        40,
+                        161
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        22,
+                        161
+                    ],
+                    "original": [
+                        18,
+                        161
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        161
+                    ],
+                    "original": [
+                        5,
+                        161
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        161
+                    ],
+                    "original": [
+                        6,
+                        161
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        161
+                    ],
+                    "original": [
+                        4,
+                        161
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        48,
+                        161
+                    ],
+                    "original": [
+                        47,
+                        161
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        37,
+                        161
+                    ],
+                    "original": [
+                        35,
+                        161
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        38,
+                        161
+                    ],
+                    "original": [
+                        41,
+                        161
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        52,
+                        161
+                    ],
+                    "original": [
+                        53,
+                        161
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        50,
+                        161
+                    ],
+                    "original": [
+                        52,
+                        161
+                    ]
+                }
+            }
+        }
+    },
+    "ReorderCondition": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        111,
+                        603
+                    ],
+                    "original": [
+                        157,
+                        603
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        64,
+                        603
+                    ],
+                    "original": [
+                        117,
+                        603
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        73,
+                        603
+                    ],
+                    "original": [
+                        149,
+                        603
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        22,
+                        603
+                    ],
+                    "original": [
+                        58,
+                        603
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        603
+                    ],
+                    "original": [
+                        28,
+                        603
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        603
+                    ],
+                    "original": [
+                        22,
+                        603
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        603
+                    ],
+                    "original": [
+                        1,
+                        603
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        82,
+                        603
+                    ],
+                    "original": [
+                        152,
+                        603
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        65,
+                        603
+                    ],
+                    "original": [
+                        110,
+                        603
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        71,
+                        603
+                    ],
+                    "original": [
+                        135,
+                        603
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        84,
+                        603
+                    ],
+                    "original": [
+                        170,
+                        603
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        86,
+                        603
+                    ],
+                    "original": [
+                        182,
+                        603
+                    ]
+                }
+            }
+        }
+    },
+    "TryCatch": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        37,
+                        114
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        24,
+                        114
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        26,
+                        114
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        11,
+                        114
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        2,
+                        114
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        4,
+                        114
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        2,
+                        114
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        30,
+                        114
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        22,
+                        114
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        26,
+                        114
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        37,
+                        114
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        114
+                    ],
+                    "original": [
+                        40,
+                        114
+                    ]
+                }
+            }
+        }
+    },
+    "VariableRenaming": {
+        "plbart": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        5,
+                        100
+                    ],
+                    "original": [
+                        32,
+                        100
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        3,
+                        100
+                    ],
+                    "original": [
+                        23,
+                        100
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        2,
+                        100
+                    ],
+                    "original": [
+                        27,
+                        100
+                    ]
+                },
+                "c2.json": {
+                    "transformed": [
+                        2,
+                        100
+                    ],
+                    "original": [
+                        11,
+                        100
+                    ]
+                }
+            }
+        },
+        "codet5": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        100
+                    ],
+                    "original": [
+                        3,
+                        100
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        100
+                    ],
+                    "original": [
+                        4,
+                        100
+                    ]
+                },
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        7
+                    ],
+                    "original": [
+                        0,
+                        7
+                    ]
+                }
+            },
+            "base": {
+                "c3.json": {
+                    "transformed": [
+                        0,
+                        173
+                    ],
+                    "original": [
+                        0,
+                        173
+                    ]
+                },
+                "c1.json": {
+                    "transformed": [
+                        0,
+                        100
+                    ],
+                    "original": [
+                        3,
+                        100
+                    ]
+                }
+            }
+        },
+        "plbart_finetune": {
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        5,
+                        100
+                    ],
+                    "original": [
+                        28,
+                        100
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        4,
+                        100
+                    ],
+                    "original": [
+                        17,
+                        100
+                    ]
+                }
+            }
+        },
+        "codet5_finetune": {
+            "small": {
+                "c1.json": {
+                    "transformed": [
+                        6,
+                        100
+                    ],
+                    "original": [
+                        24,
+                        100
+                    ]
+                }
+            },
+            "base": {
+                "c1.json": {
+                    "transformed": [
+                        8,
+                        100
+                    ],
+                    "original": [
+                        33,
+                        100
+                    ]
+                }
+            },
+            "large": {
+                "c1.json": {
+                    "transformed": [
+                        7,
+                        100
+                    ],
+                    "original": [
+                        31,
+                        100
+                    ]
+                }
+            }
+        }
+    }
+}

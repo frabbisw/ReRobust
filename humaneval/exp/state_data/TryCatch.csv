@@ -1,0 +1,16 @@
+Config, TestPasses, TestPassesRatio, CodeBLEU
+TryCatch|plbart|base|c1,0/114,0.0,78.701
+TryCatch|plbart|base|c2,0/114,0.0,65.702
+TryCatch|plbart|large|c1,0/114,0.0,79.258
+TryCatch|plbart|large|c2,0/114,0.0,67.855
+TryCatch|plbart_finetune|base|c1,0/114,0.0,82.666
+TryCatch|plbart_finetune|large|c1,0/114,0.0,82.319
+TryCatch|codet5|small|c1,0/114,0.0,76.353
+TryCatch|codet5|small|c3,0/114,0.0,70.96
+TryCatch|codet5|base|c1,5/161,3.106,73.278
+TryCatch|codet5|base|c3,0/114,0.0,67.696
+TryCatch|codet5|large|c1,5/161,3.106,79.03
+TryCatch|codet5|large|c3,0/114,0.0,70.879
+TryCatch|codet5_finetune|small|c1,0/114,0.0,82.929
+TryCatch|codet5_finetune|base|c1,0/114,0.0,82.242
+TryCatch|codet5_finetune|large|c1,0/114,0.0,81.524

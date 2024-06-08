@@ -1,0 +1,16 @@
+Config, TestPasses, TestPassesRatio, CodeBLEU
+BooleanExchange|plbart|base|c1,0/7,0.0,79.903
+BooleanExchange|plbart|base|c2,0/7,0.0,70.808
+BooleanExchange|plbart|large|c1,0/7,0.0,79.602
+BooleanExchange|plbart|large|c2,1/7,14.286,73.798
+BooleanExchange|plbart_finetune|base|c1,1/7,14.286,84.74
+BooleanExchange|plbart_finetune|large|c1,2/7,28.571,85.063
+BooleanExchange|codet5|small|c1,0/7,0.0,75.919
+BooleanExchange|codet5|small|c3,0/7,0.0,74.159
+BooleanExchange|codet5|base|c1,5/161,3.106,68.734
+BooleanExchange|codet5|base|c3,0/7,0.0,71.363
+BooleanExchange|codet5|large|c1,5/161,3.106,81.796
+BooleanExchange|codet5|large|c3,0/7,0.0,73.517
+BooleanExchange|codet5_finetune|small|c1,1/7,14.286,84.45
+BooleanExchange|codet5_finetune|base|c1,1/7,14.286,85.395
+BooleanExchange|codet5_finetune|large|c1,0/7,0.0,84.272

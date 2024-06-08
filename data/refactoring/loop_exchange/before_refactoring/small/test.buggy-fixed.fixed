@@ -1,0 +1,65 @@
+public void init () { for ( int i = 0 ; i < ( kaspar.config.ConfigConstants.KINECT_CLOSEST_POINTS_HISTORY_SIZE ) ; i ++ ) { update () ; } } 
+@ java.lang.Override protected void randomizeParameters () { for ( int i = 0 ; i <= 3 ; i ++ ) { names . add ( rage.parqu.util.Randomizer . randomString () ) ; } correctIndex = rage.parqu.util.Randomizer . randomSmallPositiveInteger ( 2 ) ; } 
+public void attendiSette ( ) throws java.lang.InterruptedException { concurrent.LockManager.lockSette . lock () ; while ( concurrent.LockManager.inAttesaSette ) { concurrent.LockManager.conditionSette . await () ; } concurrent.LockManager.inAttesaSette = true ; concurrent.LockManager.lockSette . unlock () ; } 
+public void outputNames () { for ( int x = 0 ; x < ( this . studentNames . size () ) ; x ++ ) { java.lang.System.out . println ( this . studentNames . get ( x ) ) ; } } 
+public void initializeColorPickers () { for ( int i = 0 ; i < ( tetris.GameSettingsPanel.NUMBER_OF_COLORS ) ; i ++ ) { this . colorPickers [ i ] = new javafx.scene.control.ColorPicker () ; } } 
+@ java.lang.Override public void run () { try { while ( true ) { java.lang.Thread . sleep ( 1000 ) ; this . getState () . tick () ; } } catch ( java.lang.Exception e ) { e . printStackTrace () ; } } 
+void updatePageNumber () { while ( ( ( pageNumber ) > 0 ) && ( ( ( pageNumber ) * ( pageLength ) ) >= ( pagedDataProvider . getBackendSize () ) ) ) { -- ( pageNumber ) ; } } 
+public void deleteEffect ( int id ) { while ( ( getIndexOfEffect ( id ) ) != ( - 1 ) ) { status . get ( getIndexOfEffect ( id ) ) . end ( this ) ; status . remove ( getIndexOfEffect ( id ) ) ; } } 
+fit.Parse secondLastRow ( fit.Parse lastRow ) { fit.Parse nextRow = table.parts ; fit.Parse currentRow = null ; while ( nextRow != lastRow ) { currentRow = nextRow ; nextRow = nextRow.more ; } if ( currentRow != null ) { currentRow.more = null ; } return currentRow ; } 
+@ java.lang.Override public boolean contains ( java.lang.Object obj ) { for ( int j = 0 ; j < ( array.length ) ; j ++ ) { if ( obj == ( array [ j ] ) ) { return true ; } } return false ; } 
+public void setQuestionPanel () { for ( int i = 0 ; i < 10 ; i ++ ) { if ( answered ( i ) ) {} } } 
+private void printLine ( int width , char c ) { for ( int i = 0 ; i < width ; i ++ ) { out . print ( c ) ; } out . println () ; } 
+public static void sleep ( int time ) { long startTime = java.lang.System . currentTimeMillis () ; while ( ( ( java.lang.System . currentTimeMillis () ) - startTime ) < time ) ; } 
+private void fillTower ( int N ) { for ( int i = N ; i >= 1 ; i -- ) { towers . get ( 0 ) . push ( i ) ; } } 
+public boolean search ( char i ) { cpe200.week2.PNode currentNode = head ; while ( currentNode != null ) { if ( ( currentNode.data ) == i ) return true ; currentNode = currentNode.next ; } return false ; } 
+static void draw ( int cards ) { for ( int i = 0 ; i < cards ; i ++ ) { stats.Deck.HAND . add ( stats.Deck.DECK . remove ( 0 ) ) ; } } 
+@ java.lang.Override public java.lang.String getRandomValue () { java.lang.StringBuilder stringBuilder = new java.lang.StringBuilder () ; for ( int i = 0 ; i < ( length ) ; i ++ ) { stringBuilder . append ( characterRandomizer . getRandomValue () ) ; } return stringBuilder . toString () ; } 
+@ java.lang.Override public void resetParametersToInitialValues () { super . resetParametersToInitialValues () ; for ( int i = 0 ; i < ( effects.size ) ; i ++ ) { effects . get ( i ) . resetParametersToInitialValues () ; } } 
+private static int packageDepth ( java.lang.String pkgName ) { int cnt = 0 ; int i = 0 ; while ( ( i = pkgName . indexOf ( "." , i ) ) == ( - 1 ) ) { cnt ++ ; } return cnt ; } 
+public void run () { java.lang.System.out . println ( "Running ..." ) ; while ( true ) { cm . run () ; if ( isMaster ) {} } } 
+public void getGrid () { for ( ; ; ) { queryGrid () ; java.lang.System.out . println ( userGrid ) ; if ( userGrid . isValid () ) break; java.lang.System.out . println ( "Invalid sudoku board. Try again.\n" ) ; } } 
+public int getDevCardCount () { int total = 0 ; for ( int i = 0 ; i < ( this . numberDevCardTypes ) ; i ++ ) { total += this . devCards [ i ] ; } return total ; } 
+@ php.runtime.annotation.Reflection.Signature public void addAll ( php.runtime.env.Environment env , php.runtime.lang.ForeachIterator iterator ) throws java.lang.Throwable { if ( iterator == null ) { return; } while ( iterator . next () ) { env . invokeMethod ( this , "add" , iterator . getValue () ) ; } } 
+@ java.lang.Override public void reset () { for ( com.funcache.util.FastLinkedListItem item = head ; item != null ; item = item . getNext () ) { item . setNext ( null ) ; item . setPrevious ( null ) ; } head = null ; tail = null ; } 
+public void setAllAvailable () { for ( int large = 0 ; large < 9 ; large ++ ) { for ( int small = 0 ; small < 9 ; small ++ ) { setAvailable ( large , small ) ; } } } 
+private void hideAllViewExceptKeyBoard () { for ( int i = 0 ; i < ( showViewList . size () ) ; i ++ ) { hideView ( showViewList . get ( i ) ) ; } } 
+@ java.lang.Override public boolean isTouched () { for ( int pointer = 0 ; pointer < ( com.badlogic.gdx.backends.iosmoe.IOSInput.MAX_TOUCHES ) ; pointer ++ ) { if ( ( touchDown [ pointer ] ) != null ) { return true ; } } return false ; } 
+void putString ( java.lang.CharSequence str ) { for ( int s = 0 ; s < ( str . length () ) ; s ++ ) { putChar ( str . charAt ( s ) , 0 , false ) ; } } 
+public java.lang.String listen ( ) throws java.io.IOException { while ( true ) { java.lang.String message = in . readLine () ; if ( ( message != null ) && ( message . startsWith ( "MOVE" ) ) ) return message ; } } 
+public long calculateTotalCost () { long totalDiscounts = 0 ; for ( int i = 0 ; i < ( discounts . size () ) ; i ++ ) totalDiscounts += discounts . get ( i ) ; return ( totalCost ) - totalDiscounts ; } 
+public void turn_encoder ( double power , double distance ) { double start = getEncoderAvg () ; while ( ( java.lang.Math . abs ( ( ( getEncoderAvg () ) - start ) ) ) < distance ) { turn_basic ( power ) ; } stop_motors () ; } 
+protected void initializeArrayList ( int length ) { passwordArray = new char [ length ] ; for ( int i = 0 ; i < length ; i ++ ) { passwordArray [ i ] = ' ' ; } } 
+@ java.lang.Override public void close () { kafkaConsumerThreadPool . shutdown () ; wakeup () ; while ( ! ( kafkaConsumerThreadPool . isTerminated () ) ) ; isRunning . set ( false ) ; } 
+public java.lang.Object get ( int index ) { indexRangeCheck ( index ) ; com.coding.basic.LinkedList.Node cursor = head ; for ( int i = 0 ; i < index ; i ++ ) { cursor = cursor.next ; } return cursor.next.data ; } 
+protected static void printLine ( final java.lang.String lineCharacter , final int lineSize ) { for ( int i = 0 ; i < lineSize ; i ++ ) { java.lang.System.out . print ( lineCharacter ) ; } java.lang.System.out . println () ; } 
+@ java.lang.Override public void setInventorySlotContents ( int slot , net.minecraft.item.ItemStack stack ) { while ( slot >= ( mainInventory . size () ) ) { mainInventory . add ( null ) ; } mainInventory . set ( slot , stack ) ; } 
+@ java.lang.Override public void keyReleased ( java.awt.event.KeyEvent e ) { while ( Pirates.pressedKeys . contains ( e . getKeyCode () ) ) { Pirates.pressedKeys . remove ( ( ( java.lang.Integer ) ( e . getKeyCode () ) ) ) ; } } 
+public static java.lang.String XorToOneNumber ( int number ) { int result = 0 ; while ( number > 1 ) { result += number % 2 ; number = number / 2 ; } result += number ; return "" + ( result % 2 ) ; } 
+public static void main ( java.lang.String [] args ) { while ( true ) { com.solarus.IG pacmanGraphique = new com.solarus.IG () ; pacmanGraphique . initialisationEcran () ; pacmanGraphique . ecranDeDemarrage () ; } } 
+public void attendiEndAll ( ) throws java.lang.InterruptedException { concurrent.LockManager.lockEndAll . lock () ; while ( concurrent.LockManager.inAttesaEndAll ) { concurrent.LockManager.conditionEndAll . await () ; } concurrent.LockManager.lockEndAll . unlock () ; } 
+@ java.lang.Override public boolean hasNext () { while ( ! ( mRhsIterator . hasNext () ) ) { if ( ! ( nextLhs () ) ) { return false ; } } return mRhsIterator . hasNext () ; } 
+static double [] processAccelrometerData ( double [] data ) { for ( int i = 0 ; i < 3 ; i ++ ) { data [ i ] *= 386.088 ; } return data ; } 
+@ java.lang.Override public void run () { while ( ( thread ) != null ) { synchronized ( this ) { try { step () ; java.lang.Thread . sleep ( 20 ) ; } catch ( java.lang.InterruptedException ex ) {} } } } 
+public void addEntities () { while ( ( enemyCount ) < ( enemyCountMax ) ) { com.github.fishio.EnemyFish eFish = com.github.fishio.LevelBuilder . randomizedFish () ; add ( eFish ) ; ( enemyCount ) ++ ; } } 
+@ java.lang.Override public void mouseReleased ( java.awt.event.MouseEvent e ) { for ( int i = 0 ; i < 5 ; i ++ ) switchToSnap ( 0 ) ; } 
+private void standardInit ( java.lang.Integer size ) { for ( java.lang.Integer i = 1 ; i < ( size + 1 ) ; i ++ ) { cards . add ( new com.nirus.game.basics.Card ( i ) ) ; } } 
+public void setLevelexp ( int level , int levelexp ) { for ( int i = 2 ; i <= level ; i ++ ) { levelexp = levelexp * 2 ; } this . levelexp = levelexp ; } 
+public static java.math.BigInteger getFactorial ( int n ) { java.math.BigInteger fact = java.math.BigInteger.ONE ; for ( int i = n ; i > 1 ; i -- ) { fact = fact . multiply ( new java.math.BigInteger ( java.lang.Integer . toString ( i ) ) ) ; } return fact ; } 
+public static void d ( java.lang.String message , java.lang.Throwable t ) { for ( int i = 0 ; i < ( io.realm.internal.log.RealmLog.LOGGERS . size () ) ; i ++ ) { io.realm.internal.log.RealmLog.LOGGERS . get ( i ) . d ( message , t ) ; } } 
+public void TopGoto () { while ( ( upperLimit . get () ) == false ) { lifter . set ( ( 1.0 * 1.0 ) ) ; } lifter . set ( 0 ) ; } 
+private void sendFailForAll () { for ( int id = 0 ; id < ( Simulation.NumberOfAgents ) ; id ++ ) { sendMessage ( new Messages.KillMessage () , id ) ; } } 
+private void tabIndent ( int indent ) { indent = indent * 4 ; for ( int i = 0 ; i < indent ; ++ i ) { out . print ( " " ) ; } } 
+public void initializeArray ( java.lang.Character [] array ) { for ( int i = 0 ; i < ( array.length ) ; i ++ ) {} } 
+model.Node findEnd () { model.Node currentNode = this ; while ( ( currentNode.nextNode ) != null ) { currentNode = currentNode.nextNode ; } return currentNode ; } 
+private void writeFiletoLocal ( java.nio.ByteBuffer buf ) throws java.io.IOException { while ( buf . hasRemaining () ) { fileChannel . write ( buf ) ; } } 
+public static void main ( java.lang.String [] args ) { for ( int i = 0 ; i < 5000 ; i = i + 1 ) { java.lang.System.out . println ( ( "Hej " + i ) ) ; } } 
+public void fill () { while ( addSample () ) {} } 
+public void tick () { for ( int i = 0 ; i < ( object . size () ) ; i ++ ) { com.TwodTutorial.main.GameObject tempObject = object . get ( i ) ; tempObject . tick () ; } } 
+public void initXmlList () { for ( int i = 0 ; i < ( folder . size () ) ; i ++ ) { xmlList . add ( null ) ; } } 
+public void PrintAllStats () { java.lang.System.out . println () ; for ( int i = 0 ; i < ( playerList . size () ) ; i ++ ) { playerList . get ( i ) . ViewCurrentStats () ; } java.lang.System.out . println () ; } 
+public void initiateParVector ( int numOfFeatures ) { for ( int i = 0 ; i < numOfFeatures ; i ++ ) { parVector . add ( 0.5 ) ; rewardFunction.featureValues . add ( new java.util.ArrayList < java.lang.Double > () ) ; } } 
+public void dealFour () { models.Card tempCard = NULL ; for ( i = 0 ; ( i ) ++ ; i = 4 ) { tempCard = getTopCard ( i ) ; addCardToCol ( i , tempCard ) ; } } 
+@ java.lang.Override public void execute () { while ( true ) { t . read () ; break; } } 
+public void play () { while ( ! ( this . isGameOver () ) ) { { Position position = this . player . askForTile () ; } } } 
+public static void reversedStringOrder ( java.util.ArrayList < java.lang.String > stringArrayList ) { for ( int i = ( stringArrayList . size () ) - 1 ; i >= 0 ; i -- ) { java.lang.System.out . println ( stringArrayList . get ( i ) ) ; } } 

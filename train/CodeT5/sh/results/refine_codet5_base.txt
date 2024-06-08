@@ -1,0 +1,4 @@
+[Time: 23m] /home/y_shi202/related-project/CodeT5/sh/finetuned_models/refine_small_codet5_base.bin
+[best-bleu] bleu-4: 77.82, em: 21.3196, codebleu: 0.0000
+[Time: 2h4m] /home/y_shi202/related-project/CodeT5/sh/finetuned_models/refine_small_codet5_base.bin
+[best-bleu] bleu-4: 77.82, em: 21.3196, codebleu: 0.0000

@@ -1,0 +1,1 @@
+public class CONCATENATE { public static java.lang.String concatenate ( java.lang.String [] strings ) { java.lang.String result = null ; for ( java.lang.String string : strings ) result += string ; return result ; } }

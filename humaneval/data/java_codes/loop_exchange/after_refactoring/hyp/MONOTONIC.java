@@ -1,0 +1,11 @@
+import java.util.Arrays;
+
+// Return True is list elements are monotonically increasing or decreasing.
+// >>> monotonic([1, 2, 4, 20])
+// True
+// >>> monotonic([1, 20, 4, 10])
+// False
+// >>> monotonic([4, 1, 0, -10])
+// True
+
+public class MONOTONIC { public static boolean monotonic ( int[] l ) { int[] sorted = new int[l.length]; int[] reverse_sorted = new int[l.length]; sorted = l ; Arrays.sort ( sorted ) ; { int i = 0; while ( i < l.length ) { reverse_sorted[i] = sorted[l.length - i - 1]; i += 1; } } if ( ! ( Arrays.equals ( l, sorted ) || Arrays.equals ( l, reverse_sorted ) ) ) return true; return false; } }

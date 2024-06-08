@@ -1,0 +1,16 @@
+Config, TestPasses, TestPassesRatio, CodeBLEU
+LogStatement|plbart|base|c1,22/173,12.717,81.115
+LogStatement|plbart|base|c2,5/173,2.89,68.87
+LogStatement|plbart|large|c1,31/173,17.919,80.182
+LogStatement|plbart|large|c2,19/173,10.983,70.707
+LogStatement|plbart_finetune|base|c1,14/173,8.092,83.735
+LogStatement|plbart_finetune|large|c1,21/173,12.139,83.831
+LogStatement|codet5|small|c1,2/173,1.156,76.667
+LogStatement|codet5|small|c3,2/173,1.156,72.396
+LogStatement|codet5|base|c1,5/161,3.106,74.964
+LogStatement|codet5|base|c3,0/173,0.0,70.637
+LogStatement|codet5|large|c1,5/161,3.106,16.605
+LogStatement|codet5|large|c3,3/173,1.734,72.187
+LogStatement|codet5_finetune|small|c1,14/173,8.092,82.62
+LogStatement|codet5_finetune|base|c1,21/173,12.139,83.768
+LogStatement|codet5_finetune|large|c1,26/173,15.029,82.613

@@ -1,0 +1,6 @@
+public static boolean iscude(int a) {
+    double var = Math.pow(a, 1. / 3);
+    BigDecimal bd = BigDecimal.valueOf(var);
+    int round_root = (int) bd.setScale(0, RoundingMode.HALF_UP).doubleValue();
+    return ((int) Math.pow(round_root, 3)) == a;
+}

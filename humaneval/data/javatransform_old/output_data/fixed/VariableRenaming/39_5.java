@@ -1,0 +1,15 @@
+public static List<Integer> count_up_to(int n) {
+    List<Integer> primes = new ArrayList<Integer>();
+    for (int i = 2; i < n; i += 1) {
+        boolean is_prime = true;
+        for (int var = 2; var < i; var += 1) {
+            if (i % var == 0) {
+                is_prime = false;
+                break;
+            }
+        }
+        if (is_prime)
+            primes.add(i);
+    }
+    return primes;
+}

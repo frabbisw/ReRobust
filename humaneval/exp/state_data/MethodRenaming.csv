@@ -1,0 +1,16 @@
+Config, TestPasses, TestPassesRatio, CodeBLEU
+MethodRenaming|plbart|base|c1,38/149,25.503,79.367
+MethodRenaming|plbart|base|c2,21/149,14.094,71.136
+MethodRenaming|plbart|large|c1,48/149,32.215,79.335
+MethodRenaming|plbart|large|c2,31/149,20.805,73.351
+MethodRenaming|plbart_finetune|base|c1,33/149,22.148,82.826
+MethodRenaming|plbart_finetune|large|c1,44/149,29.53,83.053
+MethodRenaming|codet5|small|c1,6/149,4.027,74.048
+MethodRenaming|codet5|small|c3,1/149,0.671,69.991
+MethodRenaming|codet5|base|c1,5/161,3.106,73.259
+MethodRenaming|codet5|base|c3,0/149,0.0,67.804
+MethodRenaming|codet5|large|c1,5/161,3.106,21.581
+MethodRenaming|codet5|large|c3,3/149,2.013,70.25
+MethodRenaming|codet5_finetune|small|c1,36/149,24.161,82.963
+MethodRenaming|codet5_finetune|base|c1,48/149,32.215,82.724
+MethodRenaming|codet5_finetune|large|c1,47/149,31.544,81.706
