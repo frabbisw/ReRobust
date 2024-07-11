@@ -1,0 +1,22 @@
+public static ArrayList<String> words_strings(String s) {
+    ArrayList<String> result = new ArrayList<String>();
+    try {
+        if (s == null || s.isEmpty())
+            return result;
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+    String s_list = "";
+    for (char c : s.toCharArray()) {
+        if (c == ',') {
+            s_list += ' ';
+        } else {
+            s_list += c;
+        }
+    }
+    String[] result_array = s_list.trim().split("\\s+");
+    for (String r : result_array) {
+        result.add(r);
+    }
+    return result;
+}

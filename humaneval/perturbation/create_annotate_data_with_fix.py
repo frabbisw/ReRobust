@@ -5,11 +5,11 @@ from os.path import isfile, join
 
 buggy_path = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/buggy/"
 fixed_path = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/correct/"
-output_path_buggy = "/home/frabbi/JavaTransformer/files/output_data/"
+# output_path_buggy = "/home/frabbi/JavaTransformer/files/output_data/"
 output_path_fixed = "/home/frabbi/JavaTransformer/files/output_fixed/"
 transformed_path_buggy = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/transformed/"
 transformed_path_fixed = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/transformed_fixed/"
-annotate_path_buggy = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/annotate/"
+# annotate_path_buggy = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/annotate/"
 annotate_path_fixed = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/annotate_fixed/"
 loc_file = "/home/frabbi/clm/humaneval-java/src/main/java/humaneval/humaneval_loc.txt"
 
@@ -69,18 +69,22 @@ for dir in transdirs_buggy:
         loc = loc_dict[classname]
         buggy_code = buggy_files_dict[classname]
         fixed_code = fixed_files_dict[classname]
-        with open(org_path_buggy, 'r') as f:
-            transformed_code_buggy = f.read()
-        with open(org_path_fixed, 'r') as f:
-            transformed_code_fixed = f.read()
+
+        try:
+            with open(org_path_buggy, 'r') as f:
+                transformed_code_buggy = f.read()
+            with open(org_path_fixed, 'r') as f:
+                transformed_code_fixed = f.read()
+        except:
+            continue
 
         # print(single_folder)
         # exit(0)
         os.makedirs(single_folder, exist_ok=True)
         with open(join(single_folder, "buggy.java"), 'w') as f:
             f.write(buggy_code)
-        # with open(join(single_folder, "fixed.java"), 'w') as f:
-        #     f.write(fixed_code)
+        with open(join(single_folder, "fixed.java"), 'w') as f:
+            f.write(fixed_code)
         with open(join(single_folder, "transformed.java"), 'w') as f:
             f.write(transformed_code_buggy)
         with open(join(single_folder, "transformed_fixed.java"), 'w') as f:
@@ -89,5 +93,5 @@ for dir in transdirs_buggy:
             f.write(f"{classname} {loc}")
         with open(join(single_folder, "new_loc.txt"), 'w') as f:
             f.write(f"")
-        # with open(join(single_folder, "src.txt"), 'w') as f:
-        #     f.write(org_path)
+        with open(join(single_folder, "src.txt"), 'w') as f:
+            f.write(org_path_fixed)
