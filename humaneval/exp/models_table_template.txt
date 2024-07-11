@@ -1,0 +1,48 @@
+\begin{sidewaystable}[!ht]
+    \centering
+    \captionsetup{justification=centering}
+    \vspace*{15cm}
+    \caption{Fine-tuned models against different semantic-preserving code transformations on HumanEval-Java.}
+    \scalebox{0.8}{
+    \begin{tabular}{ccccccccccccc}
+    \\ \toprule
+        ~ & \multicolumn{4}{c}{\textbf{local\_variable\_renaming}} & \multicolumn{4}{c}{\textbf{method\_renaming}} & \multicolumn{4}{c}{\textbf{parameter\_renaming}} \\
+        \midrule
+        ~ & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} \\
+        \cline{2-13}
+        ~ & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu \\
+        \midrule
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        \midrule
+        ~ & \multicolumn{4}{c}{\textbf{boolean\_exchange}} & \multicolumn{4}{c}{\textbf{loop\_exchange}} & \multicolumn{4}{c}{\textbf{reorder\_condition}} \\
+        \midrule
+        ~ & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} \\
+        \cline{2-13}
+        ~ & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu \\
+        \midrule
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        MODEL & X & X & X & X & X & X & X & X & X & X & X & X \\
+        \midrule
+        ~ & \multicolumn{4}{c}{\textbf{}} & \multicolumn{4}{c}{\textbf{insert\_log\_statement}} & \multicolumn{4}{c}{\textbf{insert\_try\_catch}} \\
+        \midrule
+        ~ & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} & \multicolumn{2}{c}{original} & \multicolumn{2}{c}{transformed} \\
+        \cline{2-13}
+        ~ &  &  &  &  & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu & pass@10 & codebleu \\
+        \midrule
+        MODEL &  &  &  &  & X & X & X & X & X & X & X & X \\
+        MODEL &  &  &  &  & X & X & X & X & X & X & X & X \\
+        MODEL &  &  &  &  & X & X & X & X & X & X & X & X \\
+        MODEL &  &  &  &  & X & X & X & X & X & X & X & X \\
+        MODEL &  &  &  &  & X & X & X & X & X & X & X & X \\
+        \bottomrule
+    \end{tabular}
+    }
+    \label{FinetunedRefactoringHumanEvalFineTuned}
+\end{sidewaystable}

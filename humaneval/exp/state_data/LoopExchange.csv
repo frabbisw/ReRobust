@@ -1,0 +1,16 @@
+Config, TestPasses, TestPassesRatio, CodeBLEU
+LoopExchange|plbart|base|c1,5/142,3.521,80.208
+LoopExchange|plbart|base|c2,2/142,1.408,73.59
+LoopExchange|plbart|large|c1,14/142,9.859,79.819
+LoopExchange|plbart|large|c2,6/142,4.225,75.094
+LoopExchange|plbart_finetune|base|c1,8/142,5.634,85.866
+LoopExchange|plbart_finetune|large|c1,11/142,7.746,84.849
+LoopExchange|codet5|small|c1,0/142,0.0,79.521
+LoopExchange|codet5|small|c3,0/142,0.0,74.459
+LoopExchange|codet5|base|c1,5/161,3.106,76.463
+LoopExchange|codet5|base|c3,0/142,0.0,68.631
+LoopExchange|codet5|large|c1,5/161,3.106,60.394
+LoopExchange|codet5|large|c3,0/142,0.0,73.441
+LoopExchange|codet5_finetune|small|c1,8/142,5.634,84.89
+LoopExchange|codet5_finetune|base|c1,9/142,6.338,84.594
+LoopExchange|codet5_finetune|large|c1,13/142,9.155,84.255
