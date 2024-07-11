@@ -8,3 +8,5 @@ data/transformed/
 job-log-backup/
 refactoring/JavaTransformer/data/
 refactoring/JavaTransformer/target/
+models/
+
