@@ -182,9 +182,13 @@ We will directly use SPT-Code repository to perform RQ2, so download it first by
 
 **RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
 
+#### Bug-Fix-Pairs (BFP)
 ![RQ2-Results_small](images/RQ2_Results_small.png)
 ![RQ2-Results-medium](images/RQ2_Results_medium.png)
 
+#### HumanEval-Java)
+![RQ2-Results Humaneval Pretrained](images/pretrained_he.jpg)
+![RQ2-Results Humaneval Fine-tuned](images/finetuned_he.jpg)
 
 ## Code Structure
 
