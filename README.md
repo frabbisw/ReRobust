@@ -1,6 +1,4 @@
-﻿Yu Shi Master Thesis Project - Concordia University
-
-# Evaluating the Robustness of Deep Learning Models on Automated Program Repair
+# Pre-Trained Language Models for Automated Program Repair: A Comparative Study on Performance and Robustness
 
 We present the repository of this work, including models, datasets, and code.
 
@@ -10,13 +8,13 @@ We present the repository of this work, including models, datasets, and code.
 2. `Python 3.6`
 3. `CUDA 10.1`
 
-Please make sure all the packages in [`requirement.txt`](https://github.com/ThomasShiyu/APR-Models-Performance/blob/master/config/requirement.txt) are installed.
+Please make sure all the packages in [`requirement.txt`](https://github.com/frabbisw/ReRobust/blob/master/requirements.txt) are installed.
 
 - Run `cat requirement.txt | xargs -n 1 pip install` for setting environment. Please run this twice as some libraries might not be installed due to dependencies.
 
 ## Models
 
-### Pre-trained Models
+### Pre-trained Models for Bug-Fix-Pairs (BFP)
 
 The pre-trained models are released by the corresponding repositories. 
 See the instructions in these repositories to download and use these pre-trained models.
@@ -28,7 +26,7 @@ See the instructions in these repositories to download and use these pre-trained
 - [PLBART](https://github.com/wasiahmad/PLBART).
 - [SPT-Code](https://github.com/NougatCA/SPT-Code).
 
-### Fine-tuned Models
+### Fine-tuned Models for Bug-Fix-Pairs (BFP)
 
 We fine-tune pre-trained models on Abstract BFPs and Concrete BFPs for program repair, respectively.
 
