@@ -33,16 +33,30 @@ We fine-tune pre-trained models on Abstract BFPs and Concrete BFPs for program r
 - Models fine-tuned (trained) on Concrete BFPs can be downloaded from [here](https://zenodo.org/record/7487472#.Y64Jt3bMK3B). transformer-based NMT model on Concrete BFPs can be downloaded from [here](https://drive.google.com/file/d/1rrQzr8JqRpAAT2CLv4xs8VbGtYvM9uHl/view?usp=sharing).
 - Models fine-tuned (trained) on Abstract BFPs can be downloaded from [here](https://zenodo.org/record/7487490#.Y64Jq3bMK3B). transformer-based NMT model on Abstract BFPs can be downloaded from [here](https://drive.google.com/file/d/1LfE4J5PeLhV_dZYtiagzLoyZof1AU_Hi/view?usp=sharing).
 
-## Datasets
+### Pre-trained Models for HumanEval-Java 
+The pre-trained models are released by the corresponding repositories.
+See the instructions in these repositories to download and use these pre-trained models.
 
+- [CodeT5](https://github.com/salesforce/CodeT5).
+- [PLBART](https://github.com/wasiahmad/PLBART).
+
+### Fine-tuned Models for HumanEval-Java 
+
+We directly used the fine-tuned models of PLBARTs and Code-T5s from [Jiang et. al.](https://github.com/lin-tan/clm).
+
+## Datasets
+#### Bug-Fix-Pairs (BFP)
 - Abstract BFPs are initially released by [Tufano et al., 2019](https://sites.google.com/view/learning-fixes/), 
 Concrete BFPs are initially released by [Chakraborty & Ray, 2021](https://github.com/modit-team/MODIT). We directly reuse them.
 - We also provide a [link](https://drive.google.com/file/d/1xNjo48jOliT7vLmTMOYBRziRocwpDhPg/view?usp=sharing), to download these 2 datasets. Remember to change the directory name "transformed" to "refactoring".
 - The 9 transformed datasets and corresponding original datasets are also in the link above. Files named "before_refactoring" stand for original datasets, and files named "after_refactoring" stand for transformed datasets.
 - The 9 transformed datasets can be directly used for running RQ2, see the following section "Experiment2 - RQ2". The next section introduce how to generate the transformed datasets.
+#### HumanEval-Java
+- The Bug Dataset prepared from [humaneval](https://github.com/openai/human-eval) are released by [Jian et. al.](https://github.com/lin-tan/clm).
+- The prompts from HumanEval-java with transformations, outputs, and validations are [here](https://drive.google.com/drive/folders/1aS563bTqBeEzctcyvKTJ9SXA824AR59R). 
 
 ## How to Generate Transformed Datasets?
-
+#### Bug-Fix-Pairs (BFP)
 **1. For constructing transformed datasets by *local_variable_renaming, method_renaming, parameter_renaming*:**
 
 - We use tree-sitter to parse the code to AST, and identify the target position for renaming an identifier.
@@ -83,6 +97,8 @@ So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) 
 Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
 ![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
 
+#### HumanEval-Java
+will be here ...
 
 
 ## Experiment1 - RQ1
