@@ -183,12 +183,18 @@ To download the pretrained models, follow the bash commands -
 `cd models`
 
 `# download plbart-base/large`
+
 `git clone https://huggingface.co/uclanlp/plbart-base plbart-base`
+
 `git clone https://huggingface.co/uclanlp/plbart-large plbart-large`
-``
+
+
 `# download codet5-small/base/large`
+
 `git clone https://huggingface.co/Salesforce/codet5-small codet5-small`
+
 `git clone https://huggingface.co/Salesforce/codet5-base codet5-base`
+
 `git clone https://huggingface.co/Salesforce/codet5-large codet5-large`
 
 To download the fine-tuned models, download from this link and place them inside the models folder.
@@ -197,7 +203,9 @@ To download the fine-tuned models, download from this link and place them inside
 
 To reproduce the results for Code-T5 models, run 
 `cd ReRobust/humaneval/exp/`
+
 `bash run_plbart.sh`
+
 `bash run_codet5.sh`
 
 **RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
