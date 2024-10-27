@@ -178,8 +178,27 @@ We will directly use SPT-Code repository to perform RQ2, so download it first by
   - Run `CodeT5/sh/codet5-generate-job.sh` and `codet5base-generate-job.sh`. (This file is currently located in `/APR-Models-Performance/train/CodeT5/sh/codet5-generate-job.sh`, so copy it to your current CodeT5.)
   - After running job, you will obtain a log file under the same path. Check it and check `Accuracy` and `CodeBLEU` in the final stage of log to verify the value with the thesis.
 
-####HumanEval-Java
-will be here ...
+#### HumanEval-Java
+To download the pretrained models, follow the bash commands - 
+`cd models`
+
+`# download plbart-base/large`
+`git clone https://huggingface.co/uclanlp/plbart-base plbart-base`
+`git clone https://huggingface.co/uclanlp/plbart-large plbart-large`
+``
+`# download codet5-small/base/large`
+`git clone https://huggingface.co/Salesforce/codet5-small codet5-small`
+`git clone https://huggingface.co/Salesforce/codet5-base codet5-base`
+`git clone https://huggingface.co/Salesforce/codet5-large codet5-large`
+
+To download the fine-tuned models, download from this link and place them inside the models folder.
+1. https://doi.org/10.5281/zenodo.7559244
+2. https://doi.org/10.5281/zenodo.7559277
+
+To reproduce the results for Code-T5 models, run 
+`cd ReRobust/humaneval/exp/`
+`bash run_plbart.sh`
+`bash run_codet5.sh`
 
 **RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
 
