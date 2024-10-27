@@ -124,6 +124,7 @@ Please make sure the environment libraries mentioned above installed.
 
 Please make sure the environment libraries mentioned above installed.
 
+#### Bug-Fix-Pairs (BFP)
 **1. For testing the robustness of CodeBERT, GraphCodeBERT, CodeGPT, PLBART(MODIT), LSTM-based and Transformer-based models:**
 
 - Models:
@@ -179,7 +180,7 @@ We will directly use SPT-Code repository to perform RQ2, so download it first by
   - Run `CodeT5/sh/codet5-generate-job.sh` and `codet5base-generate-job.sh`. (This file is currently located in `/APR-Models-Performance/train/CodeT5/sh/codet5-generate-job.sh`, so copy it to your current CodeT5.)
   - After running job, you will obtain a log file under the same path. Check it and check `Accuracy` and `CodeBLEU` in the final stage of log to verify the value with the thesis.
 
-
+####HumanEval-Java
 **RQ2: What is the repair robustness of different DL-based APR models against different semantic-preserving code transformations?**
 
 #### Bug-Fix-Pairs (BFP)
