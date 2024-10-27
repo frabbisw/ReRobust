@@ -95,7 +95,7 @@ So far, you obtain the renaming substitutions list (i.e., 2 .jsonl files above) 
 
 
 Finally, you will obtain the transformed datasets, the statistics of these datasets are shown the figure below:
-![RQ2_Transformations_Datasets](images/RQ2_Transformations.png)
+![RQ2_Transformations_Datasets](images/RQ2_Transformations.png.png)
 
 #### HumanEval-Java
 Similarly with the JavaTransform and attack-pretrained-model-of-code, the HumanEval-java codes are transformed. However, manual annotation for buggy lines is required because the bug locations are needed in this case. The final transformed dataset is found [here](https://drive.google.com/drive/folders/1aS563bTqBeEzctcyvKTJ9SXA824AR59R?usp=drive_link). Note that, we use eight transformations for HumanEval-Java excluding the switch-to-if-else transformation as this dataset does not have any switch case in the codes.
