@@ -29,9 +29,9 @@ do
     python humaneval_codet5.py /home/f_rabbi/clm/models/
 
     cd /home/f_rabbi/clm/clm-apr/humaneval/
-#    python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_output_c1.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_validate_c1.json /home/f_rabbi/clm/humaneval-java/
+    python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_output_c1.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_validate_c1.json /home/f_rabbi/clm/humaneval-java/
     python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_output_c3.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_base_validate_c3.json /home/f_rabbi/clm/humaneval-java/
-#    python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_output_c1.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_validate_c1.json /home/f_rabbi/clm/humaneval-java/
+    python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_output_c1.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_validate_c1.json /home/f_rabbi/clm/humaneval-java/
     python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_output_c3.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_large_validate_c3.json /home/f_rabbi/clm/humaneval-java/
     python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_small_output_c1.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_small_validate_c1.json /home/f_rabbi/clm/humaneval-java/
     python validate_humaneval.py /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_small_output_c3.json /home/f_rabbi/clm/clm-apr/humaneval/codet5_result/codet5_small_validate_c3.json /home/f_rabbi/clm/humaneval-java/
